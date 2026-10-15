@@ -1,0 +1,11 @@
+{
+  "name": "defeaters",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The scholarly case against the truth claims of Christianity and religion, with a debate arena.",
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "node tests/engine.test.js",
+    "test:e2e": "node build/build.js && node tests/smoke.e2e.js && node tests/ai.e2e.js"
+  }
+}
