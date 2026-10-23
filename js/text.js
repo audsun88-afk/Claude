@@ -16,10 +16,11 @@
     return null;
   }
 
-  // *italic*, **bold**, [[id]] / [[id|label]]
+  // *italic*, **bold**, [[id]] / [[id|label]] for entries, [[#route|label]] for other pages
   function inline(s) {
     var out = esc(s);
-    out = out.replace(/\[\[([a-z0-9-]+)(?:\|([^\]]+))?\]\]/g, function (_, id, label) {
+    out = out.replace(/\[\[(#?[a-z0-9.-]+)(?:\|([^\]]+))?\]\]/g, function (_, id, label) {
+      if (id.charAt(0) === "#") return '<a class="xref" href="' + id + '">' + (label || id.slice(1)) + "</a>";
       var e = byId(id);
       var text = label || (e ? e.title : id);
       return '<a class="xref" href="#a.' + id + '">' + text + "</a>";
@@ -64,7 +65,8 @@
   // Plain text version of inline markup (for prompts and search indexing).
   function plain(s) {
     return String(s || "")
-      .replace(/\[\[([a-z0-9-]+)(?:\|([^\]]+))?\]\]/g, function (_, id, label) {
+      .replace(/\[\[(#?[a-z0-9.-]+)(?:\|([^\]]+))?\]\]/g, function (_, id, label) {
+        if (id.charAt(0) === "#") return label || id.slice(1);
         var e = byId(id); return label || (e ? e.title : id);
       })
       .replace(/\*\*([^*]+)\*\*/g, "$1").replace(/\*([^*]+)\*/g, "$1");

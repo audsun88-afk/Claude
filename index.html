@@ -6,25 +6,51 @@
 <!-- ARTIFACT-HEAD-START -->
 <title>Defeaters</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="The scholarly case against the truth claims of Christianity and religion: 244 apologetic arguments answered with sources, and a debate arena to argue with.">
+<meta name="description" content="The scholarly case against the truth claims of Christianity and religion: 244 apologetic arguments answered with sources, a case map, a Bayesian ledger, timelines, parallel passages, and a debate arena.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&display=swap">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/tools.css">
 <!-- ARTIFACT-HEAD-END -->
 </head>
 <body>
 <!-- ARTIFACT-BODY-START -->
+<a class="skip" href="#main" data-scroll="main">Skip to content</a>
 <header class="site-head">
-  <div class="wrap">
+  <div class="wrap head-row">
     <a class="wordmark" href="#"><span class="mark" aria-hidden="true">§</span>Defeaters</a>
     <nav class="nav" aria-label="Main">
+      <a href="#" data-view="home">Index</a>
       <a href="#library" data-view="library">Library</a>
       <a href="#debate" data-view="debate">Debate</a>
-      <a href="#case" data-view="overview">The case</a>
-      <a href="#method" data-view="method">Method</a>
-      <a href="#sources" data-view="sources">Sources</a>
-      <a href="#about" data-view="about">About</a>
+      <a href="#map" data-view="map">Case map</a>
+      <a href="#ledger" data-view="ledger">Ledger</a>
+      <details class="menu">
+        <summary>Tools</summary>
+        <div class="menu-pop">
+          <a href="#timeline" data-view="timeline"><b>Timeline</b><span>When it happened, when it was written</span></a>
+          <a href="#atlas" data-view="atlas"><b>Atlas</b><span>Every argument and its connections</span></a>
+          <a href="#parallels" data-view="parallels"><b>Parallels</b><span>Bible passages side by side</span></a>
+          <a href="#compare" data-view="compare"><b>Compare</b><span>The outsider test, as a table</span></a>
+          <a href="#classics" data-view="classics"><b>Classics</b><span>Famous apologetics, mapped to answers</span></a>
+          <a href="#drill" data-view="drill"><b>Drill</b><span>Write a rebuttal, then compare</span></a>
+          <a href="#glossary" data-view="glossary"><b>Glossary</b><span>Terms used in the library</span></a>
+        </div>
+      </details>
+      <details class="menu">
+        <summary>Read</summary>
+        <div class="menu-pop">
+          <a href="#case" data-view="essay.overview"><b>The case in brief</b><span>The whole argument in eight parts</span></a>
+          <a href="#essay.concessions" data-view="essay.concessions"><b>What apologists get right</b><span>Concessions, and why they don't settle it</span></a>
+          <a href="#essay.chain" data-view="essay.chain"><b>The chain of dependence</b><span>Why every link must hold</span></a>
+          <a href="#essay.ledger" data-view="essay.ledger"><b>Weighing it all</b><span>How the Bayesian ledger works</span></a>
+          <a href="#essay.guide" data-view="essay.guide"><b>Where to start</b><span>Reading paths for different readers</span></a>
+          <a href="#method" data-view="essay.method"><b>Method</b><span>How to weigh a religious claim</span></a>
+          <a href="#sources" data-view="sources"><b>Sources</b><span>The full bibliography</span></a>
+          <a href="#about" data-view="essay.about"><b>About</b><span>What this site is</span></a>
+        </div>
+      </details>
     </nav>
     <div class="search" role="search">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg>
@@ -32,15 +58,21 @@
       <input id="site-search" type="search" placeholder="Search arguments  ( / )" autocomplete="off">
       <div class="search-results" id="search-results" hidden></div>
     </div>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
   </div>
 </header>
 <main id="main" tabindex="-1">
-  <div class="wrap"><p style="color:var(--ink-3)">Loading the library…</p></div>
+  <div class="wrap"><p class="muted">Loading the library…</p></div>
 </main>
 <footer class="site-foot">
-  <div class="wrap">
-    <span><strong>Defeaters</strong> · the scholarly case against the truth claims of religion · <span id="foot-count"></span></span>
-    <span>Critiques ideas, not people. Corrections are welcome.</span>
+  <div class="wrap foot-grid">
+    <div><span class="wordmark small"><span class="mark" aria-hidden="true">§</span>Defeaters</span><p>The scholarly case against the truth claims of religion. Critiques ideas, not people. Corrections are welcome.</p><p class="muted" id="foot-count"></p></div>
+    <nav aria-label="Footer: library"><span class="label">Library</span><a href="#">Index</a><a href="#library">All arguments</a><a href="#c.honesty">Bad skeptic arguments</a><a href="#sources">Sources</a></nav>
+    <nav aria-label="Footer: tools"><span class="label">Tools</span><a href="#map">Case map</a><a href="#ledger">Ledger</a><a href="#timeline">Timeline</a><a href="#atlas">Atlas</a><a href="#parallels">Parallels</a><a href="#compare">Compare</a><a href="#classics">Classics</a><a href="#drill">Drill</a></nav>
+    <nav aria-label="Footer: reading"><span class="label">Read</span><a href="#case">The case in brief</a><a href="#essay.concessions">Concessions</a><a href="#essay.guide">Where to start</a><a href="#method">Method</a><a href="#about">About</a></nav>
   </div>
 </footer>
 <script src="js/core.js"></script>
@@ -64,10 +96,29 @@
 <script src="js/data/17-religions.js"></script>
 <script src="js/data/18-epistemology.js"></script>
 <script src="js/data/19-honesty.js"></script>
+<script src="js/data/20-meta.js"></script>
+<script src="js/data/21-glossary.js"></script>
+<script src="js/data/22-classics.js"></script>
+<script src="js/data/23-timeline.js"></script>
+<script src="js/data/24-parallels.js"></script>
+<script src="js/data/25-compare.js"></script>
+<script src="js/data/26-casemap.js"></script>
+<script src="js/data/27-ledger.js"></script>
 <script src="js/text.js"></script>
 <script src="js/engine.js"></script>
 <script src="js/ai.js"></script>
-<script src="js/app.js"></script>
+<script src="js/ui/shell.js"></script>
+<script src="js/ui/home.js"></script>
+<script src="js/ui/library.js"></script>
+<script src="js/ui/pages.js"></script>
+<script src="js/ui/debate.js"></script>
+<script src="js/ui/map.js"></script>
+<script src="js/ui/ledger.js"></script>
+<script src="js/ui/timeline.js"></script>
+<script src="js/ui/atlas.js"></script>
+<script src="js/ui/reference.js"></script>
+<script src="js/ui/drill.js"></script>
+<script src="js/ui/boot.js"></script>
 <!-- ARTIFACT-BODY-END -->
 </body>
 </html>
