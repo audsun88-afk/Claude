@@ -20,32 +20,65 @@
     return n;
   }
 
+  // Assign each label a row and a side of its mark. items: [{cx, w}]; fixed: labels already
+  // placed. Returns one {row, end} per item, or null where no slot was free.
+  var SLOTS = [0, -1, 1, 2];
+  function place(items, fixed, W, padL, padR) {
+    var labels = fixed.slice(), leaders = [], cur = [], best = null, bestN = -1, nodes = 0;
+    function clear(r, x1, x2, cx) {
+      var i, l;
+      for (i = 0; i < labels.length; i++) { l = labels[i]; if (l.row === r && !(x2 + 6 < l.x1 || x1 - 6 > l.x2)) return false; }
+      if (r < 0) return true;
+      for (i = 0; i < leaders.length; i++) { l = leaders[i]; if (l.row > r && l.x >= x1 - 3 && l.x <= x2 + 3) return false; }
+      for (i = 0; i < labels.length; i++) { l = labels[i]; if (l.row >= 0 && l.row < r && cx >= l.x1 - 3 && cx <= l.x2 + 3) return false; }
+      return true;
+    }
+    function rec(i, n) {
+      if (bestN === items.length || nodes++ > 50000 || n + items.length - i <= bestN) return;
+      if (i === items.length) { bestN = n; best = cur.slice(); return; }
+      var it = items[i], right = it.cx + it.w <= W - padR, left = it.cx - it.w >= padL;
+      var sides = right ? (left ? [false, true] : [false]) : [true];
+      SLOTS.forEach(function (r) {
+        sides.forEach(function (end) {
+          var x1 = end ? it.cx - it.w : it.cx, x2 = end ? it.cx : it.cx + it.w;
+          if (bestN === items.length || !clear(r, x1, x2, it.cx)) return;
+          labels.push({ row: r, x1: x1, x2: x2 }); if (r > 0) leaders.push({ x: it.cx, row: r }); cur.push({ row: r, end: end });
+          rec(i + 1, n + 1);
+          labels.pop(); if (r > 0) leaders.pop(); cur.pop();
+        });
+      });
+      cur.push(null); rec(i + 1, n); cur.pop();
+    }
+    rec(0, 0);
+    return best || items.map(function () { return null; });
+  }
+
   function chart(p, host) {
     var W = 1000, padL = 18, padR = 18, laneH = 92, top = 6;
     var x = function (y) { return padL + ((y - p.from) / (p.to - p.from)) * (W - padL - padR); };
     var lanesH = p.lanes.length * laneH, axisY = top + lanesH + 6;
     var gapY0 = axisY + 40, H = gapY0 + p.gaps.length * 26 + 8;
     var svg = el("svg", { viewBox: "0 0 " + W + " " + H, class: "tl-svg", role: "img", "aria-label": p.name + " timeline: " + p.blurb });
-    // lanes
+    // layers: lane backgrounds, then gridlines, then marks and labels (which carry a halo)
+    var back = el("g"), grid = el("g"), marks = el("g");
+    svg.appendChild(back); svg.appendChild(grid); svg.appendChild(marks);
     p.lanes.forEach(function (name, li) {
-      var y0 = top + li * laneH;
-      svg.appendChild(el("rect", { x: 0, y: y0, width: W, height: laneH - 6, class: "tl-lane" + (li % 2 ? " alt" : "") }));
-      svg.appendChild(el("text", { x: padL, y: y0 + 16, class: "tl-lane-label" }, name));
+      var y0 = top + li * laneH, alt = li % 2 ? " alt" : "";
+      back.appendChild(el("rect", { x: 0, y: y0, width: W, height: laneH - 6, class: "tl-lane" + alt }));
+      marks.appendChild(el("text", { x: padL, y: y0 + 16, class: "tl-lane-label" + alt }, name));
       var base = y0 + laneH - 24;
-      svg.appendChild(el("line", { x1: padL, x2: W - padR, y1: base, y2: base, class: "tl-base" }));
-      // label placement: greedy rows above the marker
+      back.appendChild(el("line", { x1: padL, x2: W - padR, y1: base, y2: base, class: "tl-base" }));
+      // label placement: a small depth-first search over slots (the row above the line, the
+      // row below it, then two higher rows reached by leader lines), taking the first
+      // assignment that labels every event. A label may not cover a leader passing through
+      // its row, and a leader may not cross a lower label.
       var evs = p.events.map(function (e, i) { return { e: e, i: i }; }).filter(function (o) { return o.e.lane === li; })
-        .sort(function (a, b) { return a.e.y - b.e.y; });
-      var rows = [[], [], []];
-      evs.forEach(function (o) {
-        var e = o.e, cx = x(e.y), w = e.label.length * 6.3 + 6;
-        var anchorEnd = cx + w > W - padR;
-        var x1 = anchorEnd ? cx - w : cx, x2 = anchorEnd ? cx : cx + w;
-        var row = -1;
-        for (var r = 0; r < rows.length; r++) {
-          if (rows[r].every(function (s) { return x2 + 6 < s[0] || x1 - 6 > s[1]; })) { row = r; break; }
-        }
-        var g = el("g", { class: "tl-ev lane-" + li, tabindex: "0", "data-i": o.i, role: "button", "aria-label": e.label + ", " + span(e) });
+        .sort(function (a, b) { return b.e.y - a.e.y; });
+      var spots = place(evs.map(function (o) { var lab = o.e.short || o.e.label; return { cx: x(o.e.y), w: lab.length * 6.3 + 6 }; }),
+        [{ row: 2, x1: 0, x2: padL + name.length * 7.4 + 12 }], W, padL, padR);
+      evs.forEach(function (o, k) {
+        var e = o.e, cx = x(e.y), spot = spots[k];
+        var g = el("g", { class: "tl-ev lane-" + li + alt, tabindex: "0", "data-i": o.i, role: "button", "aria-label": e.label + ", " + span(e) });
         if (e.y2 != null) {
           var xa = x(e.y), xb = x(e.y2);
           g.appendChild(el("rect", { x: xa - 2, y: base - 12, width: Math.max(xb - xa + 4, 16), height: 24, class: "tl-hit" }));
@@ -54,13 +87,12 @@
           g.appendChild(el("circle", { cx: cx, cy: base, r: 12, class: "tl-hit" }));
           g.appendChild(el("circle", { cx: cx, cy: base, r: 5, class: "tl-dot" }));
         }
-        if (row >= 0) {
-          rows[row].push([x1, x2]);
-          var ly = base - 14 - row * 15;
-          if (row > 0) g.appendChild(el("line", { x1: cx, x2: cx, y1: base - 7, y2: ly + 3, class: "tl-leader" }));
-          g.appendChild(el("text", { x: anchorEnd ? cx : cx, y: ly, class: "tl-label", "text-anchor": anchorEnd ? "end" : "start" }, e.label));
+        if (spot) {
+          var ly = spot.row < 0 ? base + 18 : base - 14 - spot.row * 15;
+          if (spot.row > 0) g.appendChild(el("line", { x1: cx, x2: cx, y1: base - 7, y2: ly + 3, class: "tl-leader" }));
+          g.appendChild(el("text", { x: cx, y: ly, class: "tl-label", "text-anchor": spot.end ? "end" : "start" }, e.short || e.label));
         }
-        svg.appendChild(g);
+        marks.appendChild(g);
       });
     });
     // axis
@@ -69,7 +101,7 @@
     for (var t = Math.ceil(p.from / step) * step; t <= p.to; t += step) {
       var tx = x(t);
       svg.appendChild(el("line", { x1: tx, x2: tx, y1: axisY, y2: axisY + 5, class: "tl-axis" }));
-      svg.appendChild(el("line", { x1: tx, x2: tx, y1: top, y2: axisY, class: "tl-grid" }));
+      grid.appendChild(el("line", { x1: tx, x2: tx, y1: top, y2: axisY, class: "tl-grid" }));
       svg.appendChild(el("text", { x: tx, y: axisY + 18, class: "tl-tick", "text-anchor": "middle" }, yearLabel(t)));
     }
     // gaps
@@ -110,7 +142,7 @@
       '<div class="tl-controls">' + A.segmented("Timeline", presets.map(function (x) { return { id: x.id, name: x.name }; }), p.id) + "</div>" +
       '<p class="preset-note">' + esc(p.blurb) + "</p>" +
       '<figure class="chart tl-fig"><figcaption><span class="chart-title">' + esc(p.name) + '</span><span class="chart-sub">Select a mark for details. Brackets below the axis mark the gaps.</span></figcaption>' +
-        '<div class="tl-scroll" id="tl-host"></div>' +
+        '<p class="tl-hint">Scroll sideways to see the whole period.</p><div class="tl-scroll" id="tl-host"></div>' +
         '<button class="linkish" type="button" id="tl-tt" aria-expanded="false">Show as table</button>' +
         '<div id="tl-table" hidden>' + p.lanes.map(function (name, li) {
           return '<h3 class="tt-h">' + esc(name) + '</h3><table class="data-table"><thead><tr><th scope="col">Date</th><th scope="col">Event</th><th scope="col">Note</th></tr></thead><tbody>' +

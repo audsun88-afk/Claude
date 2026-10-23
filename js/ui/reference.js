@@ -65,7 +65,7 @@
     }).join("") + "</nav>";
     if (!b) { A.page(head + shelf, "tool-page classics"); return; }
     A.page(head + shelf +
-      '<section class="concord" aria-labelledby="cc-h"><header><span class="label">' + esc(b.author) + " · " + esc(b.year) + '</span><h2 id="cc-h">' + esc(b.title) + "</h2><p>" + esc(b.note) + "</p></header>" +
+      '<section class="concord" id="concord" aria-labelledby="cc-h"><header><span class="label">' + esc(b.author) + " · " + esc(b.year) + '</span><h2 id="cc-h">' + esc(b.title) + "</h2><p>" + esc(b.note) + "</p></header>" +
         '<ol class="cc-list">' + b.items.map(function (it) {
           return '<li><div class="cc-item">' + (it.n ? '<span class="cc-n">' + esc(it.n) + "</span>" : '<span class="cc-n">·</span>') + '<span class="cc-label">' + esc(it.label) + "</span></div>" +
             '<div class="cc-ans">' + it.ids.map(function (id) {
@@ -74,6 +74,6 @@
             }).join("") + "</div></li>";
         }).join("") + "</ol></section>", "tool-page classics");
     var cur = A.$(".shelf .book.on");
-    if (cur) setTimeout(function () { var c = A.$("#cc-h"); if (c) c.scrollIntoView({ block: "start" }); }, 0);
+    if (cur) setTimeout(function () { var c = A.$("#concord"); if (c) c.scrollIntoView({ block: "start" }); }, 0);
   });
 })();

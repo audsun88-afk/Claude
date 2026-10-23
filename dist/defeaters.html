@@ -175,8 +175,11 @@ sup { line-height: 0; }
   .search { order: 2; flex: 1 1 140px; }
   .theme-toggle { order: 2; }
   .nav > a, .nav summary { padding: 6px 7px; font-size: 0.72rem; }
+  /* on a phone the two-row header would cover an eighth of the screen, so it scrolls away */
+  .site-head { position: static; }
 }
 
+[id] { scroll-margin-top: 84px; }
 main { padding-block: 28px 64px; min-height: 60vh; }
 main:focus { outline: none; }
 .site-foot { border-top: 1px solid var(--rule); padding-block: 28px 40px; color: var(--ink-2); font-size: 0.9rem; background: var(--paper-2); }
@@ -203,7 +206,7 @@ main:focus { outline: none; }
 .linkish { background: none; border: 0; padding: 0; color: var(--rubric); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; font-size: 0.88rem; }
 .chip {
   display: inline-flex; align-items: baseline; gap: 6px; cursor: pointer; text-align: left; font-family: var(--f-body); font-size: 0.9rem; line-height: 1.35;
-  padding: 6px 11px; border: 1px solid var(--rule); border-radius: 999px; background: var(--card); color: var(--ink);
+  padding: 6px 11px; border: 1px solid var(--rule); border-radius: 15px; background: var(--card); color: var(--ink);
   text-decoration: none; max-width: 100%;
 }
 .chip:hover { border-color: var(--rubric); color: var(--rubric); }
@@ -218,6 +221,12 @@ main:focus { outline: none; }
 .seg button:last-child { border-right: 0; }
 .seg button:hover { color: var(--ink); background: var(--paper-2); }
 .seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+@media (max-width: 760px) {
+  /* wrapped segments read better as separate buttons */
+  .seg { border: 0; background: none; gap: 6px; overflow: visible; }
+  .seg button, .seg button:last-child { border: 1px solid var(--rule); border-radius: var(--radius); background: var(--card); }
+  .seg button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); }
+}
 .lvl { font-family: var(--f-mono); font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.07em; border: 1px solid currentColor; border-radius: 2px; padding: 1px 5px; white-space: nowrap; }
 .lvl-scholarly { color: var(--verdigris); }
 .lvl-popular { color: var(--ink-3); }
@@ -524,6 +533,7 @@ a.xref { color: var(--rubric); }
 }
 
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 760px) { [id], .ix, .point, .prose h2 { scroll-margin-top: 12px; } }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
 @media print {
   .site-head, .site-foot, .margin, .essay-side, .lib-side, .theme-toggle { display: none !important; }
@@ -547,6 +557,7 @@ a.xref { color: var(--rubric); }
 .hero-fig { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
 .hero-label { font-family: var(--f-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); }
 .hero-num { font-family: var(--f-sans); font-weight: 600; font-size: clamp(3rem, 7vw, 4.4rem); line-height: 1; letter-spacing: -0.02em; color: var(--ink); }
+.hero-num.long { font-size: clamp(2.3rem, 4.6vw, 3.1rem); }
 .hero-num small { font-size: 0.4em; font-weight: 500; color: var(--ink-3); letter-spacing: 0; }
 .hero-num sup { font-size: 0.5em; }
 .hero-sub { color: var(--ink-2); font-size: 0.95rem; max-width: 46ch; }
@@ -675,10 +686,15 @@ a.xref { color: var(--rubric); }
 .tl-controls { margin-top: 24px; }
 .tl-fig { margin-top: 16px; }
 .tl-scroll { overflow-x: auto; max-width: 100%; }
-.tl-svg { display: block; width: 100%; min-width: 760px; height: auto; font-family: var(--f-sans); }
+.tl-svg { --lane-alt: color-mix(in srgb, var(--paper-2) 55%, var(--card)); display: block; width: 100%; min-width: 940px; height: auto; font-family: var(--f-sans); }
+.tl-hint { display: none; font-size: 0.84rem; color: var(--ink-3); margin: -4px 0 8px; }
+@media (max-width: 980px) { .tl-hint { display: block; } }
 .tl-lane { fill: transparent; }
-.tl-lane.alt { fill: var(--paper-2); opacity: 0.55; }
+.tl-lane.alt { fill: var(--lane-alt); }
 .tl-lane-label { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; fill: var(--ink-3); }
+/* labels carry a halo in their lane's color so gridlines and leaders break around them */
+.tl-lane-label, .tl-label { paint-order: stroke; stroke: var(--card); stroke-width: 4px; stroke-linejoin: round; }
+.tl-lane-label.alt, .tl-ev.alt .tl-label { stroke: var(--lane-alt); }
 .tl-base { stroke: var(--rule); stroke-width: 1; }
 .tl-axis { stroke: var(--ink-3); stroke-width: 1; }
 .tl-grid { stroke: var(--rule-2); stroke-width: 1; }
@@ -7930,7 +7946,7 @@ DEF_SET("classics", [
 </script>
 <script>
 /* Timelines. Years are negative for BCE. Each preset has lanes; each event sits in one lane.
- * y2 marks a span; approx marks a scholarly estimate; gaps are the intervals the chart emphasizes. */
+ * y2 marks a span; approx marks a scholarly estimate; short is the label drawn on the chart; gaps are the intervals the chart emphasizes. */
 DEF_SET("timeline", {
   presets: [
     {
@@ -7941,26 +7957,26 @@ DEF_SET("timeline", {
       lanes: ["Where the Bible sets it", "History & archaeology", "Texts written or copied"],
       events: [
         { y: -2000, lane: 0, label: "Abraham", note: "Traditional dating from biblical chronology. The stories contain 1st-millennium anachronisms such as domesticated camels and Philistines.", rel: ["patriarchs"], approx: true },
-        { y: -1446, lane: 0, label: "The Exodus (1 Kings 6:1)", note: "1 Kings 6:1 implies about 1446 BCE; others prefer the 13th century. No archaeological trace of the event has been found.", rel: ["exodus"] },
-        { y: -1406, y2: -1380, lane: 0, label: "Conquest of Canaan", note: "Many of the cities said to be conquered were unoccupied or unwalled at the time.", rel: ["conquest"], approx: true },
-        { y: -1010, y2: -931, lane: 0, label: "David and Solomon", note: "The Bible describes a great united kingdom; archaeology suggests a modest chiefdom in Jerusalem.", rel: ["david-solomon"], approx: true },
+        { y: -1446, lane: 0, label: "The Exodus (1 Kings 6:1)", short: "Exodus (1 Kgs 6:1)", note: "1 Kings 6:1 implies about 1446 BCE; others prefer the 13th century. No archaeological trace of the event has been found.", rel: ["exodus"] },
+        { y: -1406, y2: -1380, lane: 0, label: "Conquest of Canaan", short: "Conquest", note: "Many of the cities said to be conquered were unoccupied or unwalled at the time.", rel: ["conquest"], approx: true },
+        { y: -1010, y2: -931, lane: 0, label: "David and Solomon", short: "David, Solomon", note: "The Bible describes a great united kingdom; archaeology suggests a modest chiefdom in Jerusalem.", rel: ["david-solomon"], approx: true },
         { y: -605, y2: -536, lane: 0, label: "Daniel in Babylon", note: "The book is set in the 6th century but its detailed 'predictions' end in the 160s BCE.", rel: ["daniel"] },
         { y: -1208, lane: 1, label: "Merneptah Stele", note: "An Egyptian inscription mentioning 'Israel' as a people in Canaan: the earliest reference outside the Bible.", rel: ["exodus", "archaeology"] },
-        { y: -1200, y2: -1000, lane: 1, label: "Highland villages appear", note: "Israel emerges from within Canaanite culture in the central highlands.", rel: ["exodus", "conquest"], approx: true },
-        { y: -840, lane: 1, label: "Tel Dan and Mesha stelae", note: "The Tel Dan inscription refers to the 'House of David', supporting a historical David.", rel: ["david-solomon", "archaeology"], approx: true },
-        { y: -722, lane: 1, label: "Assyria destroys Samaria", note: "The northern kingdom of Israel falls.", rel: [] },
-        { y: -701, lane: 1, label: "Sennacherib besieges Jerusalem", note: "Recorded in both 2 Kings and Sennacherib's own annals.", rel: ["archaeology"] },
-        { y: -586, lane: 1, label: "Babylon destroys Jerusalem", note: "The First Temple falls; the exile begins.", rel: ["babylon-nineveh"] },
-        { y: -539, lane: 1, label: "Cyrus takes Babylon", note: "The Cyrus Cylinder credits Marduk with choosing him.", rel: ["cyrus"] },
-        { y: -515, lane: 1, label: "Second Temple completed", note: "Under Darius, not Cyrus.", rel: ["cyrus"] },
-        { y: -167, y2: -164, lane: 1, label: "Antiochus IV and the Maccabean revolt", note: "The crisis that the Book of Daniel describes in detail, as 'prophecy'.", rel: ["daniel", "daniel-9"] },
-        { y: -622, lane: 2, label: "Josiah's 'Book of the Law'", note: "2 Kings 22 reports a law book 'found' in the Temple, usually identified with an early form of Deuteronomy.", rel: ["mosaic-authorship"] },
-        { y: -600, lane: 2, label: "Ketef Hinnom amulets", note: "Silver amulets with the priestly blessing of Numbers 6:24–26: the oldest surviving biblical text.", rel: ["archaeology"], approx: true },
-        { y: -540, lane: 2, label: "Second Isaiah (Isa 40–55)", note: "Written during the exile, when Cyrus was already conquering.", rel: ["cyrus", "isaiah-53"], approx: true },
-        { y: -500, y2: -350, lane: 2, label: "The Torah completed", note: "Most scholars date the final form of the five books to the Persian period.", rel: ["mosaic-authorship"], approx: true },
-        { y: -250, lane: 2, label: "Septuagint (Torah)", note: "The Greek translation used by the New Testament writers.", rel: ["isaiah-7-14"], approx: true },
+        { y: -1200, y2: -1000, lane: 1, label: "Highland villages appear", short: "Highland villages", note: "Israel emerges from within Canaanite culture in the central highlands.", rel: ["exodus", "conquest"], approx: true },
+        { y: -840, lane: 1, label: "Tel Dan and Mesha stelae", short: "Tel Dan, Mesha", note: "The Tel Dan inscription refers to the 'House of David', supporting a historical David.", rel: ["david-solomon", "archaeology"], approx: true },
+        { y: -722, lane: 1, label: "Assyria destroys Samaria", short: "Fall of Samaria", note: "The northern kingdom of Israel falls.", rel: [] },
+        { y: -701, lane: 1, label: "Sennacherib besieges Jerusalem", short: "Sennacherib's siege", note: "Recorded in both 2 Kings and Sennacherib's own annals.", rel: ["archaeology"] },
+        { y: -586, lane: 1, label: "Babylon destroys Jerusalem", short: "Fall of Jerusalem", note: "The First Temple falls; the exile begins.", rel: ["babylon-nineveh"] },
+        { y: -539, lane: 1, label: "Cyrus takes Babylon", short: "Cyrus", note: "The Cyrus Cylinder credits Marduk with choosing him.", rel: ["cyrus"] },
+        { y: -515, lane: 1, label: "Second Temple completed", short: "Second Temple", note: "Under Darius, not Cyrus.", rel: ["cyrus"] },
+        { y: -167, y2: -164, lane: 1, label: "Antiochus IV and the Maccabean revolt", short: "Maccabean revolt", note: "The crisis that the Book of Daniel describes in detail, as 'prophecy'.", rel: ["daniel", "daniel-9"] },
+        { y: -622, lane: 2, label: "Josiah's 'Book of the Law'", short: "Josiah's lawbook", note: "2 Kings 22 reports a law book 'found' in the Temple, usually identified with an early form of Deuteronomy.", rel: ["mosaic-authorship"] },
+        { y: -600, lane: 2, label: "Ketef Hinnom amulets", short: "Ketef Hinnom", note: "Silver amulets with the priestly blessing of Numbers 6:24–26: the oldest surviving biblical text.", rel: ["archaeology"], approx: true },
+        { y: -540, lane: 2, label: "Second Isaiah (Isa 40–55)", short: "Second Isaiah", note: "Written during the exile, when Cyrus was already conquering.", rel: ["cyrus", "isaiah-53"], approx: true },
+        { y: -500, y2: -350, lane: 2, label: "The Torah completed", short: "Torah completed", note: "Most scholars date the final form of the five books to the Persian period.", rel: ["mosaic-authorship"], approx: true },
+        { y: -250, lane: 2, label: "Septuagint (Torah)", short: "Septuagint", note: "The Greek translation used by the New Testament writers.", rel: ["isaiah-7-14"], approx: true },
         { y: -165, lane: 2, label: "Daniel written", note: "Its forecasts are accurate up to about 165 BCE and then fail.", rel: ["daniel", "daniel-9"], approx: true },
-        { y: -250, y2: 68, lane: 2, label: "Dead Sea Scrolls copied", note: "They show a Hebrew text still fluid in this period.", rel: ["dead-sea-scrolls"], approx: true },
+        { y: -250, y2: 68, lane: 2, label: "Dead Sea Scrolls copied", short: "Dead Sea Scrolls", note: "They show a Hebrew text still fluid in this period.", rel: ["dead-sea-scrolls"], approx: true },
         { y: 930, lane: 2, label: "Aleppo Codex", note: "The earliest near-complete Masoretic manuscript.", rel: ["dead-sea-scrolls"], approx: true },
         { y: 1008, lane: 2, label: "Leningrad Codex", note: "The oldest complete Hebrew Bible.", rel: ["dead-sea-scrolls"] }
       ],
@@ -7977,32 +7993,32 @@ DEF_SET("timeline", {
       from: -10, to: 420,
       lanes: ["Events", "Texts written", "Manuscripts & institutions"],
       events: [
-        { y: -4, lane: 0, label: "Herod the Great dies", note: "Matthew places Jesus' birth before this.", rel: ["nativity"] },
-        { y: 6, lane: 0, label: "Census of Quirinius", note: "Luke places Jesus' birth at this census, about ten years after Herod's death.", rel: ["nativity"] },
+        { y: -4, lane: 0, label: "Herod the Great dies", short: "Herod dies", note: "Matthew places Jesus' birth before this.", rel: ["nativity"] },
+        { y: 6, lane: 0, label: "Census of Quirinius", short: "Quirinius census", note: "Luke places Jesus' birth at this census, about ten years after Herod's death.", rel: ["nativity"] },
         { y: 30, lane: 0, label: "Crucifixion", note: "Around 30 or 33 CE.", rel: ["jesus-died", "historical-jesus"], approx: true },
         { y: 33, lane: 0, label: "Paul's conversion", note: "Paul's visionary experience.", rel: ["paul-conversion"], approx: true },
         { y: 62, lane: 0, label: "James executed", note: "Josephus, Antiquities 20.200.", rel: ["james-conversion", "martyrdom"] },
-        { y: 64, lane: 0, label: "Nero's persecution", note: "Tacitus, Annals 15.44.", rel: ["martyrdom", "extrabiblical"] },
-        { y: 66, y2: 70, lane: 0, label: "Jewish War; Temple destroyed", note: "The event that Mark 13 and Luke 21 appear to reflect.", rel: ["temple-prediction", "early-gospels"] },
+        { y: 64, lane: 0, label: "Nero's persecution", short: "Nero", note: "Tacitus, Annals 15.44.", rel: ["martyrdom", "extrabiblical"] },
+        { y: 66, y2: 70, lane: 0, label: "Jewish War; Temple destroyed", short: "Temple destroyed", note: "The event that Mark 13 and Luke 21 appear to reflect.", rel: ["temple-prediction", "early-gospels"] },
         { y: 132, y2: 135, lane: 0, label: "Bar Kokhba revolt", note: "Rabbi Akiva hails Bar Kokhba as messiah.", rel: ["messiah-before-70"] },
         { y: 312, lane: 0, label: "Constantine converts", note: "Imperial patronage begins.", rel: ["christianity-growth"] },
-        { y: 325, lane: 0, label: "Council of Nicaea", note: "Defines the Son as 'of one substance' with the Father.", rel: ["nicaea", "trinity"] },
+        { y: 325, lane: 0, label: "Council of Nicaea", short: "Nicaea", note: "Defines the Son as 'of one substance' with the Father.", rel: ["nicaea", "trinity"] },
         { y: 380, lane: 0, label: "Edict of Thessalonica", note: "Nicene Christianity becomes the empire's religion.", rel: ["christianity-growth", "church-survival"] },
         { y: 50, y2: 58, lane: 1, label: "Paul's letters", note: "The earliest Christian texts. No miracle of Jesus is mentioned.", rel: ["paul-confirms", "creed-1cor15"], approx: true },
         { y: 70, lane: 1, label: "Mark", note: "Anonymous; around 70 CE.", rel: ["early-gospels", "gospel-authorship"], approx: true },
-        { y: 80, y2: 90, lane: 1, label: "Matthew and Luke", note: "Both copy Mark; anonymous.", rel: ["synoptic-dependence"], approx: true },
+        { y: 80, y2: 90, lane: 1, label: "Matthew and Luke", short: "Matthew, Luke", note: "Both copy Mark; anonymous.", rel: ["synoptic-dependence"], approx: true },
         { y: 85, y2: 115, lane: 1, label: "Acts", note: "Dated 80–90 by many scholars; some argue for 110–120.", rel: ["luke-historian"], approx: true },
         { y: 90, y2: 110, lane: 1, label: "John", note: "The most theologically developed Gospel.", rel: ["john-reliable"], approx: true },
-        { y: 93, lane: 1, label: "Josephus, Antiquities", note: "Mentions James 'the brother of Jesus'; the Testimonium is partly interpolated.", rel: ["extrabiblical"] },
-        { y: 116, lane: 1, label: "Tacitus, Annals", note: "Reports Christus executed under Pilate.", rel: ["extrabiblical"], approx: true },
+        { y: 93, lane: 1, label: "Josephus, Antiquities", short: "Josephus", note: "Mentions James 'the brother of Jesus'; the Testimonium is partly interpolated.", rel: ["extrabiblical"] },
+        { y: 116, lane: 1, label: "Tacitus, Annals", short: "Tacitus", note: "Reports Christus executed under Pilate.", rel: ["extrabiblical"], approx: true },
         { y: 120, lane: 1, label: "Papias", note: "Our earliest testimony about Gospel authors, quoted by Eusebius.", rel: ["gospel-authorship"], approx: true },
         { y: 155, lane: 1, label: "Justin Martyr", note: "Sunday worship; 'memoirs of the apostles', not yet named Gospels.", rel: ["sunday-worship", "gospel-authorship"], approx: true },
-        { y: 180, lane: 1, label: "Irenaeus names four Gospels", note: "The first author to name all four.", rel: ["gospel-authorship", "canon"], approx: true },
+        { y: 180, lane: 1, label: "Irenaeus names four Gospels", short: "Irenaeus", note: "The first author to name all four.", rel: ["gospel-authorship", "canon"], approx: true },
         { y: 125, y2: 225, lane: 2, label: "P52", note: "A scrap of John, dated paleographically within a broad range.", rel: ["early-manuscripts", "manuscripts"], approx: true },
         { y: 175, y2: 250, lane: 2, label: "P45, P46, P66, P75", note: "The earliest substantial manuscripts.", rel: ["early-manuscripts", "manuscripts"], approx: true },
-        { y: 326, lane: 2, label: "Holy Sepulchre site chosen", note: "No earlier record of Christians venerating a tomb.", rel: ["tomb-veneration"], approx: true },
-        { y: 330, y2: 360, lane: 2, label: "Codex Sinaiticus and Vaticanus", note: "The earliest complete or near-complete New Testaments.", rel: ["manuscripts", "textual-variants"], approx: true },
-        { y: 367, lane: 2, label: "Athanasius lists the 27 books", note: "The first list matching today's New Testament.", rel: ["canon"] }
+        { y: 326, lane: 2, label: "Holy Sepulchre site chosen", short: "Holy Sepulchre", note: "No earlier record of Christians venerating a tomb.", rel: ["tomb-veneration"], approx: true },
+        { y: 330, y2: 360, lane: 2, label: "Codex Sinaiticus and Vaticanus", short: "Sinaiticus, Vaticanus", note: "The earliest complete or near-complete New Testaments.", rel: ["manuscripts", "textual-variants"], approx: true },
+        { y: 367, lane: 2, label: "Athanasius lists the 27 books", short: "Athanasius's 27 books", note: "The first list matching today's New Testament.", rel: ["canon"] }
       ],
       gaps: [
         { from: 30, to: 50, label: "≈20 years to Paul's letters" },
@@ -10130,6 +10146,7 @@ DEF_SET("ledger", {
 
       var post = probHtml(run);
       A.$("#lg-post").innerHTML = post.big;
+      A.$("#lg-post").classList.toggle("long", post.big.replace(/<[^>]+>|&[a-z]+;/g, "x").length > 8);
       A.$("#lg-odds").innerHTML = post.small + ". Starting from a prior of " + probHtml(pl).big + ".";
       A.$("#lg-compare").innerHTML = L.presets.map(function (p) {
         var t = total(presetState(p.id));
@@ -10227,32 +10244,65 @@ DEF_SET("ledger", {
     return n;
   }
 
+  // Assign each label a row and a side of its mark. items: [{cx, w}]; fixed: labels already
+  // placed. Returns one {row, end} per item, or null where no slot was free.
+  var SLOTS = [0, -1, 1, 2];
+  function place(items, fixed, W, padL, padR) {
+    var labels = fixed.slice(), leaders = [], cur = [], best = null, bestN = -1, nodes = 0;
+    function clear(r, x1, x2, cx) {
+      var i, l;
+      for (i = 0; i < labels.length; i++) { l = labels[i]; if (l.row === r && !(x2 + 6 < l.x1 || x1 - 6 > l.x2)) return false; }
+      if (r < 0) return true;
+      for (i = 0; i < leaders.length; i++) { l = leaders[i]; if (l.row > r && l.x >= x1 - 3 && l.x <= x2 + 3) return false; }
+      for (i = 0; i < labels.length; i++) { l = labels[i]; if (l.row >= 0 && l.row < r && cx >= l.x1 - 3 && cx <= l.x2 + 3) return false; }
+      return true;
+    }
+    function rec(i, n) {
+      if (bestN === items.length || nodes++ > 50000 || n + items.length - i <= bestN) return;
+      if (i === items.length) { bestN = n; best = cur.slice(); return; }
+      var it = items[i], right = it.cx + it.w <= W - padR, left = it.cx - it.w >= padL;
+      var sides = right ? (left ? [false, true] : [false]) : [true];
+      SLOTS.forEach(function (r) {
+        sides.forEach(function (end) {
+          var x1 = end ? it.cx - it.w : it.cx, x2 = end ? it.cx : it.cx + it.w;
+          if (bestN === items.length || !clear(r, x1, x2, it.cx)) return;
+          labels.push({ row: r, x1: x1, x2: x2 }); if (r > 0) leaders.push({ x: it.cx, row: r }); cur.push({ row: r, end: end });
+          rec(i + 1, n + 1);
+          labels.pop(); if (r > 0) leaders.pop(); cur.pop();
+        });
+      });
+      cur.push(null); rec(i + 1, n); cur.pop();
+    }
+    rec(0, 0);
+    return best || items.map(function () { return null; });
+  }
+
   function chart(p, host) {
     var W = 1000, padL = 18, padR = 18, laneH = 92, top = 6;
     var x = function (y) { return padL + ((y - p.from) / (p.to - p.from)) * (W - padL - padR); };
     var lanesH = p.lanes.length * laneH, axisY = top + lanesH + 6;
     var gapY0 = axisY + 40, H = gapY0 + p.gaps.length * 26 + 8;
     var svg = el("svg", { viewBox: "0 0 " + W + " " + H, class: "tl-svg", role: "img", "aria-label": p.name + " timeline: " + p.blurb });
-    // lanes
+    // layers: lane backgrounds, then gridlines, then marks and labels (which carry a halo)
+    var back = el("g"), grid = el("g"), marks = el("g");
+    svg.appendChild(back); svg.appendChild(grid); svg.appendChild(marks);
     p.lanes.forEach(function (name, li) {
-      var y0 = top + li * laneH;
-      svg.appendChild(el("rect", { x: 0, y: y0, width: W, height: laneH - 6, class: "tl-lane" + (li % 2 ? " alt" : "") }));
-      svg.appendChild(el("text", { x: padL, y: y0 + 16, class: "tl-lane-label" }, name));
+      var y0 = top + li * laneH, alt = li % 2 ? " alt" : "";
+      back.appendChild(el("rect", { x: 0, y: y0, width: W, height: laneH - 6, class: "tl-lane" + alt }));
+      marks.appendChild(el("text", { x: padL, y: y0 + 16, class: "tl-lane-label" + alt }, name));
       var base = y0 + laneH - 24;
-      svg.appendChild(el("line", { x1: padL, x2: W - padR, y1: base, y2: base, class: "tl-base" }));
-      // label placement: greedy rows above the marker
+      back.appendChild(el("line", { x1: padL, x2: W - padR, y1: base, y2: base, class: "tl-base" }));
+      // label placement: a small depth-first search over slots (the row above the line, the
+      // row below it, then two higher rows reached by leader lines), taking the first
+      // assignment that labels every event. A label may not cover a leader passing through
+      // its row, and a leader may not cross a lower label.
       var evs = p.events.map(function (e, i) { return { e: e, i: i }; }).filter(function (o) { return o.e.lane === li; })
-        .sort(function (a, b) { return a.e.y - b.e.y; });
-      var rows = [[], [], []];
-      evs.forEach(function (o) {
-        var e = o.e, cx = x(e.y), w = e.label.length * 6.3 + 6;
-        var anchorEnd = cx + w > W - padR;
-        var x1 = anchorEnd ? cx - w : cx, x2 = anchorEnd ? cx : cx + w;
-        var row = -1;
-        for (var r = 0; r < rows.length; r++) {
-          if (rows[r].every(function (s) { return x2 + 6 < s[0] || x1 - 6 > s[1]; })) { row = r; break; }
-        }
-        var g = el("g", { class: "tl-ev lane-" + li, tabindex: "0", "data-i": o.i, role: "button", "aria-label": e.label + ", " + span(e) });
+        .sort(function (a, b) { return b.e.y - a.e.y; });
+      var spots = place(evs.map(function (o) { var lab = o.e.short || o.e.label; return { cx: x(o.e.y), w: lab.length * 6.3 + 6 }; }),
+        [{ row: 2, x1: 0, x2: padL + name.length * 7.4 + 12 }], W, padL, padR);
+      evs.forEach(function (o, k) {
+        var e = o.e, cx = x(e.y), spot = spots[k];
+        var g = el("g", { class: "tl-ev lane-" + li + alt, tabindex: "0", "data-i": o.i, role: "button", "aria-label": e.label + ", " + span(e) });
         if (e.y2 != null) {
           var xa = x(e.y), xb = x(e.y2);
           g.appendChild(el("rect", { x: xa - 2, y: base - 12, width: Math.max(xb - xa + 4, 16), height: 24, class: "tl-hit" }));
@@ -10261,13 +10311,12 @@ DEF_SET("ledger", {
           g.appendChild(el("circle", { cx: cx, cy: base, r: 12, class: "tl-hit" }));
           g.appendChild(el("circle", { cx: cx, cy: base, r: 5, class: "tl-dot" }));
         }
-        if (row >= 0) {
-          rows[row].push([x1, x2]);
-          var ly = base - 14 - row * 15;
-          if (row > 0) g.appendChild(el("line", { x1: cx, x2: cx, y1: base - 7, y2: ly + 3, class: "tl-leader" }));
-          g.appendChild(el("text", { x: anchorEnd ? cx : cx, y: ly, class: "tl-label", "text-anchor": anchorEnd ? "end" : "start" }, e.label));
+        if (spot) {
+          var ly = spot.row < 0 ? base + 18 : base - 14 - spot.row * 15;
+          if (spot.row > 0) g.appendChild(el("line", { x1: cx, x2: cx, y1: base - 7, y2: ly + 3, class: "tl-leader" }));
+          g.appendChild(el("text", { x: cx, y: ly, class: "tl-label", "text-anchor": spot.end ? "end" : "start" }, e.short || e.label));
         }
-        svg.appendChild(g);
+        marks.appendChild(g);
       });
     });
     // axis
@@ -10276,7 +10325,7 @@ DEF_SET("ledger", {
     for (var t = Math.ceil(p.from / step) * step; t <= p.to; t += step) {
       var tx = x(t);
       svg.appendChild(el("line", { x1: tx, x2: tx, y1: axisY, y2: axisY + 5, class: "tl-axis" }));
-      svg.appendChild(el("line", { x1: tx, x2: tx, y1: top, y2: axisY, class: "tl-grid" }));
+      grid.appendChild(el("line", { x1: tx, x2: tx, y1: top, y2: axisY, class: "tl-grid" }));
       svg.appendChild(el("text", { x: tx, y: axisY + 18, class: "tl-tick", "text-anchor": "middle" }, yearLabel(t)));
     }
     // gaps
@@ -10317,7 +10366,7 @@ DEF_SET("ledger", {
       '<div class="tl-controls">' + A.segmented("Timeline", presets.map(function (x) { return { id: x.id, name: x.name }; }), p.id) + "</div>" +
       '<p class="preset-note">' + esc(p.blurb) + "</p>" +
       '<figure class="chart tl-fig"><figcaption><span class="chart-title">' + esc(p.name) + '</span><span class="chart-sub">Select a mark for details. Brackets below the axis mark the gaps.</span></figcaption>' +
-        '<div class="tl-scroll" id="tl-host"></div>' +
+        '<p class="tl-hint">Scroll sideways to see the whole period.</p><div class="tl-scroll" id="tl-host"></div>' +
         '<button class="linkish" type="button" id="tl-tt" aria-expanded="false">Show as table</button>' +
         '<div id="tl-table" hidden>' + p.lanes.map(function (name, li) {
           return '<h3 class="tt-h">' + esc(name) + '</h3><table class="data-table"><thead><tr><th scope="col">Date</th><th scope="col">Event</th><th scope="col">Note</th></tr></thead><tbody>' +
@@ -10574,7 +10623,7 @@ DEF_SET("ledger", {
     }).join("") + "</nav>";
     if (!b) { A.page(head + shelf, "tool-page classics"); return; }
     A.page(head + shelf +
-      '<section class="concord" aria-labelledby="cc-h"><header><span class="label">' + esc(b.author) + " · " + esc(b.year) + '</span><h2 id="cc-h">' + esc(b.title) + "</h2><p>" + esc(b.note) + "</p></header>" +
+      '<section class="concord" id="concord" aria-labelledby="cc-h"><header><span class="label">' + esc(b.author) + " · " + esc(b.year) + '</span><h2 id="cc-h">' + esc(b.title) + "</h2><p>" + esc(b.note) + "</p></header>" +
         '<ol class="cc-list">' + b.items.map(function (it) {
           return '<li><div class="cc-item">' + (it.n ? '<span class="cc-n">' + esc(it.n) + "</span>" : '<span class="cc-n">·</span>') + '<span class="cc-label">' + esc(it.label) + "</span></div>" +
             '<div class="cc-ans">' + it.ids.map(function (id) {
@@ -10583,7 +10632,7 @@ DEF_SET("ledger", {
             }).join("") + "</div></li>";
         }).join("") + "</ol></section>", "tool-page classics");
     var cur = A.$(".shelf .book.on");
-    if (cur) setTimeout(function () { var c = A.$("#cc-h"); if (c) c.scrollIntoView({ block: "start" }); }, 0);
+    if (cur) setTimeout(function () { var c = A.$("#concord"); if (c) c.scrollIntoView({ block: "start" }); }, 0);
   });
 })();
 

@@ -134,6 +134,7 @@
 
       var post = probHtml(run);
       A.$("#lg-post").innerHTML = post.big;
+      A.$("#lg-post").classList.toggle("long", post.big.replace(/<[^>]+>|&[a-z]+;/g, "x").length > 8);
       A.$("#lg-odds").innerHTML = post.small + ". Starting from a prior of " + probHtml(pl).big + ".";
       A.$("#lg-compare").innerHTML = L.presets.map(function (p) {
         var t = total(presetState(p.id));

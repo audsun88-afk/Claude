@@ -163,8 +163,11 @@ sup { line-height: 0; }
   .search { order: 2; flex: 1 1 140px; }
   .theme-toggle { order: 2; }
   .nav > a, .nav summary { padding: 6px 7px; font-size: 0.72rem; }
+  /* on a phone the two-row header would cover an eighth of the screen, so it scrolls away */
+  .site-head { position: static; }
 }
 
+[id] { scroll-margin-top: 84px; }
 main { padding-block: 28px 64px; min-height: 60vh; }
 main:focus { outline: none; }
 .site-foot { border-top: 1px solid var(--rule); padding-block: 28px 40px; color: var(--ink-2); font-size: 0.9rem; background: var(--paper-2); }
@@ -191,7 +194,7 @@ main:focus { outline: none; }
 .linkish { background: none; border: 0; padding: 0; color: var(--rubric); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; font-size: 0.88rem; }
 .chip {
   display: inline-flex; align-items: baseline; gap: 6px; cursor: pointer; text-align: left; font-family: var(--f-body); font-size: 0.9rem; line-height: 1.35;
-  padding: 6px 11px; border: 1px solid var(--rule); border-radius: 999px; background: var(--card); color: var(--ink);
+  padding: 6px 11px; border: 1px solid var(--rule); border-radius: 15px; background: var(--card); color: var(--ink);
   text-decoration: none; max-width: 100%;
 }
 .chip:hover { border-color: var(--rubric); color: var(--rubric); }
@@ -206,6 +209,12 @@ main:focus { outline: none; }
 .seg button:last-child { border-right: 0; }
 .seg button:hover { color: var(--ink); background: var(--paper-2); }
 .seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+@media (max-width: 760px) {
+  /* wrapped segments read better as separate buttons */
+  .seg { border: 0; background: none; gap: 6px; overflow: visible; }
+  .seg button, .seg button:last-child { border: 1px solid var(--rule); border-radius: var(--radius); background: var(--card); }
+  .seg button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); }
+}
 .lvl { font-family: var(--f-mono); font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.07em; border: 1px solid currentColor; border-radius: 2px; padding: 1px 5px; white-space: nowrap; }
 .lvl-scholarly { color: var(--verdigris); }
 .lvl-popular { color: var(--ink-3); }
@@ -512,6 +521,7 @@ a.xref { color: var(--rubric); }
 }
 
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 760px) { [id], .ix, .point, .prose h2 { scroll-margin-top: 12px; } }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
 @media print {
   .site-head, .site-foot, .margin, .essay-side, .lib-side, .theme-toggle { display: none !important; }
