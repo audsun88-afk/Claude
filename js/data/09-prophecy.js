@@ -36,6 +36,7 @@ DEF_ADD([
   title: "The Odds of Fulfilled Prophecy Are Astronomical",
   who: "Peter Stoner, Science Speaks (1958); Josh McDowell, Evidence That Demands a Verdict; Lee Strobel",
   claim: `Peter Stoner calculated that the probability of one man fulfilling just eight messianic prophecies by chance is 1 in 10^17, which is like covering Texas two feet deep in silver dollars and picking the marked one blindfolded on the first try. For 48 prophecies, the odds are 1 in 10^157. Jesus fulfilled far more.`,
+  form: ["Jesus fulfilled dozens of specific prophecies written centuries earlier.", "The probability of one person fulfilling them by chance is astronomically small (1 in 10^17 for just eight).", "Therefore the fulfillments weren't chance: the prophecies were inspired and Jesus is the Messiah."],
   short: `The numbers are guesses dressed as calculations. They assume each "prophecy" was a genuine prediction, that each fulfillment is independently documented, and that the events are independent. None of these holds. The fulfillments are reported by the same believers who chose the texts and told the stories, often decades later. You can produce equally impressive odds for any well-known figure whose biography was written to match expectations.`,
   points: [
     { h: "The inputs are made up", t: `Stoner assigned a probability to each event (for example, 1 in 10^5 for being betrayed for 30 pieces of silver) with no data behind it. Multiplying unsupported guesses produces an unsupported product, however large.` },
