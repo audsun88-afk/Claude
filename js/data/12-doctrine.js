@@ -1,3 +1,4 @@
+/* Doctrine Under Scrutiny (11 entries) */
 DEF_ADD([
 {
   id: "atonement",
@@ -159,6 +160,32 @@ DEF_ADD([
   rel: ["possession", "afterlife-origins", "yahweh-origins"]
 },
 {
+  id: "soul",
+  cat: "doctrine",
+  title: "Humans Have an Immortal Soul",
+  who: "Plato (Phaedo); Augustine; Aquinas; Descartes; J. P. Moreland & Scott Rae, Body and Soul (2000); Richard Swinburne",
+  claim: `Human beings are more than physical bodies; they have an immaterial soul that is the seat of consciousness, reason, and personal identity. The soul survives death and will be judged by God. Free will, consciousness, and moral responsibility all require it.`,
+  short: `The Hebrew Bible has no immortal soul: *nephesh* means a living being, and animals are *nephesh* too. Neuroscience shows that everything once attributed to the soul (memory, personality, reasoning, moral judgment, consciousness) depends on the brain and changes when the brain changes. There's no evidence of a non-physical component, and the theory faces unanswered questions: when does the soul arrive in the embryo, what happens to it when an embryo splits into twins, and when in human evolution did souls appear?`,
+  points: [
+    { h: "Not a biblical concept at first", t: `"The Lord God formed man from the dust of the ground, and breathed into his nostrils the breath of life; and the man became a living being (*nephesh chayyah*)" (Genesis 2:7). The same phrase describes animals (Genesis 1:20, 24). *Nephesh* refers to life, breath, appetite, or the whole person; it dies (Ezekiel 18:4, "the *nephesh* that sins shall die"). The immortal soul entered Jewish and Christian thought through Greek philosophy.` },
+    { h: "The brain does what the soul was supposed to do", t: `Damage to the frontal lobes changes moral character (Phineas Gage, 1848; modern cases of tumors causing behavioral changes that reverse when removed, e.g., Burns & Swerdlow, *Archives of Neurology*, 2003). Alzheimer's dismantles memory and personality. Split-brain patients show two partially independent streams of awareness. If the soul were the seat of personality and reason, physical damage shouldn't destroy them piece by piece.` },
+    { h: "Embryos and evolution", t: `If each human receives a soul at conception, what happens when an embryo splits into identical twins, which can occur up to about 14 days after fertilization? Or when two embryos fuse into a single chimera? About half or more of fertilized eggs never implant or are lost early. And in human evolution, there's no point at which a non-human parent had a human child with a soul: populations changed gradually over hundreds of thousands of years.` },
+    { h: "Free will doesn't need a soul", t: `Many philosophers defend compatibilist accounts of free will and responsibility without souls (Dennett, *Freedom Evolves*, 2003; Fischer & Ravizza, 1998). Christian physicalists such as Nancey Murphy (*Bodies and Souls, or Spirited Bodies?*, 2006) and Peter van Inwagen reject the immaterial soul on scientific and philosophical grounds.` }
+  ],
+  replies: [
+    { q: "The brain is just the instrument the soul uses, like a radio receiving a signal.", a: `If so, damage to the radio should distort the signal's output but not change the signal itself. But brain damage changes the person's actual beliefs, preferences, memories, and moral character, even what they want and who they are. The receiver theory makes no predictions that differ from "the brain produces the mind," while adding an undetectable extra entity.`, k: "brain instrument soul radio receiver transmitter filter" }
+  ],
+  sources: [
+    "Murphy, N. (2006). Bodies and Souls, or Spirited Bodies? Cambridge University Press.",
+    "Martin, M. & Augustine, K. (eds.) (2015). The Myth of an Afterlife. Rowman & Littlefield.",
+    "Burns, J. & Swerdlow, R. (2003). 'Right orbitofrontal tumor with pedophilia symptom and constructional apraxia sign.' Archives of Neurology 60(3): 437–440.",
+    "Gazzaniga, M. (2015). Tales from Both Sides of the Brain. Ecco.",
+    "Green, J. (2008). Body, Soul, and Human Life: The Nature of Humanity in the Bible. Baker Academic."
+  ],
+  keys: "soul immortal soul spirit nephesh mind body dualism neuroscience brain soul survives death ensoulment twins",
+  rel: ["disembodied-mind", "consciousness", "nde", "afterlife-origins"]
+},
+{
   id: "afterlife-origins",
   cat: "doctrine",
   title: "The Bible Consistently Teaches Eternal Life",
@@ -213,29 +240,52 @@ DEF_ADD([
   rel: ["dead-sea-scrolls", "satan", "afterlife-origins", "why-christianity"]
 },
 {
-  id: "soul",
+  id: "marian-dogmas",
   cat: "doctrine",
-  title: "Humans Have an Immortal Soul",
-  who: "Plato (Phaedo); Augustine; Aquinas; Descartes; J. P. Moreland & Scott Rae, Body and Soul (2000); Richard Swinburne",
-  claim: `Human beings are more than physical bodies; they have an immaterial soul that is the seat of consciousness, reason, and personal identity. The soul survives death and will be judged by God. Free will, consciousness, and moral responsibility all require it.`,
-  short: `The Hebrew Bible has no immortal soul: *nephesh* means a living being, and animals are *nephesh* too. Neuroscience shows that everything once attributed to the soul (memory, personality, reasoning, moral judgment, consciousness) depends on the brain and changes when the brain changes. There's no evidence of a non-physical component, and the theory faces unanswered questions: when does the soul arrive in the embryo, what happens to it when an embryo splits into twins, and when in human evolution did souls appear?`,
+  title: "The Church's Teachings About Mary Are True",
+  who: "Council of Ephesus (431) on Mary as Theotokos; Pius IX, Ineffabilis Deus (1854); Pius XII, Munificentissimus Deus (1950); Catholic and Orthodox tradition",
+  claim: `Mary is the Mother of God (*Theotokos*), as the Council of Ephesus defined. She remained a virgin throughout her life. She was conceived without original sin (the Immaculate Conception, defined in 1854), and at the end of her life she was taken body and soul into heaven (the Assumption, defined in 1950). These teachings rest on scripture as interpreted by Tradition and the Church's infallible teaching authority, and Marian apparitions at Lourdes, Fatima, and elsewhere confirm them.`,
+  short: `These doctrines developed over centuries, and their history shows it. The New Testament names Jesus' brothers, James, Joses, Judah, and Simon, and mentions sisters (Mark 6:3); the doctrine of perpetual virginity required reinterpreting them as cousins or as children of Joseph by an earlier marriage, explanations that arose to protect the doctrine. The Immaculate Conception was rejected by major theologians, including Thomas Aquinas and Bernard of Clairvaux, and was defined only in 1854. The Assumption first appears in apocryphal stories of the 5th and 6th centuries and was defined in 1950 without historical evidence. Protestants reject these doctrines, and their disagreement with Catholics and Orthodox is itself evidence that "Tradition" can't be told apart from accretion.`,
   points: [
-    { h: "Not a biblical concept at first", t: `"The Lord God formed man from the dust of the ground, and breathed into his nostrils the breath of life; and the man became a living being (*nephesh chayyah*)" (Genesis 2:7). The same phrase describes animals (Genesis 1:20, 24). *Nephesh* refers to life, breath, appetite, or the whole person; it dies (Ezekiel 18:4, "the *nephesh* that sins shall die"). The immortal soul entered Jewish and Christian thought through Greek philosophy.` },
-    { h: "The brain does what the soul was supposed to do", t: `Damage to the frontal lobes changes moral character (Phineas Gage, 1848; modern cases of tumors causing behavioral changes that reverse when removed, e.g., Burns & Swerdlow, *Archives of Neurology*, 2003). Alzheimer's dismantles memory and personality. Split-brain patients show two partially independent streams of awareness. If the soul were the seat of personality and reason, physical damage shouldn't destroy them piece by piece.` },
-    { h: "Embryos and evolution", t: `If each human receives a soul at conception, what happens when an embryo splits into identical twins, which can occur up to about 14 days after fertilization? Or when two embryos fuse into a single chimera? About half or more of fertilized eggs never implant or are lost early. And in human evolution, there's no point at which a non-human parent had a human child with a soul: populations changed gradually over hundreds of thousands of years.` },
-    { h: "Free will doesn't need a soul", t: `Many philosophers defend compatibilist accounts of free will and responsibility without souls (Dennett, *Freedom Evolves*, 2003; Fischer & Ravizza, 1998). Christian physicalists such as Nancey Murphy (*Bodies and Souls, or Spirited Bodies?*, 2006) and Peter van Inwagen reject the immaterial soul on scientific and philosophical grounds.` }
+    { h: "Jesus' brothers and sisters", t: `Mark 6:3 lists "James, Joses, Judah, and Simon" and asks, "Aren't his sisters here with us?" Paul calls James "the Lord's brother" (Galatians 1:19). Matthew 1:25 says Joseph "didn't know her sexually until she had given birth," which naturally implies a normal marriage afterward. The 2nd-century *Protoevangelium of James* introduced the idea that they were Joseph's children by a previous marriage; Jerome later argued they were cousins. Both readings were driven by the doctrine, not by the texts.` },
+    { h: "The Immaculate Conception was disputed", t: `Bernard of Clairvaux opposed the feast of Mary's conception in the 12th century. Thomas Aquinas held that Mary was sanctified in the womb *after* her conception, so she wasn't conceived without original sin (*Summa Theologiae* III, q. 27, a. 2). The Dominicans and Franciscans argued the question for centuries before Pius IX defined it as dogma in 1854.` },
+    { h: "The Assumption has no early witness", t: `No early Christian writer mentions Mary's bodily assumption. The earliest accounts are the "Dormition" narratives of the 5th and 6th centuries, which differ widely among themselves (Shoemaker, 2002). Pius XII defined the doctrine in 1950 on the basis of the Church's belief and theological fittingness, not historical evidence.` },
+    { h: "What it shows", t: `If doctrines can develop from nothing in scripture to infallible dogma over 1,800 years, then the "development of doctrine" (Newman, 1845) can't be distinguished from the accumulation of pious belief. And Christians themselves are deeply divided over these teachings, which undercuts the claim that the Spirit guides the Church into truth (see [[why-christianity]]).` }
   ],
-  replies: [
-    { q: "The brain is just the instrument the soul uses, like a radio receiving a signal.", a: `If so, damage to the radio should distort the signal's output but not change the signal itself. But brain damage changes the person's actual beliefs, preferences, memories, and moral character, even what they want and who they are. The receiver theory makes no predictions that differ from "the brain produces the mind," while adding an undetectable extra entity.`, k: "brain instrument soul radio receiver transmitter filter" }
-  ],
+  replies: [],
   sources: [
-    "Murphy, N. (2006). Bodies and Souls, or Spirited Bodies? Cambridge University Press.",
-    "Martin, M. & Augustine, K. (eds.) (2015). The Myth of an Afterlife. Rowman & Littlefield.",
-    "Burns, J. & Swerdlow, R. (2003). 'Right orbitofrontal tumor with pedophilia symptom and constructional apraxia sign.' Archives of Neurology 60(3): 437–440.",
-    "Gazzaniga, M. (2015). Tales from Both Sides of the Brain. Ecco.",
-    "Green, J. (2008). Body, Soul, and Human Life: The Nature of Humanity in the Bible. Baker Academic."
+    "Pius IX (1854). Ineffabilis Deus. Pius XII (1950). Munificentissimus Deus.",
+    "Thomas Aquinas, Summa Theologiae III, q. 27, a. 2.",
+    "Shoemaker, S. J. (2002). Ancient Traditions of the Virgin Mary's Dormition and Assumption. Oxford University Press.",
+    "Bauckham, R. (1990). Jude and the Relatives of Jesus in the Early Church. T&T Clark.",
+    "Pelikan, J. (1996). Mary Through the Centuries. Yale University Press.",
+    "Newman, J. H. (1845). An Essay on the Development of Christian Doctrine."
   ],
-  keys: "soul immortal soul spirit nephesh mind body dualism neuroscience brain soul survives death ensoulment twins",
-  rel: ["disembodied-mind", "consciousness", "nde", "afterlife-origins"]
+  keys: "mary mother of god perpetual virginity immaculate conception assumption marian dogmas catholic teaching mary brothers of jesus theotokos",
+  rel: ["virgin-birth", "marian-apparitions", "canon", "why-christianity"]
+},
+{
+  id: "church-survival",
+  cat: "doctrine",
+  title: "The Church's Survival Proves It Is Divine",
+  who: "Matthew 16:18 ('the gates of Hades will not prevail against it'); Thomas Babington Macaulay's 1840 essay on the papacy; a remark attributed to Hilaire Belloc; Acts 5:38–39 (Gamaliel's test)",
+  claim: `The Church has survived two thousand years of persecution, heresy, schism, scandal, and corrupt leaders. Even the Protestant historian Macaulay marveled that the Catholic Church might still flourish "when some traveller from New Zealand shall... take his stand on a broken arch of London Bridge to sketch the ruins of St. Paul's." As a remark attributed to Hilaire Belloc puts it, no merely human institution run with such knavish imbecility would have lasted a fortnight. Jesus promised that "the gates of Hades will not prevail against it" (Matthew 16:18). Gamaliel said that if the movement were of human origin it would fail (Acts 5:38–39). It hasn't.`,
+  short: `Many institutions and traditions have survived as long or longer: Judaism, Hinduism, Buddhism (about 2,500 years), Zoroastrianism (with a much smaller following today), and Confucian ritual traditions. Long survival is common once a religion becomes entwined with states and cultures, and the Church was the official religion of the Roman Empire from 380 and held enormous wealth and legal power in Europe for over a thousand years. "The Church" survived only in the sense that some institution claiming the name always did: it split into Eastern and Western churches in 1054 and fractured again at the Reformation, and each branch claims to be the true one. Gamaliel's test, applied consistently, would validate Islam's 1,400 years as well.`,
+  points: [
+    { h: "Others have survived too", t: `Judaism is older than Christianity and survived exile, persecution, and genocide without a state for most of its history (see [[jewish-survival]]). Hinduism's traditions reach back more than three thousand years. Buddhism has lasted about 2,500 years across many cultures. Islam has lasted 1,400 years and is growing. Endurance doesn't single out Christianity.` },
+    { h: "State support explains a great deal", t: `From Theodosius in 380 until the modern era, the Church in Europe was backed by state power: heresy was a crime, the Church owned vast lands, and education was largely in its hands. Institutions with that kind of support tend to persist. Where state support was withdrawn and societies modernized, as in much of Western Europe, church membership and attendance have collapsed within a few generations.` },
+    { h: "Which church survived?", t: `The Catholic Church, the Eastern Orthodox churches, the Oriental Orthodox churches, and hundreds of Protestant denominations each claim continuity with the apostles, and they disagree about what that continuity requires. Survival of "the Church" is true only under a definition generous enough to include rivals that have condemned each other.` },
+    { h: "A joke isn't an argument", t: `The Belloc remark is witty, but it cuts both ways: if an institution run so badly could survive, survival isn't a reliable sign of good management, let alone divine guidance. Long-lived institutions survive for many reasons, including inertia, wealth, and their place in people's identities.` }
+  ],
+  replies: [],
+  sources: [
+    "Macaulay, T. B. (1840). Review of Ranke's History of the Popes. Edinburgh Review 72.",
+    "Duffy, E. (2014). Saints and Sinners: A History of the Popes, 4th ed. Yale University Press.",
+    "MacCulloch, D. (2009). A History of Christianity: The First Three Thousand Years. Allen Lane.",
+    "Boyce, M. (1979). Zoroastrians: Their Religious Beliefs and Practices. Routledge.",
+    "Bruce, S. (2011). Secularization: In Defence of an Unfashionable Theory. Oxford University Press."
+  ],
+  keys: "church survived 2000 years gates of hell will not prevail catholic church survival proves divine gamaliel if it is from god belloc knavish imbecility macaulay",
+  rel: ["christianity-growth", "jewish-survival", "bible-survival", "jesus-influence"]
 }
 ]);

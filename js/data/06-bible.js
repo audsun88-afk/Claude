@@ -1,3 +1,4 @@
+/* The Bible: Authority & the Hebrew Scriptures (13 entries) */
 DEF_ADD([
 {
   id: "inerrancy",
@@ -60,228 +61,32 @@ DEF_ADD([
   rel: ["inerrancy", "synoptic-dependence", "legendary-growth", "nativity"]
 },
 {
-  id: "manuscripts",
+  id: "mosaic-authorship",
   cat: "bible",
-  title: "The New Testament Is the Best-Attested Ancient Text",
-  who: "Josh McDowell, Evidence That Demands a Verdict (1972; 2017 ed.); F. F. Bruce; Daniel Wallace; Wes Huff",
-  claim: `There are over 5,800 Greek manuscripts of the New Testament, plus over 10,000 Latin and thousands in other languages, many more than for any other ancient text. We have only a handful of copies of Caesar's Gallic Wars or Tacitus, made centuries after the originals. The earliest NT fragment (P52) is within decades of the original. If we trust classical texts, we must trust the New Testament even more.`,
-  short: `Manuscript abundance tells us something about how well we can reconstruct *what was written*, not about whether what was written is *true*. Nobody believes Tacitus's report that Vespasian healed a blind man, however good Tacitus's manuscripts are. And the comparison is overstated: most NT manuscripts are medieval (after the 9th century); the papyri before 300 CE are mostly fragments; P52's dating is less certain than often claimed; and the first 150 years of transmission, when changes were most likely, are almost entirely undocumented.`,
+  title: "Moses Wrote the Torah",
+  who: "Jewish and Christian tradition; Jesus' references to 'the book of Moses' (Mark 12:26) and 'he wrote about me' (John 5:46); Gleason Archer, A Survey of Old Testament Introduction (1964); Josh McDowell, The New Evidence That Demands a Verdict (1999), on the Documentary Hypothesis",
+  claim: `The first five books of the Bible were written by Moses, an eyewitness of the Exodus and the giving of the Law. Jesus himself attributed them to Moses, so denying Mosaic authorship means saying Jesus was wrong. The Documentary Hypothesis, which splits the Torah into sources (J, E, D, and P), is a 19th-century theory driven by anti-supernatural assumptions, and scholars now disagree about it. The text's familiarity with Egypt fits an author raised in Pharaoh's court.`,
+  short: `The Torah never claims that Moses wrote it as a whole. It describes Moses' death and burial, and adds that "since then, there has not arisen a prophet in Israel like Moses" (Deuteronomy 34:10), which looks back from long afterward. It lists the kings of Edom "before any king reigned over the children of Israel" (Genesis 36:31), which assumes Israel already had kings. It tells several stories twice, in different styles, and it contains anachronisms from the 1st millennium BCE. Scholars do debate *how* the Torah was composed. But almost all critical scholars, including many Christians, agree that several hands wrote it over centuries and that it was completed in the Persian period.`,
   points: [
-    { h: "Copies don't validate content", t: `Thousands of manuscripts show only that Christians copied their scriptures widely. They can't tell us whether the events described occurred. The Quran and the Book of Mormon are also well preserved. Tacitus's *Histories* (4.81) and Suetonius (*Vespasian* 7) report that Vespasian healed a blind man with his spittle and a lame man in Alexandria, with good manuscript support, and no one accepts the miracles. A text accurately preserved can still be legend.` },
-    { h: "Most manuscripts are late", t: `Of the 5,800 or so catalogued Greek manuscripts, the large majority date from the 9th century or later. The number from before 300 CE is small (a few dozen papyri), mostly fragments. The earliest complete New Testament, Codex Sinaiticus, dates to the mid-4th century. The impressive total mostly reflects medieval Byzantine copying, which is late and largely descends from a standardized text.` },
-    { h: "P52 is a tiny scrap of uncertain date", t: `P52 (Rylands Papyrus 457) is the size of a credit card and contains parts of a few verses of John 18. Its frequently cited date of c. 125 CE is based only on handwriting comparison. Papyrologist Brent Nongbri (*Harvard Theological Review*, 2005; *New Testament Studies*, 2020) showed that the comparable handwriting samples span from the late 1st to the early 3rd century, so P52 cannot be dated more precisely than that range. Nongbri has argued that dates for P66 and P75 are also likely later than often claimed.` },
-    { h: "The 'dark period' is the critical one", t: `The decades between the originals (c. 50–110 CE) and the earliest substantial manuscripts (c. 200 and later) are the period with the least evidence and the most freedom in copying, before texts were standardized. Helmut Koester and David Parker (*The Living Text of the Gospels*, 1997) argue that the Gospels were especially fluid in this period. The abundance of later manuscripts can't show what happened before them.` },
-    { h: "The classical comparison is misleading", t: `Classical historians don't claim their texts are inerrant or that they report miracles accurately. They read them critically, weighing bias and legend, and often doubt them. Applying that same standard to the New Testament, which is what critical scholars do, is fully consistent. Demanding *more* trust in the NT because it has more copies inverts the reasoning.` }
+    { h: "Noticed long before modern criticism", t: `The 12th-century Jewish commentator Abraham ibn Ezra hinted that some verses were added after Moses. Thomas Hobbes (*Leviathan*, 1651, ch. 33) and Baruch Spinoza (*Theological-Political Treatise*, 1670, ch. 8) argued that Moses couldn't have written books that describe his own death, refer to him in the third person, and call him "very humble, more than all the men who were on the surface of the earth" (Numbers 12:3). These observations came from reading the text, not from evolutionary theory or a bias against miracles.` },
+    { h: "Doublets and seams", t: `The Torah contains two creation accounts (Genesis 1:1–2:3 and 2:4–25), two interwoven flood stories with different numbers of animals and different timelines (see [[flood]]), and three versions of a patriarch passing off his wife as his sister (Genesis 12, 20, and 26). The repetitions come with consistent differences in vocabulary, divine names, and theology. That's the pattern editors would produce by combining separate sources.` },
+    { h: "Anachronisms", t: `The stories of the patriarchs mention domesticated camels, Philistines, and "Ur of the Chaldeans," all of which fit the 1st millennium BCE rather than the 2nd (see [[patriarchs]]). The Egyptologist Donald Redford argued that the Egyptian names in the Joseph story (Potiphera, Asenath, Zaphenath-paneah) are typical of the 7th to 5th centuries BCE, long after any period in which a historical Moses could have lived.` },
+    { h: "The debate is about how, not whether", t: `Julius Wellhausen's classic Documentary Hypothesis (1878) has been revised. "Neo-Documentarians" such as Joel Baden defend continuous written sources, while many European scholars prefer models in which blocks of tradition were supplemented over time. Apologists who cite this debate tend to leave out that both sides agree the Torah is composite and largely post-Mosaic. The alternative to the Documentary Hypothesis isn't Moses.` },
+    { h: "What Jesus' words show", t: `"Moses" was the ordinary name for those books, much as people speak of "the Psalms of David" for a collection with many authors. If Jesus was using the common name, his words don't settle who wrote them. If he meant to make a historical claim, he shared a mistaken belief of his time, which raises questions about [[incarnation|the knowledge of the incarnate Jesus]] that apologists usually prefer to avoid.` }
   ],
   replies: [
-    { q: "We have more evidence for the New Testament than for Julius Caesar or Alexander the Great.", a: `We have contemporary coins, inscriptions, and statues of Caesar; his own writings; letters by contemporaries like Cicero; and the physical remains of events like his campaigns. The comparison is between manuscript *counts*, and manuscript counts don't measure historical evidence for events. Nobody disputes that Jesus existed and was crucified (see [[historical-jesus]]). The disputed claims are miracles and divinity, and for those no number of copies helps.`, k: "more evidence than caesar alexander the great tacitus homer manuscripts compared" },
-    { q: "The Great Isaiah Scroll proves the Bible was copied perfectly for 1,000 years.", a: `It shows that one textual tradition of Isaiah was carefully preserved. Other Dead Sea Scrolls show different editions of biblical books. Jeremiah existed in a version about one-eighth shorter, matching the Septuagint (4QJer^b). See [[dead-sea-scrolls]].`, k: "isaiah scroll dead sea scrolls copied perfectly 1000 years identical" }
+    { q: "Moses could have written about his own death prophetically, or Joshua added the last chapter.", a: `The second answer concedes that someone else wrote part of it, and the question becomes how much. The problem isn't only Deuteronomy 34. The third-person narration, the references to Israel's monarchy, the doublets, and the anachronisms run through all five books. Assigning each one to a later editor gradually turns "Moses wrote it" into the critical view.`, k: "moses wrote about his own death prophetically joshua added last chapter deuteronomy 34" }
   ],
   sources: [
-    "Nongbri, B. (2005). 'The Use and Abuse of P52: Papyrological Pitfalls in the Dating of the Fourth Gospel.' Harvard Theological Review 98(1): 23–48.",
-    "Nongbri, B. (2018). God's Library: The Archaeology of the Earliest Christian Manuscripts. Yale University Press.",
-    "Parker, D. C. (1997). The Living Text of the Gospels. Cambridge University Press.",
-    "Koester, H. (1989). 'The Text of the Synoptic Gospels in the Second Century.' In Petersen (ed.), Gospel Traditions in the Second Century. Notre Dame.",
-    "Metzger, B. & Ehrman, B. (2005). The Text of the New Testament, 4th ed. Oxford University Press.",
-    "Tacitus, Histories 4.81; Suetonius, Vespasian 7."
+    "Friedman, R. E. (1987). Who Wrote the Bible? Summit Books.",
+    "Baden, J. (2012). The Composition of the Pentateuch: Renewing the Documentary Hypothesis. Yale University Press.",
+    "Schmid, K. (2012). The Old Testament: A Literary History. Fortress.",
+    "Redford, D. B. (1970). A Study of the Biblical Story of Joseph (Genesis 37–50). Supplements to Vetus Testamentum 20. Brill.",
+    "Spinoza, B. (1670). Theological-Political Treatise, ch. 8. Hobbes, T. (1651). Leviathan, ch. 33.",
+    "Archer, G. (1964). A Survey of Old Testament Introduction. Moody."
   ],
-  keys: "manuscripts 5800 greek manuscripts best attested ancient document more than caesar tacitus homer p52 rylands earliest fragment reliable copies preserved",
-  rel: ["textual-variants", "dead-sea-scrolls", "historical-jesus", "gospel-authorship"]
-},
-{
-  id: "textual-variants",
-  cat: "bible",
-  title: "Textual Variants Don't Affect Any Doctrine",
-  who: "Daniel Wallace; Bruce Metzger; Peter Williams; Dan Wallace vs. Bart Ehrman debates (2008, 2011)",
-  claim: `Yes, there are many textual variants, but over 99% are trivial: spelling, word order, obvious slips. Textual critics can reconstruct the original text with high confidence, and no doctrine of the Christian faith depends on a disputed reading.`,
-  short: `The number of variants (an estimated 500,000, more than the number of words in the New Testament) matters less than their location. Several significant passages were added or changed: the ending of Mark, the woman caught in adultery, the only explicit Trinity verse, Jesus sweating blood. These show that scribes changed the text for theological reasons. More fundamentally, the goal of modern textual criticism is now explicitly the "initial text" from which surviving manuscripts descend, which is not necessarily the original. The claim to have "the original text" overstates what the discipline itself claims.`,
-  points: [
-    { h: "How many?", t: `Peter Gurry (*New Testament Studies*, 2016) estimated about 500,000 non-spelling variants in Greek manuscripts, more than earlier estimates. The Greek New Testament has about 138,000 words. Most variants are trivial. But a large number of trivial variants does not cancel the significance of the important ones.` },
-    { h: "Additions that matter", t: `**Mark 16:9–20** (the resurrection appearances, snake-handling, and the Great Commission in Mark) is absent from the two oldest complete manuscripts, Sinaiticus and Vaticanus. Mark originally ended at 16:8, with the women fleeing and telling no one. **John 7:53–8:11** (the woman caught in adultery, "let him who is without sin cast the first stone") is absent from the earliest manuscripts and appears in different places in later ones, even after Luke 21:38. **1 John 5:7–8**, the Johannine Comma and the only explicit statement of the Trinity, is a Latin addition absent from Greek manuscripts before the 2nd millennium. **Luke 22:43–44** (sweating blood) is absent from several early manuscripts. These are now marked or bracketed in modern Bibles.` },
-    { h: "Theologically motivated changes", t: `Bart Ehrman (*The Orthodox Corruption of Scripture*, 1993; 2nd ed. 2011) documents changes made to strengthen orthodox Christology against adoptionists and others. Examples: Luke 3:22, where some early witnesses read "You are my son; today I have begotten you" (quoting Psalm 2:7, which suggests adoption at baptism); John 1:18, "the only-begotten God" versus "the only-begotten Son"; 1 Timothy 3:16, "God was manifested in the flesh" versus "who was manifested"; and Matthew 24:36, where some manuscripts omit that even "the Son" doesn't know the hour. Mark 1:41 may originally have said Jesus was "angry" rather than "moved with compassion."` },
-    { h: "From 'original text' to 'initial text'", t: `The leading project in the field, the *Editio Critica Maior* using the Coherence-Based Genealogical Method, aims at the *Ausgangstext* or "initial text": the hypothetical text from which the surviving tradition derives. It explicitly does not claim this is the authorial original (Holmes, 2013; Epp, 1999, "The Multivalence of the Term 'Original Text'"). If there were changes before the earliest common ancestor of the surviving manuscripts, we have no way to detect them.` },
-    { h: "Why this matters for inerrancy", t: `If God inspired an inerrant text but didn't preserve it, why inspire it at all? The surviving text does not need to be wildly corrupt for this to be a problem. It needs only to be uncertain in places, which it demonstrably is, for the claim of a perfectly preserved revelation to fail.` }
-  ],
-  replies: [
-    { q: "99% of variants are spelling errors and don't matter.", a: `That's true of most variants, and textual critics agree. But "most variants are trivial" isn't the issue. Several of the remaining ones affect whole passages: Mark's resurrection appearances, the adulterous woman story, the Johannine Comma. And they reveal scribes willing to change the text for theological reasons, which is significant for how we understand the early history of the text.`, k: "99% variants spelling trivial insignificant don't matter no doctrine affected" },
-    { q: "We can reconstruct the original text with near certainty.", a: `Leading textual critics no longer claim that. The *Editio Critica Maior* aims at the "initial text," the text behind the surviving tradition, not necessarily what the author wrote. Eldon Epp and Michael Holmes explain why the "original text" is a problematic target. Changes before the earliest surviving ancestor are undetectable.`, k: "reconstruct original text near certainty autographs we know what they wrote" }
-  ],
-  sources: [
-    "Gurry, P. (2016). 'The Number of Variants in the Greek New Testament: A Proposed Estimate.' New Testament Studies 62(1): 97–121.",
-    "Ehrman, B. (2011). The Orthodox Corruption of Scripture, 2nd ed. Oxford University Press.",
-    "Ehrman, B. (2005). Misquoting Jesus. HarperSanFrancisco.",
-    "Epp, E. J. (1999). 'The Multivalence of the Term \"Original Text\" in New Testament Textual Criticism.' Harvard Theological Review 92(3): 245–281.",
-    "Holmes, M. (2013). 'From \"Original Text\" to \"Initial Text\".' In Ehrman & Holmes (eds.), The Text of the New Testament in Contemporary Research, 2nd ed. Brill.",
-    "Metzger, B. (1994). A Textual Commentary on the Greek New Testament, 2nd ed. United Bible Societies.",
-    "Wallace, D. (ed.) (2011). Revisiting the Corruption of the New Testament. Kregel."
-  ],
-  keys: "textual variants textual criticism copying errors scribes changed bible mark 16 ending woman caught in adultery johannine comma original text autographs 400000 variants",
-  rel: ["manuscripts", "inerrancy", "trinity"]
-},
-{
-  id: "canon",
-  cat: "bible",
-  title: "The Canon Was Recognized, Not Invented",
-  who: "Michael Kruger, Canon Revisited (2012); F. F. Bruce, The Canon of Scripture (1988)",
-  claim: `The church didn't create the canon. It recognized books that were self-evidently inspired, apostolic, and widely used. The core of the New Testament, the four Gospels and Paul's letters, was accepted by the mid-2nd century. The Holy Spirit guided the church to recognize the right books.`,
-  short: `The canon's boundaries were disputed for centuries. Several books now included were long doubted (Hebrews, James, 2 Peter, 2–3 John, Jude, Revelation), and books now excluded were read as scripture in many churches (the Shepherd of Hermas, the Epistle of Barnabas, 1 Clement). The first list matching our 27 books exactly is Athanasius's in 367 CE. Christians still don't agree: Protestant, Catholic, Orthodox, and Ethiopian Bibles differ. A canon the Holy Spirit made "self-evident" should not have taken 300 years and still produced several versions.`,
-  points: [
-    { h: "Disputed books", t: `Eusebius (*Ecclesiastical History* 3.25, c. 325) classified James, Jude, 2 Peter, and 2–3 John as "disputed," and Revelation as either accepted or spurious depending on whom one asked. Hebrews was long doubted in the West because its authorship was unknown. In the 16th century, Luther called James "an epistle of straw" and placed Hebrews, James, Jude, and Revelation at the end of his Bible as of lesser status.` },
-    { h: "Excluded books that were read as scripture", t: `Codex Sinaiticus (4th century) includes the Epistle of Barnabas and the Shepherd of Hermas after Revelation. Codex Alexandrinus (5th century) includes 1 and 2 Clement. The Muratorian Fragment lists the Wisdom of Solomon and the Apocalypse of Peter. Its date is disputed: traditionally late 2nd century, but argued by Sundberg (1973) and Hahneman (1992) to be 4th century. Irenaeus quoted the Shepherd as "scripture."` },
-    { h: "Several canons, still", t: `The Protestant Old Testament has 39 books; the Catholic has 46, including the deuterocanonicals affirmed at Trent (1546); the Eastern Orthodox add others (1 Esdras, 3 Maccabees, Psalm 151). The Ethiopian Orthodox Tewahedo Church's broader canon includes 1 Enoch and Jubilees, which Jude 14–15 quotes as prophecy. If the Spirit guided recognition, he guided different churches to different results.` },
-    { h: "Recognition criteria were human judgments", t: `The criteria used were apostolic authorship, orthodoxy, and widespread use. Apostolic authorship was often mistaken (the Gospels are anonymous, and several letters are pseudonymous; see [[pseudepigrapha]]). Orthodoxy is circular: books were accepted because they agreed with the theology that was winning. Widespread use reflects the influence of particular churches (Rome, Alexandria).` }
-  ],
-  replies: [
-    { q: "The church didn't decide the canon. It recognized what God had already inspired.", a: `"Recognized" describes the same historical process as "decided": bishops, councils, and communities debating, disagreeing, and settling on lists. The process took centuries, included books later dropped, excluded books later added, and still yields different canons for different churches. Calling the outcome "recognition" assumes divine guidance rather than showing it.`, k: "church recognized canon didn't decide holy spirit guided self authenticating" }
-  ],
-  sources: [
-    "Eusebius. Ecclesiastical History 3.25; 6.25.",
-    "Athanasius. Festal Letter 39 (367 CE).",
-    "Metzger, B. (1987). The Canon of the New Testament. Oxford University Press.",
-    "McDonald, L. M. (2007). The Biblical Canon: Its Origin, Transmission, and Authority. Hendrickson.",
-    "Hahneman, G. (1992). The Muratorian Fragment and the Development of the Canon. Oxford University Press.",
-    "Kruger, M. (2012). Canon Revisited. Crossway."
-  ],
-  keys: "canon of scripture who decided books bible 27 books athanasius council apocrypha deuterocanon shepherd of hermas gospel of thomas left out excluded books",
-  rel: ["inerrancy", "pseudepigrapha", "nicaea"]
-},
-{
-  id: "gospel-authorship",
-  cat: "bible",
-  title: "The Gospels Were Written by Eyewitnesses or Their Associates",
-  who: "Papias (via Eusebius, c. 325); Irenaeus, Against Heresies 3.1.1 (c. 180); Craig Blomberg; Brant Pitre, The Case for Jesus (2016)",
-  claim: `Early church tradition is unanimous: Matthew (the tax collector apostle), Mark (Peter's interpreter), Luke (Paul's physician companion), and John (the beloved disciple) wrote the Gospels. Papias, writing early in the 2nd century, says Mark recorded Peter's preaching. No anonymous Gospel manuscripts survive. Unanimous titles prove authorship was known from the start.`,
-  short: `The Gospels are anonymous: none names its author, and three never claim eyewitness status. Names were attached by the late 2nd century, and Irenaeus (c. 180) is the first to name all four. Papias's testimony, the earliest, does not describe the texts we have: he says Matthew wrote "sayings" in Hebrew, while our Matthew is in Greek and copies Greek Mark. The authors wrote fluent Greek decades later, far from Galilee, while the disciples were Aramaic-speaking fishermen described in Acts as "unlettered." Most critical scholars date Mark around 70 CE and John around 90–110.`,
-  points: [
-    { h: "Anonymous texts", t: `The titles "According to Matthew," etc., are not part of the texts. They appear in manuscripts from around 200 (P66 and P75) and are standardized in a way that suggests they were added when the Gospels were collected together, to distinguish them. The texts never use "I" for the author except Luke's prologue (which says the author is *not* an eyewitness, but gathered traditions "handed down" by eyewitnesses; Luke 1:1–4) and John 21:24, an editorial note from a group ("we know that his testimony is true") about the beloved disciple.` },
-    { h: "Papias does not describe our Gospels", t: `Papias (quoted in Eusebius, *Ecclesiastical History* 3.39) says Matthew "compiled the sayings (*logia*) in the Hebrew language, and each translated them as he was able." Our Matthew is not a collection of sayings, was composed in Greek, and incorporates nearly all of Greek Mark, often word for word. An eyewitness apostle would not need to copy a non-eyewitness's account of his own calling (Matthew 9:9, copied from Mark 2:14 with "Levi" changed to "Matthew"). Papias says Mark wrote Peter's teaching "not in order," but our Mark is carefully ordered. And Papias got his information secondhand from an "elder."` },
-    { h: "Language, education, and distance", t: `The authors write in competent Greek. Luke's prologue is in polished literary Greek, and John's Greek is simple but fluent. Peter and John are described in Acts 4:13 as *agrammatoi*, "unlettered" or illiterate. Literacy in Roman Palestine is estimated at around 3% or less (Hezser, 2001; Bar-Ilan, 1992), and much lower among rural Galilean laborers. The Gospels also show unfamiliarity with Palestinian geography in places (Mark 7:31's odd route; Mark 5:1's Gerasa, about 50 km from the sea).` },
-    { h: "Dates", t: `Mark describes the destruction of the Temple (13:2) in terms that reflect the events of 70 CE, and most scholars date it around 70. Matthew and Luke use Mark, so they're later, around 80–90. Luke 21:20 makes the siege of Jerusalem explicit ("when you see Jerusalem surrounded by armies"). John is usually dated 90–110. Some scholars (Pervo, 2006; Tyson) date Luke-Acts to the early 2nd century. That puts 40 to 70 years between Jesus and the Gospels, written in another language and in other places.` },
-    { h: "Even conservative scholars hedge", t: `Many evangelical scholars now accept that Matthew was not written by the apostle in its present form, and that the Gospel of John went through stages of composition with a community behind its final form. The Catholic Church's New American Bible notes acknowledge the Gospels' anonymity and post-70 dating for most of them.` }
-  ],
-  replies: [
-    { q: "There are no anonymous copies of the Gospels. All manuscripts carry the traditional titles.", a: `All our manuscripts with the beginnings preserved date from around 200 or later, when the four-Gospel collection already existed and needed titles to tell its books apart. That shows the titles were standard *by then*, not that the authors wrote them. Justin Martyr (c. 150) quotes the Gospels repeatedly but calls them "memoirs of the apostles," without naming any author, which suggests the names weren't yet firmly attached.`, k: "no anonymous copies titles all manuscripts unanimous attribution" },
-    { q: "Why would the church attribute Gospels to minor figures like Mark and Luke if they were making it up?", a: `Because these attributions came with a story connecting them to apostles: Mark to Peter, Luke to Paul. Minor figures with apostolic connections explained how non-apostolic texts had apostolic authority. Plenty of forged texts were attributed to central figures (the Gospel of Peter, the Gospel of Thomas), so attribution patterns don't settle authorship either way.`, k: "why attribute to mark luke minor figures not apostles made up" }
-  ],
-  sources: [
-    "Eusebius. Ecclesiastical History 3.39.14–16 (Papias).",
-    "Irenaeus. Against Heresies 3.1.1.",
-    "Ehrman, B. (2016). The New Testament: A Historical Introduction, 6th ed. Oxford University Press.",
-    "Brown, R. E. (1997). An Introduction to the New Testament. Doubleday.",
-    "Hezser, C. (2001). Jewish Literacy in Roman Palestine. Mohr Siebeck.",
-    "Bar-Ilan, M. (1992). 'Illiteracy in the Land of Israel in the First Centuries C.E.' In Fishbane et al. (eds.), Essays in the Social Scientific Study of Judaism. Ktav.",
-    "Pervo, R. (2006). Dating Acts: Between the Evangelists and the Apologists. Polebridge.",
-    "Kok, M. (2015). The Gospel on the Margins: The Reception of Mark in the Second Century. Fortress."
-  ],
-  keys: "gospel authorship who wrote the gospels matthew mark luke john eyewitnesses anonymous papias irenaeus apostles wrote dating of gospels when written",
-  rel: ["synoptic-dependence", "eyewitnesses", "pseudepigrapha", "legendary-growth"]
-},
-{
-  id: "synoptic-dependence",
-  cat: "bible",
-  title: "The Gospels Are Four Independent Witnesses",
-  who: "Popular apologetics; Simon Greenleaf, The Testimony of the Evangelists (1846); J. Warner Wallace, Cold-Case Christianity (2013)",
-  claim: `We have four independent biographies of Jesus that agree on all the essentials. In a court, four independent witnesses agreeing on the main facts would be compelling evidence. The differences in detail show they didn't collude.`,
-  short: `The first three Gospels are not independent. Matthew reproduces about 90% of Mark and Luke over half, often in identical Greek word order, which shows literary copying, not independent memory. Most scholars think John knew at least the Synoptic traditions, and some think he knew Mark or Luke directly. So the "four witnesses" reduce largely to one, Mark, which was edited and expanded by others with their own theological aims.`,
-  points: [
-    { h: "Verbatim Greek agreement", t: `Matthew uses about 600 of Mark's 661 verses. Long sequences agree word for word in Greek: compare Mark 2:10–11, Matthew 9:6, and Luke 5:24, where all three break off mid-sentence in the same way ("so that you may know that the Son of Man has authority on earth to forgive sins — he said to the paralytic"). That parenthetical aside could not come from independent memory of a spoken event. It's a written text being copied.` },
-    { h: "Agreement in order", t: `Matthew and Luke follow Mark's order of episodes. Where they depart from it, they rarely agree with each other against Mark. This pattern is the main evidence for Markan priority, accepted by the large majority of scholars.` },
-    { h: "Editorial changes reveal motives", t: `Mark 6:5: Jesus "could do no deed of power" in Nazareth. Matthew 13:58 changes it to "did not do many deeds of power." Mark 10:18: "Why do you call me good? No one is good but God alone." Matthew 19:17 changes it to "Why do you ask me about what is good?" Mark 4:38: the disciples ask "do you not care that we are perishing?" Matthew 8:25 softens it to "save us, Lord." These are not different memories. They are later authors correcting a source they found theologically awkward.` },
-    { h: "The 'Q' material and the Farrer alternative", t: `Material shared by Matthew and Luke but absent from Mark is attributed to a lost source, "Q," or, on the Farrer hypothesis (Goodacre, 2002), to Luke's use of Matthew. Either way, it's more literary dependence. On neither hypothesis do we have four independent accounts.` }
-  ],
-  replies: [
-    { q: "Even if they used sources, the sources go back to eyewitnesses.", a: `Possibly some do. But we can't trace the chain, and the Gospel authors don't tell us. What we *can* see is that they freely changed their sources to suit their theology. A courtroom wouldn't accept anonymous hearsay compiled decades later, filtered through editors who are visibly altering earlier versions.`, k: "sources go back to eyewitnesses oral tradition reliable" }
-  ],
-  sources: [
-    "Goodacre, M. (2001). The Synoptic Problem: A Way Through the Maze. Sheffield Academic Press.",
-    "Goodacre, M. (2002). The Case Against Q. Trinity Press International.",
-    "Kloppenborg, J. (2000). Excavating Q. Fortress.",
-    "Sanders, E. P. & Davies, M. (1989). Studying the Synoptic Gospels. SCM.",
-    "Throckmorton, B. (1992). Gospel Parallels, 5th ed. Thomas Nelson."
-  ],
-  keys: "four independent witnesses gospels independent synoptic problem copied mark matthew used mark markan priority q source literary dependence courtroom",
-  rel: ["gospel-authorship", "contradictions", "eyewitnesses"]
-},
-{
-  id: "eyewitnesses",
-  cat: "bible",
-  title: "Jesus and the Eyewitnesses (Bauckham)",
-  who: "Richard Bauckham, Jesus and the Eyewitnesses (2006; 2nd ed. 2017)",
-  claim: `The Gospels are close to eyewitness testimony. Personal names in the Gospels match the frequency of names in 1st-century Palestine (Tal Ilan's lexicon), suggesting accurate local knowledge. Named minor characters (Bartimaeus, Simon of Cyrene's sons Alexander and Rufus) were the eyewitness sources the evangelists cited. The "inclusio" literary device marks Peter as Mark's main source. Ancient historians valued eyewitness testimony, and the Gospels belong to that genre.`,
-  short: `Bauckham's work is learned but its conclusions have not persuaded most specialists. Name frequencies show only that the traditions arose in Palestine, which no one disputes. The named-characters-as-sources thesis is speculative. And the psychology of memory shows that even eyewitness testimony is reconstructive, vulnerable to suggestion, and conformed to group retellings, especially over decades. Eyewitness memory, even if present, would not guarantee accuracy about miracles.`,
-  points: [
-    { h: "Memory science", t: `Elizabeth Loftus's research shows that eyewitness memory is reconstructive and can incorporate false details from questioning, discussion, and expectation. Bartlett's classic "serial reproduction" studies (1932) showed stories changing to fit the retellers' cultural expectations. Judith Redman (*Journal of Biblical Literature*, 2010) applied this research directly to Bauckham's thesis and concluded that eyewitness origins would not secure accuracy. Bart Ehrman's *Jesus Before the Gospels* (2016) draws on memory studies to make the same point.` },
-    { h: "Names show location, not accuracy", t: `That Gospel names match common Palestinian name frequencies shows the traditions circulated among people familiar with Palestinian naming. It doesn't distinguish accurate eyewitness memory from legends that developed in Palestine. Later apocryphal texts set in Palestine also use common names.` },
-    { h: "Speculative identifications", t: `There's no evidence that Bartimaeus or Alexander and Rufus were sources. Mark doesn't say so. Bauckham infers it from the fact that they're named. Named characters in narratives are also a common literary device. The "inclusio" (Peter named first and last) is a pattern that can be found or not depending on how one counts.` },
-    { h: "Even eyewitnesses misreport miracles", t: `Thousands of eyewitnesses at Fatima in 1917 reported the sun dancing, but no observatory recorded anything (see [[fatima]]). Eyewitness testimony to Sathya Sai Baba's materializations and to Marian apparitions is abundant. The problem with the Gospels isn't only that they're distant from eyewitnesses. Even direct eyewitness testimony to miracles is weak evidence, because people sincerely misperceive and misremember extraordinary events.` }
-  ],
-  replies: [
-    { q: "In the ancient world, eyewitnesses were still alive to correct false stories.", a: `There's no evidence that anyone checked the Gospels against eyewitnesses, and much against it: Mark was written about 40 years later, around 70 CE, after the Jewish War, probably outside Palestine, for Greek-speaking audiences who had no way to consult Galilean witnesses. Living eyewitnesses also didn't stop legends from forming around Sabbatai Zevi, the Lubavitcher Rebbe, or many 20th-century saints and gurus.`, k: "eyewitnesses still alive correct false stories hostile witnesses" }
-  ],
-  sources: [
-    "Bauckham, R. (2017). Jesus and the Eyewitnesses, 2nd ed. Eerdmans.",
-    "Redman, J. (2010). 'How Accurate Are Eyewitnesses? Bauckham and the Eyewitnesses in the Light of Psychological Research.' Journal of Biblical Literature 129(1): 177–197.",
-    "Ehrman, B. (2016). Jesus Before the Gospels. HarperOne.",
-    "Loftus, E. (2005). 'Planting misinformation in the human mind: A 30-year investigation of the malleability of memory.' Learning & Memory 12: 361–366.",
-    "Bartlett, F. (1932). Remembering. Cambridge University Press.",
-    "Schacter, D. (2001). The Seven Sins of Memory. Houghton Mifflin."
-  ],
-  keys: "eyewitnesses bauckham eyewitness testimony names onomastics peter source mark memory reliable oral tradition",
-  rel: ["gospel-authorship", "synoptic-dependence", "fatima", "legendary-growth"]
-},
-{
-  id: "undesigned-coincidences",
-  cat: "bible",
-  title: "Undesigned Coincidences Prove the Gospels Are Reliable",
-  who: "J. J. Blunt, Undesigned Coincidences (1847); Lydia McGrew, Hidden in Plain View (2017); Tim McGrew",
-  claim: `The Gospels interlock in ways no forger would design. In John 6:5, Jesus asks *Philip* where to buy bread. Why Philip? John 1:44 says Philip came from Bethsaida, and Luke 9:10 places the feeding near Bethsaida. These incidental fits between accounts show they draw on real events known in detail by truthful reporters.`,
-  short: `Some interlocks are interesting, but the method has serious problems. Texts that share oral traditions and literary sources will fit together in places for that reason alone. Coincidences are found by searching large texts for fits while ignoring the many mismatches (see [[contradictions]]). And the same method would "authenticate" other ancient narratives that contain fantastic elements. Even within evangelical scholarship, Lydia McGrew's "reportage model" is sharply criticized, for example by Mike Licona, who holds that the evangelists used compositional devices that changed details.`,
-  points: [
-    { h: "Shared traditions explain shared details", t: `If John knew the traditions behind Luke, or Luke's Gospel itself, the "Bethsaida" connection is unsurprising. Most scholars think John had some knowledge of Synoptic traditions. An undesigned coincidence shows that two texts share background information, not that either is historically accurate.` },
-    { h: "Selection bias", t: `Gospels with thousands of details will produce some unplanned fits by chance. Collecting them while setting aside the many discrepancies is cherry-picking. A fair test would compare the rate of fits to the rate of conflicts, and the conflicts are many and serious.` },
-    { h: "It proves too much", t: `Ancient texts with miraculous content, such as Philostratus's *Life of Apollonius* or the hagiographies of saints, contain similar internal fits. Even if the method shows that a narrative is rooted in real people and places, it doesn't show that the miraculous claims are true. The question was never whether Jesus, Philip, and Bethsaida existed.` },
-    { h: "Evangelicals disagree with it", t: `McGrew's book *The Mirror or the Mask* (2019) criticizes Licona and other evangelical scholars for accepting that the Gospel writers altered facts. That this dispute exists within conservative scholarship shows how contested the "straightforward reportage" view is.` }
-  ],
-  replies: [
-    { q: "A forger wouldn't plant such subtle connections, so these must be true memories.", a: `No one is proposing forgers. The view of most scholars is that the Gospels are products of communities passing on and developing traditions. Such traditions naturally carry shared details about places and people. The coincidences fit that model as well as yours, and the contradictions fit only that model.`, k: "forger wouldn't plant subtle connections true memories undesigned" }
-  ],
-  sources: [
-    "McGrew, L. (2017). Hidden in Plain View: Undesigned Coincidences in the Gospels and Acts. DeWard.",
-    "McGrew, L. (2019). The Mirror or the Mask: Liberating the Gospels from Literary Devices. DeWard.",
-    "Licona, M. (2017). Why Are There Differences in the Gospels? Oxford University Press.",
-    "Blunt, J. J. (1847). Undesigned Coincidences in the Writings Both of the Old and New Testament."
-  ],
-  keys: "undesigned coincidences lydia mcgrew interlocking gospels philip bethsaida hidden in plain view incidental details",
-  rel: ["contradictions", "eyewitnesses", "synoptic-dependence"]
-},
-{
-  id: "archaeology",
-  cat: "bible",
-  title: "Archaeology Confirms the Bible",
-  who: "Nelson Glueck ('no archaeological discovery has ever controverted a biblical reference'); William F. Albright; Kenneth Kitchen, On the Reliability of the Old Testament (2003); Josh McDowell",
-  claim: `Archaeological discoveries repeatedly confirm biblical people, places, and events: the Pool of Siloam, the Pool of Bethesda, the Pilate Stone, the Caiaphas ossuary, the Tel Dan stele ("House of David"), Hezekiah's tunnel, the Hittites once dismissed as legendary. No archaeological discovery has ever contradicted the Bible.`,
-  short: `Archaeology confirms that the Bible is set in a real world: real cities, kings, and officials. That's expected of any historical fiction or legend set in a real place, and it says nothing about miracles. On the large-scale narratives that matter (the patriarchs, the Exodus, the conquest of Canaan, a great united kingdom), mainstream archaeology, including Israeli archaeology, has largely *disconfirmed* the biblical account. Glueck's claim is simply false.`,
-  points: [
-    { h: "Real settings don't prove the stories", t: `The *Iliad* is set in a real Troy (Hisarlik), and the Mycenaean world it describes partly existed. That doesn't confirm Achilles' divine mother or Apollo's arrows. Spider-Man comics are set in a real New York. Pilate, Caiaphas, and the Pool of Siloam existed, but that doesn't show that Jesus healed a man born blind there (John 9:7).` },
-    { h: "Where archaeology speaks, it often contradicts", t: `The archaeology of the Exodus and conquest has produced the opposite of confirmation. There is no trace of two million people in Sinai. Jericho was unoccupied, or nearly so, when Joshua supposedly destroyed it. Ai was an abandoned ruin for a millennium before the conquest period. And early Israel emerged from within Canaanite culture (see [[exodus]], [[conquest]], [[patriarchs]]). Israel Finkelstein, William Dever, Ze'ev Herzog, and Amihai Mazar disagree among themselves on details, but none of them supports the biblical account of these events as written.` },
-    { h: "Mixed results even where history is confirmed", t: `The Tel Dan stele (9th century BCE) mentions the "House of David," which supports a historical David as a dynastic founder. But the same inscription has the Aramean king Hazael claiming to have killed Joram of Israel and Ahaziah of Judah, while 2 Kings 9 credits Jehu. The Mesha Stele confirms Omri and Yahweh, and describes Moab's god Chemosh ordering a *herem*, the total destruction of an Israelite town, just as Yahweh does in the Bible. Sennacherib's annals confirm his siege of Jerusalem but say nothing of 185,000 soldiers killed by an angel (2 Kings 19:35).` },
-    { h: "The 'Hittite' argument is outdated", t: `The 19th-century rediscovery of the Hittite empire is often cited as a vindication. But the biblical "Hittites" in Canaan (Genesis 23, Uriah the Hittite) are probably not the Anatolian empire at all. They reflect later Iron Age usage, when "Hatti" was used for Syria and the Levant. The story confirms that skeptics were sometimes wrong about specific names, not that the Bible is generally reliable.` },
-    { h: "Biblical archaeology has a credibility problem", t: `The "biblical archaeology" movement of Albright and Glueck set out to confirm the Bible and found what it wanted. Later archaeologists corrected many of its conclusions. In 2020, all sixteen Dead Sea Scroll fragments held by the Museum of the Bible in Washington, which had been bought for millions as evidence, were found to be modern forgeries. Apologetic enthusiasm for confirmation is not a reliable guide to what's true.` }
-  ],
-  replies: [
-    { q: "Skeptics said Pilate, the Hittites, and Belshazzar never existed, and archaeology proved them wrong.", a: `Some skeptics overreached, and archaeology corrected them. But confirming that a governor or king existed doesn't confirm any miracle. Meanwhile, on the large events (the Exodus, the conquest, the global flood), archaeology has corrected the Bible. The fair summary is that the Bible contains real historical memory mixed with legend, which is what critical scholars have always said.`, k: "skeptics said never existed pilate hittites belshazzar proven wrong" }
-  ],
-  sources: [
-    "Finkelstein, I. & Silberman, N. A. (2001). The Bible Unearthed. Free Press.",
-    "Dever, W. (2001). What Did the Biblical Writers Know and When Did They Know It? Eerdmans.",
-    "Dever, W. (2017). Beyond the Texts: An Archaeological Portrait of Ancient Israel and Judah. SBL Press.",
-    "Mazar, A. & Finkelstein, I. (2007). The Quest for the Historical Israel. SBL Press.",
-    "Kitchen, K. (2003). On the Reliability of the Old Testament. Eerdmans.",
-    "Herzog, Z. (1999). 'Deconstructing the Walls of Jericho.' Haaretz, October 29.",
-    "Loll, C. et al. (2020). Museum of the Bible Dead Sea Scroll Collection: Scientific Research and Analysis. Art Fraud Insights."
-  ],
-  keys: "archaeology confirms bible proves archaeological evidence pilate stone pool of siloam tel dan house of david hittites belshazzar nelson glueck dig",
-  rel: ["exodus", "conquest", "patriarchs", "david-solomon", "dead-sea-scrolls"]
+  keys: "moses wrote the torah pentateuch mosaic authorship documentary hypothesis jedp wellhausen five books of moses jesus said moses wrote deuteronomy 34 death of moses",
+  rel: ["patriarchs", "exodus", "genesis-creation", "inerrancy"]
 },
 {
   id: "genesis-creation",
@@ -308,8 +113,36 @@ DEF_ADD([
     "Prothero, D. (2017). Evolution: What the Fossils Say and Why It Matters, 2nd ed. Columbia University Press.",
     "Heidel, A. (1951). The Babylonian Genesis. University of Chicago Press."
   ],
-  keys: "genesis creation six days creation account order of creation young earth day age firmament two creation stories genesis 1 genesis 2 plants before sun",
+  keys: "genesis creation six days creation account order of creation young earth firmament two creation stories genesis 1 genesis 2 plants before sun",
   rel: ["adam-eve", "young-earth", "science-in-bible", "big-bang", "flood"]
+},
+{
+  id: "genesis-reinterpretations",
+  cat: "bible",
+  title: "Genesis Can Be Read in Harmony with Modern Science",
+  who: "Day-age view (Hugh Ross, Reasons to Believe); gap theory (Thomas Chalmers; the Scofield Reference Bible, 1909); framework hypothesis (Meredith Kline); analogical days (C. John Collins); John Walton, The Lost World of Genesis One (2009)",
+  claim: `Genesis 1 doesn't conflict with an old universe or with evolution, because it was never meant as a scientific chronology. The Hebrew *yom* can mean an age (the day-age view). There may be a gap of billions of years between Genesis 1:1 and 1:2 (the gap theory). The six days may be a literary framework, with days 1–3 forming realms and days 4–6 filling them (the framework view). Or, as John Walton argues, Genesis 1 is about God assigning functions to the cosmos as his temple, not about material origins. And its broad order, beginning with light and ending with humans, matches modern cosmology remarkably well.`,
+  short: `Each of these readings was developed after geology and astronomy had shown the earth to be old, not before. That's the reverse of what a revelation ahead of its time would look like. They also contradict each other, and none is the natural reading of the text. The Oxford Hebrew scholar James Barr wrote in 1984 that, as far as he knew, no professor of Hebrew or Old Testament at any world-class university doubted that the author meant ordinary days. The approach that works best, Walton's, succeeds by conceding that Genesis reflects ancient Near Eastern cosmology, which is the critic's point. A text that is compatible with every scientific result isn't confirmed by any of them.`,
+  points: [
+    { h: "Reinterpretation follows discovery", t: `Before the 19th century, Jewish and Christian interpreters mostly read Genesis as a short chronology. Augustine's view that God created everything at once is a notable exception, but he still held that the world was less than 6,000 years old (*City of God* 12.10). Thomas Chalmers popularized the gap theory in 1814 to accommodate the new geology, and day-age readings spread at the same time. The interpretations track scientific findings rather than anticipating them.` },
+    { h: "The order still doesn't fit", t: `Genesis puts the earth before the sun and stars (days 1 and 4), plants and fruit trees before the sun (day 3), and sea creatures and birds before land animals (days 5 and 6). In reality, the sun is older than the earth, flowering and fruit-bearing plants appeared long after the first land animals, and both birds and whales evolved from land animals (see [[genesis-creation]]). The day-age view keeps the sequence, so it inherits these errors.` },
+    { h: "The 'days' are days", t: `The days are numbered, each has an "evening and morning," and the Sabbath command grounds the seven-day week in them (Exodus 20:11). Barr, who didn't believe Genesis was true, summarized the scholarly consensus in his 1984 letter: the writer intended "a series of six days which were the same as the days of 24 hours we now experience." Old-earth readings are theological choices, not discoveries about Hebrew.` },
+    { h: "Walton concedes the point", t: `Walton argues that Genesis 1 describes the cosmos as an ancient reader understood it, with a solid sky and waters above it, and was never about material origins. That's careful scholarship. But it means Genesis tells us nothing true about how the world came to be, and that its picture of the cosmos was the mistaken picture of its time. That's a reason to treat it as an ancient text, not as revelation.` },
+    { h: "Unlimited flexibility", t: `If the six days can be six ages, a literary frame, a temple inauguration, or six ordinary days preceded by a gap of billions of years, then no possible discovery could count against the text. A reading that fits every outcome predicts nothing, so it can't be confirmed when science "agrees" with it.` }
+  ],
+  replies: [
+    { q: "But Genesis got the big picture right: the universe had a beginning, light came first, and humans came last.", a: `A beginning, and humans coming last, are natural guesses for an ancient creation story, and other ancient cosmologies have them too. In the Babylonian *Enuma Elish*, humans are made after the cosmos has been ordered. "Light first" isn't the Big Bang: Genesis has light, and day and night, before the sun, and the earth before the stars. Counting the guesses that match while ignoring the ones that don't is how horoscopes come to look accurate.`, k: "genesis got the big picture right beginning light first humans last big bang order of creation" }
+  ],
+  sources: [
+    "Walton, J. (2009). The Lost World of Genesis One. IVP Academic.",
+    "Ross, H. (2004). A Matter of Days. NavPress.",
+    "Kline, M. G. (1996). 'Space and Time in the Genesis Cosmogony.' Perspectives on Science and Christian Faith 48: 2–15.",
+    "Barr, J. (1984). Letter to David C. C. Watson, 23 April 1984.",
+    "Numbers, R. (2006). The Creationists, expanded ed. Harvard University Press.",
+    "Smith, M. S. (2010). The Priestly Vision of Genesis 1. Fortress."
+  ],
+  keys: "day age days are long ages genesis fits science gap theory framework hypothesis yom means age genesis compatible with science old earth genesis walton functional cosmic temple order of creation got it right light first",
+  rel: ["genesis-creation", "young-earth", "science-in-bible", "theistic-evolution"]
 },
 {
   id: "adam-eve",
@@ -374,6 +207,31 @@ DEF_ADD([
   rel: ["genesis-creation", "young-earth", "archaeology"]
 },
 {
+  id: "patriarchs",
+  cat: "bible",
+  title: "The Patriarchs Were Historical Figures",
+  who: "William F. Albright; Kenneth Kitchen; traditional readings of Genesis 12–50",
+  claim: `Abraham, Isaac, Jacob, and Joseph were real people of the Middle Bronze Age (around 2000–1500 BCE). The customs in Genesis, such as adoption and inheritance practices, match texts from Nuzi and Mari of that era. The patriarchal narratives preserve accurate ancient memories.`,
+  short: `The Genesis stories contain anachronisms that place their writing in the 1st millennium BCE: domesticated camels, Philistines, Chaldeans, Arameans, and Edomite kings. The Nuzi and Mari parallels, popular in the mid-20th century, were shown by Thomas Thompson and John Van Seters in the 1970s to be weak or equally consistent with later periods. Most historians today treat the patriarchs as legendary ancestors.`,
+  points: [
+    { h: "Camels", t: `Abraham's wealth includes camels (Genesis 12:16; 24:10). Radiocarbon dating of the earliest domesticated camel bones in the southern Levant, at copper mines in the Aravah Valley, points to the last third of the 10th century BCE (Sapir-Hadad & Ben-Yosef, *Tel Aviv*, 2014), almost a millennium after Abraham's supposed lifetime.` },
+    { h: "Philistines and Chaldeans", t: `Abraham and Isaac deal with Abimelech, "king of the Philistines" (Genesis 21:32, 26:1). The Philistines arrived in Canaan around 1175 BCE as part of the Sea Peoples. Abraham comes from "Ur of the Chaldeans" (11:28, 31), but the Chaldeans appear in the region only in the 9th century BCE.` },
+    { h: "Later political geography", t: `Genesis 36:31 lists "the kings who reigned in Edom before any king reigned over the Israelites," which looks back from the time of Israel's kings. Edom became a state only around the 8th century BCE. Genesis 14:14 mentions the city of Dan, which got that name only after the tribe of Dan captured Laish (Judges 18:29). The Arameans (Laban "the Aramean," 25:20) emerge around the 11th century BCE.` },
+    { h: "The scholarly shift", t: `Thomas L. Thompson (*The Historicity of the Patriarchal Narratives*, 1974) and John Van Seters (*Abraham in History and Tradition*, 1975) showed that the supposed 2nd-millennium parallels were either misread or equally consistent with 1st-millennium practices. Their work changed the consensus. The stories reflect the concerns of the Iron Age kingdoms of Israel and Judah: claims to land, relations with neighbors (Edom as Esau, Moab and Ammon as the sons of Lot's incest), and identity.` }
+  ],
+  replies: [
+    { q: "A few anachronisms only show later editors updated names, not that the stories are invented.", a: `Updating is possible for a place name or two. But the anachronisms are woven into the stories' plots: Abraham's camel caravans, Isaac's dealings with the Philistine king, the Edomite king list, the Aramean family relations. And there's no positive evidence that the patriarchs existed at all, so "updated" assumes an original that we have no independent reason to believe in.`, k: "anachronisms later editors updated names" }
+  ],
+  sources: [
+    "Sapir-Hadad, L. & Ben-Yosef, E. (2014). 'The Introduction of Domestic Camels to the Southern Levant: Evidence from the Aravah Valley.' Tel Aviv 41(2): 129–153.",
+    "Thompson, T. L. (1974). The Historicity of the Patriarchal Narratives. de Gruyter.",
+    "Van Seters, J. (1975). Abraham in History and Tradition. Yale University Press.",
+    "Finkelstein, I. & Silberman, N. A. (2001). The Bible Unearthed, ch. 1."
+  ],
+  keys: "abraham isaac jacob joseph patriarchs historical camels anachronism philistines ur of the chaldees genesis history",
+  rel: ["exodus", "archaeology", "genesis-creation"]
+},
+{
   id: "exodus",
   cat: "bible",
   title: "The Exodus Happened as Described",
@@ -428,31 +286,6 @@ DEF_ADD([
   ],
   keys: "conquest of canaan joshua jericho walls fell ai kenyon bryant wood archaeology canaanites conquered promised land",
   rel: ["exodus", "genocide", "archaeology"]
-},
-{
-  id: "patriarchs",
-  cat: "bible",
-  title: "The Patriarchs Were Historical Figures",
-  who: "William F. Albright; Kenneth Kitchen; traditional readings of Genesis 12–50",
-  claim: `Abraham, Isaac, Jacob, and Joseph were real people of the Middle Bronze Age (around 2000–1500 BCE). The customs in Genesis, such as adoption and inheritance practices, match texts from Nuzi and Mari of that era. The patriarchal narratives preserve accurate ancient memories.`,
-  short: `The Genesis stories contain anachronisms that place their writing in the 1st millennium BCE: domesticated camels, Philistines, Chaldeans, Arameans, and Edomite kings. The Nuzi and Mari parallels, popular in the mid-20th century, were shown by Thomas Thompson and John Van Seters in the 1970s to be weak or equally consistent with later periods. Most historians today treat the patriarchs as legendary ancestors.`,
-  points: [
-    { h: "Camels", t: `Abraham's wealth includes camels (Genesis 12:16; 24:10). Radiocarbon dating of the earliest domesticated camel bones in the southern Levant, at copper mines in the Aravah Valley, points to the last third of the 10th century BCE (Sapir-Hadad & Ben-Yosef, *Tel Aviv*, 2014), almost a millennium after Abraham's supposed lifetime.` },
-    { h: "Philistines and Chaldeans", t: `Abraham and Isaac deal with Abimelech, "king of the Philistines" (Genesis 21:32, 26:1). The Philistines arrived in Canaan around 1175 BCE as part of the Sea Peoples. Abraham comes from "Ur of the Chaldeans" (11:28, 31), but the Chaldeans appear in the region only in the 9th century BCE.` },
-    { h: "Later political geography", t: `Genesis 36:31 lists "the kings who reigned in Edom before any king reigned over the Israelites," which looks back from the time of Israel's kings. Edom became a state only around the 8th century BCE. Genesis 14:14 mentions the city of Dan, which got that name only after the tribe of Dan captured Laish (Judges 18:29). The Arameans (Laban "the Aramean," 25:20) emerge around the 11th century BCE.` },
-    { h: "The scholarly shift", t: `Thomas L. Thompson (*The Historicity of the Patriarchal Narratives*, 1974) and John Van Seters (*Abraham in History and Tradition*, 1975) showed that the supposed 2nd-millennium parallels were either misread or equally consistent with 1st-millennium practices. Their work changed the consensus. The stories reflect the concerns of the Iron Age kingdoms of Israel and Judah: claims to land, relations with neighbors (Edom as Esau, Moab and Ammon as the sons of Lot's incest), and identity.` }
-  ],
-  sources: [
-    "Sapir-Hadad, L. & Ben-Yosef, E. (2014). 'The Introduction of Domestic Camels to the Southern Levant: Evidence from the Aravah Valley.' Tel Aviv 41(2): 129–153.",
-    "Thompson, T. L. (1974). The Historicity of the Patriarchal Narratives. de Gruyter.",
-    "Van Seters, J. (1975). Abraham in History and Tradition. Yale University Press.",
-    "Finkelstein, I. & Silberman, N. A. (2001). The Bible Unearthed, ch. 1."
-  ],
-  replies: [
-    { q: "A few anachronisms only show later editors updated names, not that the stories are invented.", a: `Updating is possible for a place name or two. But the anachronisms are woven into the stories' plots: Abraham's camel caravans, Isaac's dealings with the Philistine king, the Edomite king list, the Aramean family relations. And there's no positive evidence that the patriarchs existed at all, so "updated" assumes an original that we have no independent reason to believe in.`, k: "anachronisms later editors updated names" }
-  ],
-  keys: "abraham isaac jacob joseph patriarchs historical camels anachronism philistines ur of the chaldees genesis history",
-  rel: ["exodus", "archaeology", "genesis-creation"]
 },
 {
   id: "david-solomon",
@@ -531,57 +364,5 @@ DEF_ADD([
   ],
   keys: "bible science scientific foreknowledge circle of the earth round job 26:7 hangs on nothing expanding universe paths of the sea water cycle hygiene leviticus scientific accuracy",
   rel: ["genesis-creation", "big-bang", "flood"]
-},
-{
-  id: "pseudepigrapha",
-  cat: "bible",
-  title: "All the New Testament Letters Are Authentic",
-  who: "Traditional authorship; D. A. Carson & Douglas Moo, An Introduction to the New Testament (2005)",
-  claim: `The New Testament letters were written by the apostles whose names they bear. The early church rejected forgeries and would never have accepted a forged letter as scripture. Differences in style can be explained by the use of secretaries (amanuenses).`,
-  short: `Most critical scholars hold that several New Testament letters were written in the names of apostles who didn't write them: the Pastorals (1–2 Timothy, Titus), 2 Peter, and probably Ephesians, Colossians, and 2 Thessalonians, as well as perhaps 1 Peter, James, and Jude. The evidence is vocabulary, theology, church structure, and historical setting. If so, the canon contains texts that falsely claim apostolic authorship, which the early church itself condemned as deception when it was detected.`,
-  points: [
-    { h: "The Pastoral letters", t: `1–2 Timothy and Titus use vocabulary and style markedly different from Paul's undisputed letters (Romans, 1–2 Corinthians, Galatians, Philippians, 1 Thessalonians, Philemon). They assume a developed church hierarchy of bishops, elders, and enrolled widows that fits the 2nd century. Their theology differs too: "faith" means a body of doctrine, and women are to be "saved through childbearing" (1 Timothy 2:15). The earliest Pauline manuscript collection (P46, around 200 CE) does not include them, though it's damaged at the end.` },
-    { h: "2 Peter", t: `2 Peter uses most of Jude, refers to Paul's letters as a collection and as "scripture" (3:15–16), and responds to people disappointed that the second coming hasn't happened, since "the fathers fell asleep" (3:4), meaning the first generation has died. Its Greek is very different from 1 Peter's. Early writers doubted it (Origen; Eusebius lists it as disputed). Most scholars, including some conservatives, date it to the early 2nd century and regard it as pseudonymous. It's probably the latest book in the New Testament.` },
-    { h: "The early church condemned forgery", t: `Tertullian (*On Baptism* 17) reports that a presbyter in Asia who wrote the *Acts of Paul* "out of love for Paul" was removed from office. The Muratorian Fragment rejects letters to the Laodiceans and Alexandrians "forged in Paul's name." Bart Ehrman (*Forgery and Counterforgery*, 2013) shows that ancient writers regarded false authorship claims as lies, not as an accepted literary convention. The claim that pseudonymity was "transparent fiction" lacks ancient evidence.` },
-    { h: "The secretary explanation", t: `Ancient secretaries could help with style but don't explain differences in theology, church structure, and historical setting. And a secretary who composed letters in Paul's name after his death would be a forger.` }
-  ],
-  replies: [
-    { q: "Writing in someone's name was an accepted practice in the ancient world.", a: `Ancient writers who commented on it disagreed: they called it a lie (*pseudos*) and treated detected forgeries as disqualifying. Tertullian reports a forger of Pauline material removed from office. If the practice were accepted, there'd be no reason for 2 Thessalonians 2:2 to warn against letters "as though from us," or for 2 Thessalonians 3:17 to insist on Paul's signature, which, ironically, is in a letter many scholars think Paul didn't write.`, k: "pseudonymity accepted practice ancient world writing in someone's name convention" }
-  ],
-  sources: [
-    "Ehrman, B. (2013). Forgery and Counterforgery: The Use of Literary Deceit in Early Christian Polemics. Oxford University Press.",
-    "Ehrman, B. (2011). Forged: Writing in the Name of God. HarperOne.",
-    "Brown, R. E. (1997). An Introduction to the New Testament. Doubleday.",
-    "Bauckham, R. (1983). Jude, 2 Peter. Word Biblical Commentary. (a conservative scholar who regards 2 Peter as pseudepigraphal)",
-    "Tertullian. On Baptism 17."
-  ],
-  keys: "pseudepigrapha forged letters forgery pastoral epistles 1 timothy 2 timothy titus 2 peter authorship paul didn't write ephesians colossians pseudonymous",
-  rel: ["canon", "gospel-authorship", "inerrancy"]
-},
-{
-  id: "dead-sea-scrolls",
-  cat: "bible",
-  title: "The Dead Sea Scrolls Prove the Old Testament Was Perfectly Preserved",
-  who: "Popular apologetics; Wes Huff on the Joe Rogan Experience (2025)",
-  claim: `The Dead Sea Scrolls, discovered in 1947, include copies of Old Testament books a thousand years older than the previous oldest manuscripts. The Great Isaiah Scroll (about 125 BCE) is virtually identical to the medieval Masoretic Text. This proves the Bible was transmitted with extraordinary accuracy.`,
-  short: `The Great Isaiah Scroll does show careful copying in one tradition, though it differs from the Masoretic Text in many places, mostly spelling but some in wording. The scrolls as a whole show something more important: biblical books circulated in several different versions in the Second Temple period. Jeremiah existed in a shorter edition, and in some places the scrolls preserve readings that later editors changed for theological reasons. The scrolls show a text that was still fluid, not frozen.`,
-  points: [
-    { h: "Multiple editions", t: `A Hebrew manuscript of Jeremiah from Qumran (4QJer^b) matches the Septuagint's shorter version, about one-eighth shorter than the Masoretic Text and arranged differently. So two editions of Jeremiah circulated. The scrolls also show different editions of Exodus, Numbers, and Samuel, and a version of Psalms with different contents and order (11QPs^a). Emanuel Tov, the leading textual scholar of the scrolls, describes a period of textual plurality.` },
-    { h: "Theological changes", t: `Deuteronomy 32:8 in a Qumran manuscript (4QDeut^j) says God divided the nations "according to the number of the *sons of God*," a reference to the divine council, in which each nation had its own god and Israel was Yahweh's portion. The Masoretic Text reads "the sons of *Israel*," apparently changed to remove the polytheistic implication (see [[yahweh-origins]]). 4QSam^a preserves a paragraph about Nahash the Ammonite missing from the Masoretic Text of 1 Samuel 11, which some modern translations (NRSV) now restore.` },
-    { h: "Isaiah: close, not identical", t: `The Great Isaiah Scroll (1QIsa^a) agrees with the Masoretic Text in substance but differs in many places, mostly spelling and grammar but also in wording. Another scroll, 1QIsa^b, is closer to the later text. Bart Ehrman and others corrected the "word-for-word identical" claim made in popular apologetics in 2025: the scroll demonstrates a careful scribal tradition, but not perfect preservation.` },
-    { h: "Preservation doesn't equal truth", t: `Even perfect copying would show only that a text was carefully copied, not that its content is true. See [[manuscripts]]. And in 2020 the Museum of the Bible's sixteen "Dead Sea Scroll" fragments, acquired as evidence for the Bible, were all found to be modern forgeries.` }
-  ],
-  replies: [
-    { q: "The Isaiah scroll is 95% identical to the Masoretic Text. The differences are spelling.", a: `For Isaiah, the agreement is strong. That's one book in one tradition. The scrolls also show that Jeremiah, Samuel, Exodus, and Psalms circulated in significantly different forms, and that some readings were later altered for theological reasons (Deuteronomy 32:8). The overall picture is textual diversity, with some traditions preserved carefully and others not.`, k: "isaiah scroll 95 identical masoretic spelling differences" }
-  ],
-  sources: [
-    "Tov, E. (2012). Textual Criticism of the Hebrew Bible, 3rd ed. Fortress.",
-    "Ulrich, E. (1999). The Dead Sea Scrolls and the Origins of the Bible. Eerdmans.",
-    "VanderKam, J. & Flint, P. (2002). The Meaning of the Dead Sea Scrolls. HarperSanFrancisco.",
-    "Heiser, M. (2001). 'Deuteronomy 32:8 and the Sons of God.' Bibliotheca Sacra 158: 52–74.",
-    "Loll, C. et al. (2020). Report on the Museum of the Bible Dead Sea Scroll fragments. Art Fraud Insights."
-  ],
-  keys: "dead sea scrolls qumran isaiah scroll preserved accurately masoretic text identical 1000 years copied old testament reliable",
-  rel: ["manuscripts", "textual-variants", "yahweh-origins"]
 }
 ]);

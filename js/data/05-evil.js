@@ -1,3 +1,4 @@
+/* Evil, Suffering & Hiddenness (14 entries) */
 DEF_ADD([
 {
   id: "problem-of-evil",
@@ -61,6 +62,106 @@ DEF_ADD([
   rel: ["problem-of-evil", "heaven-free-will", "foreknowledge", "natural-evil"]
 },
 {
+  id: "greater-good",
+  cat: "evil",
+  title: "God Brings Good Out of Evil",
+  who: "Romans 8:28; Genesis 50:20 ('you meant evil against me, but God meant it for good'); Augustine, Enchiridion 11; Leibniz; popular pastoral apologetics ('everything happens for a reason')",
+  claim: `God permits evil only because he can bring a greater good out of it. Joseph's brothers sold him into slavery, but God used it to save many lives (Genesis 50:20). The crucifixion, the worst evil, brought the greatest good. "All things work together for good for those who love God" (Romans 8:28). We may not see the good now, but God weaves every suffering into a greater purpose.`,
+  short: `For the defense to work, every evil must be *necessary* for a greater good that couldn't be achieved without it, because an all-powerful God could achieve any merely contingent good in other ways. There's no evidence that most suffering meets that standard, and much of it, such as infants' deaths and animal agony, has no visible good it serves. Even where good follows evil, the good doesn't justify the evil if it could have been obtained without it. And "everything happens for a reason" can't be distinguished from "things happen and we find meaning afterward."`,
+  points: [
+    { h: "Necessity, not just outcome", t: `A doctor may cause pain to cure a disease because the pain is unavoidable. An omnipotent being has no such constraints except logical ones. So each permitted evil must be logically necessary for an outweighing good. That's an extremely strong claim, and the evidence (children dying of cancer, millions of years of animal pain) gives no support to it (see [[problem-of-evil]]).` },
+    { h: "Good outcomes don't justify means", t: `Joseph's story is a narrative with a happy ending. For every Joseph, there are many whose suffering led nowhere: slaves who died in slavery, children who died before they could understand anything. Even when good results follow, we don't think they justify the evil if a better path was available.` },
+    { h: "Ivan Karamazov's objection", t: `In Dostoevsky's *The Brothers Karamazov* (Book V, "Rebellion"), Ivan describes the torture of children and says that no future harmony could be worth "the tears of that one tortured child." He doesn't deny God; he "returns his ticket." The objection is moral, not logical: some evils make any greater-good accounting obscene.` },
+    { h: "It explains anything", t: `If any suffering whatever can be assigned to an unknown greater good, the hypothesis can't be tested. Its defenders also tend to see good outcomes as God's work and bad ones as mysteries, which is a pattern of interpretation, not a discovery (see [[skeptical-theism]]).` }
+  ],
+  replies: [
+    { q: "Everything happens for a reason. We'll understand it in heaven.", a: `That's a hope, not evidence. And it implies that every specific horror, every abused child and every death in a tsunami, was necessary for something better, which would make God's plan require each of them. Most people, including most Christians, recoil from that when applied to a particular case.`, k: "everything happens for a reason understand in heaven plan purpose" }
+  ],
+  sources: [
+    "Augustine. Enchiridion, ch. 11.",
+    "Leibniz, G. W. (1710). Theodicy.",
+    "Dostoevsky, F. (1880). The Brothers Karamazov, Book V, ch. 4 ('Rebellion').",
+    "Adams, M. M. (1999). Horrendous Evils and the Goodness of God. Cornell University Press.",
+    "Rowe, W. (1979). 'The Problem of Evil and Some Varieties of Atheism.' American Philosophical Quarterly 16(4): 335–341."
+  ],
+  keys: "greater good god brings good out of evil all things work together for good romans 8:28 joseph genesis 50:20 everything happens for a reason purpose in suffering",
+  rel: ["problem-of-evil", "skeptical-theism", "soul-making", "compensation"]
+},
+{
+  id: "soul-making",
+  cat: "evil",
+  title: "Soul-Making: Suffering Builds Character",
+  who: "Irenaeus; John Hick, Evil and the God of Love (1966); Richard Swinburne",
+  claim: `God's purpose is not to make a hedonistic paradise but to develop morally and spiritually mature persons. Courage, compassion, patience, and faith can only develop in a world with real challenges and suffering. A world without pain would be a world where nothing we do matters. Suffering is the "vale of soul-making" (Keats).`,
+  short: `Much suffering does not build souls. It crushes them, or falls on beings who cannot benefit: infants who die of disease, animals, people destroyed by dementia, people driven to despair. The amount and distribution of suffering bears no relation to anyone's need for growth. Hick himself acknowledged this "dysteleological" suffering and appealed to mystery and an afterlife where soul-making continues. That concedes that the world as we see it doesn't fit the theodicy.`,
+  points: [
+    { h: "Dysteleological suffering", t: `Hick used this term for suffering that serves no soul-making purpose: a child dying of meningitis, a village buried in a mudslide, a person whose mind is erased by Alzheimer's. These don't develop anyone's virtue, least of all the victim's. Hick conceded that such evils remain a mystery under his theodicy (*Evil and the God of Love*, 1966, ch. 17).` },
+    { h: "Infants and animals can't be 'made'", t: `About half of all children born in human history died before adulthood, many before they could form moral character at all (see [[problem-of-evil]]). Animals have no soul-making to do. Suffering that falls on beings who cannot grow from it can't be justified by growth.` },
+    { h: "Suffering often degrades character", t: `Severe trauma frequently produces PTSD, depression, addiction, and cruelty, not virtue. Research on "post-traumatic growth" shows that some people report growth after adversity, but this is far from universal, and its measurement is debated (Jayawickreme & Blackie, 2014). A soul-making God would use a far less erratic tool.` },
+    { h: "The proportion problem", t: `A world with real challenges, uncertainty, and consequences would develop character without the Holocaust, smallpox, or child abuse. A gym builds strength without breaking bones. The theodicy justifies *some* hardship, not the amount and kinds we observe.` }
+  ],
+  replies: [
+    { q: "Suffering made me stronger and closer to God.", a: `I'm glad you came through it, and that experience is real for many people. But the theodicy needs suffering in general to serve that purpose, and most of it falls on people who aren't strengthened, or on infants and animals who can't be. The fact that some people grow through hardship is what we'd expect on naturalism too: human resilience is a well-studied psychological capacity.`, k: "suffering made me stronger closer to god character growth hardship" }
+  ],
+  sources: [
+    "Hick, J. (1966/2010). Evil and the God of Love. Palgrave Macmillan.",
+    "Irenaeus. Against Heresies IV.37–39.",
+    "Jayawickreme, E. & Blackie, L. (2014). 'Post-traumatic Growth as Positive Personality Change: Evidence, Controversies and Future Directions.' European Journal of Personality 28(4): 312–331.",
+    "Adams, M. M. (1999). Horrendous Evils and the Goodness of God. Cornell University Press."
+  ],
+  keys: "soul making suffering builds character growth hick irenaean vale of soul making makes us stronger virtue courage compassion",
+  rel: ["problem-of-evil", "animal-suffering", "free-will-defense"]
+},
+{
+  id: "skeptical-theism",
+  cat: "evil",
+  title: "Skeptical Theism: We Can't Know God's Reasons",
+  who: "Stephen Wykstra (CORNEA, 1984); Michael Bergmann (2001); Daniel Howard-Snyder; Isaiah 55:8–9; Job 38–41",
+  claim: `Our inability to see a reason for some evil is not good evidence that there is no reason. The gap between God's knowledge and ours is like the gap between a parent's and an infant's. An infant cannot understand why it is getting a vaccination. We have no reason to think the goods, evils, and connections between them that we know of are representative of all there are. So "pointless-looking suffering" doesn't count against God.`,
+  short: `If we really can't judge whether an evil is justified by goods beyond our understanding, then we can't judge anything about what God would do. That includes whether he would keep his promises, tell the truth in scripture, or reward the faithful. It also undermines our own moral decisions: should we prevent a child's suffering, if it might serve an unknown greater good? The cure destroys the patient, and makes theism compatible with any possible world.`,
+  points: [
+    { h: "The moral skepticism objection", t: `If I should not infer from "I see no justifying reason for this child's torture" to "there probably isn't one," then when I witness a child being tortured, I equally cannot judge that I should intervene: perhaps God allows it for unknown goods. Skeptical theism thus undermines everyday moral reasoning (Maitzen, 2013; Almeida & Oppy, 2003). Most skeptical theists act as if suffering should be prevented, which suggests they don't really accept the premise.` },
+    { h: "It undermines revelation", t: `If God might have reasons we can't grasp for permitting horrendous evil, he might have reasons we can't grasp for deceiving us: for scripture to be false, for the resurrection appearances to be illusions, for heaven to be a lie. Erik Wielenberg ("Skeptical Theism and Divine Lies," *Religious Studies*, 2010) presses this point. The skeptical theist can't consistently trust any of God's promises.` },
+    { h: "It makes theism predict nothing", t: `A hypothesis compatible with any world, whether full of suffering or free of it, is not confirmed by anything. If the theist can't say what God would do, they also can't argue that fine-tuning, consciousness, or morality are what God would produce. Skeptical theism cancels the arguments for God along with the argument against.` },
+    { h: "The parent analogy cuts the other way", t: `A loving parent who has to hurt an infant (a vaccination) comforts the child, stays with it, and explains as soon as it can understand. The parent is *present*. People suffering horrendous evil frequently experience no comfort, no presence, and no explanation, ever, and many die without any. That is the opposite of what the analogy predicts (see [[hiddenness]]).` }
+  ],
+  replies: [
+    { q: "God's ways are higher than our ways (Isaiah 55:9). Who are you to judge God?", a: `If his ways are so far above ours that we can't evaluate them, we also can't call them *good*, since "good" means what we understand by goodness. Using our moral judgment to praise God, but not to question him, is inconsistent. "Who are you to judge?" applies equally to the person concluding that God is good, wise, and loving.`, k: "god's ways higher than ours isaiah 55 who are you to judge god job mysterious ways" },
+    { q: "An infant can't understand why it gets a vaccination, and we're like infants compared to God.", a: `A good parent stays with the infant, comforts it, and later explains. God, by contrast, is absent from much horrendous suffering and never explains. The analogy also implies that we can't know whether a given evil should be prevented, which would make us unable to act morally.`, k: "infant vaccination parent child understand analogy" }
+  ],
+  sources: [
+    "Wykstra, S. (1984). 'The Humean Obstacle to Evidential Arguments from Suffering: On Avoiding the Evils of \"Appearance\".' International Journal for Philosophy of Religion 16: 73–93.",
+    "Bergmann, M. (2001). 'Skeptical Theism and Rowe's New Evidential Argument from Evil.' Noûs 35(2): 278–296.",
+    "Almeida, M. & Oppy, G. (2003). 'Sceptical Theism and Evidential Arguments from Evil.' Australasian Journal of Philosophy 81(4): 496–516.",
+    "Maitzen, S. (2013). 'The Moral Skepticism Objection to Skeptical Theism.' In McBrayer & Howard-Snyder (eds.), Blackwell Companion to the Problem of Evil.",
+    "Wielenberg, E. (2010). 'Skeptical Theism and Divine Lies.' Religious Studies 46(4): 509–523."
+  ],
+  keys: "skeptical theism we can't know god's reasons mysterious ways higher than ours who are you to judge god infant parent cornea limited perspective",
+  rel: ["problem-of-evil", "hiddenness", "unfalsifiable"]
+},
+{
+  id: "compensation",
+  cat: "evil",
+  title: "Heaven Will Make Up for All Suffering",
+  who: "Marilyn McCord Adams, Horrendous Evils and the Goodness of God (1999); Romans 8:18 ('the sufferings of this present time are not worthy to be compared with the glory which will be revealed toward us'); Revelation 21:4",
+  claim: `However great earthly suffering is, it will be overwhelmed by eternal joy in God's presence. Marilyn Adams argues that God will "defeat" even horrendous evils by integrating them into each person's relationship with God, so that every life is a great good on the whole. Finite suffering compared with infinite bliss is like a moment's pain compared with a lifetime of happiness.`,
+  short: `Compensation isn't justification. If I harm you without good reason and later pay you generously, I've compensated you, but I haven't shown that the harm was justified. The question is why an all-powerful, loving God allowed suffering he could have prevented, not whether he could make up for it afterward. The view also depends on an afterlife for which there's no independent evidence (see [[soul]], [[nde]]), and it struggles with traditional Christian teaching that many people go to hell instead.`,
+  points: [
+    { h: "Compensation versus justification", t: `A parent who lets a child be tortured, then buys the child wonderful gifts for the rest of its life, has not shown that letting the torture happen was justified. The problem of evil asks why God permits the suffering, and a later reward doesn't answer that question.` },
+    { h: "It relies on an unsupported afterlife", t: `The response works only if there's an afterlife, which is part of what's in dispute. Using an unevidenced future to rescue a present inconsistency makes the theory unfalsifiable.` },
+    { h: "Not for everyone", t: `On traditional Christian teaching, many people's lives end not in compensating bliss but in eternal punishment. Adams herself was a universalist: her theodicy requires that every person be saved. That's a minority view in Christian history, and it conflicts with many New Testament texts (see [[hell]], [[hell-alternatives]]).` }
+  ],
+  replies: [],
+  sources: [
+    "Adams, M. M. (1999). Horrendous Evils and the Goodness of God. Cornell University Press.",
+    "Dostoevsky, F. (1880). The Brothers Karamazov, Book V.",
+    "Martin, M. & Augustine, K. (eds.) (2015). The Myth of an Afterlife. Rowman & Littlefield.",
+    "Trakakis, N. (2007). The God Beyond Belief: In Defence of William Rowe's Evidential Argument from Evil. Springer."
+  ],
+  keys: "heaven make up for suffering compensation eternal joy outweighs suffering horrendous evils defeated afterlife reward romans 8:18",
+  rel: ["greater-good", "problem-of-evil", "hell-alternatives", "heaven-free-will"]
+},
+{
   id: "natural-evil",
   cat: "evil",
   title: "Natural Evil Is the Result of the Fall",
@@ -112,58 +213,6 @@ DEF_ADD([
   ],
   keys: "animal suffering animals pain predation evolution cruel nature red in tooth and claw darwin wasp ichneumon parasites before humans",
   rel: ["natural-evil", "problem-of-evil", "evolution"]
-},
-{
-  id: "skeptical-theism",
-  cat: "evil",
-  title: "Skeptical Theism: We Can't Know God's Reasons",
-  who: "Stephen Wykstra (CORNEA, 1984); Michael Bergmann (2001); Daniel Howard-Snyder; Isaiah 55:8–9; Job 38–41",
-  claim: `Our inability to see a reason for some evil is not good evidence that there is no reason. The gap between God's knowledge and ours is like the gap between a parent's and an infant's. An infant cannot understand why it is getting a vaccination. We have no reason to think the goods, evils, and connections between them that we know of are representative of all there are. So "pointless-looking suffering" doesn't count against God.`,
-  short: `If we really can't judge whether an evil is justified by goods beyond our understanding, then we can't judge anything about what God would do. That includes whether he would keep his promises, tell the truth in scripture, or reward the faithful. It also undermines our own moral decisions: should we prevent a child's suffering, if it might serve an unknown greater good? The cure destroys the patient, and makes theism compatible with any possible world.`,
-  points: [
-    { h: "The moral skepticism objection", t: `If I should not infer from "I see no justifying reason for this child's torture" to "there probably isn't one," then when I witness a child being tortured, I equally cannot judge that I should intervene: perhaps God allows it for unknown goods. Skeptical theism thus undermines everyday moral reasoning (Maitzen, 2013; Almeida & Oppy, 2003). Most skeptical theists act as if suffering should be prevented, which suggests they don't really accept the premise.` },
-    { h: "It undermines revelation", t: `If God might have reasons we can't grasp for permitting horrendous evil, he might have reasons we can't grasp for deceiving us: for scripture to be false, for the resurrection appearances to be illusions, for heaven to be a lie. Erik Wielenberg ("Skeptical Theism and Divine Lies," *Religious Studies*, 2010) presses this point. The skeptical theist can't consistently trust any of God's promises.` },
-    { h: "It makes theism predict nothing", t: `A hypothesis compatible with any world, whether full of suffering or free of it, is not confirmed by anything. If the theist can't say what God would do, they also can't argue that fine-tuning, consciousness, or morality are what God would produce. Skeptical theism cancels the arguments for God along with the argument against.` },
-    { h: "The parent analogy cuts the other way", t: `A loving parent who has to hurt an infant (a vaccination) comforts the child, stays with it, and explains as soon as it can understand. The parent is *present*. People suffering horrendous evil frequently experience no comfort, no presence, and no explanation, ever, and many die without any. That is the opposite of what the analogy predicts (see [[hiddenness]]).` }
-  ],
-  replies: [
-    { q: "God's ways are higher than our ways (Isaiah 55:9). Who are you to judge God?", a: `If his ways are so far above ours that we can't evaluate them, we also can't call them *good*, since "good" means what we understand by goodness. Using our moral judgment to praise God, but not to question him, is inconsistent. "Who are you to judge?" applies equally to the person concluding that God is good, wise, and loving.`, k: "god's ways higher than ours isaiah 55 who are you to judge god job mysterious ways" },
-    { q: "An infant can't understand why it gets a vaccination, and we're like infants compared to God.", a: `A good parent stays with the infant, comforts it, and later explains. God, by contrast, is absent from much horrendous suffering and never explains. The analogy also implies that we can't know whether a given evil should be prevented, which would make us unable to act morally.`, k: "infant vaccination parent child understand analogy" }
-  ],
-  sources: [
-    "Wykstra, S. (1984). 'The Humean Obstacle to Evidential Arguments from Suffering: On Avoiding the Evils of \"Appearance\".' International Journal for Philosophy of Religion 16: 73–93.",
-    "Bergmann, M. (2001). 'Skeptical Theism and Rowe's New Evidential Argument from Evil.' Noûs 35(2): 278–296.",
-    "Almeida, M. & Oppy, G. (2003). 'Sceptical Theism and Evidential Arguments from Evil.' Australasian Journal of Philosophy 81(4): 496–516.",
-    "Maitzen, S. (2013). 'The Moral Skepticism Objection to Skeptical Theism.' In McBrayer & Howard-Snyder (eds.), Blackwell Companion to the Problem of Evil.",
-    "Wielenberg, E. (2010). 'Skeptical Theism and Divine Lies.' Religious Studies 46(4): 509–523."
-  ],
-  keys: "skeptical theism we can't know god's reasons mysterious ways higher than ours who are you to judge god infant parent cornea limited perspective",
-  rel: ["problem-of-evil", "hiddenness", "unfalsifiable"]
-},
-{
-  id: "soul-making",
-  cat: "evil",
-  title: "Soul-Making: Suffering Builds Character",
-  who: "Irenaeus; John Hick, Evil and the God of Love (1966); Richard Swinburne",
-  claim: `God's purpose is not to make a hedonistic paradise but to develop morally and spiritually mature persons. Courage, compassion, patience, and faith can only develop in a world with real challenges and suffering. A world without pain would be a world where nothing we do matters. Suffering is the "vale of soul-making" (Keats).`,
-  short: `Much suffering does not build souls. It crushes them, or falls on beings who cannot benefit: infants who die of disease, animals, people destroyed by dementia, people driven to despair. The amount and distribution of suffering bears no relation to anyone's need for growth. Hick himself acknowledged this "dysteleological" suffering and appealed to mystery and an afterlife where soul-making continues. That concedes that the world as we see it doesn't fit the theodicy.`,
-  points: [
-    { h: "Dysteleological suffering", t: `Hick used this term for suffering that serves no soul-making purpose: a child dying of meningitis, a village buried in a mudslide, a person whose mind is erased by Alzheimer's. These don't develop anyone's virtue, least of all the victim's. Hick conceded that such evils remain a mystery under his theodicy (*Evil and the God of Love*, 1966, ch. 17).` },
-    { h: "Infants and animals can't be 'made'", t: `About half of all children born in human history died before adulthood, many before they could form moral character at all (see [[problem-of-evil]]). Animals have no soul-making to do. Suffering that falls on beings who cannot grow from it can't be justified by growth.` },
-    { h: "Suffering often degrades character", t: `Severe trauma frequently produces PTSD, depression, addiction, and cruelty, not virtue. Research on "post-traumatic growth" shows that some people report growth after adversity, but this is far from universal, and its measurement is debated (Jayawickreme & Blackie, 2014). A soul-making God would use a far less erratic tool.` },
-    { h: "The proportion problem", t: `A world with real challenges, uncertainty, and consequences would develop character without the Holocaust, smallpox, or child abuse. A gym builds strength without breaking bones. The theodicy justifies *some* hardship, not the amount and kinds we observe.` }
-  ],
-  replies: [
-    { q: "Suffering made me stronger and closer to God.", a: `I'm glad you came through it, and that experience is real for many people. But the theodicy needs suffering in general to serve that purpose, and most of it falls on people who aren't strengthened, or on infants and animals who can't be. The fact that some people grow through hardship is what we'd expect on naturalism too: human resilience is a well-studied psychological capacity.`, k: "suffering made me stronger closer to god character growth hardship" }
-  ],
-  sources: [
-    "Hick, J. (1966/2010). Evil and the God of Love. Palgrave Macmillan.",
-    "Irenaeus. Against Heresies IV.37–39.",
-    "Jayawickreme, E. & Blackie, L. (2014). 'Post-traumatic Growth as Positive Personality Change: Evidence, Controversies and Future Directions.' European Journal of Personality 28(4): 312–331.",
-    "Adams, M. M. (1999). Horrendous Evils and the Goodness of God. Cornell University Press."
-  ],
-  keys: "soul making suffering builds character growth hick irenaean vale of soul making makes us stronger virtue courage compassion",
-  rel: ["problem-of-evil", "animal-suffering", "free-will-defense"]
 },
 {
   id: "evil-god",
@@ -219,6 +268,30 @@ DEF_ADD([
   rel: ["demographics", "problem-of-evil", "skeptical-theism", "unevangelized"]
 },
 {
+  id: "without-excuse",
+  cat: "evil",
+  title: "Everyone Knows God Exists and Is Without Excuse",
+  who: "Romans 1:18–21; Psalm 14:1 ('The fool has said in his heart, There is no God'); presuppositional apologists",
+  claim: `"For the invisible things of him since the creation of the world are clearly seen, being perceived through the things that are made, even his everlasting power and divinity; that they may be without excuse" (Romans 1:20). Atheists don't really lack belief. They know God exists and suppress the truth because they don't want to submit to him.`,
+  short: `This is an empirical claim about other people's minds, and the evidence contradicts it: many people sincerely searched for God, wanted to believe, and couldn't (see [[hiddenness]]). Most people in history believed in different gods or none, according to culture (see [[demographics]]). The claim can't be tested, since any denial is treated as further proof of suppression. And it's the kind of claim every religion can make about outsiders.`,
+  points: [
+    { h: "The evidence against it", t: `Former pastors and missionaries who lost their faith, often painfully and against their wishes, are well documented (Dennett & LaScola, 2010). Billions of people throughout history worshipped other gods or followed non-theistic traditions. If God's existence were plain to everyone, belief wouldn't track culture so closely.` },
+    { h: "Unfalsifiable by design", t: `If someone says they don't believe, the claim says they're suppressing; if they search sincerely and don't find God, they're suppressing harder. A claim that treats every possible piece of contrary evidence as confirmation tells us nothing (see [[unfalsifiable]]).` },
+    { h: "It's a weapon, not an argument", t: `Telling people what they "really" believe avoids engaging with their reasons. Every faith can say the same: some Muslim apologists claim that everyone is born knowing Allah (the hadith on *fitra*), and that Christians suppress it. The symmetry shows the claim is a feature of religious rhetoric, not evidence.` }
+  ],
+  replies: [
+    { q: "Deep down you know God exists. You just don't want to be accountable.", a: `I can only tell you what I find when I examine my own mind and the evidence: I don't believe, and I'd follow good evidence wherever it led. You can't know my mind better than I do. And if I just wanted to avoid accountability, I could choose a religion with an easier path to forgiveness. Plenty of people want to believe and can't.`, k: "deep down you know god exists don't want to be accountable suppress the truth romans 1 without excuse" }
+  ],
+  sources: [
+    "Romans 1:18–21.",
+    "Schellenberg, J. L. (2015). The Hiddenness Argument. Oxford University Press.",
+    "Dennett, D. & LaScola, L. (2010). 'Preachers Who Are Not Believers.' Evolutionary Psychology 8(1): 122–150.",
+    "Maitzen, S. (2006). 'Divine Hiddenness and the Demographics of Theism.' Religious Studies 42(2): 177–191."
+  ],
+  keys: "without excuse romans 1 everyone knows god exists suppress the truth atheists know deep down fool says no god accountable",
+  rel: ["hiddenness", "demographics", "unfalsifiable"]
+},
+{
   id: "demographics",
   cat: "evil",
   title: "The Geography of Belief",
@@ -271,5 +344,29 @@ DEF_ADD([
   ],
   keys: "hell eternal punishment torment lake of fire damnation unfair just infinite punishment finite sin choose hell separation from god annihilation universalism",
   rel: ["afterlife-origins", "unevangelized", "pascal", "atonement"]
+},
+{
+  id: "hell-alternatives",
+  cat: "evil",
+  title: "Hell Isn't Eternal Torment (Annihilation or Universal Salvation)",
+  who: "Annihilationists: John Stott, Edward Fudge, Clark Pinnock; universalists: Origen, Gregory of Nyssa, David Bentley Hart (That All Shall Be Saved, 2019), Robin Parry (The Evangelical Universalist, 2006)",
+  claim: `The objection from hell targets a doctrine many Christians reject. Annihilationism holds that the wicked are destroyed, not tormented forever; the "eternal punishment" is permanent death. Christian universalism holds that God will ultimately reconcile everyone. Either way, the moral objection to eternal conscious torment falls away while Christianity remains intact.`,
+  short: `These views soften the moral problem but create others. They conflict with the most natural reading of the New Testament texts that apologists use elsewhere, such as Matthew 25:46, which sets "eternal punishment" beside "eternal life." The church condemned universalism in the 6th century. If everyone is saved, the urgency of faith, evangelism, and the cross itself becomes unclear. And the remaining problem, why a loving God permits suffering at all, is untouched.`,
+  points: [
+    { h: "The texts", t: `"These will go away into eternal punishment, but the righteous into eternal life" (Matthew 25:46). The same word, *aiōnios*, describes both, so if one is permanent, so is the other. Revelation 14:11 ("The smoke of their torment goes up forever and ever. They have no rest day and night") and 20:10 ("tormented day and night forever and ever") are hard to read as annihilation. Annihilationists and universalists offer alternative readings, but they require reading the texts against their most natural sense.` },
+    { h: "Tradition", t: `Origen's teaching of universal restoration (*apokatastasis*) was condemned in anathemas associated with the Council of Constantinople in 553. Eternal conscious punishment was the dominant view of Catholic, Orthodox, and Protestant churches for most of Christian history.` },
+    { h: "Universalism raises new questions", t: `If everyone will be saved regardless, what is the point of faith, missions, or the warnings of Jesus? Many universalists answer that everyone will eventually choose God freely after death, which concedes that earthly faith doesn't determine destiny. That's hard to square with the New Testament's urgency ("now is the day of salvation," 2 Corinthians 6:2).` },
+    { h: "It's a sign of revision under pressure", t: `The rise of annihilationism and universalism among modern Christians is driven largely by moral objections to eternal torment. When doctrines are revised to fit moral intuitions, that suggests the doctrines come from human reasoning rather than revelation.` }
+  ],
+  replies: [],
+  sources: [
+    "Fudge, E. (2011). The Fire That Consumes, 3rd ed. Cascade.",
+    "Hart, D. B. (2019). That All Shall Be Saved. Yale University Press.",
+    "MacDonald, G. [Robin Parry] (2006). The Evangelical Universalist. Cascade.",
+    "Date, C., Stump, G. & Anderson, J. (eds.) (2014). Rethinking Hell. Cascade.",
+    "Ramelli, I. (2013). The Christian Doctrine of Apokatastasis. Brill."
+  ],
+  keys: "hell not eternal annihilationism universalism conditional immortality everyone saved destroyed not tormented apokatastasis origen hart",
+  rel: ["hell", "compensation", "afterlife-origins"]
 }
 ]);

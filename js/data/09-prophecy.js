@@ -1,3 +1,4 @@
+/* Prophecy (18 entries) */
 DEF_ADD([
 {
   id: "messianic-prophecy",
@@ -28,6 +29,32 @@ DEF_ADD([
   ],
   keys: "messianic prophecy prophecies fulfilled 300 prophecies jesus fulfilled old testament predicted messiah matthew fulfillment out of egypt nazarene",
   rel: ["isaiah-7-14", "isaiah-53", "psalm-22", "micah-5-2", "daniel-9", "prophecy-odds"]
+},
+{
+  id: "prophecy-odds",
+  cat: "prophecy",
+  title: "The Odds of Fulfilled Prophecy Are Astronomical",
+  who: "Peter Stoner, Science Speaks (1958); Josh McDowell, Evidence That Demands a Verdict; Lee Strobel",
+  claim: `Peter Stoner calculated that the probability of one man fulfilling just eight messianic prophecies by chance is 1 in 10^17, which is like covering Texas two feet deep in silver dollars and picking the marked one blindfolded on the first try. For 48 prophecies, the odds are 1 in 10^157. Jesus fulfilled far more.`,
+  short: `The numbers are guesses dressed as calculations. They assume each "prophecy" was a genuine prediction, that each fulfillment is independently documented, and that the events are independent. None of these holds. The fulfillments are reported by the same believers who chose the texts and told the stories, often decades later. You can produce equally impressive odds for any well-known figure whose biography was written to match expectations.`,
+  points: [
+    { h: "The inputs are made up", t: `Stoner assigned a probability to each event (for example, 1 in 10^5 for being betrayed for 30 pieces of silver) with no data behind it. Multiplying unsupported guesses produces an unsupported product, however large.` },
+    { h: "Reported fulfillment is not observed fulfillment", t: `The probability calculation should be: how likely is it that *texts written by believers* would *report* that Jesus fulfilled these prophecies? Very likely. The Gospel writers knew the scriptures and were explicitly writing to show fulfillment ("this took place to fulfill..."). Some events were simply narrated to match (see [[psalm-22]]).` },
+    { h: "The prophecies aren't independent", t: `"Born in Bethlehem," "of David's line," and "a ruler from Judah" are linked: if you believe someone is the Davidic messiah, you'll expect all of them. The betrayal for silver and the purchase of the potter's field come from one passage. Multiplying the probabilities of linked events vastly overstates the improbability.` },
+    { h: "Many aren't predictions at all", t: `Hosea 11:1, Jeremiah 31:15, and Psalm 22 are not predictions (see [[messianic-prophecy]]). Treating any verse that a Gospel writer connected to Jesus as a "prophecy" and then counting it as fulfilled is circular.` },
+    { h: "Failures don't get counted", t: `The calculation ignores the prophecies that failed: the messianic kingdom, the rebuilt temple, world peace, the return within a generation (see [[failed-return]]), and Tyre (see [[tyre]]). Counting hits and ignoring misses is how fortune-tellers seem accurate.` }
+  ],
+  replies: [
+    { q: "Even if you remove the weak ones, the remaining prophecies are still statistically impossible.", a: `The problem isn't only weak prophecies. Any event reported by biased sources who knew the prediction and wrote decades later can't be treated as a random draw. To get a meaningful probability, you need independent verification that the events happened *and* that the prophecies were predictions. We don't have that for any of them.`, k: "remove weak prophecies still statistically impossible remaining" }
+  ],
+  sources: [
+    "Stoner, P. (1958). Science Speaks. Moody Press.",
+    "McDowell, J. & McDowell, S. (2017). Evidence That Demands a Verdict, updated ed. Thomas Nelson.",
+    "Carrier, R. (2012). Proving History: Bayes's Theorem and the Quest for the Historical Jesus. Prometheus, ch. on probabilistic reasoning.",
+    "Hájek, A. 'Interpretations of Probability.' Stanford Encyclopedia of Philosophy."
+  ],
+  keys: "prophecy odds probability stoner science speaks 10^17 silver dollars texas statistically impossible chance fulfilled prophecy math",
+  rel: ["messianic-prophecy", "failed-return", "tyre"]
 },
 {
   id: "isaiah-7-14",
@@ -129,6 +156,30 @@ DEF_ADD([
   rel: ["nativity", "messianic-prophecy", "virgin-birth"]
 },
 {
+  id: "zechariah",
+  cat: "prophecy",
+  title: "Zechariah Foretold the Details of the Passion",
+  who: "Matthew 21:4–5 and 27:9–10; Mark 14:27; John 19:37; Josh McDowell's lists of fulfilled messianic prophecies",
+  claim: `Zechariah, writing over 500 years before Jesus, foretold details of his last week. The king would come "lowly, and riding on a donkey" (9:9), fulfilled at the triumphal entry. He would be valued at thirty pieces of silver, thrown "to the potter, in Yahweh's house" (11:12–13), fulfilled when Judas returned the money and the priests bought the potter's field. "They will look to me whom they have pierced" (12:10) was fulfilled at the crucifixion, and "Strike the shepherd, and the sheep will be scattered" (13:7) when the disciples fled.`,
+  short: `These are cases where the Gospel writers shaped their stories to match scripture, and sometimes we can watch them doing it. Matthew, misreading the poetic parallelism of Zechariah 9:9 ("on a donkey, even on a colt"), has Jesus ride two animals at once, while Mark has one. Matthew attributes the thirty pieces of silver to Jeremiah, and Acts tells a different story about Judas's death and the field. In context, Zechariah's silver is the prophet's own wages in an allegory about rejected leadership; the "pierced" one is mourned during a war in which Jerusalem defeats the nations; and the struck shepherd is followed by the death of two-thirds of the land. And any messianic claimant could choose to ride a donkey into Jerusalem.`,
+  points: [
+    { h: "One animal or two", t: `Zechariah 9:9 says the king comes "riding on a donkey, even on a colt, the foal of a donkey," which is Hebrew parallelism: one animal, described twice. Mark (11:2–7) and Luke have one colt. Matthew has the disciples bring "the donkey and the colt," and Jesus "sat on them" (21:7). Matthew seems to have read the prophecy literally and adjusted the story to match, which shows which way the influence ran.` },
+    { h: "Thirty pieces of silver", t: `In Zechariah 11, the prophet plays a shepherd whose employers pay him thirty pieces of silver, an insultingly small wage, and Yahweh tells him to throw it "to the potter" in the Temple. Matthew 27:9 attributes the passage to Jeremiah, an error that some copyists tried to correct. And Acts 1:18 has Judas buy a field himself and die "falling headlong," while in Matthew he hangs himself and the priests buy the field (see [[contradictions]]). Two different stories about the money suggest the details grew out of scripture rather than memory.` },
+    { h: "The pierced one and the shepherd", t: `Zechariah 12 describes a future battle in which Yahweh destroys the nations attacking Jerusalem, after which the city mourns someone "whom they have pierced," a figure whose identity is debated. In Zechariah 13:7–8, Yahweh strikes his shepherd and then "two parts" of the land "will be cut off and die." Lifting one phrase from each passage and applying it to Jesus ignores everything around it.` },
+    { h: "How the method worked", t: `Early Christians read scripture as a code about their own time, like the authors of the Dead Sea Scrolls, whose commentaries (*pesharim*) applied the prophets line by line to their own community and its Teacher of Righteousness. Many scholars think some details of the passion are "prophecy historicized": told in order to fulfill texts, rather than texts that happened to be fulfilled (Crossan, 1995). Either way, fulfillments created by the people telling the story aren't evidence.` }
+  ],
+  replies: [],
+  sources: [
+    "Meyers, C. L. & Meyers, E. M. (1993). Zechariah 9–14. Anchor Bible 25C. Doubleday.",
+    "Brown, R. E. (1994). The Death of the Messiah, vol. 1. Doubleday.",
+    "Crossan, J. D. (1995). Who Killed Jesus? HarperSanFrancisco.",
+    "Petersen, D. L. (1995). Zechariah 9–14 and Malachi. Westminster John Knox.",
+    "Lindars, B. (1961). New Testament Apologetic. SCM."
+  ],
+  keys: "zechariah prophecy donkey triumphal entry thirty pieces of silver potter's field pierced zechariah 12 10 strike the shepherd sheep scattered zechariah fulfilled",
+  rel: ["messianic-prophecy", "psalm-22", "contradictions", "prophecy-odds"]
+},
+{
   id: "daniel-9",
   cat: "prophecy",
   title: "Daniel's Seventy Weeks Predicted the Date of the Messiah",
@@ -154,30 +205,79 @@ DEF_ADD([
   rel: ["daniel", "messianic-prophecy", "prophecy-odds"]
 },
 {
-  id: "prophecy-odds",
+  id: "messiah-before-70",
   cat: "prophecy",
-  title: "The Odds of Fulfilled Prophecy Are Astronomical",
-  who: "Peter Stoner, Science Speaks (1958); Josh McDowell, Evidence That Demands a Verdict; Lee Strobel",
-  claim: `Peter Stoner calculated that the probability of one man fulfilling just eight messianic prophecies by chance is 1 in 10^17, which is like covering Texas two feet deep in silver dollars and picking the marked one blindfolded on the first try. For 48 prophecies, the odds are 1 in 10^157. Jesus fulfilled far more.`,
-  short: `The numbers are guesses dressed as calculations. They assume each "prophecy" was a genuine prediction, that each fulfillment is independently documented, and that the events are independent. None of these holds. The fulfillments are reported by the same believers who chose the texts and told the stories, often decades later. You can produce equally impressive odds for any well-known figure whose biography was written to match expectations.`,
+  title: "The Messiah Had to Come Before the Temple Fell",
+  who: "Josh McDowell, The New Evidence That Demands a Verdict (1999); Michael Brown, Answering Jewish Objections to Jesus, vol. 3 (2003); Messianic Jewish apologetics",
+  claim: `Several prophecies require the Messiah to arrive while the Second Temple was standing. Daniel 9:26 says "the Anointed One will be cut off" before "the city and the sanctuary" are destroyed. Haggai 2:9 promises that "the latter glory of this house will be greater than the former," and Malachi 3:1 that "the Lord, whom you seek, will suddenly come to his temple." Genesis 49:10 says the scepter won't depart from Judah until the one "to whom it belongs" comes. The Temple was destroyed in 70 CE, so the Messiah must have come before then, and Jesus is the only credible candidate.`,
+  short: `None of these texts gives a timetable for a messiah. Daniel 9 refers to events of the 2nd century BCE: the "Anointed One" who is "cut off" is best identified with the high priest Onias III, murdered around 171 BCE, and the desolation is Antiochus IV's profanation of the Temple (see [[daniel-9]]). Haggai's hopes were pinned on Zerubbabel, the governor of Judah, whom God promised to make his "signet" while overthrowing "the throne of kingdoms," and that didn't happen. Malachi describes Yahweh himself coming in judgment, preceded by Elijah. Genesis 49:10 is a tribal blessing whose key phrase is obscure, and Judah's "scepter," in any political sense, departed in 586 BCE. Jesus wasn't the only claimant either, and he didn't do what the prophets expected the Messiah to do.`,
   points: [
-    { h: "The inputs are made up", t: `Stoner assigned a probability to each event (for example, 1 in 10^5 for being betrayed for 30 pieces of silver) with no data behind it. Multiplying unsupported guesses produces an unsupported product, however large.` },
-    { h: "Reported fulfillment is not observed fulfillment", t: `The probability calculation should be: how likely is it that *texts written by believers* would *report* that Jesus fulfilled these prophecies? Very likely. The Gospel writers knew the scriptures and were explicitly writing to show fulfillment ("this took place to fulfill..."). Some events were simply narrated to match (see [[psalm-22]]).` },
-    { h: "The prophecies aren't independent", t: `"Born in Bethlehem," "of David's line," and "a ruler from Judah" are linked: if you believe someone is the Davidic messiah, you'll expect all of them. The betrayal for silver and the purchase of the potter's field come from one passage. Multiplying the probabilities of linked events vastly overstates the improbability.` },
-    { h: "Many aren't predictions at all", t: `Hosea 11:1, Jeremiah 31:15, and Psalm 22 are not predictions (see [[messianic-prophecy]]). Treating any verse that a Gospel writer connected to Jesus as a "prophecy" and then counting it as fulfilled is circular.` },
-    { h: "Failures don't get counted", t: `The calculation ignores the prophecies that failed: the messianic kingdom, the rebuilt temple, world peace, the return within a generation (see [[failed-return]]), and Tyre (see [[tyre]]). Counting hits and ignoring misses is how fortune-tellers seem accurate.` }
+    { h: "Haggai's candidate was Zerubbabel", t: `Haggai 2:21–23 tells Zerubbabel, "governor of Judah," that Yahweh "will overthrow the throne of kingdoms" and "will make you as a signet, for I have chosen you." Haggai and Zechariah expected the rebuilt Temple and its Davidic governor to begin a new age, with "the precious things of all nations" flowing in (Haggai 2:7). Zerubbabel then disappears from the historical record. This is a failed expectation, not a prediction about Jesus.` },
+    { h: "Malachi's coming 'Lord'", t: `Malachi 3:1–5 describes Yahweh coming to his Temple to purify the priests and to judge sorcerers, adulterers, and oppressors, after a messenger later identified as Elijah (4:5). It doesn't concern a human messiah, and "the Lord... will suddenly come to his temple" sets no date.` },
+    { h: "The scepter", t: `Genesis 49:10 is part of Jacob's blessings on the tribes, which most scholars date to the monarchy. Its key phrase is notoriously obscure, and is often rendered "until Shiloh comes." Read as a political prophecy, it failed: Judah lost its king in 586 BCE, and the Hasmonean rulers of the 2nd and 1st centuries BCE were a priestly family, not descendants of Judah. Apologists have to redefine the scepter to make the timing work.` },
+    { h: "Many claimants, one job description", t: `Josephus names several would-be deliverers in the 1st century, and in 132 CE Rabbi Akiva hailed Simon bar Kosiba (Bar Kokhba) as the messiah. Jewish expectation, drawn from the prophets, was that the messiah would restore Israel's independence, rebuild the Temple, gather the exiles, and bring universal peace, when nations "shall beat their swords into plowshares" (Isaiah 2:4; see also Isaiah 11; Ezekiel 37). Jesus did none of these things during his life, which is why Christians developed the idea of a second coming.` }
+  ],
+  replies: [],
+  sources: [
+    "Collins, J. J. (1993). Daniel. Hermeneia. Fortress.",
+    "Meyers, C. L. & Meyers, E. M. (1987). Haggai, Zechariah 1–8. Anchor Bible 25B. Doubleday.",
+    "Westermann, C. (1986). Genesis 37–50. Augsburg.",
+    "Horsley, R. A. & Hanson, J. S. (1985). Bandits, Prophets, and Messiahs. Winston Press.",
+    "Brown, M. (2003). Answering Jewish Objections to Jesus, vol. 3. Baker.",
+    "Schäfer, P. (ed.) (2003). The Bar Kokhba War Reconsidered. Mohr Siebeck."
+  ],
+  keys: "messiah must come before 70 ad temple destroyed daniel 9 26 haggai 2 9 malachi 3 1 scepter genesis 49 10 shiloh messiah timing second temple",
+  rel: ["daniel-9", "messianic-prophecy", "temple-prediction", "failed-return"]
+},
+{
+  id: "resurrection-foretold",
+  cat: "prophecy",
+  title: "The Scriptures Foretold the Messiah's Resurrection",
+  who: "Acts 2:25–31 and 13:35 (Peter and Paul on Psalm 16); 1 Corinthians 15:4 ('raised on the third day according to the Scriptures'); Matthew 12:40 (the sign of Jonah); Hosea 6:2",
+  claim: `Paul says Jesus was "raised on the third day according to the Scriptures" (1 Corinthians 15:4), and the scriptures he had in mind are clear. David wrote, "you will not leave my soul in Sheol, neither will you allow your holy one to see corruption" (Psalm 16:10), which Peter applied to Jesus, since David's own body did decay (Acts 2:29–31). Hosea foretold the third day: "On the third day he will raise us up" (6:2). Jesus himself pointed to Jonah's three days in the great fish (Matthew 12:40). And Isaiah 53 says that after the servant's death, "he will see his offspring. He will prolong his days."`,
+  short: `Psalm 16 is a prayer by someone asking to be kept *from* death, not raised after it: the psalmist trusts that God won't abandon him to Sheol, the grave. Peter's argument in Acts depends on the Greek translation's word for "decay," a meaning the Hebrew doesn't clearly carry. Hosea 6:1–3 is a song of national repentance, which God immediately dismisses as fleeting "like the dew that disappears early" (6:4). Matthew's "three days and three nights" doesn't fit a Friday-to-Sunday burial, and Luke's version of the sign of Jonah is about preaching, not a fish. The servant of Isaiah 53 is identified in the surrounding chapters as Israel (see [[isaiah-53]]). Early Christians found these readings after the fact, as they searched their scriptures to make sense of the crucifixion and the resurrection experiences.`,
+  points: [
+    { h: "Psalm 16 in context", t: `In Hebrew poetry, being kept from Sheol and "the pit" means being kept alive, as in many psalms of deliverance: "you have brought up my soul from Sheol. You have kept me alive, that I should not go down to the pit" (30:3). Acts quotes the Greek Septuagint, whose word *diaphthora* means "decay," and builds an argument on it that the Hebrew doesn't support.` },
+    { h: "Hosea 6", t: `"After two days he will revive us. On the third day he will raise us up" (6:2) is spoken by the people of Israel about their own recovery after punishment ("he has torn us to pieces, and he will heal us"). God's reply follows at once: "your love is like a morning cloud, and like the dew that disappears early" (6:4). It's a rejected song of repentance by a nation, not a prediction that an individual would rise.` },
+    { h: "The sign of Jonah", t: `Matthew 12:40 says the Son of Man "will be three days and three nights in the heart of the earth," but the Gospels have Jesus buried on Friday evening and risen by early Sunday, about 36 hours at most. In Luke 11:29–30, the sign of Jonah is Jonah's preaching to the Ninevites, with no mention of the fish. Matthew's version looks like an expansion of the saying.` },
+    { h: "Found after the fact", t: `The Gospels say the disciples didn't expect a resurrection: "as yet they didn't know the Scripture, that he must rise from the dead" (John 20:9), and the women's report "seemed to them to be nonsense" (Luke 24:11). The proofs from scripture were assembled afterward. Movements in crisis regularly search their scriptures for explanations. After the "Great Disappointment" of 1844, Millerites reinterpreted Daniel 8:14 as referring to an event in heaven, and Seventh-day Adventism grew from that reinterpretation (see [[dying-messiah]]).` }
+  ],
+  replies: [],
+  sources: [
+    "Juel, D. (1988). Messianic Exegesis: Christological Interpretation of the Old Testament in Early Christianity. Fortress.",
+    "Lindars, B. (1961). New Testament Apologetic. SCM.",
+    "Wolff, H. W. (1974). Hosea. Hermeneia. Fortress.",
+    "Numbers, R. L. & Butler, J. M. (eds.) (1987). The Disappointed: Millerism and Millenarianism in the Nineteenth Century. Indiana University Press.",
+    "Festinger, L., Riecken, H. & Schachter, S. (1956). When Prophecy Fails. University of Minnesota Press."
+  ],
+  keys: "resurrection prophesied old testament psalm 16 holy one see decay hosea 6 2 third day sign of jonah three days three nights according to the scriptures predicted resurrection",
+  rel: ["isaiah-53", "dying-messiah", "messianic-prophecy", "passion-predictions"]
+},
+{
+  id: "cyrus",
+  cat: "prophecy",
+  title: "Isaiah Named Cyrus 150 Years in Advance",
+  who: "Traditional authorship of Isaiah; Josephus, Antiquities 11.1–7; Josh McDowell; Norman Geisler, Baker Encyclopedia of Christian Apologetics (1999)",
+  claim: `Isaiah of Jerusalem, writing in the 8th century BCE, named the Persian king Cyrus as the one who would rebuild Jerusalem. Yahweh "says of Cyrus, 'He is my shepherd, and shall perform all my pleasure,' even saying of Jerusalem, 'She will be built'" (44:28), and calls him "his anointed" (45:1). Cyrus conquered Babylon in 539 BCE and allowed the Jewish exiles to return and rebuild the Temple, more than 150 years after Isaiah. Josephus reports that Cyrus read the prophecy about himself and was moved to fulfill it. Naming a king before his birth is impossible without divine foreknowledge.`,
+  short: `Critical scholars, including many Christians, recognize that Isaiah 40–55 was written by an anonymous prophet during the Babylonian exile, around 540 BCE, when Cyrus was already conquering the region. These chapters address exiles in Babylon as their present audience, speak of Jerusalem as already in ruins, and never mention Isaiah, who appears repeatedly in chapters 1–39. The prophecy is precise about what had already happened, Cyrus's rise, and wrong about what hadn't: a glorious return in which the nations bow down to Israel. Josephus's story comes from the 1st century CE. And Cyrus's own propaganda, the Cyrus Cylinder, credits Babylon's god Marduk with choosing him in very similar terms.`,
+  points: [
+    { h: "Why scholars date Isaiah 40–55 to the exile", t: `The chapters speak to people in Babylon ("Comfort, comfort my people," 40:1), describe Jerusalem and the cities of Judah as "waste places" waiting to be rebuilt (44:26), and treat Babylon's fall as imminent. They differ in style, vocabulary, and theology from Isaiah 1–39, and the 8th-century prophet, named repeatedly in those chapters, is never mentioned. Scholars in the late 18th century developed the theory of a "Second Isaiah" from these features of the text.` },
+    { h: "Accurate where hindsight helps, wrong where it doesn't", t: `The prophecies about Cyrus fit the time when he was already campaigning. The prophecies about what would follow didn't come true: a highway through the desert and a transformed landscape (40:3–5; 41:18–19), kings bowing down to Israel to "lick the dust of your feet" (49:23), and a Jerusalem never again entered by "the uncircumcised and the unclean" (52:1). The actual return was small and difficult, as Haggai, Ezra, and Nehemiah show, and the Temple wasn't rebuilt until 515 BCE, under Darius.` },
+    { h: "Marduk said it too", t: `The Cyrus Cylinder, a Babylonian text written for Cyrus after he took Babylon, says that Marduk searched for a righteous ruler, called out the name of Cyrus, and let him enter Babylon without a battle. Each religion credited its own god with Cyrus. Second Isaiah's portrait of Cyrus as Yahweh's anointed fits the political theology of its time.` },
+    { h: "Josephus's story", t: `Josephus wrote around 600 years after the events. His claim that Cyrus read Isaiah's prophecy comes from Jewish tradition, not Persian records, and nothing outside Josephus supports it.` }
   ],
   replies: [
-    { q: "Even if you remove the weak ones, the remaining prophecies are still statistically impossible.", a: `The problem isn't only weak prophecies. Any event reported by biased sources who knew the prediction and wrote decades later can't be treated as a random draw. To get a meaningful probability, you need independent verification that the events happened *and* that the prophecies were predictions. We don't have that for any of them.`, k: "remove weak prophecies still statistically impossible remaining" }
+    { q: "Dating Isaiah 40–55 late assumes predictive prophecy is impossible. That's circular.", a: `The late date rests on the text's own point of view: it addresses exiles, describes Jerusalem in ruins, and never mentions Isaiah. Scholars apply the same criteria to any text, religious or not. The prophecy claim isn't neutral either: it needs the 8th-century date to be established independently, and it isn't. The real test of prophecy comes in the predictions that go beyond Cyrus's early career, and those failed.`, k: "dating isaiah late assumes prophecy impossible anti supernatural circular deutero isaiah" }
   ],
   sources: [
-    "Stoner, P. (1958). Science Speaks. Moody Press.",
-    "McDowell, J. & McDowell, S. (2017). Evidence That Demands a Verdict, updated ed. Thomas Nelson.",
-    "Carrier, R. (2012). Proving History: Bayes's Theorem and the Quest for the Historical Jesus. Prometheus, ch. on probabilistic reasoning.",
-    "Hájek, A. 'Interpretations of Probability.' Stanford Encyclopedia of Philosophy."
+    "Blenkinsopp, J. (2002). Isaiah 40–55. Anchor Bible 19A. Doubleday.",
+    "Childs, B. S. (2001). Isaiah. Westminster John Knox.",
+    "Finkel, I. (ed.) (2013). The Cyrus Cylinder: The Great Persian Edict from Babylon. I. B. Tauris.",
+    "Kuhrt, A. (1983). 'The Cyrus Cylinder and Achaemenid Imperial Policy.' Journal for the Study of the Old Testament 25: 83–97.",
+    "Josephus, Antiquities 11.1–7."
   ],
-  keys: "prophecy odds probability stoner science speaks 10^17 silver dollars texas statistically impossible chance fulfilled prophecy math",
-  rel: ["messianic-prophecy", "failed-return", "tyre"]
+  keys: "isaiah named cyrus 150 years before cyrus prophecy isaiah 44 45 cyrus anointed rebuild jerusalem deutero isaiah second isaiah",
+  rel: ["daniel", "messianic-prophecy", "babylon-nineveh", "prophecy-odds"]
 },
 {
   id: "tyre",
@@ -207,6 +307,30 @@ DEF_ADD([
   rel: ["prophecy-odds", "messianic-prophecy"]
 },
 {
+  id: "babylon-nineveh",
+  cat: "prophecy",
+  title: "The Prophecies Against Babylon and Nineveh Came True",
+  who: "Josh McDowell, Evidence That Demands a Verdict (1972); Peter Stoner, Science Speaks (1958); Hank Hanegraaff",
+  claim: `The prophets foretold the fate of the great empires. Isaiah declared that Babylon "will never be inhabited... The Arabian will not pitch a tent there" (13:20), and Jeremiah that it would become "heaps... without inhabitant" (51:37). Today Babylon is a ruin. Nahum foretold the destruction of Nineveh, the mighty Assyrian capital, which fell in 612 BCE and was never rebuilt. Prophecies of the total and permanent destruction of the world's greatest cities, fulfilled to the letter, show divine foreknowledge.`,
+  short: `Where the details are specific, they're wrong. Isaiah 13 predicts that the Medes would slaughter Babylon's young men and children. In fact, Babylon surrendered to the Persian Cyrus in 539 BCE with little violence and remained a major city for centuries; Alexander the Great died there in 323 BCE, and it declined only gradually after the Seleucid kings founded a new capital nearby. Most great ancient cities eventually became ruins, so predicting that an enemy capital will someday fall is a safe bet. Nahum was most likely written shortly before Nineveh fell, when Assyria was already collapsing. And prophecies against other nations that didn't come true, such as Ezekiel's forty-year desolation of Egypt, are rarely mentioned.`,
+  points: [
+    { h: "Babylon's actual history", t: `Isaiah 13:17–18 says the Medes' "bows will dash the young men in pieces" and their "eyes will not spare children," and 13:19 compares Babylon's fate to Sodom and Gomorrah. Instead, Babylon opened its gates to Cyrus in 539 BCE, stayed an important city under the Persians, served Alexander as a capital, and declined over several centuries after Seleucus I founded Seleucia on the Tigris. Smaller-scale settlement continued long afterward. The site is now surrounded by modern towns and was inscribed as a UNESCO World Heritage Site in 2019.` },
+    { h: "Every city falls eventually", t: `Ur, Uruk, Nineveh, Troy, Mycenae, and Persepolis all became ruins. Predicting that an enemy's capital will one day be desolate succeeds very often, especially when no deadline is given. The real test lies in the specific, time-bound details, and those failed (see [[prophecy-odds]]).` },
+    { h: "Nahum's timing", t: `Nahum refers to the sack of Thebes (No-Amon, 3:8) as a past event, and that happened in 663 BCE. So the book was written between 663 and Nineveh's fall in 612, and most scholars place it near the end of that period, when Assyria was collapsing under attacks by the Babylonians and the Medes. Predicting the fall of a crumbling empire's capital is political commentary, not foreknowledge.` },
+    { h: "The prophecies that failed", t: `Ezekiel predicted that Egypt would be "an utter waste and desolation," uninhabited for forty years, with its people scattered among the nations (29:10–12). That never happened. He predicted Tyre would become "a bare rock" that would "be built no more" (26:14), and later conceded that Nebuchadnezzar's army "had no wages" from its siege of Tyre (29:18; see [[tyre]]). A method that counts the hits and forgets the misses will find fulfilled prophecy anywhere.` }
+  ],
+  replies: [],
+  sources: [
+    "Seymour, M. (2014). Babylon: Legend, History and the Ancient City. I. B. Tauris.",
+    "Boiy, T. (2004). Late Achaemenid and Hellenistic Babylon. Peeters.",
+    "Kuhrt, A. (1995). The Ancient Near East, c. 3000–330 BC. Routledge.",
+    "Roberts, J. J. M. (1991). Nahum, Habakkuk, and Zephaniah. Westminster John Knox.",
+    "UNESCO World Heritage Centre (2019). 'Babylon.'"
+  ],
+  keys: "babylon never inhabited isaiah 13 jeremiah 51 prophecy fulfilled babylon ruins nineveh nahum fall of nineveh 612 prophecies against nations fulfilled",
+  rel: ["tyre", "prophecy-odds", "cyrus", "israel-1948"]
+},
+{
   id: "israel-1948",
   cat: "prophecy",
   title: "Israel's Rebirth in 1948 Fulfilled Prophecy",
@@ -230,6 +354,30 @@ DEF_ADD([
   ],
   keys: "israel 1948 rebirth nation born in a day isaiah 66:8 ezekiel 37 dry bones jews returned prophecy fulfilled end times",
   rel: ["failed-return", "prophecy-odds", "messianic-prophecy"]
+},
+{
+  id: "temple-prediction",
+  cat: "prophecy",
+  title: "Jesus Predicted the Temple's Destruction",
+  who: "Mark 13:1–2 and parallels; Luke 19:41–44 and 21:20–24; N. T. Wright, Jesus and the Victory of God (1996); Craig Evans",
+  claim: `Looking at the Temple's huge stones, Jesus said, "There will not be left here one stone on another, which will not be thrown down" (Mark 13:2). About forty years later, in 70 CE, the Romans destroyed the Temple, just as Jesus said it would happen within "this generation." The prediction was precise, came true within the stated time, and was made when the Temple, newly rebuilt by Herod, seemed permanent.`,
+  short: `If the Gospels were written around or after 70, as most scholars think, the details may have been shaped by hindsight, especially in Luke (see [[early-gospels]]). Even if Jesus did predict the destruction, that wouldn't require foreknowledge. Prophecies against the Temple were a recognized genre (Jeremiah made one about the First Temple), relations with Rome were tense, and Josephus describes another Jesus, Jesus son of Ananias, who cried woe against Jerusalem and the Temple for seven years before the war. And in Mark, the prediction is bundled with the end of the world: the sun darkened and the Son of Man coming in clouds, all within "this generation." The Temple fell. The rest didn't happen (see [[failed-return]]).`,
+  points: [
+    { h: "Another Jesus with the same message", t: `Josephus (*Jewish War* 6.300–309) reports that in 62 CE, a peasant named Jesus son of Ananias began crying out in the Temple against "Jerusalem and the holy house" and "this whole people." The authorities had him beaten and handed him over to the Roman governor, and he kept up his cry for seven years until a stone from a Roman siege engine killed him. Prophecies of the Temple's doom were in the air.` },
+    { h: "Precedent", t: `Jeremiah declared that Yahweh would make the Temple "like Shiloh" (26:6), and the Babylonians destroyed the First Temple. For a prophet who believed God was about to judge Israel, predicting the Temple's fall was a natural part of the message. Many historians think Jesus did say something against the Temple, since it appears in the charges at his trial (Mark 14:58).` },
+    { h: "Part of a package", t: `Mark 13 continues: "in those days... the sun will be darkened... Then they will see the Son of Man coming in clouds with great power and glory," and "this generation will not pass away until all these things happen" (13:24–30). If the Temple prophecy counts as fulfilled within that generation, the coming of the Son of Man within the same generation counts as failed.` },
+    { h: "Not quite every stone", t: `Herod's massive retaining walls, including the Western Wall, still stand. Apologists answer that Jesus meant the Temple buildings, not the walls of the platform, which is fair. But it shows how readily the wording of a prophecy is adjusted to fit the outcome.` }
+  ],
+  replies: [],
+  sources: [
+    "Josephus, Jewish War 6.300–309.",
+    "Allison, D. C. (1998). Jesus of Nazareth: Millenarian Prophet. Fortress.",
+    "Kloppenborg, J. S. (2005). 'Evocatio Deorum and the Date of Mark.' Journal of Biblical Literature 124(3): 419–450.",
+    "Theissen, G. (1991). The Gospels in Context. Fortress.",
+    "Sanders, E. P. (1985). Jesus and Judaism. Fortress."
+  ],
+  keys: "jesus predicted temple destruction not one stone on another 70 ad temple destroyed fulfilled prophecy this generation mark 13 olivet discourse",
+  rel: ["failed-return", "early-gospels", "messiah-before-70", "signs-of-times"]
 },
 {
   id: "failed-return",
@@ -261,5 +409,52 @@ DEF_ADD([
   ],
   keys: "second coming return of jesus this generation will not pass away some standing here will not taste death soon imminent end times apocalyptic prophet failed prophecy delay rapture",
   rel: ["historical-jesus", "daniel", "israel-1948", "prophecy-odds"]
+},
+{
+  id: "signs-of-times",
+  cat: "prophecy",
+  title: "The Signs of the End Times Are Being Fulfilled Now",
+  who: "Hal Lindsey, The Late Great Planet Earth (1970); Tim LaHaye & Jerry Jenkins, the Left Behind series (1995–2007); John Hagee; Matthew 24; 2 Timothy 3; Revelation 13",
+  claim: `Jesus said the end would be preceded by "wars and rumors of wars" and "famines, plagues, and earthquakes in various places" (Matthew 24:6–7). Daniel foresaw that "many will run back and forth, and knowledge will be increased" (12:4), a description of modern travel and technology. Paul predicted that "in the last days," people would be "lovers of self, lovers of money... lovers of pleasure rather than lovers of God" (2 Timothy 3:1–4). Israel has been restored (see [[israel-1948]]), and Revelation's mark without which "no one would be able to buy or to sell" (13:17) is now technologically possible. These converging signs show that biblical prophecy is being fulfilled in our generation.`,
+  short: `Every generation of Christians has believed these signs pointed to its own time, beginning with Paul, who wrote that "we who are alive" would be caught up to meet the Lord (1 Thessalonians 4:17). The signs are chosen so they can always be found: there are always wars, famines, earthquakes, and selfish people. They aren't even increasing: the number of large earthquakes per year has stayed roughly constant, and deaths from famine have fallen dramatically since the mid-20th century. Daniel 12:4 is about people searching a sealed book for its meaning, not about air travel. And the record of modern end-times predictions, from the Millerites in 1844 to Harold Camping in 2011, is one of complete failure.`,
+  points: [
+    { h: "A perennial expectation", t: `Paul expected to be alive at the Lord's return (1 Thessalonians 4:15–17). The 2nd-century Montanists expected the New Jerusalem to descend in Phrygia. The Anabaptists of Münster (1534–35), the Fifth Monarchy Men in 17th-century England, the Millerites (1844), the Jehovah's Witnesses (1914, 1925, 1975), Hal Lindsey (who implied the end would come within a generation of 1948), Edgar Whisenant (*88 Reasons Why the Rapture Will Be in 1988*), and Harold Camping (May 21, 2011) all saw the signs fulfilled in their own time (see [[failed-return]]).` },
+    { h: "Earthquakes, famines, and wars", t: `The U.S. Geological Survey notes that the number of earthquakes of magnitude 7 or greater has remained fairly constant over the past century; the apparent increase comes from better detection and reporting. Famine deaths have fallen sharply since the 1960s (de Waal, *Mass Starvation*, 2018). Wars and human selfishness are constant features of history. Signs that are always present can't mark a particular time.` },
+    { h: "Daniel 12:4", t: `"Shut up the words, and seal the book, even to the time of the end. Many will run back and forth, and knowledge will be increased." Daniel is told to seal his vision; many will search ("run back and forth") for its meaning, and understanding will grow. Reading it as a prophecy of jet travel and the internet means ignoring the first half of the verse.` },
+    { h: "Unfalsifiable by design", t: `When a predicted date passes, the movement reinterprets the expectation rather than abandoning it (see [[dying-messiah]]). Because the signs are vague and the timetable is open, the claim that "we are in the last days" can be made in every generation and never be refuted, which means it predicts nothing (see [[unfalsifiable]]).` }
+  ],
+  replies: [],
+  sources: [
+    "Weber, E. (1999). Apocalypses: Prophecies, Cults, and Millennial Beliefs through the Ages. Harvard University Press.",
+    "Boyer, P. (1992). When Time Shall Be No More: Prophecy Belief in Modern American Culture. Harvard University Press.",
+    "Lindsey, H. (1970). The Late Great Planet Earth. Zondervan.",
+    "U.S. Geological Survey. 'Why are we having so many earthquakes? Has naturally occurring earthquake activity been increasing?' Earthquake Hazards Program FAQ.",
+    "de Waal, A. (2018). Mass Starvation: The History and Future of Famine. Polity."
+  ],
+  keys: "end times signs last days wars rumors of wars earthquakes increasing famines mark of the beast microchip knowledge increased daniel 12 4 rapture soon prophecy fulfilled today our generation",
+  rel: ["failed-return", "israel-1948", "temple-prediction", "unfalsifiable"]
+},
+{
+  id: "bible-codes",
+  cat: "prophecy",
+  title: "Hidden Codes in the Hebrew Bible Predict the Future",
+  who: "Doron Witztum, Eliyahu Rips & Yoav Rosenberg, 'Equidistant Letter Sequences in the Book of Genesis,' Statistical Science (1994); Michael Drosnin, The Bible Code (1997); Grant Jeffrey, The Signature of God (1996)",
+  claim: `When the Hebrew text of the Torah is searched for equidistant letter sequences, taking every nth letter, it reveals names and events clustered meaningfully together. In 1994, three Israeli researchers published a paper in the peer-reviewed journal *Statistical Science* showing that the names of famous rabbis appear in Genesis close to their dates of birth and death far more often than chance would allow. Michael Drosnin found Yitzhak Rabin's assassination encoded in the text and warned Rabin a year before it happened. Only a divine author could have encoded the future in the text.`,
+  short: `In a large text searched with flexible rules, such patterns are guaranteed. In 1999, Brendan McKay, Dror Bar-Natan, Maya Bar-Hillel, and Gil Kalai published a rebuttal in the same journal. They showed that the 1994 result depended on choices about which names, spellings, and dates to use, and that similar choices produced equally "significant" results in a Hebrew translation of *War and Peace*. When Drosnin challenged critics to find a prime minister's assassination in *Moby-Dick*, McKay found Indira Gandhi's assassination there, among others. And a code written in individual letters couldn't survive transmission: the Dead Sea Scrolls show that the spelling of the Hebrew text varied widely before the standard Masoretic text was fixed.`,
+  points: [
+    { h: "The rebuttal in Statistical Science", t: `McKay and his colleagues showed that the 1994 experiment had many hidden choices: which rabbis to include, which of many possible name forms and date formats to search for, and how to measure closeness. Small changes to these choices, all defensible, made the effect disappear, and choices tuned the same way produced the effect in *War and Peace* (*Statistical Science* 14(2), 1999).` },
+    { h: "Moby-Dick", t: `Drosnin told *Newsweek* in 1997, "When my critics find a message about the assassination of a prime minister encrypted in Moby Dick, I'll believe them." McKay then used Drosnin's methods to find "predictions" in *Moby-Dick* of the assassinations of Indira Gandhi, Martin Luther King Jr., and others.` },
+    { h: "The text isn't stable letter by letter", t: `Hebrew words can be spelled with or without certain vowel letters, and manuscripts differ. The Dead Sea Scrolls, about a thousand years older than the earliest complete Masoretic manuscripts, show many such spelling differences (Tov, 2012). Any code that depends on the exact sequence of letters would be scrambled by ordinary copying.` },
+    { h: "No track record", t: `Drosnin's warning to Rabin is his one celebrated hit, and with enough searching, some hits are inevitable. His books also warned of an atomic world war, which didn't come. The codes have never produced a specific, checkable prediction ahead of time that a skeptic couldn't match in a secular text.` }
+  ],
+  replies: [],
+  sources: [
+    "Witztum, D., Rips, E. & Rosenberg, Y. (1994). 'Equidistant Letter Sequences in the Book of Genesis.' Statistical Science 9(3): 429–438.",
+    "McKay, B., Bar-Natan, D., Bar-Hillel, M. & Kalai, G. (1999). 'Solving the Bible Code Puzzle.' Statistical Science 14(2): 150–173.",
+    "Drosnin, M. (1997). The Bible Code. Simon & Schuster.",
+    "Tov, E. (2012). Textual Criticism of the Hebrew Bible, 3rd ed. Fortress."
+  ],
+  keys: "bible code hidden codes torah equidistant letter sequences els drosnin rabin assassination predicted statistical science witztum rips moby dick",
+  rel: ["prophecy-odds", "unfalsifiable", "textual-variants"]
 }
 ]);

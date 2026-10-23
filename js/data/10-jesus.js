@@ -1,3 +1,4 @@
+/* Who Was Jesus? (13 entries) */
 DEF_ADD([
 {
   id: "historical-jesus",
@@ -87,6 +88,55 @@ DEF_ADD([
   rel: ["trinity", "trilemma", "incarnation", "historical-jesus"]
 },
 {
+  id: "implicit-christology",
+  cat: "jesus",
+  title: "Jesus' Actions Show He Implicitly Claimed to Be God",
+  who: "Ben Witherington, The Christology of Jesus (1990); William Lane Craig, Reasonable Faith (2008); Robert Bowman & J. Ed Komoszewski, Putting Jesus in His Place (2007)",
+  claim: `Even setting John's Gospel aside, the historical Jesus acted in ways that make sense only if he thought he was God. He forgave sins, which the scribes rightly said only God can do (Mark 2:7). He called himself the Son of Man who would come "with the clouds of the sky" (Mark 14:62), the figure of Daniel 7 who receives everlasting dominion. He taught on his own authority ("but I tell you"), called himself Lord of the Sabbath, chose twelve disciples to represent a renewed Israel, called God "Abba," and said that people's eternal destiny depends on how they respond to him. Historians accept these features of his ministry, and together they imply a claim to divinity.`,
+  short: `Many historians agree that Jesus believed he had a unique role in God's plan, perhaps as the coming king or the Son of Man. But these are claims to act *for* God, not to *be* God. In Jewish tradition, God's agents spoke and acted with his authority: prophets, priests who pronounced forgiveness, and exalted figures like the Son of Man in 1 Enoch. Matthew himself ends the forgiveness story with the crowds glorifying God, "who had given such authority to men" (9:8). In the same Gospels, Jesus says, "No one is good except one, God" (Mark 10:18), and says that the Son doesn't know the day or the hour (Mark 13:32). Belief in Jesus' divinity developed after Easter, and quickly, but that's evidence about his followers' experiences, not about his own claims (see [[jesus-claimed-god]]).`,
+  points: [
+    { h: "Forgiveness by an agent", t: `In the Temple system, "the priest shall make atonement for them, and they shall be forgiven" (Leviticus 4:20). In Mark 2:10, Jesus claims that "the Son of Man has authority on earth to forgive sins," a delegated authority, and Matthew's version ends with praise for God "who had given such authority to men" (9:8). In John, Jesus gives the disciples the same power: "If you forgive anyone's sins, they have been forgiven them" (20:23). Pronouncing forgiveness didn't mean claiming to be God.` },
+    { h: "The Son of Man", t: `In Daniel 7:13–14, "one like a son of man" comes with the clouds to the ancient of days and is *given* dominion. Later in the chapter, the kingdom is given to "the people of the saints of the Most High" (7:27). Jewish texts such as the Parables of Enoch (1 Enoch 37–71) develop the Son of Man into an exalted heavenly judge who remains distinct from God. Identifying with this figure claims a role, not identity with Yahweh.` },
+    { h: "'Abba' isn't unique", t: `Joachim Jeremias argued that Jesus' use of "Abba" for God showed an unprecedented intimacy. James Barr's article "'Abbā Isn't Daddy'" (1988) showed that the word wasn't childish, and later scholarship has found the claim of uniqueness overstated.` },
+    { h: "Exalted agents were a pattern", t: `Second Temple Judaism had a range of exalted figures: angels such as Michael, Moses enthroned in Ezekiel the Tragedian's *Exagoge*, Melchizedek in a Dead Sea Scroll (11Q13), and the Enochic Son of Man. Jesus could have seen himself in such a role without believing he was the God of Israel. Larry Hurtado's work shows that devotion to Jesus began very early *after* Easter, which Bart Ehrman and others trace to the resurrection experiences (*How Jesus Became God*, 2014).` }
+  ],
+  replies: [],
+  sources: [
+    "Witherington, B. (1990). The Christology of Jesus. Fortress.",
+    "Hurtado, L. W. (2003). Lord Jesus Christ: Devotion to Jesus in Earliest Christianity. Eerdmans.",
+    "Ehrman, B. (2014). How Jesus Became God. HarperOne.",
+    "Collins, A. Y. & Collins, J. J. (2008). King and Messiah as Son of God. Eerdmans.",
+    "Barr, J. (1988). 'Abbā Isn't Daddy.' Journal of Theological Studies 39(1): 28–47.",
+    "Dunn, J. D. G. (2010). Did the First Christians Worship Jesus? SPCK."
+  ],
+  keys: "implicit christology jesus forgave sins only god can forgive son of man daniel 7 clouds jesus authority but i say to you lord of the sabbath abba twelve disciples jesus acted like god",
+  rel: ["jesus-claimed-god", "trilemma", "incarnation", "sinless-jesus"]
+},
+{
+  id: "sinless-jesus",
+  cat: "jesus",
+  title: "Jesus Lived a Sinless Life",
+  who: "Hebrews 4:15; 1 Peter 2:22; 2 Corinthians 5:21; John 8:46; Philip Schaff, The Person of Christ (1865); C. S. Lewis",
+  claim: `Jesus was "in all points tempted like we are, yet without sin" (Hebrews 4:15). He challenged his enemies, "Which of you convicts me of sin?" (John 8:46), and none could. Even Pilate said, "I find no basis for a charge against this man" (Luke 23:4). No other religious founder is presented as morally perfect; the greatest saints confess their sins. A perfect life is a sign that Jesus was more than a man.`,
+  short: `Sinlessness can't be established historically. We have only accounts by devoted followers written decades later, and no one's inner life can be observed. The claim is theological. The Gospels also contain episodes that many readers find hard to call perfect: Jesus compares a Gentile woman to a dog (Mark 7:27), curses a fig tree for having no fruit when "it was not the season for figs" (Mark 11:13), sends two thousand pigs to drown (Mark 5:13), and tells a would-be follower not to bury his father (Luke 9:60). Christians have answers to each, but the point is that perfection is read into the record rather than read off it. And other traditions make the same claim about their founders: Islam teaches that prophets were protected from sin.`,
+  points: [
+    { h: "Unverifiable in principle", t: `Even a constant companion couldn't know that someone never had a sinful thought or motive. The Gospels report selected episodes, written by people who believed Jesus was the Messiah. The New Testament's affirmations of his sinlessness, in 2 Corinthians 5:21 and Hebrews 4:15, are statements of theology, needed for Jesus to be a perfect sacrifice, not reports of observation.` },
+    { h: "The awkward baptism", t: `John preached "the baptism of repentance for forgiveness of sins" (Mark 1:4), and Jesus submitted to it. Early Christians felt the problem: Matthew adds John's protest, and a lost Jewish-Christian gospel quoted by Jerome has Jesus ask, "What sin have I committed, that I should go and be baptized by him?" (see [[embarrassing-details]]).` },
+    { h: "Hard sayings and deeds", t: `Bertrand Russell, in *Why I Am Not a Christian* (1927), questioned the moral perfection of a teacher who threatened eternal fire, cursed a fig tree out of season, and drowned a herd of pigs. Jesus also called opponents "serpents" and "offspring of vipers" (Matthew 23:33), told would-be disciples they must "disregard" (in older translations, "hate") their families (Luke 14:26), and answered his mother brusquely: "Woman, what does that have to do with you and me?" (John 2:4). Each can be defended, but they show that the judgment of perfection depends on prior belief.` },
+    { h: "Not unique", t: `Islamic theology holds that prophets were protected from sin (*ʿiṣma*). Jain tradition describes the *tirthankaras* as omniscient and free of all passions. Buddhist texts portray the Buddha as fully awakened and free of craving. Claims that a founder was perfect are common, so they can't single out Christianity.` }
+  ],
+  replies: [],
+  sources: [
+    "Russell, B. (1927). Why I Am Not a Christian. Watts & Co.",
+    "Jerome, Dialogue against the Pelagians 3.2.",
+    "Meier, J. P. (1994). A Marginal Jew, vol. 2, chs. 12–13 (on John the Baptist). Doubleday.",
+    "Schaff, P. (1865). The Person of Christ. American Tract Society.",
+    "Madelung, W. & Tyan, E. 'ʿIṣma.' Encyclopaedia of Islam, 2nd ed. Brill."
+  ],
+  keys: "jesus sinless perfect life without sin which of you convicts me of sin no fault pilate jesus never sinned moral perfection fig tree pigs",
+  rel: ["implicit-christology", "jesus-moral-teaching", "embarrassing-details", "trilemma"]
+},
+{
   id: "virgin-birth",
   cat: "jesus",
   title: "The Virgin Birth",
@@ -173,6 +223,29 @@ DEF_ADD([
   rel: ["modern-miracles", "miracles-hume", "possession", "extrabiblical"]
 },
 {
+  id: "passion-predictions",
+  cat: "jesus",
+  title: "Jesus Predicted His Death and Resurrection",
+  who: "Mark 8:31; 9:31; 10:33–34 and parallels; Hans Bayer, Jesus' Predictions of Vindication and Resurrection (1986); N. T. Wright",
+  claim: `Three times, Jesus told his disciples exactly what would happen in Jerusalem: he would be "delivered to the chief priests and the scribes," condemned to death, handed over to the Gentiles, mocked, spat on, scourged, and killed, and he would rise again (Mark 10:33–34). Everything happened as he said. He went to Jerusalem knowing what awaited him, which shows both his foreknowledge and that his death was a deliberate act, not an accident.`,
+  short: `The three predictions are formulaic and read like summaries of Mark's own passion narrative, and most critical scholars regard them, at least in their detailed form, as written after the events. The strongest evidence is internal: in the same Gospels, the disciples are bewildered by the crucifixion and dismiss the first reports of resurrection as "nonsense" (Luke 24:11), which is hard to square with three plain predictions. We can even watch the wording being adjusted. Mark says Jesus would rise "after three days," which doesn't fit a Friday-to-Sunday timeline, and Matthew and Luke change it to "on the third day." A historical Jesus may well have expected to die. After the execution of John the Baptist, that took insight, not foreknowledge.`,
+  points: [
+    { h: "The disciples' surprise", t: `After the second prediction, "they didn't understand the saying, and were afraid to ask him" (Mark 9:32). At the arrest, they flee. When the women report the empty tomb, the apostles think it nonsense, and "as yet they didn't know the Scripture, that he must rise from the dead" (John 20:9). If Jesus had plainly predicted his resurrection three times, these reactions make little sense. They make more sense if the predictions were written into the story later.` },
+    { h: "'After three days' becomes 'on the third day'", t: `Mark 8:31 says the Son of Man would "after three days rise again." Matthew 16:21 and Luke 9:22 change this to "the third day." In the oldest manuscripts, Mark's other two predictions (9:31; 10:34) also read "after three days," and later scribes changed them to "on the third day" as well, which is why the King James Version and other translations based on later manuscripts read differently from modern critical editions. The wording was adjusted to fit the Easter timeline, first by the evangelists and then by copyists.` },
+    { h: "Ordinary foresight", t: `A prophet who denounced the Temple authorities and entered Jerusalem at Passover, when the Romans were on alert, had good reason to expect trouble, and John the Baptist had already been executed. Jesus may have expected to die and trusted that God would vindicate him, as Jewish martyrs trusted they would be vindicated at the resurrection (2 Maccabees 7). That's a long way from the detailed itinerary of Mark 10.` }
+  ],
+  replies: [],
+  sources: [
+    "Bultmann, R. (1963). The History of the Synoptic Tradition. Harper & Row.",
+    "Brown, R. E. (1994). The Death of the Messiah, 2 vols. Doubleday.",
+    "Bayer, H. F. (1986). Jesus' Predictions of Vindication and Resurrection. Mohr Siebeck.",
+    "Allison, D. C. (2010). Constructing Jesus. Baker Academic.",
+    "Nestle-Aland, Novum Testamentum Graece, 28th ed. (2012), apparatus at Mark 9:31 and 10:34."
+  ],
+  keys: "jesus predicted his death and resurrection three times passion predictions son of man must suffer rise after three days foreknew death went to jerusalem knowing",
+  rel: ["resurrection-foretold", "dying-messiah", "jesus-claimed-god", "embarrassing-details"]
+},
+{
   id: "extrabiblical",
   cat: "jesus",
   title: "Non-Christian Sources Confirm the Gospels",
@@ -224,6 +297,30 @@ DEF_ADD([
   ],
   keys: "jesus greatest moral teacher sermon on the mount golden rule love your enemies good samaritan ethics teaching unique revolutionary",
   rel: ["slavery", "hell", "failed-return", "christian-civilization"]
+},
+{
+  id: "jesus-influence",
+  cat: "jesus",
+  title: "No One Has Influenced History Like Jesus",
+  who: "James Allan Francis, 'One Solitary Life' (1926); Jaroslav Pelikan, Jesus Through the Centuries (1985); John Ortberg, Who Is This Man? (2012); Tom Holland, Dominion (2019)",
+  claim: `A carpenter from an obscure village, who never wrote a book, held an office, or traveled far from his birthplace, was executed as a criminal in his early thirties. Yet history is dated from his birth, more than two billion people follow him, and his influence shaped art, music, law, hospitals, universities, and the idea of human rights. As the famous sermon "One Solitary Life" puts it, all the armies and kings in history have not affected human life as much as he has. Such influence from such a beginning demands an explanation, and the best one is that he was who he claimed to be.`,
+  short: `Influence isn't evidence of truth. Muhammad, the Buddha, Confucius, and Marx also had vast influence from modest beginnings, and Michael Hart's well-known ranking of the most influential people put Muhammad first, ahead of Jesus, because he founded both a religion and an empire. Christianity's reach has clear historical causes: Paul's mission to the Gentiles, the roads and common language of the Roman Empire, Constantine's conversion and the establishment of Christianity as the empire's religion, and later European colonial expansion. Most of Jesus' influence came through institutions founded long after his death. And the calendar dated from his birth was devised in the 6th century, and it's off by several years.`,
+  points: [
+    { h: "Other founders, other empires", t: `Within a century of Muhammad's death, Islam stretched from Spain to Central Asia, and today it has nearly two billion adherents. Buddhism spread across Asia, and Confucian thought shaped Chinese civilization for two thousand years. If a founder's influence proved his divine status, it would prove too much, and the resulting claims contradict each other.` },
+    { h: "How Christianity actually spread", t: `The sociologist Rodney Stark estimated that early Christianity grew at about 40% per decade, similar to the Latter-day Saints in the 20th century, through ordinary social networks (see [[christianity-growth]]). After Constantine's conversion in 312 and the edict of Theodosius in 380, it became the empire's official religion, and pagan worship was gradually suppressed. In the modern era, missions followed colonial empires. Those are the causes of Jesus' worldwide influence.` },
+    { h: "The calendar", t: `The *Anno Domini* system was devised by the monk Dionysius Exiguus in 525 CE and came into wide use only after Bede adopted it in the 8th century. Herod the Great died in 4 BCE, and Matthew places Jesus' birth before Herod's death, so Dionysius's date is off by at least four years (see [[nativity]]).` },
+    { h: "A changing Jesus", t: `Pelikan's *Jesus Through the Centuries* shows how each era remade Jesus in its own image: the cosmic ruler of the Byzantine emperors, the suffering man of medieval devotion, the moral teacher of the Enlightenment, the liberator of 20th-century theology. Much of his influence is the influence of what people needed him to be.` }
+  ],
+  replies: [],
+  sources: [
+    "Hart, M. H. (1978). The 100: A Ranking of the Most Influential Persons in History. Hart Publishing.",
+    "Stark, R. (1996). The Rise of Christianity. Princeton University Press.",
+    "MacMullen, R. (1984). Christianizing the Roman Empire, A.D. 100–400. Yale University Press.",
+    "Pelikan, J. (1985). Jesus Through the Centuries. Yale University Press.",
+    "Blackburn, B. & Holford-Strevens, L. (1999). The Oxford Companion to the Year. Oxford University Press."
+  ],
+  keys: "jesus most influential person in history one solitary life calendar dated from his birth billions of followers influence proves jesus divine changed the world",
+  rel: ["christianity-growth", "christian-civilization", "church-survival", "trilemma"]
 },
 {
   id: "christianity-growth",

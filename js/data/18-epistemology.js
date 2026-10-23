@@ -1,3 +1,4 @@
+/* Faith & Knowledge (11 entries) */
 DEF_ADD([
 {
   id: "burden-of-proof",
@@ -47,6 +48,29 @@ DEF_ADD([
   ],
   keys: "can't prove god doesn't exist prove a negative absence of evidence not evidence of absence know everything science can't disprove god",
   rel: ["burden-of-proof", "unfalsifiable", "hiddenness"]
+},
+{
+  id: "atheism-faith",
+  cat: "epistemology",
+  title: "Atheism Takes More Faith Than Christianity",
+  who: "Norman Geisler & Frank Turek, I Don't Have Enough Faith to Be an Atheist (2004)",
+  claim: `It takes more faith to believe that everything came from nothing, that life arose by chance, and that consciousness emerged from matter than to believe in a Creator. Atheism is itself a religion, with its own creeds, priests (Dawkins), and unprovable dogmas.`,
+  short: `Atheism isn't a worldview with creeds; it's the absence of belief in gods. Naturalists don't claim "everything came from nothing" (see [[something-from-nothing]]), and they're comfortable saying "we don't yet know" about open questions like the origin of life. Admitting ignorance takes no faith. Positing a specific God to fill gaps does. Calling atheism a religion is like calling "not collecting stamps" a hobby.`,
+  points: [
+    { h: "Not a religion", t: `Atheism has no scripture, rituals, clergy, sacred places, doctrines about salvation, or required beliefs beyond rejecting gods. Atheists disagree widely about politics, ethics, and philosophy. Richard Dawkins is a popular writer, not a priest; atheists frequently disagree with him.` },
+    { h: "'I don't know' takes no faith", t: `On the origin of the universe and of life, naturalists typically say: here are the leading hypotheses, here is the evidence, and here's what's still unknown. That's not faith. "God did it" adds a confident specific answer without independent evidence.` },
+    { h: "Straw men", t: `Geisler and Turek attribute to atheists views few hold: that the universe came from absolutely nothing, that life arose by pure chance in one step, and that morality is just opinion. Each is addressed elsewhere: [[something-from-nothing]], [[origin-of-life]], [[moral-argument]].` }
+  ],
+  replies: [
+    { q: "Atheism is a religion too.", a: `What would be its scriptures, rituals, clergy, or doctrines? Atheists share only one thing: not believing in gods. If not believing in gods is a religion, then not believing in astrology is a religion too.`, k: "atheism is a religion too atheist religion dogma creed" }
+  ],
+  sources: [
+    "Geisler, N. & Turek, F. (2004). I Don't Have Enough Faith to Be an Atheist. Crossway.",
+    "Martin, M. (ed.) (2007). The Cambridge Companion to Atheism. Cambridge University Press.",
+    "Baggini, J. (2003). Atheism: A Very Short Introduction. Oxford University Press."
+  ],
+  keys: "atheism takes more faith atheism is a religion don't have enough faith to be an atheist geisler turek atheist faith dogma",
+  rel: ["science-faith", "burden-of-proof", "something-from-nothing", "faith"]
 },
 {
   id: "faith",
@@ -102,54 +126,53 @@ DEF_ADD([
   rel: ["csr", "religious-experience", "faith", "demographics"]
 },
 {
-  id: "atheism-faith",
+  id: "spirit-witness",
   cat: "epistemology",
-  title: "Atheism Takes More Faith Than Christianity",
-  who: "Norman Geisler & Frank Turek, I Don't Have Enough Faith to Be an Atheist (2004)",
-  claim: `It takes more faith to believe that everything came from nothing, that life arose by chance, and that consciousness emerged from matter than to believe in a Creator. Atheism is itself a religion, with its own creeds, priests (Dawkins), and unprovable dogmas.`,
-  short: `Atheism isn't a worldview with creeds; it's the absence of belief in gods. Naturalists don't claim "everything came from nothing" (see [[something-from-nothing]]), and they're comfortable saying "we don't yet know" about open questions like the origin of life. Admitting ignorance takes no faith. Positing a specific God to fill gaps does. Calling atheism a religion is like calling "not collecting stamps" a hobby.`,
+  title: "The Holy Spirit's Witness Makes Christianity Certain",
+  who: "William Lane Craig, Reasonable Faith (3rd ed., 2008), ch. 1; Alvin Plantinga, Warranted Christian Belief (2000), on the 'internal instigation of the Holy Spirit'; Romans 8:16; John Calvin",
+  claim: `Christians don't ultimately know their faith is true through arguments. As William Lane Craig puts it, "the way in which we know Christianity to be true is by the self-authenticating witness of God's Holy Spirit," as Paul says: "The Spirit himself testifies with our spirit that we are children of God" (Romans 8:16). This witness is properly basic and self-authenticating. Arguments and evidence can confirm it, but if they ever seem to conflict with it, the Spirit's witness wins. Plantinga calls such an experience an "intrinsic defeater-defeater," which can overwhelm any objection.`,
+  short: `Every religion offers its own version of this experience. Latter-day Saints are taught to pray about the Book of Mormon and receive a burning in the bosom confirming its truth (Moroni 10:4; Doctrine and Covenants 9:8); Muslims, Hindus, and Buddhists report certainty too. Since these "self-authenticating" experiences support incompatible beliefs, at most one of them can be reliable, and from the inside they can't be told apart. Craig's position also makes his belief immune to evidence by design, since he says that in any conflict "it is the former which must take precedence over the latter." That's an admission that evidence doesn't finally matter. Plantinga's model, for its part, claims only that *if* Christianity is true, Spirit-produced belief would be warranted; he concedes that it doesn't show Christianity is true.`,
   points: [
-    { h: "Not a religion", t: `Atheism has no scripture, rituals, clergy, sacred places, doctrines about salvation, or required beliefs beyond rejecting gods. Atheists disagree widely about politics, ethics, and philosophy. Richard Dawkins is a popular writer, not a priest; atheists frequently disagree with him.` },
-    { h: "'I don't know' takes no faith", t: `On the origin of the universe and of life, naturalists typically say: here are the leading hypotheses, here is the evidence, and here's what's still unknown. That's not faith. "God did it" adds a confident specific answer without independent evidence.` },
-    { h: "Straw men", t: `Geisler and Turek attribute to atheists views few hold: that the universe came from absolutely nothing, that life arose by pure chance in one step, and that morality is just opinion. Each is addressed elsewhere: [[something-from-nothing]], [[origin-of-life]], [[moral-argument]].` }
+    { h: "The parity problem", t: `If a feeling of certainty produced by prayer were self-authenticating, the Latter-day Saint's testimony of the Book of Mormon would be as well grounded as the evangelical's testimony of the Bible. They can't both be right. A method that produces contradictory results isn't a reliable route to truth, however certain it feels (see [[religious-experience]], [[outsider-test]]).` },
+    { h: "Immunity from evidence", t: `Craig writes that if a conflict arises between the Spirit's witness and beliefs based on argument and evidence, "it is the former which must take precedence over the latter." A belief that no evidence could ever overturn isn't held on the basis of evidence. That's what "faith" means in the sense skeptics criticize (see [[faith]], [[unfalsifiable]]).` },
+    { h: "What about those who lose it?", t: `Many former Christians report having had exactly the experience Craig describes, and then losing their faith after study (see [[famous-converts]]). Craig's view must say they never really had the witness, or that they resisted it, which makes the claim circular: whoever keeps the faith had the true witness, and whoever loses it didn't.` },
+    { h: "Plantinga's conditional", t: `Plantinga argues that if Christianity is true, belief produced by the Holy Spirit is probably warranted, and that objections to its rationality therefore depend on whether it's true. That's a defense against one kind of objection. It doesn't give anyone a reason to think Christianity is true, as Plantinga acknowledges (see [[properly-basic]]).` }
   ],
-  replies: [
-    { q: "Atheism is a religion too.", a: `What would be its scriptures, rituals, clergy, or doctrines? Atheists share only one thing: not believing in gods. If not believing in gods is a religion, then not believing in astrology is a religion too.`, k: "atheism is a religion too atheist religion dogma creed" }
-  ],
+  replies: [],
   sources: [
-    "Geisler, N. & Turek, F. (2004). I Don't Have Enough Faith to Be an Atheist. Crossway.",
-    "Martin, M. (ed.) (2007). The Cambridge Companion to Atheism. Cambridge University Press.",
-    "Baggini, J. (2003). Atheism: A Very Short Introduction. Oxford University Press."
+    "Craig, W. L. (2008). Reasonable Faith: Christian Truth and Apologetics, 3rd ed., ch. 1. Crossway.",
+    "Plantinga, A. (2000). Warranted Christian Belief. Oxford University Press.",
+    "The Book of Mormon, Moroni 10:3–5. Doctrine and Covenants 9:8.",
+    "Schellenberg, J. L. (2007). The Wisdom to Doubt. Cornell University Press.",
+    "Martin, M. (1990). Atheism: A Philosophical Justification. Temple University Press."
   ],
-  keys: "atheism takes more faith atheism is a religion don't have enough faith to be an atheist geisler turek atheist faith dogma",
-  rel: ["science-faith", "burden-of-proof", "something-from-nothing", "faith"]
+  keys: "witness of the holy spirit self authenticating spirit testifies with our spirit know christianity true inner witness defeater defeater craig burning in the bosom",
+  rel: ["properly-basic", "religious-experience", "faith", "outsider-test"]
 },
 {
-  id: "meaning",
+  id: "testimony",
   cat: "epistemology",
-  title: "Without God, Life Has No Meaning",
-  who: "William Lane Craig, 'The Absurdity of Life without God'; Leo Tolstoy, A Confession (1882); Ecclesiastes ('vanity of vanities')",
-  claim: `If there is no God, life has no ultimate meaning, value, or purpose. We're accidents of chance, and everything we do will be forgotten when the universe ends in heat death. Atheists may invent meaning, but it's an illusion. Only God gives life objective significance.`,
-  short: `This is an argument from consequences: even if it were true that atheism makes life meaningless, that wouldn't make God exist. And it isn't true: meaning comes from relationships, work, love, knowledge, creativity, and helping others, and these have value now, whether or not they last forever. Meaning assigned by an external authority isn't obviously more meaningful than meaning we find ourselves. Most non-religious people report lives full of meaning, and secular societies rank among the happiest.`,
+  title: "Rejecting the Apostles' Testimony Is Inconsistent",
+  who: "Thomas Reid, Inquiry into the Human Mind (1764); C. A. J. Coady, Testimony (1992); Richard Bauckham, Jesus and the Eyewitnesses (2006); Craig Keener, Miracles (2011)",
+  claim: `Most of what we know comes from testimony: history, geography, science, even our own birthdays. Thomas Reid argued that we're naturally disposed to trust what others tell us, and C. A. J. Coady showed that testimony is a basic source of knowledge that can't be reduced to anything else. The Gospels are testimony to Jesus' life, death, and resurrection, and Craig Keener has collected hundreds of modern eyewitness accounts of miracles. Accepting testimony everywhere except when it reports the supernatural is arbitrary.`,
+  short: `Testimony is a source of knowledge when it's reliable, and its reliability depends on the claim and the chain of transmission. We trust textbooks and news reports because they can be checked, are produced by institutions that correct errors, and concern ordinary events. The Gospel testimony is anonymous, mostly second-hand or later, written decades afterward by devoted followers, about miracles, which is exactly the category in which testimony is least reliable. And applying the principle consistently leads to contradiction: there is abundant testimony for the miracles of other religions, from the witnesses of Joseph Smith's golden plates to the many followers of Sathya Sai Baba, that Christians reject.`,
   points: [
-    { h: "Consequences don't settle truth", t: `"If X is true, I'll be unhappy" is no reason to think X is false. The universe isn't obliged to give us what we want. Truth comes first; then we work out how to live with it (see [[consequences]]).` },
-    { h: "Meaning without eternity", t: `Susan Wolf (*Meaning in Life and Why It Matters*, 2010) argues that meaning arises when we're actively engaged in projects of worth. Thomas Nagel ("The Absurd," 1971) argues that the "cosmic perspective" from which everything looks pointless applies even if God exists: if nothing finite matters, an eternity of finite things doesn't help. Comforting a friend matters because of what it does for the friend now, not because it will be remembered in a billion years.` },
-    { h: "Borrowed purpose", t: `Being created for a purpose isn't the same as having a meaningful life. A tool has a purpose given by its maker; a person's dignity lies partly in choosing their own ends. Kurt Baier ("The Meaning of Life," 1957) argued that being made for someone else's purpose would, if anything, lower our dignity.` },
-    { h: "The evidence", t: `Non-religious people consistently report meaningful lives. The world's most secular societies, such as Denmark and Sweden, consistently rank near the top of the World Happiness Report. And Ecclesiastes, in the Bible itself, struggles with the meaninglessness of life even with God.` }
+    { h: "Trust has conditions", t: `Reid's principle of credulity is a default, not a blank check: we withdraw trust when a claim is improbable, when the witness has an interest in it, or when it can't be corroborated. Coady, too, holds that testimony can be defeated by evidence. Philosophers of testimony, such as Jennifer Lackey, stress that whether testimony yields knowledge depends on the reliability of the speaker and the claim (see [[miracles-hume]]).` },
+    { h: "The Gospels' chain", t: `The Gospels don't name their authors, don't claim to be by eyewitnesses (except possibly John, through a third party), and were written forty to seventy years after the events (see [[gospel-authorship]], [[eyewitnesses]]). That's not eyewitness testimony in the sense the argument needs; it's tradition written down by believers.` },
+    { h: "Testimony for every religion", t: `Eleven men signed statements that they had seen and handled Joseph Smith's golden plates. Thousands of followers testified to Sathya Sai Baba's materialization of objects, which a 2004 BBC documentary, *The Secret Swami*, showed to be sleight of hand. Hadith collections report many miracles of Muhammad. If testimony to miracles should be accepted, these must be too (see [[modern-miracles]], [[mormonism]]).` },
+    { h: "Keener's collection", t: `Keener's *Miracles* (2011) gathers hundreds of reports of modern healings, many sincere and moving. But a collection of reports isn't a set of verified cases: few have medical documentation before and after, and none has been confirmed under conditions that rule out misdiagnosis, spontaneous remission, and memory distortion (see [[modern-miracles]]).` }
   ],
-  replies: [
-    { q: "If there's no God, what's the point of anything? We'll all die and be forgotten.", a: `The point of helping your child, loving your partner, or finishing a good piece of work is in what those things are and do, not in their lasting forever. A beautiful piece of music doesn't become pointless because it ends. And if finite things have no value, adding an infinite number of finite experiences in heaven wouldn't give them any.`, k: "no god what's the point die forgotten meaningless heat death purpose" }
-  ],
+  replies: [],
   sources: [
-    "Wolf, S. (2010). Meaning in Life and Why It Matters. Princeton University Press.",
-    "Nagel, T. (1971). 'The Absurd.' Journal of Philosophy 68(20): 716–727.",
-    "Baier, K. (1957). 'The Meaning of Life.' Inaugural lecture, Canberra University College.",
-    "Craig, W. L. (2008). 'The Absurdity of Life without God.' In Reasonable Faith, 3rd ed.",
-    "Helliwell, J. et al. (annual). World Happiness Report.",
-    "Metz, T. (2013). Meaning in Life. Oxford University Press."
+    "Reid, T. (1764). An Inquiry into the Human Mind on the Principles of Common Sense, ch. 6, §24.",
+    "Coady, C. A. J. (1992). Testimony: A Philosophical Study. Oxford University Press.",
+    "Lackey, J. (2008). Learning from Words: Testimony as a Source of Knowledge. Oxford University Press.",
+    "Earman, J. (2000). Hume's Abject Failure: The Argument Against Miracles. Oxford University Press.",
+    "Keener, C. S. (2011). Miracles: The Credibility of the New Testament Accounts. Baker Academic.",
+    "BBC (2004). The Secret Swami. BBC documentary."
   ],
-  keys: "without god life meaningless no meaning purpose of life why live point of anything nihilism heat death objective meaning",
-  rel: ["consequences", "moral-argument", "desire"]
+  keys: "testimony we believe testimony all the time apostles testimony reid principle of credulity coady eyewitness testimony miracles keener inconsistent to reject testimony",
+  rel: ["miracles-hume", "modern-miracles", "eyewitnesses", "gospel-authorship"]
 },
 {
   id: "unfalsifiable",
@@ -223,5 +246,29 @@ DEF_ADD([
   ],
   keys: "religion good for people happier healthier useful benefits society needs religion argument from consequences comfort hope",
   rel: ["meaning", "christian-civilization", "pascal", "atheist-regimes"]
+},
+{
+  id: "peterson-truth",
+  cat: "epistemology",
+  title: "The Bible Is True in a Deeper Sense",
+  who: "Jordan Peterson, Maps of Meaning (1999), 12 Rules for Life (2018), and We Who Wrestle with God (2024); popular 'Christian atheist' and cultural-Christian arguments",
+  claim: `Arguing about whether the Bible is literally true misses the point. Its stories encode the deepest wisdom humanity has accumulated about how to live: how to confront chaos, take responsibility, sacrifice for the future, and speak the truth. They're true in a more profound sense than scientific facts: they've proven themselves over thousands of years by producing individuals and societies that flourish. Western civilization rests on this foundation, and abandoning it leads to nihilism and tyranny.`,
+  short: `This changes the meaning of "true." A story can be psychologically powerful and useful without being factually accurate, and on Peterson's pragmatic standard, the long-lived stories of every tradition are "true," including ones that contradict each other. The question Christianity answers isn't whether its stories contain wisdom (many do) but whether God exists, became incarnate, and raised Jesus from the dead. Peterson has generally avoided answering these questions directly, saying that he acts as if God exists. That's a concession: the factual claims at the heart of Christianity are left undefended.`,
+  points: [
+    { h: "Two kinds of 'true'", t: `In a 2017 podcast conversation, Sam Harris and Peterson spent most of two hours failing to agree on what "true" means, because Peterson wanted to count as true whatever, over the long run, serves survival and flourishing. On that definition, a falsehood that helps people survive is "true." Most people mean something else: that a claim matches reality.` },
+    { h: "Every tradition has its wisdom", t: `The Hindu epics, Buddhist sutras, Confucian classics, and Greek myths also contain deep psychological insight and have sustained civilizations for millennia. If longevity and usefulness made stories true, all of these would be true, though they make incompatible claims about gods, souls, and salvation.` },
+    { h: "Wisdom without metaphysics", t: `One can value the parable of the Prodigal Son, the story of Cain and Abel, or the Book of Job as profound literature without believing that their events happened or that the God they describe exists. That's how most people read Homer and Shakespeare (see [[meaning]]).` },
+    { h: "Does civilization need the belief?", t: `The claim that losing faith leads to nihilism and tyranny is an argument from consequences, and the evidence doesn't support it: many of the world's most secular societies are among its most stable and humane (see [[consequences]], [[atheist-regimes]]).` }
+  ],
+  replies: [],
+  sources: [
+    "Peterson, J. B. (1999). Maps of Meaning: The Architecture of Belief. Routledge.",
+    "Peterson, J. B. (2018). 12 Rules for Life: An Antidote to Chaos. Random House Canada.",
+    "Peterson, J. B. (2024). We Who Wrestle with God. Portfolio.",
+    "James, W. (1907). Pragmatism. Longmans, Green.",
+    "Zuckerman, P. (2008). Society Without God. New York University Press."
+  ],
+  keys: "jordan peterson bible true deeper sense metaphorical truth darwinian truth psychological truth act as if god exists meaning stories wisdom western civilization needs christianity",
+  rel: ["meaning", "consequences", "faith", "christian-civilization"]
 }
 ]);

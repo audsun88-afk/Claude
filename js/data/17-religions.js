@@ -1,3 +1,4 @@
+/* Why This Religion? (8 entries) */
 DEF_ADD([
 {
   id: "why-christianity",
@@ -148,5 +149,52 @@ DEF_ADD([
   ],
   keys: "every culture believes in god universal belief consensus gentium common consent billions believe majority atheism rare most people believe",
   rel: ["csr", "smart-believers", "demographics"]
+},
+{
+  id: "myth-became-fact",
+  cat: "religions",
+  title: "Pagan Myths Foreshadowed the True Myth",
+  who: "C. S. Lewis, 'Myth Became Fact' (1944); J. R. R. Tolkien; Justin Martyr, First Apology 54 (an earlier form of the argument)",
+  claim: `Critics point out that the story of Jesus resembles pagan myths of dying and rising gods, divine sons, and sacred meals. C. S. Lewis, persuaded by Tolkien, saw this as confirmation rather than refutation. The pagan myths were "good dreams" that God sent to humanity, longing for the real thing. In Christ, "the old myth of the Dying God, without ceasing to be myth, comes down from the heaven of legend and imagination to the earth of history." We should expect the true story to echo the myths it fulfills.`,
+  short: `This explanation fits any evidence. If Christianity had no parallels with earlier religions, it would show its uniqueness; since it has them, they become "preparation." That can't be distinguished from the simpler view that Christianity grew up in a world where such stories were familiar, and drew on the same patterns. Other religions can and do say the same about Christianity. The early church's version of the argument was cruder: Justin Martyr said the demons had imitated Christ in advance to confuse people. Note that the skeptic's best point here isn't that Christianity "copied" a specific myth (see [[copycat]]), but that its central concepts were already intelligible in its culture.`,
+  points: [
+    { h: "Unfalsifiable", t: `Lewis's view makes every resemblance between Christianity and other religions confirm Christianity, and every difference confirm its uniqueness. An account that treats all possible evidence as support predicts nothing (see [[unfalsifiable]]).` },
+    { h: "Justin's demons", t: `Justin Martyr argued in the 2nd century that demons, having read the prophecies of Christ, created pagan imitations in advance (*First Apology* 54), and Tertullian said the same about Mithraic rites. That's Lewis's argument in a darker key, and it shows that early Christians saw the parallels and needed to explain them.` },
+    { h: "The scholarly picture", t: `J. Z. Smith argued that the category of "dying and rising gods" was largely a modern construction, but Tryggve Mettinger (*The Riddle of Resurrection*, 2001) concluded that some ancient Near Eastern gods, such as Dumuzi, Baal, and Melqart, did die and return, while denying that these myths explain the Christian belief. The modest conclusion is that ideas of a god or hero who dies and is vindicated were available in the ancient world, as were divine sons and miraculous births (see [[virgin-birth]]).` },
+    { h: "Every tradition can say this", t: `A Hindu could say that Christ's incarnation is a partial echo of the avatars of Vishnu; a Muslim that Christianity distorted the prophet Jesus. Interpreting other religions as anticipations of one's own is a universal move, so it can't decide which religion is true (see [[why-christianity]]).` }
+  ],
+  replies: [],
+  sources: [
+    "Lewis, C. S. (1944). 'Myth Became Fact.' In God in the Dock (1970). Eerdmans.",
+    "Justin Martyr, First Apology 54. Tertullian, The Prescription Against Heretics 40.",
+    "Mettinger, T. N. D. (2001). The Riddle of Resurrection: 'Dying and Rising Gods' in the Ancient Near East. Almqvist & Wiksell.",
+    "Smith, J. Z. (1987). 'Dying and Rising Gods.' In M. Eliade (ed.), The Encyclopedia of Religion, vol. 4. Macmillan."
+  ],
+  keys: "myth became fact cs lewis true myth pagan myths foreshadow christ good dreams dying and rising god tolkien preparation diabolical mimicry",
+  rel: ["copycat", "virgin-birth", "why-christianity", "famous-converts"]
+},
+{
+  id: "jewish-survival",
+  cat: "religions",
+  title: "The Survival of the Jewish People Proves God's Hand",
+  who: "Blaise Pascal, Pensées; an anecdote attributed to Frederick the Great's court ('The Jews, Your Majesty'); Mark Twain, 'Concerning the Jews' (1899); Christian Zionist apologetics",
+  claim: `The Jewish people have survived two thousand years of exile, persecution, expulsion, and the Holocaust, and returned to their land, while the empires that oppressed them, Babylon, Persia, Greece, and Rome, have vanished. Mark Twain marveled: "All things are mortal but the Jew; all other forces pass, but he remains. What is the secret of his immortality?" The answer is God's covenant faithfulness, just as the Bible promised. Their survival confirms the Bible, and therefore the God of the Bible.`,
+  short: `Jewish survival is remarkable, and it has historical explanations. After 70 CE, rabbinic Judaism became a portable religion centered on text, law, study, and community, which didn't need a land or a Temple; distinctive practices maintained identity, and diaspora networks provided mutual support. Other peoples have survived long diasporas too, such as the Parsis, the Samaritans, the Armenians, and the Roma. And as an argument for *Christianity*, it backfires: the people whose survival is cited are those who rejected Jesus as the Messiah, and their covenant, as they understand it, doesn't include Christian claims. The Holocaust, in which about a third of the world's Jews were murdered, is also a strange showcase for divine protection.`,
+  points: [
+    { h: "How Judaism survived", t: `The economists Maristella Botticini and Zvi Eckstein argue in *The Chosen Few* (2012) that the rabbinic requirement for men to read and study Torah created a literate population with advantages in trade and a strong commitment to its community. Shared law, endogamy, and communal institutions sustained identity across scattered communities. Many Jews also assimilated and disappeared from the Jewish population over the centuries; survival wasn't universal.` },
+    { h: "Other survivors", t: `Zoroastrians who fled Persia have preserved their religion in India as Parsis for over a thousand years. The Samaritans, a few hundred people today, have kept their own version of the Torah for over two millennia. Armenians, Assyrians, and Mandaeans have preserved identities through long histories of persecution.` },
+    { h: "An argument for Judaism, not Christianity", t: `If Jewish survival shows God's faithfulness to the covenant, the covenant in question is the one Jews keep: Torah observance, without Jesus as Messiah. Paul wrestled with this in Romans 9–11. Using Jewish survival to support Christianity requires reinterpreting it in a way Jews themselves reject.` },
+    { h: "The cost of the argument", t: `If God's hand protected the Jewish people, it didn't prevent pogroms, the Crusader massacres, the Spanish expulsion, or the murder of six million in the Holocaust. A protection that allows that much suffering is hard to tell apart from no protection at all (see [[problem-of-evil]]).` }
+  ],
+  replies: [],
+  sources: [
+    "Botticini, M. & Eckstein, Z. (2012). The Chosen Few: How Education Shaped Jewish History, 70–1492. Princeton University Press.",
+    "Twain, M. (1899). 'Concerning the Jews.' Harper's New Monthly Magazine 99.",
+    "Boyce, M. (1979). Zoroastrians: Their Religious Beliefs and Practices. Routledge.",
+    "Pummer, R. (2016). The Samaritans: A Profile. Eerdmans.",
+    "Pascal, B. (1670). Pensées."
+  ],
+  keys: "jewish survival proves god jews survived persecution holocaust israel return chosen people survival miracle mark twain jews immortal frederick the great the jews your majesty",
+  rel: ["israel-1948", "church-survival", "problem-of-evil", "why-christianity"]
 }
 ]);

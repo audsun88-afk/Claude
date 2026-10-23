@@ -1,6 +1,4 @@
-/* Weak skeptic arguments. In these entries, `claim` is the weak skeptic
- * argument, `short` explains why it fails, and points give the stronger
- * argument to use instead. Flagged skeptic:true for the UI and the debate engine. */
+/* Bad Skeptic Arguments (13 entries) */
 DEF_ADD([
 {
   id: "myth-jesus",
@@ -26,6 +24,29 @@ DEF_ADD([
   rel: ["historical-jesus", "extrabiblical", "copycat"]
 },
 {
+  id: "nazareth-myth",
+  cat: "honesty",
+  skeptic: true,
+  title: "'Nazareth Didn't Exist in Jesus' Time'",
+  who: "René Salm, The Myth of Nazareth (2008); Frank Zindler; some online mythicists",
+  claim: `There is no archaeological evidence that Nazareth was inhabited in the early 1st century. The village appears in no ancient source outside the Gospels until later centuries: not in the Hebrew Bible, the Talmud, or Josephus, who lists many Galilean towns. The Gospels' "Jesus of Nazareth" is a later invention, perhaps from a misunderstood title, which supports the view that Jesus himself never existed.`,
+  short: `Archaeology shows that Nazareth was a small Jewish village in the early Roman period. In 2009, Yardenna Alexandre of the Israel Antiquities Authority excavated a 1st-century house near the Church of the Annunciation, and Ken Dark's work at the Sisters of Nazareth convent identified a 1st-century courtyard house. Rock-cut tombs of the period surround the village, and an inscription from Caesarea, probably from the 3rd or 4th century, lists Nazareth as a home of a priestly family after the destruction of the Temple. Small villages are often absent from ancient texts. Archaeologists reject the Nazareth-myth argument, and it's best abandoned (see [[myth-jesus]]).`,
+  points: [
+    { h: "The archaeological evidence", t: `Alexandre's excavation uncovered remains of a house with pottery from the early Roman period. Dark's study (*Roman-Period and Byzantine Nazareth and Its Hinterland*, 2020) argues that a house beneath the Sisters of Nazareth convent dates to the 1st century and was later venerated by Christians. Kokh tombs, a Jewish burial style of the period, have been found around the village.` },
+    { h: "Why it's missing from texts", t: `Nazareth was a hamlet of perhaps a few hundred people. Josephus names only some of the region's settlements, and the Mishnah and Talmud mention relatively few villages. Absence from surviving texts is normal for places that small.` },
+    { h: "The better argument", t: `The real problem with the Gospels' geography is the birthplace: Matthew and Luke both place Jesus' birth in Bethlehem, to fit prophecy, but disagree on how a family from Nazareth (Luke) or a family that moved to Nazareth (Matthew) came to be there. That's a substantive argument about the nativity stories (see [[nativity]]).` }
+  ],
+  replies: [],
+  sources: [
+    "Alexandre, Y. (2012). Mary's Well, Nazareth: The Late Hellenistic to the Ottoman Periods. IAA Reports 49. Israel Antiquities Authority.",
+    "Dark, K. (2020). Roman-Period and Byzantine Nazareth and Its Hinterland. Routledge.",
+    "Avi-Yonah, M. (1962). 'A List of Priestly Courses from Caesarea.' Israel Exploration Journal 12(2): 137–139.",
+    "Salm, R. (2008). The Myth of Nazareth: The Invented Town of Jesus. American Atheist Press."
+  ],
+  keys: "nazareth didn't exist no archaeological evidence nazareth myth jesus of nazareth invented town salm",
+  rel: ["myth-jesus", "nativity", "archaeology"]
+},
+{
   id: "copycat",
   cat: "honesty",
   skeptic: true,
@@ -47,6 +68,29 @@ DEF_ADD([
   ],
   keys: "jesus copied horus mithras krishna pagan gods zeitgeist december 25 virgin birth 12 disciples crucified sun god copycat",
   rel: ["myth-jesus", "virgin-birth", "empty-tomb", "christmas-pagan"]
+},
+{
+  id: "paul-invented",
+  cat: "honesty",
+  skeptic: true,
+  title: "'Paul Invented Christianity'",
+  who: "Hyam Maccoby, The Mythmaker (1986); A. N. Wilson, Paul: The Mind of the Apostle (1997); popular claim",
+  claim: `Jesus was a Jewish teacher who never claimed to be divine or founded a new religion. Paul, who never met him, invented Christianity: the divine Christ, salvation through his death, the abandonment of the Law, and the sacraments, borrowing from mystery religions. The original followers in Jerusalem had nothing like Paul's theology, and Christianity as we know it is Paul's creation.`,
+  short: `Paul certainly shaped Christianity, especially on including Gentiles without requiring the Law. But he joined a movement that already existed: he says he persecuted it (Galatians 1:13), and he passes on beliefs he "received" (1 Corinthians 15:3), including Jesus' death "for our sins" and the resurrection appearances, which the Jerusalem leaders shared. Pre-Pauline material in his letters, such as the Aramaic prayer *Maranatha*, "Our Lord, come!" (1 Corinthians 16:22), shows Jesus' Aramaic-speaking followers praying to him as Lord. Maccoby's portrait of Paul relies on hostile later sources. The stronger argument concerns how the earliest beliefs arose, not who invented them.`,
+  points: [
+    { h: "What Paul received", t: `In 1 Corinthians 15:3–7, Paul cites a formula he received about Jesus' death, burial, resurrection, and appearances, and says that he and the other apostles preached the same message (15:11). In Galatians 2, he describes the Jerusalem leaders agreeing with his gospel, while differing on the role of the Law. His conflicts with Peter and James show disagreement within a shared core.` },
+    { h: "Early devotion to Jesus", t: `Larry Hurtado (*Lord Jesus Christ*, 2003) argues that devotion to Jesus as Lord, including prayer and hymns addressed to him, began among Jewish believers before Paul. The Aramaic *Maranatha* is the clearest trace of that early practice.` },
+    { h: "The better argument", t: `The real historical question is how Jesus' followers came to believe he had been raised and exalted, and how that belief developed into the full doctrine of the Trinity over the next four centuries. That development is well documented and needs no single inventor (see [[appearances]], [[jesus-claimed-god]], [[trinity]]).` }
+  ],
+  replies: [],
+  sources: [
+    "Maccoby, H. (1986). The Mythmaker: Paul and the Invention of Christianity. Harper & Row.",
+    "Wenham, D. (1995). Paul: Follower of Jesus or Founder of Christianity? Eerdmans.",
+    "Hurtado, L. W. (2003). Lord Jesus Christ: Devotion to Jesus in Earliest Christianity. Eerdmans.",
+    "Fredriksen, P. (2017). Paul: The Pagans' Apostle. Yale University Press."
+  ],
+  keys: "paul invented christianity paul founder of christianity jesus never claimed paul changed jesus message mythmaker maccoby",
+  rel: ["paul-confirms", "creed-1cor15", "jesus-claimed-god", "myth-jesus"]
 },
 {
   id: "nicaea",
@@ -172,5 +216,72 @@ DEF_ADD([
   ],
   keys: "science has disproved god science proved no god evolution big bang explained everything",
   rel: ["unfalsifiable", "science-faith", "cumulative-case"]
+},
+{
+  id: "pi-three",
+  cat: "honesty",
+  skeptic: true,
+  title: "'The Bible Says Pi Equals Three'",
+  who: "Popular skeptic claim",
+  claim: `1 Kings 7:23 describes Solomon's bronze basin as "ten cubits from brim to brim" and says "a line of thirty cubits encircled it." That makes pi equal to three. So the Bible contains a mathematical error, and it can't be the inspired word of God.`,
+  short: `This is a description of a large cast basin in round numbers, not a mathematical claim. Measurements in ancient texts were approximate, and the text itself says the rim was "a hand width thick" and "worked like the brim of a cup," so the inner circumference and the outer diameter needn't correspond to a perfect circle with the same measurements. Rounded measurements aren't errors, and Jewish commentators discussed the passage for centuries. The argument makes skeptics look petty. There are better examples of the Bible reflecting ancient knowledge, such as its picture of a solid sky (see [[science-in-bible]]).`,
+  points: [
+    { h: "Approximation isn't error", t: `Engineers, historians, and ordinary people round numbers constantly. A description of a basin "ten cubits across and thirty around" is a reasonable approximation of a real object; nobody reading it in the ancient world would have taken it as a statement about the ratio of circumference to diameter.` },
+    { h: "The text allows for it", t: `The rim was a handbreadth thick and flared like a lily (7:26). If the circumference was measured inside or below the flared rim and the diameter across the outer brim, the numbers fit quite closely. Rabbinic writers discussed the passage, and some suggested such explanations (Tsaban & Garber, 1998).` },
+    { h: "The better argument", t: `Instead of nitpicking measurements, point to places where the Bible's authors clearly shared the cosmology of their time, such as the firmament holding back waters above the sky (Genesis 1:6–8), and to substantive historical problems (see [[science-in-bible]], [[contradictions]]).` }
+  ],
+  replies: [],
+  sources: [
+    "Tsaban, B. & Garber, D. (1998). 'On the Rabbinical Approximation of π.' Historia Mathematica 25(1): 75–84.",
+    "1 Kings 7:23–26; 2 Chronicles 4:2–5."
+  ],
+  keys: "bible says pi equals three 1 kings 7 23 molten sea ten cubits thirty cubits pi error bible math mistake",
+  rel: ["science-in-bible", "contradictions", "inerrancy"]
+},
+{
+  id: "atheists-smarter",
+  cat: "honesty",
+  skeptic: true,
+  title: "'Atheists Are Smarter, So Atheism Is True'",
+  who: "Popular claim, often citing Zuckerman, Silberman & Hall (2013)",
+  claim: `Studies show a negative correlation between intelligence and religious belief: a 2013 meta-analysis of 63 studies found that more intelligent people are less likely to be religious, and an expanded analysis in 2020 confirmed it. Scientists, especially elite scientists, are much less religious than the general public. Smart people see through religion.`,
+  short: `The correlation is real but small, and the argument is a fallacy. The meta-analyses found a modest negative relationship, around r = −0.2, which leaves enormous overlap between believers and unbelievers, and the effect varies with how religiosity is measured and with culture. A belief isn't true or false because of the average intelligence of those who hold it; that's an appeal to authority in a statistical disguise. Highly intelligent people hold all sorts of beliefs, including religious ones (see [[smart-believers]]). Some related findings haven't held up: the 2012 *Science* study claiming that analytic thinking reduces religious belief failed to replicate. The honest argument is about the evidence, not about who believes it.`,
+  points: [
+    { h: "Small and contextual", t: `Zuckerman, Silberman, and Hall (2013) and the follow-up by Zuckerman and colleagues (2020) report a modest negative association. Proposed explanations include intelligent people's greater tendency to nonconformity, analytic thinking styles, and the fact that some functions of religion (self-regulation, attachment) can be met in other ways. None of these speaks to whether God exists.` },
+    { h: "A failed replication", t: `Gervais and Norenzayan (2012) reported in *Science* that priming analytic thinking reduced religious belief. A large, direct replication by Sanchez and colleagues (2017) found no effect, and other replications also failed. Skeptics who cite the original study are relying on a result that didn't hold up.` },
+    { h: "The better argument", t: `Arguments about who believes cut both ways and settle nothing. The case against Christianity should rest on the arguments and evidence themselves, which is what the rest of this library tries to do.` }
+  ],
+  replies: [],
+  sources: [
+    "Zuckerman, M., Silberman, J. & Hall, J. A. (2013). 'The Relation Between Intelligence and Religiosity: A Meta-Analysis and Some Proposed Explanations.' Personality and Social Psychology Review 17(4): 325–354.",
+    "Zuckerman, M., Li, C., Lin, S. & Hall, J. A. (2020). 'The Negative Intelligence–Religiosity Relation: New and Confirming Evidence.' Personality and Social Psychology Bulletin.",
+    "Gervais, W. M. & Norenzayan, A. (2012). 'Analytic Thinking Promotes Religious Disbelief.' Science 336: 493–496.",
+    "Sanchez, C. et al. (2017). 'Direct replication of Gervais & Norenzayan (2012): No evidence that analytic thinking decreases religious belief.' PLoS ONE 12(2): e0172636."
+  ],
+  keys: "atheists smarter than believers intelligence religiosity correlation smart people are atheists religious people less intelligent iq religion",
+  rel: ["smart-believers", "scientists-believe", "csr"]
+},
+{
+  id: "religion-crutch",
+  cat: "honesty",
+  skeptic: true,
+  title: "'Religion Is Just a Crutch, So It's False'",
+  who: "Popular claim, drawing on Sigmund Freud, The Future of an Illusion (1927), and Karl Marx ('the opium of the people')",
+  claim: `People believe in God because they're afraid of death, want a father figure to protect them, and can't face a meaningless universe. Freud showed that religion is wish fulfillment: an illusion born of our childhood longing for a protective father. Marx called it the opium of the people. Belief is a psychological crutch, and that's why it's false.`,
+  short: `This is the genetic fallacy: explaining why someone holds a belief doesn't show that the belief is false. People can believe true things for bad reasons. The argument also runs both ways: the Christian psychologist Paul Vitz has argued that atheism is wish fulfillment by people with absent or defective fathers, and that argument is equally fallacious. Many Christian doctrines aren't comforting, such as hell and divine judgment. Psychological explanations of belief become relevant only *after* we've seen that the evidence doesn't support the belief: then they explain why people would believe it anyway. That's the legitimate form of the argument (see [[csr]]).`,
+  points: [
+    { h: "Origin isn't truth", t: `Even if every believer believed out of fear of death, God might still exist; even if every atheist disbelieved out of resentment, God might still not exist. The question of truth has to be settled by arguments and evidence.` },
+    { h: "It cuts both ways", t: `Paul Vitz's *Faith of the Fatherless* (1999) argues that many famous atheists had dead, absent, or abusive fathers, and that their atheism expresses that wound. Alvin Plantinga calls the Freudian and Marxist critique "the F&M complaint" and argues that it presupposes religion is false rather than showing it. Skeptics who use the crutch argument invite the same move in reverse.` },
+    { h: "The legitimate version", t: `Once the arguments for God have been examined and found wanting, it's reasonable to ask why belief is so widespread anyway. Then cognitive science of religion (hyperactive agency detection, intuitive teleology, social learning) and research on death anxiety (Jong & Halberstadt, 2016) are relevant: they show how belief could be common without being true (see [[csr]], [[universal-belief]]).` }
+  ],
+  replies: [],
+  sources: [
+    "Freud, S. (1927). The Future of an Illusion.",
+    "Vitz, P. C. (1999). Faith of the Fatherless: The Psychology of Atheism. Spence.",
+    "Plantinga, A. (2000). Warranted Christian Belief, ch. 6. Oxford University Press.",
+    "Jong, J. & Halberstadt, J. (2016). Death Anxiety and Religious Belief. Bloomsbury Academic."
+  ],
+  keys: "religion is a crutch wish fulfillment freud future of an illusion opium of the people marx people believe because afraid of death father figure psychological need",
+  rel: ["csr", "universal-belief", "consequences", "deathbed-conversions"]
 }
 ]);

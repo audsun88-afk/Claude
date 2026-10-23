@@ -1,3 +1,4 @@
+/* Biblical Morality & Christian History (10 entries) */
 DEF_ADD([
 {
   id: "slavery",
@@ -141,6 +142,31 @@ DEF_ADD([
   rel: ["genocide", "atonement", "yahweh-origins"]
 },
 {
+  id: "progressive-revelation",
+  cat: "morality",
+  title: "God Accommodated Ancient Culture and Led It Forward Gradually",
+  who: "Paul Copan, Is God a Moral Monster? (2011); William Webb, Slaves, Women & Homosexuals (2001); Matthew 19:8 ('because of the hardness of your hearts')",
+  claim: `The laws of the Old Testament on slavery, war, and women must be read in their ancient context. God met Israel where it was and moved it toward higher standards step by step, as Jesus said Moses permitted divorce "because of the hardness of your hearts" (Matthew 19:8). Compared with other ancient Near Eastern laws, Israel's laws were humane: they protected runaway slaves, limited punishments, and cared for widows and foreigners. William Webb's "redemptive-movement hermeneutic" traces a trajectory in scripture that points beyond the text toward the full equality revealed in Christ.`,
+  short: `An all-powerful, perfectly good God could have simply said "Do not own people." The Torah has no trouble imposing radical demands that went against the culture of its time, such as exclusive worship, dietary laws, and the Sabbath, so "they weren't ready" is selective. Some biblical laws are harsher than their neighbors', including the death penalty for Sabbath-breaking, for apostasy, and for cursing one's parents, and commands to exterminate whole peoples (see [[genocide]]). The New Testament doesn't complete the trajectory: it tells slaves to obey even harsh masters and women to be silent. And if we have to extrapolate beyond the text to know what's right, the moral standard we use to judge the direction comes from outside the text.`,
+  points: [
+    { h: "Radical where it wanted to be", t: `The Torah forbade worshipping other gods, eating pork and shellfish, working on the Sabbath, and many other practices that were deeply rooted in the surrounding cultures. It didn't hesitate to demand costly changes. Its failure to forbid slavery, while regulating the beating of slaves (Exodus 21:20–21) and permitting the purchase of foreign slaves as permanent property (Leviticus 25:44–46), isn't explained by a policy of gradualism.` },
+    { h: "Not always better than the neighbors", t: `The Torah prescribes death for working on the Sabbath (Exodus 31:15; Numbers 15:32–36), for cursing a parent (Leviticus 20:9), for a betrothed woman who doesn't cry out when raped in a town (Deuteronomy 22:23–24), and for those who entice others to worship other gods (Deuteronomy 13). Comparative studies find a mixed picture, not a consistent moral advance over Hammurabi's or the Hittite laws (see [[harsh-laws]]).` },
+    { h: "The New Testament didn't finish the job", t: `"Servants, be in subjection to your masters with all fear; not only to the good and gentle, but also to the wicked" (1 Peter 2:18). "Let a woman learn in quietness with full submission. But I don't permit a woman to teach" (1 Timothy 2:11–12). If the trajectory pointed toward abolition and equality, the texts that were supposed to complete it point the other way, and Christians used them for 1,800 years.` },
+    { h: "Who decides the direction?", t: `Webb's method requires identifying which elements of the text are "redemptive" and which are cultural, and extending the former beyond the text. That judgment depends on a moral standard the reader brings. If we can identify the right direction independently, scripture isn't needed as our moral guide; if we can't, the method has no way to tell progress from regression.` }
+  ],
+  replies: [],
+  sources: [
+    "Copan, P. (2011). Is God a Moral Monster? Making Sense of the Old Testament God. Baker.",
+    "Webb, W. J. (2001). Slaves, Women & Homosexuals: Exploring the Hermeneutics of Cultural Analysis. InterVarsity Press.",
+    "Copan, P. & Flannagan, M. (2014). Did God Really Command Genocide? Baker.",
+    "Avalos, H. (2011). Slavery, Abolitionism, and the Ethics of Biblical Scholarship. Sheffield Phoenix.",
+    "Stark, T. (2011). The Human Faces of God. Wipf & Stock.",
+    "Morriston, W. (2009). 'Did God Command Genocide? A Challenge to the Biblical Inerrantist.' Philosophia Christi 11(1): 7–26."
+  ],
+  keys: "progressive revelation god accommodated ancient culture hardness of hearts redemptive movement hermeneutic webb copan moral monster old testament laws improvement on neighbors slavery regulated",
+  rel: ["slavery", "genocide", "harsh-laws", "women"]
+},
+{
   id: "christian-civilization",
   cat: "morality",
   title: "Christianity Built Western Civilization",
@@ -166,6 +192,55 @@ DEF_ADD([
   ],
   keys: "christianity built western civilization human rights hospitals universities dominion tom holland borrowed capital values come from christianity secular humanism christian",
   rel: ["science-founders", "slavery", "atheist-regimes", "consequences"]
+},
+{
+  id: "christian-reforms",
+  cat: "morality",
+  title: "Christians Led the Great Moral Reforms",
+  who: "Tom Holland, Dominion (2019); Rodney Stark, For the Glory of God (2003); Alvin Schmidt, How Christianity Changed the World (2004); Eric Metaxas, Amazing Grace (2007)",
+  claim: `Christians led the abolition of slavery: William Wilberforce, the Quakers, and the evangelical Clapham Sect. The civil rights movement was led by Black churches and the Reverend Martin Luther King Jr. Christians founded hospitals and orphanages, opposed infanticide and gladiatorial games, and led prison reform (Elizabeth Fry) and the campaigns against child labor. Christianity's moral power is visible in the reforms that made the modern world humane.`,
+  short: `Many reformers were devout Christians, and their faith motivated them; that's true and worth honoring. But their opponents were Christians too, and often had the better of the textual argument: slaveholders quoted Leviticus 25 and "servants, be obedient" (Ephesians 6:5), and the Southern Baptist Convention was founded in 1845 to defend slaveholding missionaries, only apologizing in 1995. Abolitionists had to argue from the "spirit" of scripture against its letter, using moral reasoning that goes beyond the text. Reformers also included secular figures and people of other faiths: Gandhi, a Hindu, shaped King's nonviolence, and A. Philip Randolph, who organized the 1963 March on Washington, was a humanist. Christianity was on both sides of every one of these struggles.`,
+  points: [
+    { h: "Both sides quoted the Bible", t: `Defenders of slavery pointed to Leviticus 25:44–46, which permits buying slaves from the nations, and to New Testament commands for slaves to obey their masters (Ephesians 6:5; 1 Peter 2:18). Mark Noll's *The Civil War as a Theological Crisis* (2006) shows that the pro-slavery side often had the more straightforward reading of the text. The Southern Baptist Convention formed in 1845 over the right of slaveholders to serve as missionaries and formally apologized in 1995 (see [[slavery]]).` },
+    { h: "Segregation and the churches", t: `White churches in the American South were among segregation's strongest supporters, and some used the "curse of Ham" (Genesis 9) to justify racial hierarchy. Bob Jones University banned interracial dating until 2000. King's "Letter from Birmingham Jail" (1963) was addressed to white clergymen who had urged him to wait.` },
+    { h: "Reformers outside the church", t: `Frederick Douglass wrote that he loved "the pure, peaceable, and impartial Christianity of Christ" but hated "the corrupt, slaveholding, women-whipping, cradle-plundering, partial and hypocritical Christianity of this land" (*Narrative*, 1845, Appendix). The Enlightenment critique of slavery, freethinkers such as Thomas Paine, Gandhi's example of nonviolent resistance, and humanists such as A. Philip Randolph and Bayard Rustin all played large parts in these reforms.` },
+    { h: "Where the moral standard came from", t: `If reformers had to read against the plain sense of scripture to oppose slavery and subordination, then the moral standard they were applying came from conscience and moral reasoning, not from the text (see [[progressive-revelation]]). That's to their credit, and it's evidence that morality doesn't depend on revelation.` }
+  ],
+  replies: [],
+  sources: [
+    "Noll, M. A. (2006). The Civil War as a Theological Crisis. University of North Carolina Press.",
+    "Haynes, S. R. (2002). Noah's Curse: The Biblical Justification of American Slavery. Oxford University Press.",
+    "Douglass, F. (1845). Narrative of the Life of Frederick Douglass, an American Slave, Appendix.",
+    "Southern Baptist Convention (1995). 'Resolution on Racial Reconciliation on the 150th Anniversary of the Southern Baptist Convention.'",
+    "Branch, T. (1988). Parting the Waters: America in the King Years 1954–63. Simon & Schuster.",
+    "Holland, T. (2019). Dominion: How the Christian Revolution Remade the World. Basic Books."
+  ],
+  keys: "christians ended slavery wilberforce abolition civil rights martin luther king christian reformers hospitals orphanages christianity moral progress quakers",
+  rel: ["slavery", "christian-civilization", "progressive-revelation", "human-dignity"]
+},
+{
+  id: "religious-generosity",
+  cat: "morality",
+  title: "Religious People Are More Generous",
+  who: "Arthur C. Brooks, Who Really Cares (2006); Robert Putnam & David Campbell, American Grace (2010)",
+  claim: `Religious Americans give far more to charity and volunteer far more than secular Americans, and the gap holds even for giving to secular causes. Arthur Brooks found that religious people were more generous by almost every measure. Faith produces generosity, compassion, and civic engagement; a society that loses its faith will lose these too.`,
+  short: `The finding is real in the United States, but its cause isn't belief. Putnam and Campbell found that the generosity and civic engagement of religious Americans are explained by their social networks: people with close friends in a congregation give and volunteer more, whatever their theology, and the effect doesn't depend on beliefs about God. A large share of religious giving goes to congregations themselves. Across countries, the most secular societies, such as Denmark, Sweden, and Japan, have strong social welfare, low crime, and generous foreign aid. And generosity is no evidence of truth: devout Latter-day Saints and Muslims are generous too.`,
+  points: [
+    { h: "It's the community", t: `In *American Grace* (2010), Putnam and Campbell found that the best predictor of religious Americans' good neighborliness was how many close friends they had in their congregation. Theological belief, such as belief in hell or in a personal God, added little. Secular people embedded in similar communities show similar patterns. Congregations ask people to give, and give them networks that make it easy.` },
+    { h: "Where the money goes", t: `Much of religious giving supports places of worship, clergy, and church programs. Brooks reported that religious people also give more to secular causes, which is a fair point, but counting tithes to one's own church as charity in the same sense as aid to strangers inflates the comparison.` },
+    { h: "Secular societies do well", t: `Phil Zuckerman's *Society Without God* (2008) describes Denmark and Sweden, among the least religious societies in history, as also among the most humane by measures of welfare, safety, and equality. Gregory Paul's cross-national study (2009) found that higher religiosity tends to accompany worse measures of social health. That's correlation, not causation, but it refutes the claim that secularization brings social collapse.` },
+    { h: "Generosity isn't evidence", t: `Latter-day Saints tithe at high rates, and zakat is one of the pillars of Islam. If generosity validated a religion's truth claims, it would validate incompatible ones. At most it shows that religious communities can encourage giving, which is a reason to build strong communities, not to believe doctrines (see [[consequences]]).` }
+  ],
+  replies: [],
+  sources: [
+    "Brooks, A. C. (2006). Who Really Cares: The Surprising Truth About Compassionate Conservatism. Basic Books.",
+    "Putnam, R. D. & Campbell, D. E. (2010). American Grace: How Religion Divides and Unites Us. Simon & Schuster.",
+    "Zuckerman, P. (2008). Society Without God. New York University Press.",
+    "Paul, G. S. (2009). 'The Chronic Dependence of Popular Religiosity upon Dysfunctional Psychosociological Conditions.' Evolutionary Psychology 7(3): 398–441.",
+    "Norris, P. & Inglehart, R. (2011). Sacred and Secular: Religion and Politics Worldwide, 2nd ed. Cambridge University Press."
+  ],
+  keys: "religious people more generous give more to charity volunteer more arthur brooks who really cares atheists less charitable religion makes people better",
+  rel: ["consequences", "christian-civilization", "christian-reforms", "atheist-regimes"]
 },
 {
   id: "atheist-regimes",

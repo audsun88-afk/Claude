@@ -1,3 +1,4 @@
+/* Is the Concept Coherent? (9 entries) */
 DEF_ADD([
 {
   id: "omnipotence",
@@ -23,6 +24,29 @@ DEF_ADD([
   ],
   keys: "omnipotence all powerful paradox of the stone heavy rock can god make logically possible power",
   rel: ["problem-of-evil", "free-will-defense", "perfect-freedom"]
+},
+{
+  id: "omniscience-grim",
+  cat: "coherence",
+  title: "God Knows All Truths",
+  who: "Classical theism; Psalm 147:5; responses to Patrick Grim by Alvin Plantinga and others",
+  claim: `God is omniscient: he knows every truth, including every future event and every fact about every person's inner life. There's no logical problem with a being who knows all truths, since he is infinite and his knowledge is not limited the way ours is.`,
+  short: `Patrick Grim has argued that omniscience, knowing *all* truths, is incoherent. By a Cantorian argument, there can be no set of all truths, because for any collection of truths there are more truths about its subsets than there are members. Omniscience also faces "indexical" problems: God can't know first-personal facts like "I am making a mess in this supermarket" (my facts, known as mine) unless he is me. Theists have replied, but no reply is generally accepted.`,
+  points: [
+    { h: "The Cantorian argument", t: `Suppose there were a set T of all truths. For every subset of T, there is a truth (for example, that a particular truth belongs or doesn't belong to that subset). By Cantor's theorem, there are more subsets of T than members of T, so there are more truths than T contains, contradicting the supposition. If there's no set of all truths, it's unclear what it means for God to know "all truths" (Grim, 1983, 1991).` },
+    { h: "The exchange with Plantinga", t: `Plantinga and Grim debated this in *Philosophical Studies* (1993). Plantinga argued that omniscience can be defined without a set of all truths, by quantifying over propositions directly. Grim replied that the same Cantorian problems arise for such quantification. The exchange ended without agreement.` },
+    { h: "Indexical knowledge", t: `John Perry ("The Problem of the Essential Indexical," 1979) showed that first-person knowledge ("I am the one making a mess") isn't captured by any third-person description. If God knows only third-person truths, there are truths only I can know. If God knows them as I do, he must in some sense be me.` }
+  ],
+  replies: [],
+  sources: [
+    "Grim, P. (1983). 'Some Neglected Problems of Omniscience.' American Philosophical Quarterly 20(3): 265–276.",
+    "Grim, P. (1991). The Incomplete Universe: Totality, Knowledge, and Truth. MIT Press.",
+    "Plantinga, A. & Grim, P. (1993). 'Truth, Omniscience, and Cantorian Arguments: An Exchange.' Philosophical Studies 71(3): 267–306.",
+    "Perry, J. (1979). 'The Problem of the Essential Indexical.' Noûs 13(1): 3–21.",
+    "Wierenga, E. 'Omniscience.' Stanford Encyclopedia of Philosophy."
+  ],
+  keys: "omniscience god knows all truths cantor set of all truths grim indexical knowledge first person knowledge coherent omniscient",
+  rel: ["foreknowledge", "omnipotence", "timeless-god"]
 },
 {
   id: "foreknowledge",
@@ -105,6 +129,56 @@ DEF_ADD([
   rel: ["contingency", "trinity", "classical-proofs", "uncaused-god"]
 },
 {
+  id: "perfect-freedom",
+  cat: "coherence",
+  title: "God Is Both Perfectly Good and Perfectly Free",
+  who: "Classical theism; Thomas Morris; Thomas Flint; responses to William Rowe",
+  claim: `God is perfectly free, under no external constraint, choosing to create out of love. He is also perfectly good, unable to do evil. These are compatible: true freedom is the freedom to do the good, and God's inability to sin is a perfection, not a limitation.`,
+  short: `William Rowe (*Can God Be Free?*, 2004) argued that a perfectly good God would be obligated to create the best world, if there is one. If there is no best world, then for any world God creates, there's a better one he could have created, so a morally perfect being could not settle on any of them. If God has no real alternatives, he is not free in the libertarian sense that the free will defense needs. Either way the classical package becomes unstable.`,
+  points: [
+    { h: "Rowe's dilemma", t: `If there is a best possible world, perfect goodness requires God to create it, so God had no real choice. If there is no best world (for any world, a better one exists), then whatever God creates, he could have done better. A perfectly good being cannot be outdone even by its own other options. So, Rowe argues, either God is not free or no perfectly good being can exist. Responses (Adams' "grace" view; Kraay's "theistic multiverse") are debated, and none has become standard.` },
+    { h: "The theist's own free will defense depends on alternatives", t: `The free will defense says creatures must be able to choose evil to be genuinely free and morally responsible. But God is supposed to be the paradigm of freedom and moral worth, yet unable to choose evil. If freedom without the possibility of evil is the highest freedom, God could have given it to us. See [[heaven-free-will]].` },
+    { h: "Is our world the best God could do?", t: `If God chose freely among options, he chose *this* world, with its smallpox, Holocaust, and five mass extinctions, as either the best or at least as acceptable. Leibniz accepted that this is the best of all possible worlds, which Voltaire mocked in *Candide* after the 1755 Lisbon earthquake. Saying that God chose a world short of the best implies he settled for worse.` }
+  ],
+  replies: [
+    { q: "True freedom is freedom to do good, not to choose evil.", a: `If that's true, then God could have made humans with that freedom, free and incapable of evil, as Christians say the redeemed will be in heaven. Then the free will defense for human evil fails, because the ability to choose evil was not necessary for genuine freedom after all.`, k: "true freedom freedom to do good not choose evil god can't sin perfection" }
+  ],
+  sources: [
+    "Rowe, W. (2004). Can God Be Free? Oxford University Press.",
+    "Adams, R. M. (1972). 'Must God Create the Best?' Philosophical Review 81(3): 317–332.",
+    "Kraay, K. (2010). 'Theism, Possible Worlds, and the Multiverse.' Philosophical Studies 147: 355–368.",
+    "Leibniz, G. W. (1710). Theodicy.",
+    "Voltaire (1759). Candide."
+  ],
+  keys: "god perfectly free perfectly good best possible world rowe can god be free god can't sin freedom choose evil",
+  rel: ["free-will-defense", "heaven-free-will", "omnipotence"]
+},
+{
+  id: "disembodied-mind",
+  cat: "coherence",
+  title: "God Is a Mind Without a Body",
+  who: "Classical theism generally; Richard Swinburne, The Coherence of Theism (1977, 2nd ed. 2016); J. P. Moreland",
+  claim: `God is spirit (John 4:24), a personal being with knowledge, will, and love, but no body, brain, or physical location. There is nothing incoherent in the idea of a mind that does not depend on matter. Swinburne argues that we can imagine being disembodied, so it is possible.`,
+  short: `Every mind we have evidence of is the activity of a nervous system, and its features (memory, attention, emotion, reasoning) are traceable to specific neural mechanisms. That gives inductive evidence that minds depend on brains, which counts against the existence of any disembodied mind, God included. The idea that we can "imagine being disembodied" shows only that we can imagine it, which is weak evidence that it's possible.`,
+  points: [
+    { h: "The argument from neural dependence", t: `Damage to specific brain regions removes specific mental capacities: Broca's area (speech production), the hippocampus (forming new memories), the fusiform face area (recognizing faces), the ventromedial prefrontal cortex (moral and social judgment, as in the case of Phineas Gage). General anesthesia removes consciousness; drugs alter it predictably. This is massive inductive evidence that mental functions are brain functions (Augustine, "The Dependence of Consciousness on the Brain," in *The Myth of an Afterlife*, 2015). A mind with no brain would be the one exception to everything we know about minds.` },
+    { h: "Knowledge and action need mechanisms", t: `Our knowledge comes through causal contact (perception) and is stored in physical structures (synapses). How does a non-physical, non-spatial mind know where and when anything is, or act on matter at particular places? The interaction problem, which Princess Elisabeth of Bohemia pressed against Descartes in 1643, has never been solved. For God it is the same problem in its most extreme form.` },
+    { h: "Conceivability is a weak guide", t: `Swinburne argues: I can conceive of myself existing without a body, so it is possible. But conceivability arguments are notoriously unreliable: people "conceived" of water not being H2O, or of a largest prime, before learning better. Conceiving of a disembodied mind may only show we don't fully understand what a mind is.` }
+  ],
+  replies: [
+    { q: "God isn't like human minds. You can't generalize from brains to God.", a: `Then we lose the grounds for calling God a mind at all. The theist describes God with mental terms (knowing, willing, loving) whose meaning comes from human minds. If those terms apply, the evidence about what minds require applies. If they don't, "God is personal" has no content.`, k: "god not like human minds can't generalize brains spirit different" }
+  ],
+  sources: [
+    "Martin, M. & Augustine, K. (eds.) (2015). The Myth of an Afterlife. Rowman & Littlefield, Part I.",
+    "Swinburne, R. (2016). The Coherence of Theism, 2nd ed. Oxford University Press.",
+    "Kandel, E. et al. (2021). Principles of Neural Science, 6th ed. McGraw-Hill.",
+    "Damasio, A. (1994). Descartes' Error. Putnam.",
+    "Shapiro, L. (ed.) (2007). The Correspondence between Princess Elisabeth of Bohemia and René Descartes. University of Chicago Press."
+  ],
+  keys: "disembodied mind god is spirit immaterial mind without brain mind depends on brain neural dependence interaction problem dualism",
+  rel: ["consciousness", "soul", "nde"]
+},
+{
   id: "trinity",
   cat: "coherence",
   title: "The Trinity Is a Mystery, Not a Contradiction",
@@ -163,55 +237,5 @@ DEF_ADD([
   ],
   keys: "incarnation fully god fully man two natures hypostatic union chalcedon kenosis emptied himself jesus omniscient didn't know the hour two minds could jesus sin",
   rel: ["trinity", "jesus-claimed-god", "timeless-god"]
-},
-{
-  id: "disembodied-mind",
-  cat: "coherence",
-  title: "God Is a Mind Without a Body",
-  who: "Classical theism generally; Richard Swinburne, The Coherence of Theism (1977, 2nd ed. 2016); J. P. Moreland",
-  claim: `God is spirit (John 4:24), a personal being with knowledge, will, and love, but no body, brain, or physical location. There is nothing incoherent in the idea of a mind that does not depend on matter. Swinburne argues that we can imagine being disembodied, so it is possible.`,
-  short: `Every mind we have evidence of is the activity of a nervous system, and its features (memory, attention, emotion, reasoning) are traceable to specific neural mechanisms. That gives inductive evidence that minds depend on brains, which counts against the existence of any disembodied mind, God included. The idea that we can "imagine being disembodied" shows only that we can imagine it, which is weak evidence that it's possible.`,
-  points: [
-    { h: "The argument from neural dependence", t: `Damage to specific brain regions removes specific mental capacities: Broca's area (speech production), the hippocampus (forming new memories), the fusiform face area (recognizing faces), the ventromedial prefrontal cortex (moral and social judgment, as in the case of Phineas Gage). General anesthesia removes consciousness; drugs alter it predictably. This is massive inductive evidence that mental functions are brain functions (Augustine, "The Dependence of Consciousness on the Brain," in *The Myth of an Afterlife*, 2015). A mind with no brain would be the one exception to everything we know about minds.` },
-    { h: "Knowledge and action need mechanisms", t: `Our knowledge comes through causal contact (perception) and is stored in physical structures (synapses). How does a non-physical, non-spatial mind know where and when anything is, or act on matter at particular places? The interaction problem, which Princess Elisabeth of Bohemia pressed against Descartes in 1643, has never been solved. For God it is the same problem in its most extreme form.` },
-    { h: "Conceivability is a weak guide", t: `Swinburne argues: I can conceive of myself existing without a body, so it is possible. But conceivability arguments are notoriously unreliable: people "conceived" of water not being H2O, or of a largest prime, before learning better. Conceiving of a disembodied mind may only show we don't fully understand what a mind is.` }
-  ],
-  replies: [
-    { q: "God isn't like human minds. You can't generalize from brains to God.", a: `Then we lose the grounds for calling God a mind at all. The theist describes God with mental terms (knowing, willing, loving) whose meaning comes from human minds. If those terms apply, the evidence about what minds require applies. If they don't, "God is personal" has no content.`, k: "god not like human minds can't generalize brains spirit different" }
-  ],
-  sources: [
-    "Martin, M. & Augustine, K. (eds.) (2015). The Myth of an Afterlife. Rowman & Littlefield, Part I.",
-    "Swinburne, R. (2016). The Coherence of Theism, 2nd ed. Oxford University Press.",
-    "Kandel, E. et al. (2021). Principles of Neural Science, 6th ed. McGraw-Hill.",
-    "Damasio, A. (1994). Descartes' Error. Putnam.",
-    "Shapiro, L. (ed.) (2007). The Correspondence between Princess Elisabeth of Bohemia and René Descartes. University of Chicago Press."
-  ],
-  keys: "disembodied mind god is spirit immaterial mind without brain mind depends on brain neural dependence interaction problem dualism",
-  rel: ["consciousness", "soul", "nde"]
-},
-{
-  id: "perfect-freedom",
-  cat: "coherence",
-  title: "God Is Both Perfectly Good and Perfectly Free",
-  who: "Classical theism; Thomas Morris; Thomas Flint; responses to William Rowe",
-  claim: `God is perfectly free, under no external constraint, choosing to create out of love. He is also perfectly good, unable to do evil. These are compatible: true freedom is the freedom to do the good, and God's inability to sin is a perfection, not a limitation.`,
-  short: `William Rowe (*Can God Be Free?*, 2004) argued that a perfectly good God would be obligated to create the best world, if there is one. If there is no best world, then for any world God creates, there's a better one he could have created, so a morally perfect being could not settle on any of them. If God has no real alternatives, he is not free in the libertarian sense that the free will defense needs. Either way the classical package becomes unstable.`,
-  points: [
-    { h: "Rowe's dilemma", t: `If there is a best possible world, perfect goodness requires God to create it, so God had no real choice. If there is no best world (for any world, a better one exists), then whatever God creates, he could have done better. A perfectly good being cannot be outdone even by its own other options. So, Rowe argues, either God is not free or no perfectly good being can exist. Responses (Adams' "grace" view; Kraay's "theistic multiverse") are debated, and none has become standard.` },
-    { h: "The theist's own free will defense depends on alternatives", t: `The free will defense says creatures must be able to choose evil to be genuinely free and morally responsible. But God is supposed to be the paradigm of freedom and moral worth, yet unable to choose evil. If freedom without the possibility of evil is the highest freedom, God could have given it to us. See [[heaven-free-will]].` },
-    { h: "Is our world the best God could do?", t: `If God chose freely among options, he chose *this* world, with its smallpox, Holocaust, and five mass extinctions, as either the best or at least as acceptable. Leibniz accepted that this is the best of all possible worlds, which Voltaire mocked in *Candide* after the 1755 Lisbon earthquake. Saying that God chose a world short of the best implies he settled for worse.` }
-  ],
-  replies: [
-    { q: "True freedom is freedom to do good, not to choose evil.", a: `If that's true, then God could have made humans with that freedom, free and incapable of evil, as Christians say the redeemed will be in heaven. Then the free will defense for human evil fails, because the ability to choose evil was not necessary for genuine freedom after all.`, k: "true freedom freedom to do good not choose evil god can't sin perfection" }
-  ],
-  sources: [
-    "Rowe, W. (2004). Can God Be Free? Oxford University Press.",
-    "Adams, R. M. (1972). 'Must God Create the Best?' Philosophical Review 81(3): 317–332.",
-    "Kraay, K. (2010). 'Theism, Possible Worlds, and the Multiverse.' Philosophical Studies 147: 355–368.",
-    "Leibniz, G. W. (1710). Theodicy.",
-    "Voltaire (1759). Candide."
-  ],
-  keys: "god perfectly free perfectly good best possible world rowe can god be free god can't sin freedom choose evil",
-  rel: ["free-will-defense", "heaven-free-will", "omnipotence"]
 }
 ]);

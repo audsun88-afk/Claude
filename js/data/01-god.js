@@ -1,3 +1,4 @@
+/* Arguments for God (19 entries) */
 DEF_ADD([
 {
   id: "kalam",
@@ -37,6 +38,82 @@ DEF_ADD([
   ],
   keys: "kalam cosmological argument first cause universe began beginning cause of universe who caused the universe uncaused cause craig ghazali everything that begins to exist",
   rel: ["contingency", "big-bang", "something-from-nothing", "uncaused-god", "classical-proofs"]
+},
+{
+  id: "big-bang",
+  cat: "god",
+  title: "The Big Bang Proves Creation (and Genesis Predicted It)",
+  who: "Popular apologetics; Robert Jastrow, God and the Astronomers (1978); Hugh Ross, Reasons to Believe",
+  claim: `For centuries, atheists held that the universe was eternal. The Big Bang showed it had a beginning, just as Genesis 1:1 says: "In the beginning God created the heavens and the earth." Atheist scientists like Fred Hoyle resisted the Big Bang because of its theistic implications. The discovery of a cosmic beginning vindicates the Bible.`,
+  short: `The Big Bang model describes the expansion of the universe from a hot, dense state. Whether that was an absolute beginning is open. Genesis 1 does not describe a Big Bang: it describes God shaping pre-existing waters and darkness, a solid dome holding up waters, and the Earth and plants before the Sun and stars. Georges Lemaître, a Catholic priest and the theory's originator, himself warned Pope Pius XII not to treat it as confirming creation.`,
+  points: [
+    { h: "Lemaître rejected the theological reading", t: `The Big Bang theory was proposed by Georges Lemaître, a Belgian priest and physicist. When Pius XII suggested in 1951 that the theory confirmed creation, Lemaître reportedly asked the Vatican to stop, insisting that his cosmology was neutral on metaphysics. He wrote that the theory "remains entirely outside any metaphysical or religious question."` },
+    { h: "Genesis 1 describes a different cosmos", t: `Genesis 1:2 begins with darkness over "the deep" (tehom) and the spirit over "the waters," which are already there. God separates the waters with a *raqia* (1:6–8), a solid firmament or dome that holds back the waters above (compare Job 37:18, "the skies, hard as a cast metal mirror"). Plants appear on day 3, before the Sun on day 4, and the stars are mentioned almost in passing. This is the cosmology of the ancient Near East, close to the Babylonian Enuma Elish, in which Marduk splits the sea-monster Tiamat to form sky and earth. It is not modern cosmology.` },
+    { h: "A beginning isn't established", t: `The classical Big Bang singularity is where general relativity breaks down. Physics does not yet know what happened before the Planck time, or whether "before" even applies. Several respectable models have no absolute beginning: eternal inflation, the Carroll–Chen model, conformal cyclic cosmology (Penrose), and quantum cosmologies. See [[kalam]].` },
+    { h: "Even a beginning wouldn't select Genesis", t: `Many creation myths have beginnings: Babylonian, Egyptian, Hindu (the Nasadiya Sukta of the Rig Veda), Chinese (Pangu). A beginning is consistent with them all. If the universe turned out to be eternal, apologists would presumably not abandon Christianity; Aquinas held that reason alone cannot show the world had a beginning. A hypothesis compatible with both outcomes isn't confirmed by either.` }
+  ],
+  replies: [
+    { q: "Atheists believed in an eternal universe until the Big Bang proved them wrong.", a: `Some scientists, including Hoyle, preferred a steady state. Others, religious and not, accepted the Big Bang when the evidence came in, the cosmic microwave background in 1965. That is how science works: following evidence regardless of anyone's preferences. Whether the Big Bang was an absolute beginning is still an open question in physics, not settled in favor of theism.`, k: "atheists eternal universe proven wrong steady state hoyle" }
+  ],
+  sources: [
+    "Lemaître, G. (1958). 'The Primeval Atom Hypothesis and the Problem of the Clusters of Galaxies.' In La Structure et l'Évolution de l'Univers.",
+    "Kragh, H. (1996). Cosmology and Controversy. Princeton University Press.",
+    "Walton, J. (2009). The Lost World of Genesis One. InterVarsity.",
+    "Smith, M. S. (2010). The Priestly Vision of Genesis 1. Fortress.",
+    "Carroll, S. (2010). From Eternity to Here. Dutton."
+  ],
+  keys: "big bang proves creation genesis predicted beginning in the beginning lemaitre jastrow universe had a beginning bible science",
+  rel: ["kalam", "genesis-creation", "science-in-bible"]
+},
+{
+  id: "something-from-nothing",
+  cat: "god",
+  title: "Atheists Believe Everything Came from Nothing",
+  who: "Popular apologetics (e.g., 'nothing created everything'); responses to Lawrence Krauss, A Universe from Nothing (2012)",
+  claim: `Atheism says that nothing created everything, that the universe popped into being from nothing, uncaused. That is absurd. Even Krauss's "nothing" is really a quantum vacuum, which is something. Only an eternal Creator explains why there is something rather than nothing.`,
+  short: `Atheism, as a position, says nothing about cosmic origins. It is just the absence of belief in gods. Most naturalist philosophers do *not* claim the universe came from absolute nothing. They hold that physical reality is eternal, or that its first state needs no cause, or that "why is there something rather than nothing?" may have no answer. The theist's own position is that God created matter from no pre-existing matter, so "something from nothing" is more accurately the Christian doctrine.`,
+  points: [
+    { h: "Nobody serious says 'nothing created everything'", t: `"Nothing created everything" is a straw man. Naturalist options include: an eternal universe or multiverse; a first physical state that exists necessarily or without cause; and the view that the question has no answer. Graham Oppy, the leading naturalist in philosophy of religion, defends a necessary initial physical state.` },
+    { h: "Krauss's 'nothing' is a red herring on both sides", t: `Krauss's book used "nothing" loosely, to mean a state with no particles or no space, and the philosopher David Albert criticized it sharply in the *New York Times* (2012). Apologists then use Krauss's mistake to suggest that all naturalists are confused. But no part of the case against theism depends on Krauss's terminology.` },
+    { h: "Theism has the same question", t: `"Why is there God rather than nothing?" If the answer is "God exists necessarily," the naturalist can give the same answer about the physical foundation. If "necessary existence" is meaningful at all, it is no more mysterious for a physical reality than for a mind. And positing an uncaused God, in order to avoid an uncaused universe, adds a second uncaused thing.` },
+    { h: "Creatio ex nihilo is the 'something from nothing' view", t: `Christian doctrine (since Irenaeus and Theophilus of Antioch in the 2nd century; Genesis 1 itself begins with pre-existing waters) holds that God made the universe out of nothing. No mechanism is offered: God willed and matter appeared. This is the claim that physical stuff came into being with no physical precursor, which is what apologists find absurd when they attribute it to atheists.` }
+  ],
+  replies: [
+    { q: "Where did the universe come from then?", a: `Honest answer: no one knows, and "I don't know" is better than an answer that has no evidence behind it. Physics has candidate models (eternal inflation, cyclic models, quantum cosmology). "God did it" is not an answer to "where did it come from?" so much as a renaming of the mystery, since you then have to ask where God came from, or accept that something can just exist without a cause, which is what the naturalist says about the universe.`, k: "where did universe come from origin of universe how did everything begin" }
+  ],
+  sources: [
+    "Krauss, L. (2012). A Universe from Nothing. Free Press.",
+    "Albert, D. (2012). 'On the Origin of Everything.' New York Times Book Review, March 23.",
+    "Oppy, G. (2013). The Best Argument against God. Palgrave Macmillan.",
+    "Holt, J. (2012). Why Does the World Exist? Liveright.",
+    "May, G. (1994). Creatio ex Nihilo: The Doctrine of 'Creation out of Nothing' in Early Christian Thought. T&T Clark."
+  ],
+  keys: "something from nothing nothing created everything universe from nothing krauss popped into existence came from nothing where did universe come from atheists believe",
+  rel: ["kalam", "contingency", "big-bang"]
+},
+{
+  id: "uncaused-god",
+  cat: "god",
+  title: "God Doesn't Need a Cause (Who Made God?)",
+  who: "Standard apologetic reply to 'Who made God?' (Craig, Feser, Lennox)",
+  claim: `"Who made God?" is a confused question. God is by definition uncaused and eternal; only things that begin to exist need a cause. Asking who made God is like asking who the bachelor's wife is. Dawkins's "Ultimate Boeing 747" argument, that God would be even more complex than the universe, misunderstands classical theism, in which God is simple and necessary.`,
+  short: `The reply is fair against a naive "everything has a cause" argument, but it shows that uncaused existence is possible, which the naturalist can claim for the universe or its foundation. The theist must then argue that a mind is a better candidate for uncaused existence than physical reality, and no good argument for that is available. Defining God as uncaused doesn't help: definitions can't settle what exists.`,
+  points: [
+    { h: "Special pleading, or a symmetric option", t: `If some things can exist without a cause, the question is which things. The theist says "only God." The naturalist says "the most fundamental physical reality." Without an independent reason to think that minds, rather than physical states, are the kind of thing that can be uncaused, the theist's exemption is special pleading.` },
+    { h: "Definitions don't create existence", t: `"God is by definition uncaused" tells us what the word means. It does not tell us that anything answers to the definition. One could define a "Zog" as an uncaused cause of the universe that is impersonal and mindless, and the definition would work just as well.` },
+    { h: "Simplicity is contested", t: `Classical theists answer Dawkins by saying God is metaphysically simple, without parts. But a being that knows every fact, holds every possible plan, and can bring about any possible world contains, in some sense, all that information. Divine simplicity also faces serious coherence objections (see [[divine-simplicity]]). An infinitely capable mind does not look like the kind of thing one should expect to exist without explanation.` }
+  ],
+  replies: [
+    { q: "God is eternal, so he doesn't need a cause. The universe began, so it does.", a: `That depends on the universe having begun in the absolute sense, which is not established (see [[kalam]]). And if the first physical state, or physical reality as a whole, is eternal or necessary, the same exemption applies to it. The theist's claim adds a mind that has no evidence of its own, so it is the less economical version of the same move.`, k: "god eternal doesn't need cause universe began needs cause who made god" }
+  ],
+  sources: [
+    "Dawkins, R. (2006). The God Delusion. Houghton Mifflin, ch. 4.",
+    "Feser, E. (2017). Five Proofs of the Existence of God, ch. 7.",
+    "Oppy, G. (2013). The Best Argument against God.",
+    "Le Poidevin, R. (1996). Arguing for Atheism. Routledge, ch. 1."
+  ],
+  keys: "who made god who created god god doesn't need cause uncaused eternal special pleading dawkins 747 what caused god",
+  rel: ["kalam", "contingency", "divine-simplicity"]
 },
 {
   id: "contingency",
@@ -102,6 +179,105 @@ DEF_ADD([
   rel: ["contingency", "kalam", "divine-simplicity"]
 },
 {
+  id: "fourth-way",
+  cat: "god",
+  title: "The Fourth Way: Degrees of Perfection",
+  who: "Thomas Aquinas, Summa Theologiae I q.2 a.3 (the Fourth Way); Anselm, Monologion 1–4; Peter Kreeft & Ronald Tacelli (argument 4 of their twenty)",
+  claim: `We find things that are more and less good, true, and noble. "More" and "less" are said of things as they approach a maximum, as a thing is hotter the nearer it is to the hottest. So there is something that is truest, best, and noblest, and therefore most fully in being. Whatever is maximal in a genus causes everything in that genus, as fire, the hottest thing, causes all heat. So there is something that causes the being, goodness, and every perfection of all things, and this we call God.`,
+  form: ["Things exhibit degrees of goodness, truth, and being.", "Degrees imply a maximum against which they are measured.", "The maximum in a genus causes everything in that genus.", "So a maximally perfect being causes all perfections: God."],
+  short: `Comparatives don't require an existing superlative: things can be more or less heavy, smelly, or large without a heaviest, smelliest, or largest thing existing. The "hottest thing causes all heat" premise is Aristotelian physics, which is false. The argument works only inside a Neoplatonic metaphysics of "participation" in which goodness and being are degrees of the same thing, and that metaphysics is exactly what's in question.`,
+  points: [
+    { h: "Comparatives without a maximum", t: `We rank numbers as larger and smaller without there being a largest number. We rank smells as stronger and weaker without a maximally smelly object. A scale of comparison needs a standard or an ordering, not an actual instance at the top. Anthony Kenny (*The Five Ways*, 1969) shows that the inference from "more and less" to "a maximum exists" is invalid on its own terms.` },
+    { h: "The physics is obsolete", t: `Aquinas's illustration, that fire is the hottest thing and the cause of all heat, comes from Aristotle (*Metaphysics* II.1). Fire isn't the hottest thing (stellar cores are millions of degrees hotter), and heat isn't caused by participation in a maximally hot thing. It's molecular motion. The premise that the maximum of a genus causes every member of the genus has no modern defender outside Thomism.` },
+    { h: "It assumes a contested metaphysics", t: `The argument needs goodness, truth, and being to be "convertible": degrees of the same thing, so that the most good is the most real. That's a Neoplatonic doctrine. Without it, there's no single scale on which a cockroach is "less" than an angel in the relevant sense. Defenders like Feser rely on the full Thomistic framework, which the existential inertia and modal collapse objections challenge (see [[classical-proofs]], [[divine-simplicity]]).` },
+    { h: "The gap remains", t: `Even granting a maximum of goodness, nothing shows it's a person, that it created anything, or that it's the God of the Bible. A Platonic Form of the Good would do just as well.` }
+  ],
+  replies: [
+    { q: "You can only call something 'less good' by reference to a perfect standard of goodness.", a: `You can rank things on a scale without the top of the scale being instantiated, as we do with numbers and lengths. And if the standard is an ideal, it's a concept, not necessarily a being. A "perfect circle" is a standard for judging drawn circles, but no perfect circle need exist anywhere.`, k: "less good perfect standard measure goodness reference" }
+  ],
+  sources: [
+    "Aquinas. Summa Theologiae I, q.2, a.3.",
+    "Kenny, A. (1969). The Five Ways. Routledge, ch. 5.",
+    "Feser, E. (2017). Five Proofs of the Existence of God. Ignatius Press.",
+    "Kreeft, P. & Tacelli, R. (1994). Handbook of Christian Apologetics. InterVarsity, ch. 3.",
+    "Davies, B. (1992). The Thought of Thomas Aquinas. Oxford University Press."
+  ],
+  keys: "fourth way degrees of perfection gradation more and less good true noble maximum perfection aquinas hottest standard of goodness",
+  rel: ["classical-proofs", "moral-argument", "fifth-way"]
+},
+{
+  id: "fifth-way",
+  cat: "god",
+  title: "The Fifth Way: Natural Things Act for Ends",
+  who: "Thomas Aquinas, Summa Theologiae I q.2 a.3 (the Fifth Way); Edward Feser, Aquinas (2009); Alvin Plantinga's 'Kenny-style teleological argument' (argument G in 'Two Dozen (or so) Theistic Arguments')",
+  claim: `Things without intelligence, such as natural bodies, act for an end: they act always or nearly always in the same way to obtain the best result. A match reliably produces fire and not ice, an acorn an oak and not a rose. Something that lacks awareness can't move toward an end unless it's directed by something with awareness and intelligence, as an arrow is directed by an archer. So there's an intelligence by which all natural things are directed to their ends.`,
+  form: ["Unintelligent natural things act for ends (are directed toward specific outcomes).", "Whatever lacks intelligence can be directed toward an end only by an intelligence.", "So an intelligence directs all natural things toward their ends: God."],
+  short: `Modern physics replaced Aristotle's final causes with laws and initial conditions, and biology explains apparent purposes by natural selection. The remaining kernel, that causes reliably "point" to their typical effects, is captured by the metaphysics of causal powers and dispositions, and philosophers who defend powers (Molnar, Mumford, Bird) argue that such directedness requires no mind. Premise 2 is the whole argument, and it's asserted, not shown.`,
+  points: [
+    { h: "Final causes left physics for good reasons", t: `Seventeenth-century science made progress by dropping "for the sake of" explanations from physics. Objects follow laws describable without goals. Galileo and Newton didn't need to ask what a falling stone is "for." The Fifth Way's intuition that regular behavior needs a purpose-giver belongs to the Aristotelian picture that this shift replaced.` },
+    { h: "Directedness without minds", t: `The most sophisticated version (Feser) says even the simplest causes are "directed": a match is directed toward fire. Contemporary metaphysicians of powers agree that dispositions are directed toward their manifestations. George Molnar (*Powers*, 2003) calls this "physical intentionality," and argues that it's a basic feature of natural properties, needing no mind behind it. Accepting directedness doesn't commit anyone to a director.` },
+    { h: "The archer analogy assumes the conclusion", t: `An arrow needs an archer because arrows are artifacts with no internal tendency to fly toward a target. Natural objects have their own causal powers. The analogy treats nature as an artifact, which is the conclusion of the argument, not a premise.` },
+    { h: "Biological teleology has a known mechanism", t: `Where nature looks purposive, as with eyes that are "for" seeing, natural selection explains why: traits persist because of their effects on survival and reproduction (Wright, 1973; Millikan, 1984). Philosophers of biology use teleological language freely without invoking a designer.` }
+  ],
+  replies: [
+    { q: "Even laws of nature need something to make things obey them.", a: `On one view, laws are just descriptions of regularities (Humeans). On another, they flow from the intrinsic powers of things (dispositionalists). Neither view needs an external enforcer. Saying a mind "makes things obey" adds a new mystery: how does a non-physical mind push particles?`, k: "laws need enforcer obey laws of nature someone makes" }
+  ],
+  sources: [
+    "Aquinas. Summa Theologiae I, q.2, a.3.",
+    "Feser, E. (2009). Aquinas: A Beginner's Guide. Oneworld.",
+    "Molnar, G. (2003). Powers: A Study in Metaphysics. Oxford University Press.",
+    "Mumford, S. & Anjum, R. L. (2011). Getting Causes from Powers. Oxford University Press.",
+    "Wright, L. (1973). 'Functions.' Philosophical Review 82(2): 139–168.",
+    "Plantinga, A. (2007). 'Two Dozen (or so) Theistic Arguments.' In Baker (ed.), Alvin Plantinga. Cambridge University Press."
+  ],
+  keys: "fifth way final causes teleology natural things act for an end directed archer arrow acorn oak intelligence directs nature purpose",
+  rel: ["design-intuition", "classical-proofs", "math-and-logic", "proper-function"]
+},
+{
+  id: "neoplatonic-proof",
+  cat: "god",
+  title: "The Neo-Platonic Proof: Composite Things Need a Simple One",
+  who: "Plotinus, Enneads; Edward Feser, Five Proofs of the Existence of God (2017), ch. 2",
+  claim: `Everything we experience is composed of parts: physical parts, or form and matter, or essence and existence. A composite thing depends on something to bring and hold its parts together. That dependence can't regress infinitely in a series of things that exist right now, so there must be something with no parts at all, the absolutely simple One, which causes the unity of everything else. Such a being is unique, immutable, eternal, and the source of all being: God.`,
+  short: `The argument depends on two contested premises: that composite things need a continuous cause of their composition, and that such a series of causes must end in something absolutely simple. Existential inertia denies the first, and the second leads into the paradoxes of divine simplicity, including the modal collapse that makes everything necessary. And it's unclear why the "One" of Plotinus, which he held to be impersonal and beyond thought, should be the personal God of Christianity.`,
+  points: [
+    { h: "Composites don't obviously need sustaining", t: `A molecule's atoms are held together by electromagnetic forces among the parts themselves. Why must there also be something outside, right now, keeping the composite together? The existential inertia thesis says things persist unless destroyed (Schmid & Linford, 2023; see [[classical-proofs]]).` },
+    { h: "Simplicity is the problem, not the answer", t: `An absolutely simple being, with no distinction between its essence, existence, knowledge, and will, faces the objections in [[divine-simplicity]]: it seems to be a property rather than a person, and its necessary act of creating makes creation necessary.` },
+    { h: "Plotinus's One isn't the biblical God", t: `For Plotinus, the One is beyond being and thought; it doesn't know, choose, or love in any personal sense, and the world emanates from it necessarily. The argument, if it worked, would support Neoplatonism, not Christianity.` }
+  ],
+  replies: [],
+  sources: [
+    "Plotinus. Enneads V.4; VI.9.",
+    "Feser, E. (2017). Five Proofs of the Existence of God, ch. 2.",
+    "Schmid, J. C. & Linford, D. (2023). Existential Inertia and Classical Theistic Proofs. Springer.",
+    "Gerson, L. (1994). Plotinus. Routledge."
+  ],
+  keys: "neoplatonic proof composite parts simple one plotinus feser composition requires cause absolutely simple being",
+  rel: ["classical-proofs", "divine-simplicity", "contingency"]
+},
+{
+  id: "interacting-whole",
+  cat: "god",
+  title: "The World as an Interacting Whole",
+  who: "Peter Kreeft & Ronald Tacelli, Handbook of Christian Apologetics (1994), argument 8",
+  claim: `The universe isn't a collection of separate things but a single, coordinated system. Its parts interact according to the same laws everywhere, forming an intelligible order in which everything is related to everything else. Such a unified, interacting order can't be explained by any of its parts, each of which is only one element in the system. It requires an intelligent cause outside the system that ordered the whole.`,
+  short: `Global order emerges from local rules all the time: crystals, galaxies, weather systems, and ecosystems are coordinated wholes that arise from parts following simple laws. The deepest "unity" of the universe, the same laws everywhere, is either a brute fact or explained by physics (symmetry principles, a common origin in the early universe). Positing a mind to explain the unity of all things moves the unity into the mind, where it's just as unexplained.`,
+  points: [
+    { h: "Order from local rules", t: `Snowflakes, convection cells, flocking birds, and spiral galaxies show coordinated global patterns produced by parts following local rules, with no outside organizer. The study of complex systems and self-organization (Prigogine; Kauffman, *At Home in the Universe*, 1995) is built on this.` },
+    { h: "Uniform laws have physical explanations", t: `That the same laws hold everywhere is connected to symmetries (Noether's theorem links conservation laws to symmetries of space and time) and to the universe's common origin in a hot, dense state. Where physics stops, the uniformity is a basic fact, which theists also need: God's single nature is the brute fact on their account.` },
+    { h: "A designing mind doesn't help", t: `The theist explains the unity of the world by a single mind. But a mind that thinks the whole universe at once is at least as unified and complex as the universe itself, and its unity is left unexplained. This is the regress Hume raised in the *Dialogues* (Part IV).` }
+  ],
+  replies: [],
+  sources: [
+    "Kreeft, P. & Tacelli, R. (1994). Handbook of Christian Apologetics, ch. 3.",
+    "Kauffman, S. (1995). At Home in the Universe. Oxford University Press.",
+    "Hume, D. (1779). Dialogues Concerning Natural Religion, Part IV.",
+    "Wilczek, F. (2015). A Beautiful Question: Finding Nature's Deep Design. Penguin."
+  ],
+  keys: "world as interacting whole unified system universe order everything related interconnected coordinated whole needs cause",
+  rel: ["design-intuition", "math-and-logic", "fine-tuning"]
+},
+{
   id: "fine-tuning",
   cat: "god",
   title: "The Fine-Tuning Argument",
@@ -141,135 +317,34 @@ DEF_ADD([
   rel: ["design-intuition", "cumulative-case", "big-bang"]
 },
 {
-  id: "ontological",
+  id: "design-intuition",
   cat: "god",
-  title: "The Ontological Argument",
-  who: "Anselm, Proslogion II–III (1078); Descartes, Meditation V; Alvin Plantinga, The Nature of Necessity (1974); Kurt Gödel's ontological proof",
-  claim: `God is "that than which nothing greater can be conceived." A being that exists in reality is greater than one that exists only in the mind. So if God existed only in the mind, we could conceive of something greater, which is a contradiction. So God exists in reality. Plantinga's modal version: it is possible that a maximally great being exists, meaning a being with maximal excellence in every possible world. If that is possible, then it exists in some possible world. A being that exists necessarily in some world exists in all worlds, including the actual one.`,
-  form: ["It is possible that a maximally great being exists.", "If it is possible, a maximally great being exists in some possible world.", "If it exists in some possible world, it exists in every possible world (by definition of maximal greatness).", "Therefore a maximally great being exists in the actual world."],
-  short: `The modal version is valid, but its key premise, "a maximally great being is *possible*," is equivalent in S5 modal logic to "a maximally great being *exists*." Accepting it means accepting the conclusion in advance. A perfectly symmetric argument shows that *no* maximally great being exists, starting from the equally plausible premise "it is possible that no maximally great being exists." Plantinga himself conceded that his argument does not *prove* God's existence. It shows only that belief in God is not irrational for someone who already accepts the premise.`,
+  title: "Paley's Watch and the Intuition of Design",
+  who: "William Paley, Natural Theology (1802); popular apologetics ('a painting needs a painter'; 'look at the trees')",
+  claim: `If you found a watch on a heath, you would infer a watchmaker from its intricate arrangement of parts for a purpose. Living things and the universe are far more intricate than any watch. A painting needs a painter, a building needs a builder, and creation needs a Creator. Just look at the beauty and order of nature.`,
+  short: `Paley's argument was a reasonable inference in 1802. Darwin gave a natural mechanism for the appearance of design: variation plus selection, accumulated over deep time. We recognize human artifacts as designed because we know what humans make and how, and because artifacts contrast with nature. The intuition that living things are designed is a well-studied cognitive bias ("promiscuous teleology"), not a reliable perception.`,
   points: [
-    { h: "Existence is not a great-making property", t: `Kant's objection (*Critique of Pure Reason*, A598/B626): "existence" is not a real predicate that adds to the concept of a thing. A hundred real dollars contain no more dollars than a hundred imagined ones. Anselm's version needs existence to be a perfection that a concept can lack, and that treats a property of concepts (being instantiated) as if it were a property of things.` },
-    { h: "The parodies: Gaunilo's island and its descendants", t: `Gaunilo (c. 1078) argued the same way for a "lost island" greater than any conceivable island. Anselm replied that the argument works only for necessary beings. But the modal form simply builds necessity into the definition, so you can define a "maximally great pizza" or, more seriously, a "necessarily existing evil god," and the pattern of inference goes through. When an argument form proves too much, it is defective.` },
-    { h: "The reverse ontological argument", t: `In the modal logic S5, which the argument relies on: if it is *possible* that a necessary being does *not* exist, then it does not exist. "Possibly, no maximally great being exists" seems at least as intuitive as "possibly, one does." Imagining a world of just one electron and nothing else seems coherent. The argument therefore reduces to a stalemate of modal intuitions, and you only reach God if you already believe in God (Rowe, 1976; Oppy, 1995).` },
-    { h: "Plantinga's own assessment", t: `Plantinga wrote that the argument does not "establish" God's existence. It shows that belief in God is rationally acceptable for anyone who accepts its central premise (*The Nature of Necessity*, 1974, p. 221). Even its most sophisticated defender does not claim what popular apologists claim for it.` },
-    { h: "Gödel's proof collapses modality", t: `Gödel's formal ontological proof is valid in its system, but Jordan Howard Sobel (1987) showed that its axioms entail *modal collapse*: every truth becomes a necessary truth, so nothing could have been otherwise. Repaired versions (Anderson, Fitting) avoid that collapse by adopting axioms whose plausibility is just as contested. A computer-assisted check (Benzmüller & Woltzenlogel Paleo, 2014) confirmed the inconsistency of one variant and the modal collapse.` },
-    { h: "Is maximal greatness even coherent?", t: `The possibility premise also requires that the great-making properties be *jointly* coherent: omnipotence with omniscience, perfect goodness with perfect freedom, timelessness with personhood. Each pairing has well-known problems (see [[omnipotence]], [[foreknowledge]], [[perfect-freedom]], [[timeless-god]]). If the bundle is incoherent, a maximally great being is not even possible, and the argument fails at its first step.` }
+    { h: "Darwin answered Paley", t: `Natural selection is a mechanism that produces adaptation without foresight. Darwin had studied Paley at Cambridge and admired him, and wrote that Paley's argument "fails, now that the law of natural selection has been discovered" (*Autobiography*). The appearance of design in organisms is real. Its cause is cumulative selection, which can be observed in the lab, in the field (Darwin's finches; Grant & Grant), and in computer simulations.` },
+    { h: "We infer watchmakers from knowledge of watchmakers", t: `We know the watch was made because we know who makes watches, how, and why. We have seen watch factories. Hume's point: the design inference is an argument from analogy, and analogies are only as strong as our experience of the cause. We have no experience of universe-makers. And the watch stands out on the heath precisely *because* the heath (nature) is not like it.` },
+    { h: "Design looks like history, not engineering", t: `Real biological "design" carries the marks of tinkering. The recurrent laryngeal nerve loops down around the aorta and back up, which makes it about 4.5 meters long in a giraffe, a relic of our fish ancestry. The vertebrate retina is wired backwards, creating a blind spot. The human birth canal passes through a pelvis built for walking, and the male urethra passes through the prostate. These are not choices an omniscient engineer would make. They are compromises a historical process would leave behind.` },
+    { h: "We are built to see design", t: `Developmental psychologist Deborah Kelemen found that children (and adults under time pressure) attribute purpose to natural objects, saying that rocks are "pointy so animals can scratch on them." She calls this "promiscuous teleology." Agency detection is biased toward false positives because, in evolutionary terms, mistaking wind for a predator costs little while the reverse can be fatal (see [[csr]]). An intuition we know to be systematically over-sensitive is weak evidence.` },
+    { h: "Whose design?", t: `Even if design were granted, nothing would follow about the number, goodness, or identity of designers. Hume asked why not a committee of gods, an infant deity's first botched attempt, or an aged deity's last (*Dialogues*, V). The parasitic wasps that eat caterpillars alive from the inside, which troubled Darwin, are also "designs." See [[animal-suffering]].` }
   ],
   replies: [
-    { q: "The possibility premise is very modest. Surely God is at least possible.", a: `In S5, "possibly necessary" collapses into "necessary." So the "modest" premise is not modest at all: granting it means granting that God actually exists. Our everyday sense of "possible" means "for all I know." That is epistemic possibility, and it does not support the metaphysical possibility the argument needs. In the epistemic sense, a world with no God is equally "possible."`, k: "possibility premise modest possible god possibly exists s5 maximally great" },
-    { q: "Parodies like the perfect island fail because islands can't have intrinsic maxima.", a: `Fine, then use parodies built from properties that do have intrinsic maxima, such as the "maximally evil" being or a "necessarily existing non-God" (a world-feature that rules God out). The underlying problem is that the argument form turns any definition that includes necessary existence into a proof, and the conflicting proofs cannot all succeed.`, k: "gaunilo island parody intrinsic maximum perfect island pizza" }
+    { q: "A painting needs a painter and a building needs a builder. Creation needs a Creator.", a: `That assumes the conclusion by calling the universe "creation." Paintings and buildings are known to be made by humans. Snowflakes, crystals, and river deltas are intricate and patterned, but come from natural processes. The question is which category living things and the universe belong to, and the evidence (fossils, genetics, observed selection) puts life in the snowflake category, not the painting one.`, k: "painting needs painter building builder creation creator look around trees" },
+    { q: "Just look at the trees, the stars, a newborn baby. How can you not see God?", a: `Beauty and complexity are real, and they are moving. But the same nature includes malaria, childhood cancer, and parasites that blind children (*Onchocerca volvulus*, river blindness). If the beautiful parts are evidence of a good designer, the horrific parts are evidence too. Natural processes explain both without anyone choosing them.`, k: "look at trees nature beauty stars baby how can you not see god creation obvious romans 1" }
   ],
   sources: [
-    "Anselm. Proslogion II–III; Gaunilo, 'On Behalf of the Fool.'",
-    "Kant, I. (1781/1787). Critique of Pure Reason A592/B620–A602/B630.",
-    "Plantinga, A. (1974). The Nature of Necessity. Oxford: Clarendon, ch. 10.",
-    "Rowe, W. (1976). 'Modal Versions of the Ontological Argument.' In Pojman (ed.), Philosophy of Religion.",
-    "Oppy, G. (1995). Ontological Arguments and Belief in God. Cambridge University Press.",
-    "Sobel, J. H. (1987). 'Gödel's Ontological Proof.' In Thomson (ed.), On Being and Saying. MIT Press.",
-    "Benzmüller, C. & Woltzenlogel Paleo, B. (2014). 'Automating Gödel's Ontological Proof of God's Existence with Higher-order Automated Theorem Provers.' ECAI 2014.",
-    "Oppy, G. 'Ontological Arguments.' Stanford Encyclopedia of Philosophy."
+    "Paley, W. (1802). Natural Theology.",
+    "Hume, D. (1779). Dialogues Concerning Natural Religion, Parts II–VIII.",
+    "Darwin, C. (1859). On the Origin of Species; (1887) Autobiography.",
+    "Dawkins, R. (1986). The Blind Watchmaker. Norton.",
+    "Kelemen, D. (2004). 'Are Children \"Intuitive Theists\"? Reasoning about Purpose and Design in Nature.' Psychological Science 15(5): 295–301.",
+    "Grant, P. & Grant, R. (2014). 40 Years of Evolution: Darwin's Finches on Daphne Major Island. Princeton University Press.",
+    "Coyne, J. (2009). Why Evolution Is True. Viking."
   ],
-  keys: "ontological argument anselm maximally great being greatest conceivable plantinga modal godel possible worlds necessary existence perfect being",
-  rel: ["omnipotence", "divine-simplicity", "contingency"]
-},
-{
-  id: "moral-argument",
-  cat: "god",
-  title: "The Moral Argument",
-  who: "William Lane Craig; C. S. Lewis, Mere Christianity (1952); Robert Adams, Finite and Infinite Goods (1999); David Baggett & Jerry Walls",
-  claim: `If God does not exist, objective moral values and duties do not exist. But objective moral values and duties do exist: torturing children for fun is really wrong, not just disliked. So God exists. Without God, morality is just evolved feeling or social convention. There is no grounding for real obligation, no moral lawgiver behind the moral law, and no ultimate accountability.`,
-  form: ["If God does not exist, objective moral values and duties do not exist.", "Objective moral values and duties do exist.", "Therefore, God exists."],
-  short: `Premise 1 is false, or at least unsupported. Most moral realists in academic philosophy are not theists, and secular moral realism (naturalist and non-naturalist) is a thriving research program. Adding God does not ground morality either: the Euthyphro dilemma shows that divine commands make morality arbitrary, or presuppose a standard of goodness independent of God. And the evolutionary debunking argument the theist uses against secular ethics, if it works, also undercuts the theist's own moral intuitions, including the one in premise 2.`,
-  points: [
-    { h: "Euthyphro's dilemma, still unanswered", t: `Is an act good because God commands it, or does God command it because it is good? If the first, morality is arbitrary: had God commanded cruelty, cruelty would be obligatory. If the second, goodness is independent of God and God is not its source. The standard reply is that goodness is grounded in God's *nature*, not his will. That moves the dilemma back a step. Is God's nature good because it is God's, which makes "good" mean nothing more than "whatever God's nature is like"? Or because it has features like love, justice, and mercy that are good in themselves, in which case those features ground goodness and God is not needed (Morriston, 2012; Wielenberg, 2014).` },
-    { h: "Secular moral realism is a mainstream position", t: `Erik Wielenberg (*Robust Ethics*, OUP 2014) defends non-theistic robust realism: basic ethical facts are necessary truths, like mathematical truths, and need no further foundation. Derek Parfit (*On What Matters*, 2011), David Enoch (*Taking Morality Seriously*, 2011), and Russ Shafer-Landau (*Moral Realism*, 2003) defend realism without God. Cornell realists (Boyd, Brink, Railton) identify moral properties with natural properties connected to well-being. In the 2020 PhilPapers survey, a majority of professional philosophers accept or lean toward moral realism, and a supermajority accept or lean toward atheism. Plenty of philosophers hold both.` },
-    { h: "God's commands don't explain obligation either", t: `If moral facts need grounding, why does "God commanded it" ground obligation? Only if we already have an obligation to obey God, and that obligation cannot itself come from a command without circularity. Either there is a moral fact (obey God) that God doesn't ground, or the theory is circular. "Because he's powerful" grounds prudence, not morality. "Because he's good" presupposes a standard of goodness.` },
-    { h: "The debunking argument cuts both ways", t: `Theists often argue that evolution would give us moral intuitions useful for survival, not true ones, so the naturalist can't trust them. If that argument works, it undermines *everyone's* intuitive moral knowledge, including the theist's belief that "torturing children is objectively wrong" (premise 2), since the theist's faculties came from the same evolutionary process. The theist can reply that God guided evolution, but that assumes God exists, which is the conclusion. On the other side, Wielenberg (2014) and others have developed "third-factor" accounts in which evolution tracked moral truth because fitness correlates with features, such as others' pain, that are themselves morally relevant.` },
-    { h: "Accountability is not grounding", t: `"Without God, Hitler gets away with it" is about cosmic justice, not about whether morality is objective. The wrongness of the Holocaust does not depend on whether anyone is later punished. And making morality depend on future punishment and reward reduces ethics to prudence, which is the opposite of the moral seriousness the argument appeals to.` },
-    { h: "The Bible's commands are an awkward foundation", t: `If God's commands constitute morality, the commands to kill every Amalekite infant (1 Samuel 15:3), to stone Sabbath-breakers (Numbers 15:32–36), and the permission to buy slaves as property (Leviticus 25:44–46) were morally right when given. Most Christians today find these horrifying, which shows they evaluate God's commands by a moral standard they hold independently. That is the very independence the moral argument denies. See [[slavery]] and [[genocide]].` }
-  ],
-  replies: [
-    { q: "Goodness is grounded in God's nature, not his commands, so Euthyphro is a false dilemma.", a: `Then ask: is God's nature good because it has features like love, justice, and honesty, or simply because it is God's? If the first, those features are what make things good, and God's nature merely *exemplifies* a standard. If the second, calling God "good" says only that God is like God, and the claim that "God is good" becomes empty. Morriston (2012, *Faith and Philosophy*) and Wielenberg (2014) develop this in detail.`, k: "god's nature not commands euthyphro false dilemma third option grounded in nature" },
-    { q: "Without God, morality is just your opinion. Who's to say Hitler was wrong?", a: `The fact that torturing people for fun is wrong does not depend on anyone's opinion, including God's. Secular realists hold that it is wrong because of what it does to sentient beings, a fact that would hold in any world. "Who's to say?" confuses who *knows* moral truths (epistemology) with what *makes* them true (ontology). We know Hitler was wrong the same way the theist does: from the reality of suffering and the equal worth of persons, which the theist also has to rely on to recognize which commands are divine.`, k: "just opinion subjective who's to say hitler wrong relative relativism" },
-    { q: "Evolution only gives survival instincts, not real morality. Atheists can't trust their moral sense.", a: `If evolution undermines moral knowledge, it does so for theists too, since their moral faculties evolved the same way. Then premise 2 has no support. If the theist says God guided the process, they are assuming the conclusion. The naturalist can also explain why evolved cognition tracks moral truth: the features that make actions wrong, such as harm, suffering, and betrayal, are the same features that matter for social survival.`, k: "evolution survival instinct can't trust moral sense herd morality debunking" },
-    { q: "If there's no God, there's no ultimate justice, so why be moral?", a: `That is a question about motivation, not about whether morality is objective. People are moral because they care about others, value fairness, and understand that cruelty is bad. If someone would be cruel but for fear of hell, that is not morality but self-interest. The existence of cosmic justice is also exactly what's in question, so it can't be assumed.`, k: "why be moral ultimate justice accountability no consequences get away with it" }
-  ],
-  sources: [
-    "Plato. Euthyphro 10a.",
-    "Craig, W. L. (2008). Reasonable Faith, 3rd ed. Crossway, ch. 4.",
-    "Adams, R. M. (1999). Finite and Infinite Goods. Oxford University Press.",
-    "Wielenberg, E. J. (2014). Robust Ethics: The Metaphysics and Epistemology of Godless Normative Realism. Oxford University Press.",
-    "Morriston, W. (2012). 'God and the Ontological Foundation of Morality.' Religious Studies 48(1): 15–34.",
-    "Enoch, D. (2011). Taking Morality Seriously. Oxford University Press.",
-    "Parfit, D. (2011). On What Matters. Oxford University Press.",
-    "Shafer-Landau, R. (2003). Moral Realism: A Defence. Oxford University Press.",
-    "Street, S. (2006). 'A Darwinian Dilemma for Realist Theories of Value.' Philosophical Studies 127: 109–166.",
-    "Bourget, D. & Chalmers, D. (2023). 'Philosophers on Philosophy: The 2020 PhilPapers Survey.' Philosophers' Imprint 23."
-  ],
-  keys: "moral argument objective morality moral law lawgiver without god everything permitted right wrong good evil grounding euthyphro ethics hitler",
-  rel: ["slavery", "genocide", "atheist-regimes", "meaning"]
-},
-{
-  id: "consciousness",
-  cat: "god",
-  title: "The Argument from Consciousness",
-  who: "J. P. Moreland, Consciousness and the Existence of God (2008); Richard Swinburne, The Evolution of the Soul (1986); Robert Adams",
-  claim: `Conscious experience, the felt quality of seeing red or feeling pain, cannot be explained by matter in motion. Physical science describes structure and dynamics, but consciousness is something over and above these. The emergence of consciousness from unconscious matter is inexplicable on naturalism and expected on theism, since the ultimate reality is itself a conscious mind. So consciousness is evidence for God.`,
-  short: `The hard problem of consciousness is real, but an unsolved problem is not evidence for a particular supernatural answer. Theism does not explain consciousness either: "a mind created minds" restates the mystery. Meanwhile, the overwhelming evidence that consciousness depends on brains (lesions, anesthesia, neurochemistry, development, decline) counts *against* minds that exist without brains. That is exactly the kind of mind God is supposed to be.`,
-  points: [
-    { h: "A gap is not a God", t: `Neither the theist nor the naturalist has a *mechanistic* account of why some physical processes are experienced. Every historical "only God can explain X" (lightning, disease, the variety of life, the motions of the planets) has been replaced by natural explanations. Theism does not offer a mechanism either. "God made it so" is not an explanation of *how* experience arises from anything, physical or otherwise.` },
-    { h: "Mind depends on brain", t: `Every change in consciousness we can measure is correlated with a change in the brain: anesthetics switch it off, strokes remove specific capacities (language, face recognition, moral judgment), psychedelics alter it, dementia dismantles personality, and development builds it up gradually. The most economical inference is that consciousness is something brains do. That makes a disembodied, omniscient, eternal consciousness, God, the most unlike anything in our evidence (see [[disembodied-mind]] and Augustine & Martin, *The Myth of an Afterlife*, 2015).` },
-    { h: "Naturalism has real options", t: `Philosophy of mind offers physicalist identity theories, functionalism, illusionism (Frankish, Dennett), and Russellian monism or panpsychism (Strawson, Goff). The last two treat experience as a fundamental feature of matter, which removes the "emergence from nothing" problem without any God. The hard problem is a research problem, not a dead end.` },
-    { h: "Even dualism wouldn't get you to God", t: `If consciousness were a non-physical property, that would show that reality contains more than physics describes. It would not show that there is a personal Creator. Dualism is compatible with atheism (many Buddhists and Jains are dualist atheists), and property dualism is compatible with naturalism (Chalmers' "naturalistic dualism").` },
-    { h: "Theism makes the wrong predictions", t: `If consciousness came from a divine mind, why does it appear only late, only in complex nervous systems, only after long evolutionary development, and only in a gradient (from nematodes to mammals) that tracks neural complexity? This is what we'd expect if consciousness is a biological phenomenon. It is surprising if it is a gift from a pre-existing mind who could have given it to anything.` }
-  ],
-  replies: [
-    { q: "Science will never explain qualia. It's a category error.", a: `Perhaps, though "never" has a poor track record. But even a permanent explanatory gap only shows the limits of our understanding. It doesn't give us positive evidence that a personal God exists. Panpsychism and Russellian monism, for instance, take qualia as fundamental without any God at all.`, k: "qualia never explain category error what it is like hard problem chalmers" },
-    { q: "Near-death experiences prove consciousness survives without the brain.", a: `The best prospective tests of that claim, the AWARE studies, found no verified case of "seeing" hidden targets during cardiac arrest. See [[nde]].`, k: "near death experience out of body consciousness survives brain death" }
-  ],
-  sources: [
-    "Moreland, J. P. (2008). Consciousness and the Existence of God. Routledge.",
-    "Chalmers, D. (1996). The Conscious Mind. Oxford University Press.",
-    "Martin, M. & Augustine, K. (eds.) (2015). The Myth of an Afterlife: The Case against Life After Death. Rowman & Littlefield.",
-    "Frankish, K. (2016). 'Illusionism as a Theory of Consciousness.' Journal of Consciousness Studies 23(11–12).",
-    "Goff, P. (2017). Consciousness and Fundamental Reality. Oxford University Press.",
-    "Koch, C. (2019). The Feeling of Life Itself. MIT Press."
-  ],
-  keys: "consciousness argument from mind qualia hard problem subjective experience matter can't think soul awareness materialism can't explain",
-  rel: ["disembodied-mind", "soul", "nde", "argument-from-reason"]
-},
-{
-  id: "argument-from-reason",
-  cat: "god",
-  title: "The Argument from Reason and Plantinga's EAAN",
-  who: "C. S. Lewis, Miracles (1947, rev. 1960); Victor Reppert, C. S. Lewis's Dangerous Idea (2003); Alvin Plantinga, Warrant and Proper Function (1993), Where the Conflict Really Lies (2011)",
-  claim: `If naturalism and evolution are both true, our cognitive faculties were shaped for survival, not truth. Evolution cares about adaptive behavior, not true belief. So the probability that our faculties are reliable, given naturalism and evolution, is low or inscrutable. Anyone who accepts naturalism and evolution therefore has a defeater for all their beliefs, including naturalism itself. Naturalism is self-defeating. Lewis's version: if thoughts are just the product of non-rational causes, we have no reason to trust them.`,
-  form: ["P(our faculties are reliable | naturalism & evolution) is low or inscrutable.", "Anyone who accepts N&E and sees this has a defeater for the belief that their faculties are reliable.", "That defeater spreads to every belief, including N&E itself.", "So N&E is self-defeating and cannot rationally be accepted."],
-  short: `True beliefs are, on the whole, more useful than false ones for an organism that has to find food, avoid predators, and navigate a social world. So selection favors reliable belief-forming faculties within the domains that matter for survival. Plantinga's argument works only if belief *content* has no effect on behavior, which is semantic epiphenomenalism, and most naturalists reject it. Fitelson and Sober (1998) found technical problems in the probability reasoning. And we actually do find our faculties unreliable exactly where evolution predicts they would be: in abstract, statistical, and long-range reasoning.`,
-  points: [
-    { h: "Truth tracks fitness", t: `An animal that believes "there is a lion" when there is a lion, and acts accordingly, does better than one whose beliefs are disconnected from its surroundings. Plantinga's examples, such as a hominid who wants to be eaten but believes running away is the way to get eaten, need fantastically gerrymandered combinations of beliefs and desires. Simple, general, reliable belief formation is cheaper for an organism than vast compensating systems of error (Ramsey, 2002; Draper, 2002; Law, 2012).` },
-    { h: "The argument assumes content doesn't cause behavior", t: `If the *content* of a belief, what it is about, is causally relevant to behavior, as teleosemantic theories of content hold (Millikan, Papineau), then selection acts on content and true content is favored. Plantinga's argument needs semantic epiphenomenalism, or a reductive materialism in which content "floats free" of the physical properties that cause behavior. Naturalists can reject both.` },
-    { h: "Probability problems", t: `Fitelson and Sober (1998) showed that Plantinga's formal reasoning mixes up the probability of reliability given N&E in general with the probability given our total evidence. They also showed that "inscrutable" probabilities do not generate defeaters the way he claims. Once we condition on what we know about our own success (predicting eclipses, building aircraft), the reliability of our faculties is very well confirmed.` },
-    { h: "We have exactly the reliability evolution predicts", t: `Our perception and everyday reasoning are good. Our intuitive statistics (base-rate neglect), probability (gambler's fallacy), physics (impetus intuitions), and agency detection (seeing faces in clouds, gods in storms) are systematically bad, as Kahneman and Tversky's research program documents. That pattern fits evolution, which built faculties for medium-sized survival problems. It fits poorly with faculties designed by an omniscient God for truth.` },
-    { h: "It defeats theism too", t: `If we cannot trust our faculties without first knowing they were designed, the theist has to rely on those same faculties to arrive at "God designed my faculties." That is circular. Any skeptical argument strong enough to defeat naturalism also defeats the theist's reasoning toward God. Descartes faced this problem in the "Cartesian circle."` }
-  ],
-  replies: [
-    { q: "If your brain is just chemicals, why trust it to reason correctly?", a: `Because the chemicals are organized into a system that was shaped by billions of selection events in which tracking reality mattered, and because we can *check* it: our predictions about eclipses, bridges, and vaccines succeed. Being made of chemicals is not a strike against a calculator either. What matters is how a system is organized, not what it is made of.`, k: "brain just chemicals neurons trust reason atoms fizzing molecules" },
-    { q: "Lewis showed that if thought is caused by non-rational processes, it can't be rational.", a: `That confuses causes with reasons. A computer's outputs are physically caused, yet it computes valid proofs, because its physical states are organized to mirror logical relations. Rational inference can be implemented in a physical mechanism; that is what computation is. Anscombe pressed Lewis on exactly this in their 1948 Socratic Club debate, and Lewis substantially revised the chapter in the second edition of *Miracles*.`, k: "lewis irrational causes non-rational process reasons causes anscombe" }
-  ],
-  sources: [
-    "Plantinga, A. (1993). Warrant and Proper Function. Oxford University Press, ch. 12.",
-    "Plantinga, A. (2011). Where the Conflict Really Lies. Oxford University Press.",
-    "Beilby, J. (ed.) (2002). Naturalism Defeated? Essays on Plantinga's Evolutionary Argument Against Naturalism. Cornell University Press.",
-    "Fitelson, B. & Sober, E. (1998). 'Plantinga's Probability Arguments Against Evolutionary Naturalism.' Pacific Philosophical Quarterly 79: 115–129.",
-    "Ramsey, W. (2002). 'Naturalism Defended.' In Beilby (ed.), Naturalism Defeated?",
-    "Law, S. (2012). 'Naturalism, Evolution and True Belief.' Analysis 72(1): 41–48.",
-    "Lewis, C. S. (1960). Miracles, 2nd ed., ch. 3; on the Anscombe exchange see Reppert (2003).",
-    "Kahneman, D. (2011). Thinking, Fast and Slow. Farrar, Straus & Giroux."
-  ],
-  keys: "argument from reason plantinga eaan evolutionary argument against naturalism self-defeating can't trust brain reason lewis naturalism undermines itself reliable faculties",
-  rel: ["consciousness", "math-and-logic", "transcendental"]
+  keys: "paley watchmaker watch design designer painting painter building builder creation creator look at trees nature complexity order purpose",
+  rel: ["fine-tuning", "irreducible-complexity", "evolution", "csr", "animal-suffering"]
 },
 {
   id: "irreducible-complexity",
@@ -361,114 +436,60 @@ DEF_ADD([
   rel: ["dna-information", "irreducible-complexity", "evolution"]
 },
 {
-  id: "design-intuition",
+  id: "ontological",
   cat: "god",
-  title: "Paley's Watch and the Intuition of Design",
-  who: "William Paley, Natural Theology (1802); popular apologetics ('a painting needs a painter'; 'look at the trees')",
-  claim: `If you found a watch on a heath, you would infer a watchmaker from its intricate arrangement of parts for a purpose. Living things and the universe are far more intricate than any watch. A painting needs a painter, a building needs a builder, and creation needs a Creator. Just look at the beauty and order of nature.`,
-  short: `Paley's argument was a reasonable inference in 1802. Darwin gave a natural mechanism for the appearance of design: variation plus selection, accumulated over deep time. We recognize human artifacts as designed because we know what humans make and how, and because artifacts contrast with nature. The intuition that living things are designed is a well-studied cognitive bias ("promiscuous teleology"), not a reliable perception.`,
+  title: "The Ontological Argument",
+  who: "Anselm, Proslogion II–III (1078); Descartes, Meditation V; Alvin Plantinga, The Nature of Necessity (1974); Kurt Gödel's ontological proof",
+  claim: `God is "that than which nothing greater can be conceived." A being that exists in reality is greater than one that exists only in the mind. So if God existed only in the mind, we could conceive of something greater, which is a contradiction. So God exists in reality. Plantinga's modal version: it is possible that a maximally great being exists, meaning a being with maximal excellence in every possible world. If that is possible, then it exists in some possible world. A being that exists necessarily in some world exists in all worlds, including the actual one.`,
+  form: ["It is possible that a maximally great being exists.", "If it is possible, a maximally great being exists in some possible world.", "If it exists in some possible world, it exists in every possible world (by definition of maximal greatness).", "Therefore a maximally great being exists in the actual world."],
+  short: `The modal version is valid, but its key premise, "a maximally great being is *possible*," is equivalent in S5 modal logic to "a maximally great being *exists*." Accepting it means accepting the conclusion in advance. A perfectly symmetric argument shows that *no* maximally great being exists, starting from the equally plausible premise "it is possible that no maximally great being exists." Plantinga himself conceded that his argument does not *prove* God's existence. It shows only that belief in God is not irrational for someone who already accepts the premise.`,
   points: [
-    { h: "Darwin answered Paley", t: `Natural selection is a mechanism that produces adaptation without foresight. Darwin had studied Paley at Cambridge and admired him, and wrote that Paley's argument "fails, now that the law of natural selection has been discovered" (*Autobiography*). The appearance of design in organisms is real. Its cause is cumulative selection, which can be observed in the lab, in the field (Darwin's finches; Grant & Grant), and in computer simulations.` },
-    { h: "We infer watchmakers from knowledge of watchmakers", t: `We know the watch was made because we know who makes watches, how, and why. We have seen watch factories. Hume's point: the design inference is an argument from analogy, and analogies are only as strong as our experience of the cause. We have no experience of universe-makers. And the watch stands out on the heath precisely *because* the heath (nature) is not like it.` },
-    { h: "Design looks like history, not engineering", t: `Real biological "design" carries the marks of tinkering. The recurrent laryngeal nerve loops down around the aorta and back up, which makes it about 4.5 meters long in a giraffe, a relic of our fish ancestry. The vertebrate retina is wired backwards, creating a blind spot. The human birth canal passes through a pelvis built for walking, and the male urethra passes through the prostate. These are not choices an omniscient engineer would make. They are compromises a historical process would leave behind.` },
-    { h: "We are built to see design", t: `Developmental psychologist Deborah Kelemen found that children (and adults under time pressure) attribute purpose to natural objects, saying that rocks are "pointy so animals can scratch on them." She calls this "promiscuous teleology." Agency detection is biased toward false positives because, in evolutionary terms, mistaking wind for a predator costs little while the reverse can be fatal (see [[csr]]). An intuition we know to be systematically over-sensitive is weak evidence.` },
-    { h: "Whose design?", t: `Even if design were granted, nothing would follow about the number, goodness, or identity of designers. Hume asked why not a committee of gods, an infant deity's first botched attempt, or an aged deity's last (*Dialogues*, V). The parasitic wasps that eat caterpillars alive from the inside, which troubled Darwin, are also "designs." See [[animal-suffering]].` }
+    { h: "Existence is not a great-making property", t: `Kant's objection (*Critique of Pure Reason*, A598/B626): "existence" is not a real predicate that adds to the concept of a thing. A hundred real dollars contain no more dollars than a hundred imagined ones. Anselm's version needs existence to be a perfection that a concept can lack, and that treats a property of concepts (being instantiated) as if it were a property of things.` },
+    { h: "The parodies: Gaunilo's island and its descendants", t: `Gaunilo (c. 1078) argued the same way for a "lost island" greater than any conceivable island. Anselm replied that the argument works only for necessary beings. But the modal form simply builds necessity into the definition, so you can define a "maximally great pizza" or, more seriously, a "necessarily existing evil god," and the pattern of inference goes through. When an argument form proves too much, it is defective.` },
+    { h: "The reverse ontological argument", t: `In the modal logic S5, which the argument relies on: if it is *possible* that a necessary being does *not* exist, then it does not exist. "Possibly, no maximally great being exists" seems at least as intuitive as "possibly, one does." Imagining a world of just one electron and nothing else seems coherent. The argument therefore reduces to a stalemate of modal intuitions, and you only reach God if you already believe in God (Rowe, 1976; Oppy, 1995).` },
+    { h: "Plantinga's own assessment", t: `Plantinga wrote that the argument does not "establish" God's existence. It shows that belief in God is rationally acceptable for anyone who accepts its central premise (*The Nature of Necessity*, 1974, p. 221). Even its most sophisticated defender does not claim what popular apologists claim for it.` },
+    { h: "Gödel's proof collapses modality", t: `Gödel's formal ontological proof is valid in its system, but Jordan Howard Sobel (1987) showed that its axioms entail *modal collapse*: every truth becomes a necessary truth, so nothing could have been otherwise. Repaired versions (Anderson, Fitting) avoid that collapse by adopting axioms whose plausibility is just as contested. A computer-assisted check (Benzmüller & Woltzenlogel Paleo, 2014) confirmed the inconsistency of one variant and the modal collapse.` },
+    { h: "Is maximal greatness even coherent?", t: `The possibility premise also requires that the great-making properties be *jointly* coherent: omnipotence with omniscience, perfect goodness with perfect freedom, timelessness with personhood. Each pairing has well-known problems (see [[omnipotence]], [[foreknowledge]], [[perfect-freedom]], [[timeless-god]]). If the bundle is incoherent, a maximally great being is not even possible, and the argument fails at its first step.` }
   ],
   replies: [
-    { q: "A painting needs a painter and a building needs a builder. Creation needs a Creator.", a: `That assumes the conclusion by calling the universe "creation." Paintings and buildings are known to be made by humans. Snowflakes, crystals, and river deltas are intricate and patterned, but come from natural processes. The question is which category living things and the universe belong to, and the evidence (fossils, genetics, observed selection) puts life in the snowflake category, not the painting one.`, k: "painting needs painter building builder creation creator look around trees" },
-    { q: "Just look at the trees, the stars, a newborn baby. How can you not see God?", a: `Beauty and complexity are real, and they are moving. But the same nature includes malaria, childhood cancer, and parasites that blind children (*Onchocerca volvulus*, river blindness). If the beautiful parts are evidence of a good designer, the horrific parts are evidence too. Natural processes explain both without anyone choosing them.`, k: "look at trees nature beauty stars baby how can you not see god creation obvious romans 1" }
+    { q: "The possibility premise is very modest. Surely God is at least possible.", a: `In S5, "possibly necessary" collapses into "necessary." So the "modest" premise is not modest at all: granting it means granting that God actually exists. Our everyday sense of "possible" means "for all I know." That is epistemic possibility, and it does not support the metaphysical possibility the argument needs. In the epistemic sense, a world with no God is equally "possible."`, k: "possibility premise modest possible god possibly exists s5 maximally great" },
+    { q: "Parodies like the perfect island fail because islands can't have intrinsic maxima.", a: `Fine, then use parodies built from properties that do have intrinsic maxima, such as the "maximally evil" being or a "necessarily existing non-God" (a world-feature that rules God out). The underlying problem is that the argument form turns any definition that includes necessary existence into a proof, and the conflicting proofs cannot all succeed.`, k: "gaunilo island parody intrinsic maximum perfect island pizza" }
   ],
   sources: [
-    "Paley, W. (1802). Natural Theology.",
-    "Hume, D. (1779). Dialogues Concerning Natural Religion, Parts II–VIII.",
-    "Darwin, C. (1859). On the Origin of Species; (1887) Autobiography.",
-    "Dawkins, R. (1986). The Blind Watchmaker. Norton.",
-    "Kelemen, D. (2004). 'Are Children \"Intuitive Theists\"? Reasoning about Purpose and Design in Nature.' Psychological Science 15(5): 295–301.",
-    "Grant, P. & Grant, R. (2014). 40 Years of Evolution: Darwin's Finches on Daphne Major Island. Princeton University Press.",
-    "Coyne, J. (2009). Why Evolution Is True. Viking."
+    "Anselm. Proslogion II–III; Gaunilo, 'On Behalf of the Fool.'",
+    "Kant, I. (1781/1787). Critique of Pure Reason A592/B620–A602/B630.",
+    "Plantinga, A. (1974). The Nature of Necessity. Oxford: Clarendon, ch. 10.",
+    "Rowe, W. (1976). 'Modal Versions of the Ontological Argument.' In Pojman (ed.), Philosophy of Religion.",
+    "Oppy, G. (1995). Ontological Arguments and Belief in God. Cambridge University Press.",
+    "Sobel, J. H. (1987). 'Gödel's Ontological Proof.' In Thomson (ed.), On Being and Saying. MIT Press.",
+    "Benzmüller, C. & Woltzenlogel Paleo, B. (2014). 'Automating Gödel's Ontological Proof of God's Existence with Higher-order Automated Theorem Provers.' ECAI 2014.",
+    "Oppy, G. 'Ontological Arguments.' Stanford Encyclopedia of Philosophy."
   ],
-  keys: "paley watchmaker watch design designer painting painter building builder creation creator look at trees nature complexity order purpose",
-  rel: ["fine-tuning", "irreducible-complexity", "evolution", "csr", "animal-suffering"]
+  keys: "ontological argument anselm maximally great being greatest conceivable plantinga modal godel possible worlds necessary existence perfect being",
+  rel: ["omnipotence", "divine-simplicity", "contingency"]
 },
 {
-  id: "desire",
+  id: "idea-of-god",
   cat: "god",
-  title: "The Argument from Desire",
-  who: "C. S. Lewis, Mere Christianity III.10 (1952); Augustine ('our heart is restless until it rests in you'); Peter Kreeft",
-  claim: `Every natural, innate desire corresponds to a real object that can satisfy it: hunger to food, thirst to water, sexual desire to sex. Humans have a desire that nothing in this world can satisfy, a longing for transcendence and joy (Lewis's *Sehnsucht*). "If I find in myself a desire which no experience in this world can satisfy, the most probable explanation is that I was made for another world." There is a "God-shaped hole" in every heart.`,
-  short: `The premise is false in general: people desire immortality, perfect justice, and unlimited knowledge, and their wanting these does not make them exist. Natural desires correspond to *types* of things, not guaranteed objects (the thirsty desert traveler dies). Restless, open-ended desire is exactly what evolution would produce in an organism that must keep striving. And the "God-shaped hole" is not universal: highly secular societies show no epidemic of unmet longing.`,
+  title: "The Origin of the Idea of God (Descartes' Trademark Argument)",
+  who: "René Descartes, Meditations on First Philosophy, Meditation III (1641); Peter Kreeft & Ronald Tacelli (argument 12)",
+  claim: `I have the idea of an infinite, perfect being. The cause of an idea must have at least as much reality as the idea represents. A finite, imperfect mind like mine can't be the source of an idea of infinite perfection, since I couldn't get the idea of the infinite by adding up finite things. So the idea must have been placed in me by an infinite, perfect being, like a craftsman's trademark stamped on his work. So God exists.`,
+  form: ["I have an idea of an infinite, perfect being.", "The cause of an idea must contain at least as much reality as the idea represents.", "Only an infinite, perfect being contains that much reality.", "So an infinite, perfect being caused my idea: God exists."],
+  short: `We can form the idea of "infinite" and "perfect" by negating limits we're familiar with ("not finite," "without flaw"), as Descartes' own critics (Gassendi, Hobbes) objected in 1641. The causal principle about ideas is unsupported: we can imagine unicorns without unicorns causing the idea, and mathematicians reason about infinite sets without being infinite. The idea of God also varies widely across cultures and has a traceable history (see [[yahweh-origins]]).`,
   points: [
-    { h: "Desires don't guarantee their objects", t: `Lewis restricts the premise to "natural" desires. But the distinction is drawn after the fact: a desire for heaven gets counted as natural because the theist believes heaven exists. People desire to fly unaided, to live forever, and to see the dead again. That a desire exists explains why we search, not that the object is real.` },
-    { h: "Insatiability is an evolutionary design feature", t: `An organism that became permanently satisfied would stop seeking food, mates, status, and security, and would be outcompeted. "Hedonic adaptation" (returning to a baseline after gains) is a robust finding in psychology (Brickman & Campbell, 1971; Frederick & Loewenstein, 1999). Endless longing is what we'd predict from natural selection, not a clue about another world.` },
-    { h: "The 'God-shaped hole' isn't universal", t: `In Denmark, Sweden, Japan, and the Czech Republic, large majorities live without religious belief. They rank at or near the top of world happiness surveys and do not report a gap where God should be (Zuckerman, *Society without God*, 2008). The longing Lewis describes is real for many people but culturally shaped, not a fixed feature of human nature.` }
+    { h: "Infinite by negation", t: `Gassendi's objection (*Fifth Objections*): we build the idea of the infinite by extending and negating the finite. We understand "without limit" because we understand limits. Descartes replied that the infinite is prior, but this reply is just a restatement of the claim. Cantor showed that rigorous ideas of infinity can be built by finite minds using finite rules.` },
+    { h: "The causal principle is arbitrary", t: `The principle that an idea of X must be caused by something with as much "reality" as X is a scholastic doctrine about "objective" and "formal" reality, with no independent support. We have ideas of perfect circles, frictionless planes, and fictional heroes without anything that perfect causing them.` },
+    { h: "The idea isn't universal or uniform", t: `If God stamped the idea on every mind, we'd expect it to be the same everywhere. Instead, religious concepts vary from ancestral spirits to many gods to impersonal absolutes, and the specific idea of an infinite, perfect, single God arose late, in Greek philosophy and the post-exilic Jewish tradition (see [[yahweh-origins]], [[csr]]).` }
   ],
-  replies: [
-    { q: "Nothing in this world has ever satisfied me. Only God fills that hole.", a: `That's a sincere report of your experience, and many people share it. But people of every religion and none report finding meaning and peace in their own way: Buddhists through practice, secular people through relationships and work. The feeling of fulfillment is evidence about human psychology, which responds to commitment, community, and ritual whatever their content.`, k: "god shaped hole nothing satisfies emptiness restless heart fulfilled only god" }
-  ],
+  replies: [],
   sources: [
-    "Lewis, C. S. (1952). Mere Christianity, Book III, ch. 10.",
-    "Kreeft, P. & Tacelli, R. (1994). Handbook of Christian Apologetics. InterVarsity, ch. 3.",
-    "Beversluis, J. (2007). C. S. Lewis and the Search for Rational Religion, rev. ed. Prometheus, ch. 2.",
-    "Frederick, S. & Loewenstein, G. (1999). 'Hedonic Adaptation.' In Kahneman et al. (eds.), Well-Being. Russell Sage.",
-    "Zuckerman, P. (2008). Society without God. NYU Press."
+    "Descartes, R. (1641). Meditations on First Philosophy, Meditation III; Fifth Objections and Replies (Gassendi).",
+    "Williams, B. (1978). Descartes: The Project of Pure Enquiry. Penguin.",
+    "Kreeft, P. & Tacelli, R. (1994). Handbook of Christian Apologetics, ch. 3.",
+    "Boyer, P. (2001). Religion Explained. Basic Books."
   ],
-  keys: "argument from desire longing sehnsucht god shaped hole restless heart made for another world lewis joy transcendence",
-  rel: ["meaning", "religious-experience", "csr"]
-},
-{
-  id: "math-and-logic",
-  cat: "god",
-  title: "The Laws of Logic, Mathematics, and the Order of Nature",
-  who: "Presuppositional and classical apologists; Eugene Wigner's 'unreasonable effectiveness of mathematics' (1960) used as evidence by apologists; Alister McGrath; John Lennox",
-  claim: `The universe is orderly, governed by precise mathematical laws, and intelligible to human minds. The laws of logic are universal, immaterial, and unchanging, so they must exist in a universal, immaterial, unchanging mind. Mathematics, a free creation of human minds, describes physical reality with uncanny precision. This "unreasonable effectiveness" is just what we'd expect if the universe and our minds came from the same rational Creator.`,
-  short: `Laws of logic are not things that need a location. They are the most general constraints on any coherent description, and they would hold in any world. Making them depend on God's mind creates a new Euthyphro: could God have made contradictions true? Mathematics fits physics partly because we select and build the mathematics that fits, and partly because physics, in the relevant regimes, really is simple and regular. That calls for explanation, but a mind is not a better explanation of regularity than regularity itself.`,
-  points: [
-    { h: "Logic doesn't need a lawgiver", t: `"Laws" of logic are not commands that need someone to issue them. They describe what is coherent. The law of non-contradiction says no proposition is both true and false. A world in which it "failed" isn't a world we can even describe. If logic depended on God's mind, then God could presumably have thought otherwise, and contradictions could have been true. If God *couldn't* have, logic constrains God, and logic is independent of him. This is the Euthyphro dilemma again.` },
-    { h: "Immaterial is not the same as mental", t: `The argument assumes that whatever is not physical must be a thought in some mind. But many philosophers who are realists about abstract objects (Frege, Gödel, contemporary platonists) hold that numbers and propositions exist independently of *any* mind. Others (nominalists, structuralists, fictionalists) hold they exist in no strong sense. None of these positions requires God.` },
-    { h: "Wigner's puzzle has natural answers", t: `Mathematics is not arbitrary invention. Much of it was developed by abstracting from physical experience (counting, geometry, motion), so it fits the world because it came from the world. Mathematicians also generate vast amounts of structure, and physicists use the small part of it that fits. That is a selection effect. Hamming (1980) noted that much of physics is *not* mathematically tidy: turbulence, biology, and economics remain stubborn.` },
-    { h: "Order is the default, not a miracle", t: `A universe where things behave consistently is, arguably, the minimal possibility. Disorder would also need description. On Humean views, "laws" are simply the most efficient summaries of regularities (Lewis's best-system account), so asking who enforces them is like asking who enforces the average height of Norwegians. On anti-Humean views, laws flow from the natures of physical things (Bird, Ellis). Neither requires an enforcer.` },
-    { h: "Theism doesn't explain order better", t: `A God who acts in history, answers prayer, and performs miracles is a God whose world is *not* fully lawful. If the universe were less orderly, apologists could equally say this shows God's active hand. A hypothesis compatible with both order and disorder predicts neither.` }
-  ],
-  replies: [
-    { q: "How do you account for the laws of logic in your worldview?", a: `The same way the theist does, at bottom: they are necessary, and necessary truths need no further cause. The theist says "they're grounded in God's nature," but that is just positing a necessary being whose nature happens to include logic. Saying "logic is necessary" is simpler and avoids the question of whether God could have made contradictions true. See [[transcendental]].`, k: "account for laws of logic worldview ground logic immaterial universal invariant" },
-    { q: "If the universe weren't created by a rational mind, why would it be intelligible?", a: `Intelligibility is partly a fact about us. Brains evolved to model regularities, because regularities could be exploited to survive. We find the universe intelligible at our scale and remarkably *un*intuitive elsewhere (quantum mechanics, curved spacetime). The universe isn't designed to be understood. We are adapted to understand parts of it.`, k: "intelligible comprehensible rational universe understand why order science possible" }
-  ],
-  sources: [
-    "Wigner, E. (1960). 'The Unreasonable Effectiveness of Mathematics in the Natural Sciences.' Communications on Pure and Applied Mathematics 13: 1–14.",
-    "Hamming, R. W. (1980). 'The Unreasonable Effectiveness of Mathematics.' American Mathematical Monthly 87(2): 81–90.",
-    "Lewis, D. (1994). 'Humean Supervenience Debugged.' Mind 103: 473–490.",
-    "Balaguer, M. (1998). Platonism and Anti-Platonism in Mathematics. Oxford University Press.",
-    "Martin, M. (1996). 'The Transcendental Argument for the Nonexistence of God.' The Secular Web."
-  ],
-  keys: "laws of logic mathematics order of nature unreasonable effectiveness wigner intelligible lawgiver laws of physics who made the laws immaterial abstract",
-  rel: ["transcendental", "argument-from-reason", "fine-tuning"]
-},
-{
-  id: "transcendental",
-  cat: "god",
-  title: "Presuppositionalism: The Transcendental Argument",
-  who: "Cornelius Van Til; Greg Bahnsen (debate with Gordon Stein, 1985); Sye Ten Bruggencate; Jeff Durbin",
-  claim: `Logic, science, and morality all presuppose the Christian God. The unbeliever cannot "account for" the laws of logic, the uniformity of nature, or moral absolutes within their own worldview. So every time they reason, they borrow from the Christian worldview. The proof of God is the impossibility of the contrary. Any attempt to argue against God uses tools only God provides. "How do you know your reasoning is valid? Could you be wrong about everything you know?"`,
-  short: `Transcendental arguments need to show that *only* the Christian God could make logic, induction, and morality possible. That has never been done. Any being or necessary structure stipulated to "ground" these would do equally well (Martin's parody). The "how do you know" regress applies equally to the theist, whose claim to know God via revelation relies on their own reasoning to interpret that revelation. And "God revealed it so I can be certain" is circular by the presuppositionalist's own admission.`,
-  points: [
-    { h: "The 'impossibility of the contrary' is asserted, not shown", t: `To prove that God is the *necessary* precondition of logic, you would need to refute every alternative: logic as necessary in itself, as a feature of language, as a description of all possible worlds, or as grounded in a non-Christian deity. Presuppositionalists rarely consider these. They demand that the opponent "account for" logic, then declare victory. A Muslim, a Hindu, or a believer in a "logic-god" can run the identical argument.` },
-    { h: "God doesn't ground logic either", t: `If logic is grounded in God's nature, why is God's nature logical? Either because it must be, in which case logic is prior, or because God is just that way, a brute fact the presuppositionalist says the atheist cannot have. Michael Martin's "Transcendental Argument for the Non-existence of God" (1996) argues that if God created logic, God could have made it otherwise, which undermines its necessity. So logic's necessity tells *against* a creator of logic.` },
-    { h: "Circular by design", t: `Bahnsen accepted that his argument is circular, but called it "virtuously" circular because all ultimate commitments are. If circularity is acceptable at the foundations, then the naturalist can be equally "virtuously" circular about logic and the senses, and the argument proves nothing. The demand for absolute certainty also defeats itself: the believer must be certain that their interpretation of revelation is correct, using the same fallible mind.` },
-    { h: "Induction is a problem for everyone", t: `Hume's problem of induction (why expect the future to resemble the past?) is unsolved for everyone. Saying "God promised nature would be uniform" (citing Genesis 8:22) relies on the past reliability of God's promises, which is itself an inductive inference. It also sits poorly with a God who performs miracles, which are by definition breaks in uniformity.` }
-  ],
-  replies: [
-    { q: "Could you be wrong about everything you know? If so, how do you know anything?", a: `I could be wrong about any particular thing; that's what it means to be fallible. Knowledge doesn't require certainty. It requires reliable belief formation, which is open to checking. The question works equally on you: could you be wrong about God's revelation? If you say no, because God revealed it to you, you are using your own fallible mind to judge that he did. Infallibility is unavailable to anyone.`, k: "could you be wrong about everything know anything certainty how do you know presupp sye" },
-    { q: "You're borrowing from the Christian worldview when you use logic.", a: `Logic was formalized by Aristotle three centuries before Christianity, and Indian (Nyāya) and Chinese (Mohist) logicians worked independently. It is used by people of every religion and none, all of whom would then be "borrowing" from their own worldviews. The claim is an assertion that the Christian God is the only possible ground of logic, which is the very thing that needed proof.`, k: "borrowing christian worldview using logic presuppose god account for" }
-  ],
-  sources: [
-    "Bahnsen, G. vs. Stein, G. (1985). 'The Great Debate: Does God Exist?' University of California, Irvine.",
-    "Van Til, C. (1955). The Defense of the Faith. Presbyterian & Reformed.",
-    "Martin, M. (1996). 'The Transcendental Argument for the Nonexistence of God.' The Secular Web.",
-    "Stroud, B. (1968). 'Transcendental Arguments.' Journal of Philosophy 65(9): 241–256.",
-    "Hume, D. (1748). An Enquiry Concerning Human Understanding, §IV."
-  ],
-  keys: "presuppositionalism transcendental argument tag account for logic impossibility of the contrary bahnsen van til sye ten bruggencate how do you know borrowing worldview uniformity of nature",
-  rel: ["math-and-logic", "argument-from-reason", "faith"]
+  keys: "idea of god origin descartes trademark argument infinite perfect being idea of infinity cause of idea meditation three",
+  rel: ["ontological", "csr", "yahweh-origins"]
 },
 {
   id: "pascal",
@@ -526,81 +547,5 @@ DEF_ADD([
   ],
   keys: "cumulative case best explanation inference to best explanation swinburne bayesian all arguments together simplest explanation worldview",
   rel: ["problem-of-evil", "hiddenness", "fine-tuning", "minimal-facts"]
-},
-{
-  id: "something-from-nothing",
-  cat: "god",
-  title: "Atheists Believe Everything Came from Nothing",
-  who: "Popular apologetics (e.g., 'nothing created everything'); responses to Lawrence Krauss, A Universe from Nothing (2012)",
-  claim: `Atheism says that nothing created everything, that the universe popped into being from nothing, uncaused. That is absurd. Even Krauss's "nothing" is really a quantum vacuum, which is something. Only an eternal Creator explains why there is something rather than nothing.`,
-  short: `Atheism, as a position, says nothing about cosmic origins. It is just the absence of belief in gods. Most naturalist philosophers do *not* claim the universe came from absolute nothing. They hold that physical reality is eternal, or that its first state needs no cause, or that "why is there something rather than nothing?" may have no answer. The theist's own position is that God created matter from no pre-existing matter, so "something from nothing" is more accurately the Christian doctrine.`,
-  points: [
-    { h: "Nobody serious says 'nothing created everything'", t: `"Nothing created everything" is a straw man. Naturalist options include: an eternal universe or multiverse; a first physical state that exists necessarily or without cause; and the view that the question has no answer. Graham Oppy, the leading naturalist in philosophy of religion, defends a necessary initial physical state.` },
-    { h: "Krauss's 'nothing' is a red herring on both sides", t: `Krauss's book used "nothing" loosely, to mean a state with no particles or no space, and the philosopher David Albert criticized it sharply in the *New York Times* (2012). Apologists then use Krauss's mistake to suggest that all naturalists are confused. But no part of the case against theism depends on Krauss's terminology.` },
-    { h: "Theism has the same question", t: `"Why is there God rather than nothing?" If the answer is "God exists necessarily," the naturalist can give the same answer about the physical foundation. If "necessary existence" is meaningful at all, it is no more mysterious for a physical reality than for a mind. And positing an uncaused God, in order to avoid an uncaused universe, adds a second uncaused thing.` },
-    { h: "Creatio ex nihilo is the 'something from nothing' view", t: `Christian doctrine (since Irenaeus and Theophilus of Antioch in the 2nd century; Genesis 1 itself begins with pre-existing waters) holds that God made the universe out of nothing. No mechanism is offered: God willed and matter appeared. This is the claim that physical stuff came into being with no physical precursor, which is what apologists find absurd when they attribute it to atheists.` }
-  ],
-  replies: [
-    { q: "Where did the universe come from then?", a: `Honest answer: no one knows, and "I don't know" is better than an answer that has no evidence behind it. Physics has candidate models (eternal inflation, cyclic models, quantum cosmology). "God did it" is not an answer to "where did it come from?" so much as a renaming of the mystery, since you then have to ask where God came from, or accept that something can just exist without a cause, which is what the naturalist says about the universe.`, k: "where did universe come from origin of universe how did everything begin" }
-  ],
-  sources: [
-    "Krauss, L. (2012). A Universe from Nothing. Free Press.",
-    "Albert, D. (2012). 'On the Origin of Everything.' New York Times Book Review, March 23.",
-    "Oppy, G. (2013). The Best Argument against God. Palgrave Macmillan.",
-    "Holt, J. (2012). Why Does the World Exist? Liveright.",
-    "May, G. (1994). Creatio ex Nihilo: The Doctrine of 'Creation out of Nothing' in Early Christian Thought. T&T Clark."
-  ],
-  keys: "something from nothing nothing created everything universe from nothing krauss popped into existence came from nothing where did universe come from atheists believe",
-  rel: ["kalam", "contingency", "big-bang"]
-},
-{
-  id: "big-bang",
-  cat: "god",
-  title: "The Big Bang Proves Creation (and Genesis Predicted It)",
-  who: "Popular apologetics; Robert Jastrow, God and the Astronomers (1978); Hugh Ross, Reasons to Believe",
-  claim: `For centuries, atheists held that the universe was eternal. The Big Bang showed it had a beginning, just as Genesis 1:1 says: "In the beginning God created the heavens and the earth." Atheist scientists like Fred Hoyle resisted the Big Bang because of its theistic implications. The discovery of a cosmic beginning vindicates the Bible.`,
-  short: `The Big Bang model describes the expansion of the universe from a hot, dense state. Whether that was an absolute beginning is open. Genesis 1 does not describe a Big Bang: it describes God shaping pre-existing waters and darkness, a solid dome holding up waters, and the Earth and plants before the Sun and stars. Georges Lemaître, a Catholic priest and the theory's originator, himself warned Pope Pius XII not to treat it as confirming creation.`,
-  points: [
-    { h: "Lemaître rejected the theological reading", t: `The Big Bang theory was proposed by Georges Lemaître, a Belgian priest and physicist. When Pius XII suggested in 1951 that the theory confirmed creation, Lemaître reportedly asked the Vatican to stop, insisting that his cosmology was neutral on metaphysics. He wrote that the theory "remains entirely outside any metaphysical or religious question."` },
-    { h: "Genesis 1 describes a different cosmos", t: `Genesis 1:2 begins with darkness over "the deep" (tehom) and the spirit over "the waters," which are already there. God separates the waters with a *raqia* (1:6–8), a solid firmament or dome that holds back the waters above (compare Job 37:18, "the skies, hard as a cast metal mirror"). Plants appear on day 3, before the Sun on day 4, and the stars are mentioned almost in passing. This is the cosmology of the ancient Near East, close to the Babylonian Enuma Elish, in which Marduk splits the sea-monster Tiamat to form sky and earth. It is not modern cosmology.` },
-    { h: "A beginning isn't established", t: `The classical Big Bang singularity is where general relativity breaks down. Physics does not yet know what happened before the Planck time, or whether "before" even applies. Several respectable models have no absolute beginning: eternal inflation, the Carroll–Chen model, conformal cyclic cosmology (Penrose), and quantum cosmologies. See [[kalam]].` },
-    { h: "Even a beginning wouldn't select Genesis", t: `Many creation myths have beginnings: Babylonian, Egyptian, Hindu (the Nasadiya Sukta of the Rig Veda), Chinese (Pangu). A beginning is consistent with them all. If the universe turned out to be eternal, apologists would presumably not abandon Christianity; Aquinas held that reason alone cannot show the world had a beginning. A hypothesis compatible with both outcomes isn't confirmed by either.` }
-  ],
-  replies: [
-    { q: "Atheists believed in an eternal universe until the Big Bang proved them wrong.", a: `Some scientists, including Hoyle, preferred a steady state. Others, religious and not, accepted the Big Bang when the evidence came in, the cosmic microwave background in 1965. That is how science works: following evidence regardless of anyone's preferences. Whether the Big Bang was an absolute beginning is still an open question in physics, not settled in favor of theism.`, k: "atheists eternal universe proven wrong steady state hoyle" }
-  ],
-  sources: [
-    "Lemaître, G. (1958). 'The Primeval Atom Hypothesis and the Problem of the Clusters of Galaxies.' In La Structure et l'Évolution de l'Univers.",
-    "Kragh, H. (1996). Cosmology and Controversy. Princeton University Press.",
-    "Walton, J. (2009). The Lost World of Genesis One. InterVarsity.",
-    "Smith, M. S. (2010). The Priestly Vision of Genesis 1. Fortress.",
-    "Carroll, S. (2010). From Eternity to Here. Dutton."
-  ],
-  keys: "big bang proves creation genesis predicted beginning in the beginning lemaitre jastrow universe had a beginning bible science",
-  rel: ["kalam", "genesis-creation", "science-in-bible"]
-},
-{
-  id: "uncaused-god",
-  cat: "god",
-  title: "God Doesn't Need a Cause (Who Made God?)",
-  who: "Standard apologetic reply to 'Who made God?' (Craig, Feser, Lennox)",
-  claim: `"Who made God?" is a confused question. God is by definition uncaused and eternal; only things that begin to exist need a cause. Asking who made God is like asking who the bachelor's wife is. Dawkins's "Ultimate Boeing 747" argument, that God would be even more complex than the universe, misunderstands classical theism, in which God is simple and necessary.`,
-  short: `The reply is fair against a naive "everything has a cause" argument, but it shows that uncaused existence is possible, which the naturalist can claim for the universe or its foundation. The theist must then argue that a mind is a better candidate for uncaused existence than physical reality, and no good argument for that is available. Defining God as uncaused doesn't help: definitions can't settle what exists.`,
-  points: [
-    { h: "Special pleading, or a symmetric option", t: `If some things can exist without a cause, the question is which things. The theist says "only God." The naturalist says "the most fundamental physical reality." Without an independent reason to think that minds, rather than physical states, are the kind of thing that can be uncaused, the theist's exemption is special pleading.` },
-    { h: "Definitions don't create existence", t: `"God is by definition uncaused" tells us what the word means. It does not tell us that anything answers to the definition. One could define a "Zog" as an uncaused cause of the universe that is impersonal and mindless, and the definition would work just as well.` },
-    { h: "Simplicity is contested", t: `Classical theists answer Dawkins by saying God is metaphysically simple, without parts. But a being that knows every fact, holds every possible plan, and can bring about any possible world contains, in some sense, all that information. Divine simplicity also faces serious coherence objections (see [[divine-simplicity]]). An infinitely capable mind does not look like the kind of thing one should expect to exist without explanation.` }
-  ],
-  replies: [
-    { q: "God is eternal, so he doesn't need a cause. The universe began, so it does.", a: `That depends on the universe having begun in the absolute sense, which is not established (see [[kalam]]). And if the first physical state, or physical reality as a whole, is eternal or necessary, the same exemption applies to it. The theist's claim adds a mind that has no evidence of its own, so it is the less economical version of the same move.`, k: "god eternal doesn't need cause universe began needs cause who made god" }
-  ],
-  sources: [
-    "Dawkins, R. (2006). The God Delusion. Houghton Mifflin, ch. 4.",
-    "Feser, E. (2017). Five Proofs of the Existence of God, ch. 7.",
-    "Oppy, G. (2013). The Best Argument against God.",
-    "Le Poidevin, R. (1996). Arguing for Atheism. Routledge, ch. 1."
-  ],
-  keys: "who made god who created god god doesn't need cause uncaused eternal special pleading dawkins 747 what caused god",
-  rel: ["kalam", "contingency", "divine-simplicity"]
 }
 ]);
