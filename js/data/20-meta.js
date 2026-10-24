@@ -15,7 +15,7 @@ DEF_SET("meta", {
      "consciousness argument-from-reason proper-function intentionality math-and-logic abstract-objects modality-grounding a-priori induction meaning-reference lucas-penrose free-will-soul colors-flavors " +
      "moral-argument kant-moral conscience human-dignity " +
      "omnipotence omniscience-grim foreknowledge timeless-god divine-simplicity perfect-freedom disembodied-mind trinity incarnation " +
-     "problem-of-evil free-will-defense natural-evil animal-suffering skeptical-theism soul-making evil-god hiddenness demographics compensation hell-alternatives " +
+     "problem-of-evil free-will-defense cross-suffering natural-evil animal-suffering skeptical-theism soul-making evil-god hiddenness demographics compensation hell-alternatives " +
      "genesis-reinterpretations patriarchs exodus conquest david-solomon " +
      "canon gospel-authorship synoptic-dependence eyewitnesses undesigned-coincidences textual-variants gospel-genre oral-tradition embarrassing-details luke-historian john-reliable early-gospels pseudepigrapha " +
      "dead-sea-scrolls isaiah-53 daniel-9 failed-return temple-prediction " +

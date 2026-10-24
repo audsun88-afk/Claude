@@ -28,7 +28,7 @@ DEF_SET("casemap", {
       rival: "An indifferent, limited, or malevolent creator, or no creator at all.",
       status: "against",
       summary: "The amount and distribution of suffering, the hiddenness of God, and the incoherence of the classical attributes count against this link more strongly than any argument counts in its favor.",
-      support: ["moral-argument", "ontological", "free-will-defense", "soul-making", "skeptical-theism", "greater-good"],
+      support: ["moral-argument", "ontological", "free-will-defense", "soul-making", "skeptical-theism", "greater-good", "cross-suffering"],
       defeaters: ["problem-of-evil", "animal-suffering", "hiddenness", "evil-god", "omnipotence", "omniscience-grim", "divine-simplicity"],
       generous: 0.6
     },
@@ -55,7 +55,7 @@ DEF_SET("casemap", {
       rival: "The doctrines are later theological constructions with unresolved problems.",
       status: "contested",
       summary: "The Trinity, the Incarnation, the atonement, original sin, and eternal punishment face objections their defenders haven't resolved and Christians themselves dispute.",
-      support: ["trinity", "incarnation", "atonement", "hell-alternatives"],
+      support: ["trinity", "incarnation", "atonement", "hell-alternatives", "human-condition"],
       defeaters: ["hell", "original-sin", "unevangelized", "atonement", "trinity"],
       generous: 0.7
     },
@@ -64,7 +64,7 @@ DEF_SET("casemap", {
       rival: "Catholic, Orthodox, Protestant, and other Christian traditions disagree on what Christianity teaches.",
       status: "contested",
       summary: "Christians disagree about salvation, the sacraments, scripture, Mary, and authority, and each tradition's evidence for itself has parallels in the others and in other religions.",
-      support: ["why-christianity", "church-survival", "marian-dogmas", "spirit-witness"],
+      support: ["why-christianity", "falsifiable", "church-survival", "marian-dogmas", "spirit-witness"],
       defeaters: ["outsider-test", "demographics", "mormonism", "islam"],
       generous: 0.5
     }

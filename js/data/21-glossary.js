@@ -74,6 +74,8 @@ DEF_SET("glossary", [
   { t: "Synoptic Gospels", aka: ["Synoptics", "Synoptic"], d: "Matthew, Mark, and Luke, which share much material and can be 'seen together' in parallel columns.", see: ["synoptic-dependence"] },
   { t: "teleology", aka: ["teleological"], d: "Purpose or goal-directedness; explanation in terms of ends.", see: ["fifth-way", "design-intuition"] },
   { t: "textual criticism", aka: ["textual critics"], d: "The discipline of reconstructing the original wording of texts from copies that differ.", see: ["textual-variants", "manuscripts"] },
+  { t: "impassibility", aka: ["impassible"], d: "The classical doctrine that God's own nature cannot suffer or be affected by anything outside him. Many modern theologians reject it in favor of a God who suffers with creation.", see: ["cross-suffering", "timeless-god"] },
+  { t: "felix culpa", d: "Latin for 'happy fault': the idea, from the Easter liturgy, that Adam's sin was fortunate because it led to the Incarnation and redemption. Alvin Plantinga built a theodicy on it.", see: ["cross-suffering", "original-sin"] },
   { t: "theodicy", d: "An attempt to explain why God permits evil. A 'defense' claims only that God might have reasons, without saying what they are.", see: ["free-will-defense", "soul-making"] },
   { t: "Thomism", aka: ["Thomist", "Thomistic"], d: "The philosophical tradition of Thomas Aquinas, built on Aristotle's metaphysics of act and potency, form, and final causes.", see: ["classical-proofs", "fifth-way"] },
   { t: "transubstantiation", d: "The Catholic doctrine that in the Eucharist the substance of the bread and wine becomes Christ's body and blood while their appearances remain.", see: ["eucharistic-miracles"] },

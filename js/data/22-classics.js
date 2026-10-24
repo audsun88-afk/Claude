@@ -127,7 +127,7 @@ DEF_SET("classics", [
     note: "Part 1 answers seven common doubts; Part 2 gives the reasons for faith.",
     items: [
       { n: "1", label: "'There Can't Be Just One True Religion'", ids: ["why-christianity", "outsider-test"] },
-      { n: "2", label: "'How Could a Good God Allow Suffering?'", ids: ["problem-of-evil", "greater-good", "compensation"] },
+      { n: "2", label: "'How Could a Good God Allow Suffering?'", ids: ["problem-of-evil", "greater-good", "compensation", "cross-suffering"] },
       { n: "3", label: "'Christianity Is a Straitjacket'", ids: ["consequences", "meaning"] },
       { n: "4", label: "'The Church Is Responsible for So Much Injustice'", ids: ["christian-civilization", "religion-wars", "christian-reforms"] },
       { n: "5", label: "'How Can a Loving God Send People to Hell?'", ids: ["hell", "hell-alternatives"] },
@@ -135,9 +135,9 @@ DEF_SET("classics", [
       { n: "7", label: "'You Can't Take the Bible Literally'", ids: ["gospel-genre", "early-gospels", "inerrancy"] },
       { n: "8", label: "'The Clues of God'", ids: ["fine-tuning", "kalam", "beauty", "cumulative-case"] },
       { n: "9", label: "'The Knowledge of God'", ids: ["moral-argument", "human-dignity"] },
-      { n: "10", label: "'The Problem of Sin'", ids: ["original-sin"] },
+      { n: "10", label: "'The Problem of Sin'", ids: ["original-sin", "human-condition"] },
       { n: "11", label: "'Religion and the Gospel'", ids: ["why-christianity"] },
-      { n: "12", label: "'The (True) Story of the Cross'", ids: ["atonement"] },
+      { n: "12", label: "'The (True) Story of the Cross'", ids: ["atonement", "cross-suffering"] },
       { n: "13", label: "'The Reality of the Resurrection'", ids: ["wright-mutations", "empty-tomb", "martyrdom"] },
       { n: "14", label: "'The Dance of God'", ids: ["trinity"] }
     ]

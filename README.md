@@ -8,14 +8,14 @@ The name comes from epistemology: a *defeater* is a reason that undermines a bel
 
 ### The library
 
-**244 arguments for Christianity in 19 categories and five parts**, about 120,000 words, each answered. Every entry has a siglum for citation (§1.1 is the first argument in the first category) and contains:
+**247 arguments for Christianity in 19 categories and five parts**, about 124,000 words, each answered. Every entry has a siglum for citation (§1.1 is the first argument in the first category) and contains:
 
 - **The argument (*videtur quod*):** the apologetic argument, stated as strongly as its best defenders state it, with formal premises where it has them.
 - **The answer (*respondeo*):** a one-paragraph reply.
 - **An argument map:** for the 25 entries with formal premises, each premise is listed with the defeaters that attack it, and the inference is listed with the defeaters that attack the step from premises to conclusion.
 - **Defeaters:** the detailed counter-arguments.
 - **If they reply (*ad obiecta*):** common comebacks, each with an answer.
-- **Apparatus:** the sources cited, about 1,150 works across the library.
+- **Apparatus:** the sources cited, more than 1,100 works across the library.
 
 The five parts:
 
@@ -51,7 +51,7 @@ Each entry is marked by level: **scholarly** (made by academic philosophers and 
 - **Compare:** the outsider test as a table. Ten kinds of evidence offered for Christianity, set against the parallel claims made for Islam, the Latter-day Saints, Hindu traditions, and Buddhism.
 - **Classics concordance:** twelve well-known works of apologetics (Plantinga's two dozen arguments, Kreeft and Tacelli's twenty, Lewis, Strobel, Keller, Craig, Wallace, Habermas, Wright and others) mapped item by item to the entries that answer them.
 - **Drill:** read an argument, write your own rebuttal, and see which of the library's defeaters you covered.
-- **Glossary:** 79 terms, also explained in place wherever they appear in an entry or essay.
+- **Glossary:** 81 terms, also explained in place wherever they appear in an entry or essay.
 - **Essays:** a summary of the case, what apologists get right, the chain of dependence, how the ledger works, reading paths, the method, and an about page.
 - **Sources:** a searchable bibliography of every work cited.
 
@@ -92,12 +92,12 @@ This writes two files:
 
 ```sh
 node tests/data.test.js          # integrity: required fields, unique ids, every cross-reference, [[link]] and argument map resolves
-node tests/engine.test.js        # routing: 155 realistic apologetic statements → expected entry; conversation flow; pattern checks
+node tests/engine.test.js        # routing: 162 realistic apologetic statements → expected entry; conversation flow; pattern checks
 node build/build.js && NODE_PATH=$(npm root -g) node tests/smoke.e2e.js   # Chromium: every view and tool, desktop + phone, light + dark
 NODE_PATH=$(npm root -g) node tests/ai.e2e.js                             # Live AI path against a simulated artifact `sample` runtime
 ```
 
-The smoke test renders all 244 entries, exercises each tool (index filter, glossary tooltips, case-map sliders, ledger presets, timeline labels, atlas search, parallels, drill scoring, the debate, and search), and fails on console errors or horizontal overflow. The browser tests need Playwright installed globally.
+The smoke test renders all 247 entries, exercises each tool (index filter, glossary tooltips, case-map sliders, ledger presets, timeline labels, atlas search, parallels, drill scoring, the debate, and search), and fails on console errors or horizontal overflow. The browser tests need Playwright installed globally.
 
 ## Layout
 

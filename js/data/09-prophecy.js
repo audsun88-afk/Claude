@@ -409,7 +409,7 @@ DEF_ADD([
     "Wright, N. T. (1996). Jesus and the Victory of God. Fortress (preterist-leaning reading)."
   ],
   keys: "second coming return of jesus this generation will not pass away some standing here will not taste death soon imminent end times apocalyptic prophet failed prophecy delay rapture",
-  rel: ["historical-jesus", "daniel", "israel-1948", "prophecy-odds"]
+  rel: ["historical-jesus", "daniel", "israel-1948", "prophecy-odds", "falsifiable"]
 },
 {
   id: "signs-of-times",

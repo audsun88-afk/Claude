@@ -54,7 +54,7 @@ DEF_ADD([
     "de Waal, F. (2006). Primates and Philosophers: How Morality Evolved. Princeton University Press."
   ],
   keys: "original sin adam's sin inherited sin fallen nature born sinners augustine romans 5:12 infants baptism total depravity sinful nature",
-  rel: ["adam-eve", "atonement", "natural-evil"]
+  rel: ["adam-eve", "atonement", "natural-evil", "human-condition"]
 },
 {
   id: "unevangelized",
@@ -287,5 +287,38 @@ DEF_ADD([
   ],
   keys: "church survived 2000 years gates of hell will not prevail catholic church survival proves divine gamaliel if it is from god belloc knavish imbecility macaulay",
   rel: ["christianity-growth", "jewish-survival", "bible-survival", "jesus-influence"]
+},
+{
+  id: "human-condition",
+  cat: "doctrine",
+  title: "Only Christianity Explains Human Nature",
+  who: "Blaise Pascal, Pensées (1670); G. K. Chesterton, Orthodoxy (1908), ch. 2; C. S. Lewis, Mere Christianity (1952), Book 1; Aleksandr Solzhenitsyn, The Gulag Archipelago (1973); Timothy Keller, The Reason for God (2008), ch. 10",
+  claim: `Human beings are a paradox. We build cathedrals, compose symphonies, and found hospitals, and we also build death camps. We know the moral law and break it every day. Pascal called man the "glory and refuse of the universe" and argued that only Christianity explains both halves: we are made in the image of God, and we are fallen. Chesterton called original sin "the only part of Christian theology which can really be proved," and Solzhenitsyn, after the Gulag, concluded that "the line dividing good and evil cuts through the heart of every human being." The twentieth century refuted secular optimism about human perfectibility. Christianity's diagnosis fits the evidence of history and of every honest heart.`,
+  short: `The observation is right: people are capable of great good and great evil. But that mixture is what evolutionary biology predicts for a social primate, and many traditions diagnosed it without Christianity, from the Confucian philosopher Xunzi to the Buddha. The specifically Christian explanation, a historical fall of a first human pair that passed sin and death to all their descendants, is contradicted by genetics and the fossil record. And a doctrine that can explain any mixture of good and evil predicts no particular mixture.`,
+  points: [
+    { h: "Evolution predicts the paradox", t: `A social species shaped by both cooperation and competition should have both tendencies: kin altruism and reciprocity (Trivers, 1971) alongside aggression, deception, and favoritism toward one's own group. Primatologists find precursors of both in other apes (de Waal, 2006). Richard Wrangham (*The Goodness Paradox*, 2019) argues that humans combine unusually low impulsive aggression with unusually high planned, coalitionary violence, as an outcome of our evolutionary history. The "greatness and wretchedness" Pascal saw is what a naturalistic account expects.` },
+    { h: "Other traditions saw it too", t: `The Confucian philosopher Xunzi, in the 3rd century BCE, argued that human nature is bad and that goodness comes from deliberate effort and education (*Xunzi*, ch. 23). Buddhism traces suffering to greed, hatred, and delusion, the "three poisons." Greek tragedy, Hindu thought, and modern psychology all describe a divided human nature. Christianity offers one account of a widely recognized fact; the fact doesn't single it out.` },
+    { h: "The Christian explanation conflicts with the evidence", t: `The doctrine doesn't just say that people do wrong. It says that sin and death entered the world through one man (Romans 5:12), the ancestor of all humans. Population genetics shows that humans don't descend from a single pair: the population hasn't fallen below thousands of individuals in hundreds of thousands of years ([[adam-eve]]). Death, predation, and disease existed for hundreds of millions of years before humans ([[animal-suffering]]). Reading the Fall as a symbol, or placing a first couple among thousands of other humans, keeps the story but gives up the explanation.` },
+    { h: "Inherited guilt is unjust", t: `Original sin holds that people are born guilty or corrupted because of an ancestor's act. The Bible itself states the opposite principle: "The son will not bear the iniquity of the father" (Ezekiel 18:20). Most people judge it unjust to blame anyone for another's wrongdoing, and the doctrine has divided Christians since Augustine's dispute with Pelagius (see [[original-sin]]).` },
+    { h: "It fits any outcome", t: `If people were mostly good, the doctrine would point to the image of God; if mostly bad, to the Fall; since they're mixed, it points to both. An account that fits every possible distribution of good and evil makes no prediction and earns no confirmation (see [[unfalsifiable]]). A real test would be something the doctrine predicts and its rivals don't, and the argument doesn't name one.` }
+  ],
+  replies: [
+    { q: "The twentieth century proved that people aren't basically good. Secular humanism was naive.", a: `It refuted some utopian ideologies, including several that were explicitly atheist (see [[atheist-regimes]]). But naturalism doesn't claim that people are basically good; evolutionary psychology predicts a mix of cooperation and cruelty. And over the long run, serious violence has fallen as states, trade, and the rule of law have spread: homicide in Europe declined dramatically between the sixteenth and the early twentieth centuries (Eisner, 2003). That fits a human account of moral progress.`, k: "twentieth century proved people not basically good secular humanism naive utopian holocaust gulag human perfectibility" },
+    { q: "Everyone knows they fall short of their own standards. That's the knowledge of sin.", a: `That's the experience of having ideals that outrun behavior, which any creature with foresight, language, and social norms will have. It doesn't require a divine lawgiver or an inherited fall (see [[conscience]]).`, k: "fall short of standards guilt everyone sins knows sin conscience moral law break it lewis" }
+  ],
+  sources: [
+    "Pascal, B. (1670). Pensées, fragment 131 (Lafuma numbering; 434 in Brunschvicg's).",
+    "Chesterton, G. K. (1908). Orthodoxy, ch. 2, 'The Maniac.'",
+    "Lewis, C. S. (1952). Mere Christianity. Geoffrey Bles, Book 1.",
+    "Solzhenitsyn, A. (1973). The Gulag Archipelago, vol. 1, part 1, ch. 4.",
+    "Keller, T. (2008). The Reason for God. Dutton, ch. 10.",
+    "Trivers, R. L. (1971). 'The Evolution of Reciprocal Altruism.' Quarterly Review of Biology 46(1): 35–57.",
+    "de Waal, F. (2006). Primates and Philosophers: How Morality Evolved. Princeton University Press.",
+    "Wrangham, R. (2019). The Goodness Paradox: The Strange Relationship between Virtue and Violence in Human Evolution. Pantheon.",
+    "Hutton, E. L. (trans.) (2014). Xunzi: The Complete Text. Princeton University Press, ch. 23.",
+    "Eisner, M. (2003). 'Long-Term Historical Trends in Violent Crime.' Crime and Justice 30: 83–142."
+  ],
+  keys: "christianity explains human nature human condition greatness and wretchedness pascal chesterton original sin only doctrine that can be proved solzhenitsyn line dividing good and evil heart human paradox fallen image of god sin explains evil people capable of good and evil",
+  rel: ["original-sin", "adam-eve", "conscience", "atheist-regimes", "unfalsifiable"]
 }
 ]);

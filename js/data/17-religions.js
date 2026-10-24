@@ -23,7 +23,7 @@ DEF_ADD([
     "Talbert, C. (1975). 'The Concept of Immortals in Mediterranean Antiquity.' Journal of Biblical Literature 94(3): 419–436."
   ],
   keys: "christianity unique why christianity other religions grace not works relationship not religion only religion rose from dead true religion",
-  rel: ["outsider-test", "demographics", "islam", "copycat"]
+  rel: ["outsider-test", "demographics", "islam", "copycat", "falsifiable"]
 },
 {
   id: "outsider-test",
@@ -196,5 +196,35 @@ DEF_ADD([
   ],
   keys: "jewish survival proves god jews survived persecution holocaust israel return chosen people survival miracle mark twain jews immortal frederick the great the jews your majesty",
   rel: ["israel-1948", "church-survival", "problem-of-evil", "why-christianity"]
+},
+{
+  id: "falsifiable",
+  cat: "religions",
+  title: "Christianity Is the One Testable Religion",
+  who: "Paul, 1 Corinthians 15:14–17; John Warwick Montgomery, History and Christianity (1965); evidentialist apologists such as Gary Habermas and Lee Strobel",
+  claim: `Other religions rest on private revelations or timeless teachings that can't be checked. Christianity stakes everything on a public event in history. Paul wrote, "If Christ has not been raised, your faith is vain" (1 Corinthians 15:17): produce the body, and Christianity is finished. No other religion invites investigation like this. That Christianity exposed itself to falsification, and survived, is a mark of its truth.`,
+  short: `A test counts in a claim's favor only if the claim passes it, and many religions make historical claims, including Judaism, Islam, and Mormonism. The resurrection can't be tested now by any evidence anyone could produce. Where the New Testament made a prediction that came due, Jesus' return within his generation, it failed, and believers reinterpreted it instead of giving up, the response psychologists later documented in *When Prophecy Fails*. Exposure to falsification only helps Christianity if Christianity actually passed.`,
+  points: [
+    { h: "Other religions make historical claims", t: `Judaism rests on the Exodus and Sinai. Islam rests on Muhammad's revelation and a Quran said to be preserved letter for letter, and the Quran states its own tests: "Had it been from other than God, they would have found in it much contradiction" (4:82; see also 2:23). Mormonism rests on golden plates, eleven named witnesses, and a history of ancient American peoples. Those Book of Mormon claims are more testable than the resurrection, and they have fared badly: genetic studies trace Native American ancestry to Asia, not the Near East (Southerton, 2004). The LDS Church's 2014 essay on DNA accepts that most Native American DNA identified so far most closely resembles East Asian populations, while arguing that DNA can't settle the question, and the introduction to its edition of the Book of Mormon changed "the principal ancestors of the American Indians" to "among the ancestors" in 2006. Believers reinterpret under pressure, Mormon and Christian alike.` },
+    { h: "No test is available now", t: `A body might have falsified the resurrection in the 30s CE. Today no evidence could: a skeleton or ossuary found now could never be identified as Jesus'. A claim that can no longer be checked gains nothing from once having been checkable. What can be checked are the reports, and they show the marks of legendary development ([[legendary-growth]], [[empty-tomb]]).` },
+    { h: "The prediction that came due failed", t: `The New Testament did make a test with a deadline. Jesus says that "this generation will not pass away until all these things happen" (Mark 13:30), and Paul expected some of his readers to be alive at the return (1 Thessalonians 4:15–17). It didn't happen ([[failed-return]]). The response was reinterpretation: "one day is with the Lord as a thousand years" (2 Peter 3:8). Festinger, Riecken, and Schachter (*When Prophecy Fails*, 1956) documented the same response in a modern group, and the Millerite movement, whose predicted return failed in 1844, gave rise to the Seventh-day Adventists (Knight, 1993).` },
+    { h: "Paul wasn't proposing a test", t: `1 Corinthians 15 is addressed to believers in Corinth, some of whom denied any resurrection of the dead. Paul's "if Christ has not been raised" is a step in showing that their denial would undermine their own faith, not an invitation to outsiders to investigate. The evidence he offers is a list of appearances ([[creed-1cor15]]), including an unnamed group of five hundred that no one in Corinth could have checked ([[five-hundred]]).` },
+    { h: "Surviving isn't passing", t: `A religion's survival shows that its believers kept believing, not that it passed a test. Every major religion has survived challenges to its historical claims. What would count is a prediction that Christianity makes and its rivals don't, checked and confirmed. The argument points to the possibility of a test, not to a result.` }
+  ],
+  replies: [
+    { q: "If the resurrection were false, the authorities would have produced the body.", a: `That assumes the location of the body was known and the body still identifiable when the preaching began. Acts places the first public preaching at Pentecost, about seven weeks after the crucifixion, when a body would no longer have been recognizable. Whether Jesus received an individual tomb burial at all is also disputed (see [[empty-tomb]]).`, k: "authorities would have produced the body jewish leaders romans find the body show the corpse tomb" },
+    { q: "Christianity is falsifiable and Islam isn't, so Christianity is more rational.", a: `Islam makes falsifiable claims too, and the Quran states its own tests (4:82, 2:23). Falsifiability is a property of claims, not a scorecard, and a claim earns credit only by surviving a real test (see the defeaters above).`, k: "islam not falsifiable christianity falsifiable more rational testable unlike other religions" }
+  ],
+  sources: [
+    "Montgomery, J. W. (1965). History and Christianity. First published as articles in HIS magazine, 1964–65.",
+    "Festinger, L., Riecken, H. W. & Schachter, S. (1956). When Prophecy Fails. University of Minnesota Press.",
+    "Knight, G. R. (1993). Millennial Fever and the End of the World: A Study of Millerite Adventism. Pacific Press.",
+    "Southerton, S. G. (2004). Losing a Lost Tribe: Native Americans, DNA, and the Mormon Church. Signature Books.",
+    "The Church of Jesus Christ of Latter-day Saints (2014). 'Book of Mormon and DNA Studies.' Gospel Topics Essays.",
+    "Allison, D. C. (1998). Jesus of Nazareth: Millenarian Prophet. Fortress Press.",
+    "Ehrman, B. D. (2014). How Jesus Became God. HarperOne."
+  ],
+  keys: "christianity falsifiable testable only religion that can be tested 1 corinthians 15 if christ has not been raised your faith is vain produce the body historical religion public event open to investigation unlike other religions",
+  rel: ["why-christianity", "failed-return", "empty-tomb", "mormonism", "islam", "unfalsifiable"]
 }
 ]);

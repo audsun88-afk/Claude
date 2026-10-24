@@ -30,7 +30,7 @@ DEF_ADD([
     "Tooley, M. 'The Problem of Evil.' Stanford Encyclopedia of Philosophy."
   ],
   keys: "problem of evil suffering why does god allow suffering evil bad things happen good people pain disease children dying rowe draper evidential theodicy",
-  rel: ["free-will-defense", "natural-evil", "animal-suffering", "skeptical-theism", "soul-making", "evil-god"]
+  rel: ["free-will-defense", "natural-evil", "animal-suffering", "skeptical-theism", "soul-making", "evil-god", "cross-suffering"]
 },
 {
   id: "free-will-defense",
@@ -86,7 +86,7 @@ DEF_ADD([
     "Rowe, W. (1979). 'The Problem of Evil and Some Varieties of Atheism.' American Philosophical Quarterly 16(4): 335–341."
   ],
   keys: "greater good god brings good out of evil all things work together for good romans 8:28 joseph genesis 50:20 everything happens for a reason purpose in suffering",
-  rel: ["problem-of-evil", "skeptical-theism", "soul-making", "compensation"]
+  rel: ["problem-of-evil", "skeptical-theism", "soul-making", "compensation", "cross-suffering"]
 },
 {
   id: "soul-making",
@@ -369,5 +369,42 @@ DEF_ADD([
   ],
   keys: "hell not eternal annihilationism universalism conditional immortality everyone saved destroyed not tormented apokatastasis origen hart",
   rel: ["hell", "compensation", "afterlife-origins"]
+},
+{
+  id: "cross-suffering",
+  cat: "evil",
+  title: "God Suffers With Us on the Cross",
+  who: "Dietrich Bonhoeffer, letter of 16 July 1944 ('only the suffering God can help'); Jürgen Moltmann, The Crucified God (1972); John Stott, The Cross of Christ (1986); Timothy Keller, The Reason for God (2008), ch. 2; Alvin Plantinga, 'Supralapsarianism, or O Felix Culpa' (2004)",
+  claim: `Christianity doesn't answer suffering from a distance. Its God entered the world's pain in Jesus: he was betrayed, tortured, and executed, and he cried out, "My God, my God, why have you forsaken me?" (Mark 15:34). John Stott wrote that he "could never myself believe in God, if it were not for the cross," and asked, "In the real world of pain, how could one worship a God who was immune to it?" Writing from a Nazi prison, Dietrich Bonhoeffer put it in six words: "only the suffering God can help." The cross also points toward an explanation. Alvin Plantinga argues that a world containing the Incarnation and the Atonement is so good that no world without them could match it, and such a world must contain sin and suffering to redeem. The Easter liturgy calls Adam's sin *felix culpa*, the "happy fault" that gained so great a Redeemer. Suffering isn't explained away; it's taken into a story of redemption, and the resurrection promises that it won't have the last word.`,
+  short: `The cross offers solidarity, not a reason. A God who shares suffering he could have prevented hasn't thereby justified allowing it, and the comfort exists only if the Incarnation is true, which is the question at issue. The *felix culpa* version makes sin and horror the price of God's display of love, which Christian philosophers such as Marilyn McCord Adams and Kevin Diller have found troubling. Classical Christian theology denies that God suffers at all. Other religions offer the same consolation. And none of it reaches the suffering of animals over hundreds of millions of years before humans existed.`,
+  points: [
+    { h: "Solidarity isn't justification", t: `The problem of evil asks why a being with the power to prevent suffering permits so much of it. That this being also suffers doesn't answer the question. A parent who could stop a child's torment, and instead joins in it, has shown sympathy, not a good reason. The evidential argument ([[problem-of-evil]]) is untouched: the amount and distribution of suffering are still what we'd expect if no all-powerful, all-good being governs the world.` },
+    { h: "It assumes what's in question", t: `The comfort depends on the Incarnation and the Atonement: that Jesus was God, and that his death accomplished something. If those claims are doubtful (see [[incarnation]] and [[atonement]]), so is the comfort. At most the argument shows that *if* Christianity is true, its God isn't indifferent. It can't be evidence that Christianity is true, and a consoling story isn't evidence of anything (see [[consequences]]).` },
+    { h: "Felix culpa makes evil a means", t: `Plantinga's theodicy says God permitted sin and suffering because a world with incarnation and atonement is better than any world without them. Critics, including Christian philosophers, object that this makes the horrors of history part of the price of displaying divine love, and seems to require that God want sin to occur so that he can redeem it (Diller, 2008; Adams, 2008). It also implies that the redeemed should be glad of the evils that made their redemption necessary.` },
+    { h: "Christians disagree that God suffers", t: `The classical doctrine of divine impassibility, taught by Aquinas and by the Westminster Confession, which describes God as "without body, parts, or passions," holds that the divine nature doesn't suffer at all; only Christ's human nature did. Defenders of the tradition, such as Thomas Weinandy (*Does God Suffer?*, 2000), regard a suffering God as a modern revision. So "God suffers with us" isn't settled Christian teaching, and the classical alternative removes much of the comfort.` },
+    { h: "A suffering with a known end", t: `Crucifixion was a horrific death, and the Gospels portray real anguish. But on Mark's account Jesus was on the cross for about six hours (Mark 15:25, 34), and Pilate was surprised that he had died so soon (Mark 15:44). The Gospels also present him as predicting his resurrection ([[passion-predictions]]). Rome crucified thousands of others, and many people suffer for years with no expectation of rescue. If Jesus was God and knew how the story would end, his experience differed from theirs in the very respect that makes suffering hardest to bear.` },
+    { h: "Other traditions offer the same comfort", t: `In Mahayana Buddhism, bodhisattvas vow to remain in the world of suffering until all beings are freed. Twelver Shi'ism venerates Husayn's martyrdom at Karbala as redemptive suffering (Ayoub, 1978). In the Bhagavad Gita, Krishna descends into the world whenever righteousness declines (4:7–8). If divine or saintly participation in suffering were evidence, it would be evidence for several religions at once ([[outsider-test]]).` },
+    { h: "Nothing here reaches animal suffering", t: `Predation, parasitism, and disease caused suffering for hundreds of millions of years before humans existed ([[animal-suffering]]). None of it resulted from human sin, and the cross isn't presented as redeeming it. Some theologians, such as Christopher Southgate (*The Groaning of Creation*, 2008), extend God's co-suffering and a future compensation to animals, but that's a further hypothesis added to the theory, not something the cross explains.` }
+  ],
+  replies: [
+    { q: "At least Christianity offers a God who understands our pain. Atheism offers nothing.", a: `Whether a belief is comforting doesn't bear on whether it's true (see [[consequences]]). Atheism isn't a rival consolation scheme; it's the absence of one belief. People without religion find solidarity in each other and in the work of reducing suffering, and that solidarity doesn't depend on a God who allowed the suffering in the first place.`, k: "atheism offers nothing comfort hope understands our pain consolation god who understands" },
+    { q: "Jesus' suffering was infinite, because he bore the sins of the whole world.", a: `That's the doctrine of penal substitution, which Christians themselves dispute and which faces serious moral objections (see [[atonement]]). Even granting it, it concerns guilt, not the suffering of a child with leukemia, which no one claims was caused by that child's sin.`, k: "infinite suffering bore the sins of the world wrath penal substitution atonement" },
+    { q: "God will wipe away every tear. The resurrection shows suffering doesn't have the last word.", a: `A future reward doesn't explain why the suffering was permitted (see [[compensation]]). And the promise depends on the resurrection having happened, which is examined in [[minimal-facts]].`, k: "wipe away every tear revelation 21 resurrection last word new creation make all things new" }
+  ],
+  sources: [
+    "Bonhoeffer, D. Letters and Papers from Prison, ed. E. Bethge. Letter of 16 July 1944.",
+    "Moltmann, J. (1974). The Crucified God. SCM Press. German original, Der gekreuzigte Gott, 1972.",
+    "Stott, J. (1986). The Cross of Christ. InterVarsity Press.",
+    "Keller, T. (2008). The Reason for God. Dutton, ch. 2.",
+    "Plantinga, A. (2004). 'Supralapsarianism, or “O Felix Culpa”.' In P. van Inwagen (ed.), Christian Faith and the Problem of Evil. Eerdmans.",
+    "Diller, K. (2008). 'Are Sin and Evil Necessary for a Really Good World? Questions for Alvin Plantinga's Felix Culpa Theodicy.' Faith and Philosophy 25(1): 87–101.",
+    "Adams, M. M. (2008). 'Plantinga on “Felix Culpa”: Analysis and Critique.' Faith and Philosophy 25(2).",
+    "Weinandy, T. G. (2000). Does God Suffer? T&T Clark / University of Notre Dame Press.",
+    "Westminster Confession of Faith (1646), ch. 2, sec. 1.",
+    "Ayoub, M. (1978). Redemptive Suffering in Islam: A Study of the Devotional Aspects of 'Ashura' in Twelver Shi'ism. Mouton.",
+    "Southgate, C. (2008). The Groaning of Creation: God, Evolution, and the Problem of Evil. Westminster John Knox."
+  ],
+  keys: "god suffers with us cross suffering crucified god god on the cross jesus suffered too understands our pain felix culpa o happy fault theodicy of the cross bonhoeffer moltmann stott keller only the suffering god can help why have you forsaken me god knows suffering",
+  rel: ["problem-of-evil", "greater-good", "compensation", "atonement", "incarnation", "animal-suffering"]
 }
 ]);

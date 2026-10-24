@@ -167,6 +167,13 @@ const cases = [
   ["Paul invented Christianity.", "paul-invented"],
   ["Atheists are smarter than religious people.", "atheists-smarter"],
   ["Religion is just a crutch for people afraid of death.", "religion-crutch"],
+  ["God suffered on the cross, so he understands our pain.", "cross-suffering"],
+  ["Only the suffering God can help. The cross is God's answer to evil.", "cross-suffering"],
+  ["Original sin is the only Christian doctrine that can really be proved.", "human-condition"],
+  ["Pascal showed that only Christianity explains the greatness and wretchedness of man.", "human-condition"],
+  ["Christianity is the only religion you can test: if Christ was not raised, our faith is in vain.", "falsifiable"],
+  ["Harvard studies show that people who go to church live longer.", "consequences"],
+  ["The Grim Reaper paradox shows the past must be finite.", "kalam"],
 ];
 
 let pass = 0, fail = 0, top3 = 0;
